@@ -1,0 +1,13 @@
+[
+  {"domainCode": "MasterData", "domainNameZh": "主数据和基础数据"},
+  {"domainCode": "Workflow", "domainNameZh": "流程"},
+  {"domainCode": "Ledger", "domainNameZh": "台账"},
+  {"domainCode": "RuleManagement", "domainNameZh": "规则"},
+  {"domainCode": "MonitoringReport", "domainNameZh": "监控预警和报表"},
+  {"domainCode": "Integration", "domainNameZh": "集成"},
+  {"domainCode": "Configuration", "domainNameZh": "配置"},
+  {"domainCode": "AccessAudit", "domainNameZh": "权限和审计"},
+  {"domainCode": "DataMigrationInitialization", "domainNameZh": "数据迁移和初始化"},
+  {"domainCode": "Other", "domainNameZh": "Other"}
+]
+
