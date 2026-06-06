@@ -4,7 +4,7 @@ import json
 import shutil
 from collections import Counter
 from dataclasses import asdict, dataclass, field
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -128,7 +128,7 @@ def build_pilot_execution_pack_from_source(
     )
     execution_pack = PilotExecutionPack(
         execution_id=stable_hash(f"{document_id}:{source}", prefix="pilot_exec"),
-        generated_at=datetime.now(UTC).isoformat(),
+        generated_at=datetime.now(timezone.utc).isoformat(),
         source_file=str(source),
         output_dir=str(output_dir) if output_dir else None,
         document_id=document_id,

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from collections import Counter
 from dataclasses import asdict
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from typing import Any
 
 from .candidate_extraction import CandidateExtractionReport
@@ -41,7 +41,7 @@ def build_pilot_report_pack(
     review_serialized = serialize_candidate_review_report(candidate_review_report)
     report = PilotReportPack(
         report_id=_report_id(ingestion_payload.document_id),
-        generated_at=datetime.now(UTC).isoformat(),
+        generated_at=datetime.now(timezone.utc).isoformat(),
         module_name=module_name,
         document_id=ingestion_payload.document_id,
         source_file=source_file,

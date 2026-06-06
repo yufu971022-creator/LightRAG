@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from typing import Any
 
 from .candidate_extraction import CandidateExtractionReport
@@ -146,7 +146,7 @@ def build_candidate_review_report(
     decision_counts = Counter(item.decision for item in decisions)
     report = CandidateReviewReport(
         report_id=_report_id(document_id),
-        generated_at=datetime.now(UTC).isoformat(),
+        generated_at=datetime.now(timezone.utc).isoformat(),
         document_id=document_id,
         total_candidates=total,
         total_entities=sum(1 for candidate in candidates if isinstance(candidate, CandidateEntity)),
@@ -580,7 +580,7 @@ def _next_step(
 def _report_id(document_id: str | None) -> str:
     import hashlib
 
-    raw = f"{document_id or 'candidate-review'}|{datetime.now(UTC).isoformat()}"
+    raw = f"{document_id or 'candidate-review'}|{datetime.now(timezone.utc).isoformat()}"
     return f"review-{hashlib.md5(raw.encode('utf-8')).hexdigest()[:12]}"
 
 
