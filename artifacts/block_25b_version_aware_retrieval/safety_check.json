@@ -1,0 +1,16 @@
+{
+  "business_module_hardcode_detected": false,
+  "document_upload_time_used_for_latest": false,
+  "generic_graph_writes_executed": false,
+  "lightrag_core_modified": false,
+  "live_query_behavior_changed": false,
+  "live_query_hook_connected": false,
+  "live_upload_behavior_changed": false,
+  "neo4j_connected": false,
+  "new_supersedes_auto_created": false,
+  "pfss_graph_writes_executed": false,
+  "production_database_connected": false,
+  "real_embedding_calls_executed": false,
+  "real_llm_calls_executed": false,
+  "source_us_order_used_for_latest": false
+}

@@ -1,0 +1,525 @@
+{
+  "dry_run": [
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n01_requirement_intake",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "REQUIREMENT_INTAKE",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n02_scenario_classification",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "SCENARIO_CLASSIFICATION",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "ADAPTER_AVAILABLE",
+      "execution_mode": "DETERMINISTIC_EXECUTION",
+      "node_id": "n03_trusted_knowledge_retrieval",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "TRUSTED_KNOWLEDGE_RETRIEVAL",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "ADAPTER_AVAILABLE",
+      "execution_mode": "DETERMINISTIC_EXECUTION",
+      "node_id": "n04_version_analysis",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "VERSION_ANALYSIS",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n05_current_state_analysis",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "CURRENT_STATE_ANALYSIS",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n06_primary_change_target_identification",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "PRIMARY_CHANGE_TARGET_IDENTIFICATION",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "ADAPTER_AVAILABLE",
+      "execution_mode": "DETERMINISTIC_EXECUTION",
+      "node_id": "n07_impact_analysis",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "IMPACT_ANALYSIS",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n08_clarification_question_generation",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "CLARIFICATION_QUESTION_GENERATION",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n09_feature_decomposition",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "FEATURE_DECOMPOSITION",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n10_function_decomposition",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "FUNCTION_DECOMPOSITION",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n11_high_level_solution_planning",
+      "output": {
+        "final_business_text_generated": false,
+        "future_execution_contract": true
+      },
+      "reason": "Future LLM or external-agent skill is not executed in 27A.",
+      "skill_id": "HIGH_LEVEL_SOLUTION_PLANNING",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n12_detailed_design_planning",
+      "output": {
+        "final_business_text_generated": false,
+        "future_execution_contract": true
+      },
+      "reason": "Future LLM or external-agent skill is not executed in 27A.",
+      "skill_id": "DETAILED_DESIGN_PLANNING",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n13_field_spec_planning",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "FIELD_SPEC_PLANNING",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n14_process_state_design_planning",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "PROCESS_STATE_DESIGN_PLANNING",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n15_integration_design_planning",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "INTEGRATION_DESIGN_PLANNING",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n16_permission_audit_design_planning",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "PERMISSION_AUDIT_DESIGN_PLANNING",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n17_migration_initialization_planning",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "MIGRATION_INITIALIZATION_PLANNING",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n18_dfx_design_planning",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "DFX_DESIGN_PLANNING",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "PLANNED_NOT_IMPLEMENTED",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n19_ux_design_input_planning",
+      "output": {
+        "capability_gap_visible": true
+      },
+      "reason": "Capability unavailable; recorded gap instead of fake output.",
+      "skill_id": "UX_DESIGN_INPUT_PLANNING",
+      "status": "SKIPPED_CAPABILITY_GAP"
+    },
+    {
+      "capability_status": "ADAPTER_AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n20_us_generation",
+      "output": {
+        "final_business_text_generated": false,
+        "future_execution_contract": true
+      },
+      "reason": "Future LLM or external-agent skill is not executed in 27A.",
+      "skill_id": "US_GENERATION",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n21_ac_generation",
+      "output": {
+        "final_business_text_generated": false,
+        "future_execution_contract": true
+      },
+      "reason": "Future LLM or external-agent skill is not executed in 27A.",
+      "skill_id": "AC_GENERATION",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n22_test_scope_planning",
+      "output": {
+        "contract_checked": true,
+        "final_output_generated": false
+      },
+      "reason": "Deterministic offline skill contract checked without side effects.",
+      "skill_id": "TEST_SCOPE_PLANNING",
+      "status": "DRY_RUN_COMPLETED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n23_cross_output_consistency_check",
+      "output": {
+        "final_business_text_generated": false,
+        "future_execution_contract": true
+      },
+      "reason": "Future LLM or external-agent skill is not executed in 27A.",
+      "skill_id": "CROSS_OUTPUT_CONSISTENCY_CHECK",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n24_final_quality_gate",
+      "output": {
+        "final_business_text_generated": false,
+        "future_execution_contract": true
+      },
+      "reason": "Future LLM or external-agent skill is not executed in 27A.",
+      "skill_id": "FINAL_QUALITY_GATE",
+      "status": "NOT_EXECUTED"
+    }
+  ],
+  "one_to_one_x": [],
+  "plan_only": [
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n01_requirement_intake",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "REQUIREMENT_INTAKE",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n02_scenario_classification",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "SCENARIO_CLASSIFICATION",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "ADAPTER_AVAILABLE",
+      "execution_mode": "DETERMINISTIC_EXECUTION",
+      "node_id": "n03_trusted_knowledge_retrieval",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "TRUSTED_KNOWLEDGE_RETRIEVAL",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n04_novelty_gap_analysis",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "NOVELTY_GAP_ANALYSIS",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n05_clarification_question_generation",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "CLARIFICATION_QUESTION_GENERATION",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n06_feature_decomposition",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "FEATURE_DECOMPOSITION",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n07_function_decomposition",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "FUNCTION_DECOMPOSITION",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n08_high_level_solution_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "HIGH_LEVEL_SOLUTION_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n09_detailed_design_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "DETAILED_DESIGN_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "PLANNED_NOT_IMPLEMENTED",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n10_ux_design_input_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "UX_DESIGN_INPUT_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n11_field_spec_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "FIELD_SPEC_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n12_process_state_design_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "PROCESS_STATE_DESIGN_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n13_integration_design_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "INTEGRATION_DESIGN_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n14_permission_audit_design_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "PERMISSION_AUDIT_DESIGN_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n15_migration_initialization_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "MIGRATION_INITIALIZATION_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n16_dfx_design_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "DFX_DESIGN_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "ADAPTER_AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n17_us_generation",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "US_GENERATION",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n18_ac_generation",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "AC_GENERATION",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "DRY_RUN",
+      "node_id": "n19_test_scope_planning",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "TEST_SCOPE_PLANNING",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n20_cross_output_consistency_check",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "CROSS_OUTPUT_CONSISTENCY_CHECK",
+      "status": "PLANNED_ONLY"
+    },
+    {
+      "capability_status": "AVAILABLE",
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "node_id": "n21_final_quality_gate",
+      "output": {
+        "final_output_generated": false
+      },
+      "reason": "27A plan-only mode does not execute business generation.",
+      "skill_id": "FINAL_QUALITY_GATE",
+      "status": "PLANNED_ONLY"
+    }
+  ]
+}

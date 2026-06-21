@@ -1,0 +1,307 @@
+{
+  "approval_status": {
+    "canonical_key": "approvalstatus",
+    "canonical_term": "Approval Status",
+    "confidence": 1.0,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "approval status",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0013"
+    ],
+    "original_term": "Approval Status",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Workflow|ApprovalFeature|FieldSpec"
+  },
+  "bank_status": {
+    "canonical_key": "bankstatus",
+    "canonical_term": "Bank Status",
+    "confidence": 1.0,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "bank status",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0012"
+    ],
+    "original_term": "Bank Status",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Ledger|BankStatusFeature|FieldSpec"
+  },
+  "candidate_handler": {
+    "canonical_key": "currenthandler",
+    "canonical_term": "Current Handler",
+    "confidence": 0.8,
+    "conflict_mapping_ids": [],
+    "decision": "CANDIDATE_REVIEW",
+    "lexically_normalized_term": "handler",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CANDIDATE",
+    "matched_mapping_ids": [
+      "term:25A-0:0015"
+    ],
+    "original_term": "Handler",
+    "reason_codes": [
+      "candidate_mapping_requires_review"
+    ],
+    "requires_review": true,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Workflow|CandidateFeature|FieldSpec"
+  },
+  "conflict_status": {
+    "canonical_key": "status",
+    "canonical_term": "Status",
+    "confidence": 0.0,
+    "conflict_mapping_ids": [
+      "term:conflict:1",
+      "term:conflict:2"
+    ],
+    "decision": "CONFLICT",
+    "lexically_normalized_term": "status",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:conflict:1",
+      "term:conflict:2"
+    ],
+    "original_term": "Status",
+    "reason_codes": [
+      "term_ambiguity",
+      "conflicting_confirmed_mapping"
+    ],
+    "requires_review": true,
+    "semantic_scope_key": "*|MOD-PRODUCT|Ledger|ConflictFeature|FieldSpec"
+  },
+  "current_handler_en": {
+    "canonical_key": "currenthandler",
+    "canonical_term": "Current Handler",
+    "confidence": 1.0,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "current handler",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0006"
+    ],
+    "original_term": "Current Handler",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Workflow|HandlerFeature|RolePermission"
+  },
+  "current_handler_zh": {
+    "canonical_key": "currenthandler",
+    "canonical_term": "Current Handler",
+    "confidence": 1.0,
+    "conflict_mapping_ids": [],
+    "decision": "REGISTRY_CONFIRMED",
+    "lexically_normalized_term": "当前处理人",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0005"
+    ],
+    "original_term": "当前处理人",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Workflow|HandlerFeature|RolePermission"
+  },
+  "rejected_owner": {
+    "canonical_key": "owner",
+    "canonical_term": "Owner",
+    "confidence": 0.4,
+    "conflict_mapping_ids": [],
+    "decision": "REJECTED_MAPPING",
+    "lexically_normalized_term": "owner",
+    "mapping_source": "CONFIG",
+    "mapping_status": "REJECTED",
+    "matched_mapping_ids": [
+      "term:25A-0:0016"
+    ],
+    "original_term": "Owner",
+    "reason_codes": [
+      "mapping_rejected"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Workflow|RejectedFeature|FieldSpec"
+  },
+  "scoped_search": {
+    "canonical_key": "search",
+    "canonical_term": "Search",
+    "confidence": 1.0,
+    "conflict_mapping_ids": [],
+    "decision": "REGISTRY_CONFIRMED",
+    "lexically_normalized_term": "查询",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0010"
+    ],
+    "original_term": "查询",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|MonitoringReport|MonitoringSearch|ReportSpec"
+  },
+  "scoped_status": {
+    "canonical_key": "bankstatus",
+    "canonical_term": "Bank Status",
+    "confidence": 1.0,
+    "conflict_mapping_ids": [],
+    "decision": "REGISTRY_CONFIRMED",
+    "lexically_normalized_term": "状态",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0007"
+    ],
+    "original_term": "状态",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Ledger|BankStatusFeature|FieldSpec"
+  },
+  "swift_code": {
+    "canonical_key": "swiftcode",
+    "canonical_term": "Swift Code",
+    "confidence": 0.99,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "swift code",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0001"
+    ],
+    "original_term": "SWIFT CODE",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Integration|PaymentFeature|FieldSpec"
+  },
+  "swift_hyphen": {
+    "canonical_key": "swiftcode",
+    "canonical_term": "Swift Code",
+    "confidence": 0.99,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "swift code",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0001"
+    ],
+    "original_term": "swift-code",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Integration|PaymentFeature|FieldSpec"
+  },
+  "swift_underscore": {
+    "canonical_key": "swiftcode",
+    "canonical_term": "Swift Code",
+    "confidence": 0.99,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "swift code",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0001"
+    ],
+    "original_term": "swift_code",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Integration|PaymentFeature|FieldSpec"
+  },
+  "swiftcode": {
+    "canonical_key": "swiftcode",
+    "canonical_term": "Swift Code",
+    "confidence": 0.99,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "swiftcode",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0001"
+    ],
+    "original_term": "SWIFTCODE",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Integration|PaymentFeature|FieldSpec"
+  },
+  "task_status": {
+    "canonical_key": "taskstatus",
+    "canonical_term": "Task Status",
+    "confidence": 1.0,
+    "conflict_mapping_ids": [],
+    "decision": "IDENTITY",
+    "lexically_normalized_term": "task status",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:25A-0:0014"
+    ],
+    "original_term": "Task Status",
+    "reason_codes": [
+      "confirmed_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "CoreSystem|MOD-PRODUCT|Workflow|TaskFeature|FieldSpec"
+  },
+  "unscoped_search": {
+    "canonical_key": "查询",
+    "canonical_term": "查询",
+    "confidence": 0.0,
+    "conflict_mapping_ids": [],
+    "decision": "NO_MAPPING",
+    "lexically_normalized_term": "查询",
+    "mapping_source": null,
+    "mapping_status": null,
+    "matched_mapping_ids": [],
+    "original_term": "查询",
+    "reason_codes": [
+      "no_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "*|*|*|*|*"
+  },
+  "unscoped_status": {
+    "canonical_key": "status",
+    "canonical_term": "Status",
+    "confidence": 0.0,
+    "conflict_mapping_ids": [],
+    "decision": "NO_MAPPING",
+    "lexically_normalized_term": "status",
+    "mapping_source": null,
+    "mapping_status": null,
+    "matched_mapping_ids": [],
+    "original_term": "Status",
+    "reason_codes": [
+      "no_registry_mapping"
+    ],
+    "requires_review": false,
+    "semantic_scope_key": "*|*|*|*|*"
+  }
+}

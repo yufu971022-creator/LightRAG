@@ -1,0 +1,29 @@
+{
+  "embedding_dimension": 3072,
+  "extension_schema_version": "runtime-closure.v1",
+  "fusion_policy_version": "fusion-policy.v1",
+  "future_remote_storage_adapters": [
+    "MILVUS",
+    "MONGO",
+    "NEO4J",
+    "OPENSEARCH",
+    "POSTGRES",
+    "QDRANT",
+    "REDIS"
+  ],
+  "lightrag_commit": "91bf57c90c8321fddc3b2e04d4f456c19d693012",
+  "lightrag_version": "local-fork",
+  "ontology_version": "ontology.v1",
+  "python_implementation": "CPython",
+  "python_version": "3.14.5",
+  "quality_gate_version": "quality-gate.v1",
+  "sidecar_schema_version": "sidecar.v1",
+  "supported_local_storage_backends": [
+    "LOCAL_FILES",
+    "LOCAL_JSON",
+    "LOCAL_MEMORY",
+    "LOCAL_SQLITE"
+  ],
+  "term_registry_version": "term-registry.v1",
+  "version_policy_version": "version-policy.v1"
+}

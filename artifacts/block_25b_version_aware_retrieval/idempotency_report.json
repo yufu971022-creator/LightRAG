@@ -1,0 +1,6 @@
+{
+  "candidate_index_idempotent": true,
+  "idempotency_passed": true,
+  "issue_index_idempotent": true,
+  "ranking_deterministic": true
+}

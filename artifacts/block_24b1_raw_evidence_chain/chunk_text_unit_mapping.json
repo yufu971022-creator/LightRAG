@@ -1,0 +1,56 @@
+[
+  {
+    "chunk_coverage_ratio": 1.0,
+    "chunk_id": "chunk-d85499495371c2daef4c6d984be4eb40",
+    "document_id": "block24b1-fixture-dsl-full",
+    "document_version_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+    "evidence": {
+      "chunk_content_hash": "e73abc893815acf82d6da766da3809867cdded16c3ca3f8415e38c6a493d63c4",
+      "mapping_basis": "document_version_id+offset_interval",
+      "text_unit_hash": "5c24a130ef229612"
+    },
+    "link_id": "link-7866f40f27d37280a8b9a15a4f3662c5",
+    "link_type": "FULL",
+    "overlap_char_count": 352,
+    "overlap_end_offset": 352,
+    "overlap_start_offset": 0,
+    "text_unit_coverage_ratio": 1.0,
+    "text_unit_id": "TU249eb978458c"
+  },
+  {
+    "chunk_coverage_ratio": 1.0,
+    "chunk_id": "chunk-fa3a91ce802ffb9bd081a6e6ca4eba09",
+    "document_id": "block24b1-fixture-dsl-partial",
+    "document_version_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+    "evidence": {
+      "chunk_content_hash": "c5b9fd5ebf9caaa221d318bd81ea58fadd6dc0665884e4f4c7557330113b20da",
+      "mapping_basis": "document_version_id+offset_interval",
+      "text_unit_hash": "52dda8186dffc6b2"
+    },
+    "link_id": "link-fa44907f8ff0b6454911807bd3d5e293",
+    "link_type": "FULL",
+    "overlap_char_count": 240,
+    "overlap_end_offset": 240,
+    "overlap_start_offset": 0,
+    "text_unit_coverage_ratio": 1.0,
+    "text_unit_id": "TUd94d239d4980"
+  },
+  {
+    "chunk_coverage_ratio": 1.0,
+    "chunk_id": "chunk-35157ded3ba21643cec33459c477bc84",
+    "document_id": "block24b1-fixture-raw-only",
+    "document_version_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+    "evidence": {
+      "chunk_content_hash": "ec8b322c84db929dd09c83bb252f3fe779e839830be97d8fd3691c45fd4f898e",
+      "mapping_basis": "document_version_id+offset_interval",
+      "text_unit_hash": "703b0964ddb1dc82"
+    },
+    "link_id": "link-3d01d6fc653c0e235bd3e6e9e8fa378e",
+    "link_type": "FULL",
+    "overlap_char_count": 137,
+    "overlap_end_offset": 137,
+    "overlap_start_offset": 0,
+    "text_unit_coverage_ratio": 1.0,
+    "text_unit_id": "TU27b0cb17d10b"
+  }
+]

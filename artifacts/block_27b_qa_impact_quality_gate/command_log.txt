@@ -1,0 +1,10 @@
+Block 27B QA/Impact quality gate smoke started
+max_attempts=2
+Generated Block 27B artifacts
+US/AC/Code Agent/storage/live hooks not executed
+pytest --collect-only target 27B tests: 48 collected
+pytest target 27B tests: 48 passed, 0 failed
+compileall lightrag_ext: passed
+py_compile lightrag/prompt.py: passed
+ruff check lightrag_ext lightrag/prompt.py: passed
+core_diff_check.txt: empty

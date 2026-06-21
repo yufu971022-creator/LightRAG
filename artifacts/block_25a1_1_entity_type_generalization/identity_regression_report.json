@@ -1,0 +1,8 @@
+{
+  "same_resolved_type_keeps_stable_identity": true,
+  "same_resolved_type_keeps_version_group_key": true,
+  "stable_identity_regression_passed": true,
+  "term_normalization_identity_regression_passed": true,
+  "type_change_changes_semantic_identity": true,
+  "uncertain_type_uses_no_pfss_identity": true
+}

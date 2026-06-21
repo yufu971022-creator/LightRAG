@@ -1,0 +1,142 @@
+{
+  "IMPACT-LOCAL": [
+    {
+      "actor": "SYSTEM",
+      "reason": "initial deterministic output drafted",
+      "state": "OUTPUT_DRAFTED",
+      "timestamp": "2026-06-21T08:29:16.499299+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates running",
+      "state": "QUALITY_CHECKING",
+      "timestamp": "2026-06-21T08:29:16.499308+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates passed",
+      "state": "QUALITY_GATE_PASSED",
+      "timestamp": "2026-06-21T08:29:16.499319+00:00"
+    }
+  ],
+  "IMPACT-ONE-MANY": [
+    {
+      "actor": "SYSTEM",
+      "reason": "initial deterministic output drafted",
+      "state": "OUTPUT_DRAFTED",
+      "timestamp": "2026-06-21T08:29:16.499267+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates running",
+      "state": "QUALITY_CHECKING",
+      "timestamp": "2026-06-21T08:29:16.499283+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates passed",
+      "state": "QUALITY_GATE_PASSED",
+      "timestamp": "2026-06-21T08:29:16.499297+00:00"
+    }
+  ],
+  "IMPACT-ZERO": [
+    {
+      "actor": "SYSTEM",
+      "reason": "initial deterministic output drafted",
+      "state": "OUTPUT_DRAFTED",
+      "timestamp": "2026-06-21T08:29:16.499320+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates running",
+      "state": "QUALITY_CHECKING",
+      "timestamp": "2026-06-21T08:29:16.499325+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates passed",
+      "state": "QUALITY_GATE_PASSED",
+      "timestamp": "2026-06-21T08:29:16.499332+00:00"
+    }
+  ],
+  "QA-CONFIRMED": [
+    {
+      "actor": "SYSTEM",
+      "reason": "initial deterministic output drafted",
+      "state": "OUTPUT_DRAFTED",
+      "timestamp": "2026-06-21T08:29:16.499135+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates running",
+      "state": "QUALITY_CHECKING",
+      "timestamp": "2026-06-21T08:29:16.499202+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates passed",
+      "state": "QUALITY_GATE_PASSED",
+      "timestamp": "2026-06-21T08:29:16.499218+00:00"
+    }
+  ],
+  "QA-MISSING": [
+    {
+      "actor": "SYSTEM",
+      "reason": "initial deterministic output drafted",
+      "state": "OUTPUT_DRAFTED",
+      "timestamp": "2026-06-21T08:29:16.499256+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates running",
+      "state": "QUALITY_CHECKING",
+      "timestamp": "2026-06-21T08:29:16.499259+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates passed",
+      "state": "QUALITY_GATE_PASSED",
+      "timestamp": "2026-06-21T08:29:16.499264+00:00"
+    }
+  ],
+  "QA-TEXT": [
+    {
+      "actor": "SYSTEM",
+      "reason": "initial deterministic output drafted",
+      "state": "OUTPUT_DRAFTED",
+      "timestamp": "2026-06-21T08:29:16.499242+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates running",
+      "state": "QUALITY_CHECKING",
+      "timestamp": "2026-06-21T08:29:16.499247+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates passed",
+      "state": "QUALITY_GATE_PASSED",
+      "timestamp": "2026-06-21T08:29:16.499254+00:00"
+    }
+  ],
+  "QA-VERSION": [
+    {
+      "actor": "SYSTEM",
+      "reason": "initial deterministic output drafted",
+      "state": "OUTPUT_DRAFTED",
+      "timestamp": "2026-06-21T08:29:16.499221+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates running",
+      "state": "QUALITY_CHECKING",
+      "timestamp": "2026-06-21T08:29:16.499228+00:00"
+    },
+    {
+      "actor": "SYSTEM",
+      "reason": "initial quality gates passed",
+      "state": "QUALITY_GATE_PASSED",
+      "timestamp": "2026-06-21T08:29:16.499240+00:00"
+    }
+  ]
+}

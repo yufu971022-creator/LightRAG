@@ -1,0 +1,25 @@
+{
+  "entity_name_scenario_rule_count": 0,
+  "entity_name_skill_rule_count": 0,
+  "findings": [],
+  "fixture_runtime_coupling_count": 0,
+  "module_specific_skill_count": 0,
+  "module_specific_threshold_count": 0,
+  "new_module_requires_code_change": false,
+  "runtime_module_branch_count": 0,
+  "scanned_files": [
+    "harness_types.py",
+    "requirement_scenario_profile.py",
+    "requirement_scenario_router.py",
+    "skill_contracts.py",
+    "skill_registry.py",
+    "skill_capability_probe.py",
+    "scenario_skill_templates.py",
+    "skill_dag_planner.py",
+    "harness_context_assembler.py",
+    "harness_checkpoint_policy.py",
+    "harness_state_machine.py",
+    "harness_executor.py",
+    "harness_generalization_guard.py"
+  ]
+}

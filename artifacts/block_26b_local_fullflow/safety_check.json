@@ -1,0 +1,18 @@
+{
+  "entity_name_specific_rule_count": 0,
+  "fixture_runtime_coupling_count": 0,
+  "formal_multi_module_gate_status": "BLOCKED_INPUT_SET",
+  "intranet_real_module_validation_pending": true,
+  "lightrag_core_modified": false,
+  "live_query_behavior_changed": false,
+  "live_upload_behavior_changed": false,
+  "local_filename_controls_runtime_logic_count": 0,
+  "local_fullflow_mode_enabled": true,
+  "local_fullflow_status": "LOCAL_FULLFLOW_PASS_WITH_GAPS",
+  "module_specific_weight_count": 0,
+  "multi_module_gate_thresholds_changed": false,
+  "multi_module_production_gate_pending": true,
+  "neo4j_connected": false,
+  "production_storage_connected": false,
+  "runtime_module_branch_count": 0
+}

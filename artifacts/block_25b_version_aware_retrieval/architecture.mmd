@@ -1,0 +1,20 @@
+flowchart TD
+    Q[Query + Explicit Parameters] --> I[Version Query Intent]
+    I --> K[Canonical Semantic Identity / Version Group]
+
+    K --> C[Version Candidate Index]
+    K --> X[Version Issue Index]
+
+    C --> R[Conservative Current Resolver]
+    X --> R
+
+    R --> A[Version-aware Ranker]
+    I --> A
+
+    A --> V[Selected / Historical / Uncertain Candidates]
+    V --> B[Version Context Builder]
+    X --> B
+
+    B --> O[Safe Context + Evidence + Warnings]
+
+    NOTE[No Live Query Hook / No LLM / No New Supersedes]

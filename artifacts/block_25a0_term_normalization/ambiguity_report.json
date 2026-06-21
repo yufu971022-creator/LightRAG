@@ -1,0 +1,28 @@
+{
+  "ambiguities": {
+    "canonical_key": "status",
+    "canonical_term": "Status",
+    "confidence": 0.0,
+    "conflict_mapping_ids": [
+      "term:conflict:1",
+      "term:conflict:2"
+    ],
+    "decision": "CONFLICT",
+    "lexically_normalized_term": "status",
+    "mapping_source": "CONFIG",
+    "mapping_status": "CONFIRMED",
+    "matched_mapping_ids": [
+      "term:conflict:1",
+      "term:conflict:2"
+    ],
+    "original_term": "Status",
+    "reason_codes": [
+      "term_ambiguity",
+      "conflicting_confirmed_mapping"
+    ],
+    "requires_review": true,
+    "semantic_scope_key": "*|MOD-PRODUCT|Ledger|ConflictFeature|FieldSpec"
+  },
+  "conflict_mapping_detected": true,
+  "term_ambiguity_issue_created": true
+}

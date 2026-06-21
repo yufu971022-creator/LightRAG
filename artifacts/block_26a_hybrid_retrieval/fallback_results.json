@@ -1,0 +1,65 @@
+{
+  "generic_only_low_trust": {
+    "reasons": [
+      "generic_only"
+    ],
+    "safe_for_deterministic_answer": false,
+    "state": "GENERIC_ONLY_LOW_TRUST"
+  },
+  "historical_compare": {
+    "reasons": [
+      "pfss_raw_factual_path"
+    ],
+    "safe_for_deterministic_answer": true,
+    "state": "HYBRID_EVIDENCE_READY"
+  },
+  "hybrid_ready": {
+    "reasons": [
+      "pfss_raw_factual_path"
+    ],
+    "safe_for_deterministic_answer": true,
+    "state": "HYBRID_EVIDENCE_READY"
+  },
+  "impact_path": {
+    "reasons": [
+      "pfss_raw_factual_path"
+    ],
+    "safe_for_deterministic_answer": true,
+    "state": "HYBRID_EVIDENCE_READY"
+  },
+  "insufficient_evidence": {
+    "reasons": [
+      "no_result"
+    ],
+    "safe_for_deterministic_answer": false,
+    "state": "INSUFFICIENT_EVIDENCE"
+  },
+  "issue_only": {
+    "reasons": [
+      "warning_only"
+    ],
+    "safe_for_deterministic_answer": false,
+    "state": "ISSUE_ONLY"
+  },
+  "strict_scope_empty": {
+    "reasons": [
+      "strict_scope_no_result"
+    ],
+    "safe_for_deterministic_answer": false,
+    "state": "STRICT_SCOPE_EMPTY"
+  },
+  "text_only_fallback": {
+    "reasons": [
+      "raw_only"
+    ],
+    "safe_for_deterministic_answer": false,
+    "state": "TEXT_ONLY_FALLBACK"
+  },
+  "version_warning": {
+    "reasons": [
+      "version_warning"
+    ],
+    "safe_for_deterministic_answer": false,
+    "state": "PFSS_WITH_VERSION_WARNING"
+  }
+}

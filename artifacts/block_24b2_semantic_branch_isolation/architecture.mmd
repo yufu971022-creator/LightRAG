@@ -1,0 +1,18 @@
+flowchart TD
+    R[Route Decision] --> E[Raw Evidence Result Required]
+
+    E -->|DSL_FULL| F[Compile Full Safe DSL Payload]
+    E -->|DSL_PARTIAL| P[Compile Safe DSL Subset]
+    E -->|RAW_ONLY| T[Text-only, No PFSS Write]
+    E -->|PARSE_FAILED| X[No Semantic Write]
+
+    F --> PFSS[PFSS Test Graph]
+    P --> PFSS
+    P --> ISSUE[Issue / Review Index]
+
+    G[Optional Synthetic Generic Smoke] --> GENERIC[Generic Test Graph]
+
+    PFSS -. isolated .- GENERIC
+    PFSS -. no overlap .- ISSUE
+
+    NOTE[No Live Upload Hook / No LLM / No Original Extraction]

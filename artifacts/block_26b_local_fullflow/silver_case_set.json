@@ -1,0 +1,1202 @@
+[
+  {
+    "case_id": "silver_regression-local-doc-0000-000",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:000",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-001",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:001",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-002",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:002",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-003",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:003",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-004",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:004",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-005",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:005",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-006",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:006",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-007",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:007",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-008",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:008",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-009",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:009",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-010",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:010",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-011",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:011",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-012",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:012",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-013",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:013",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-014",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:014",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-015",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:015",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-016",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:016",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-017",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:017",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-018",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:018",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-019",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:019",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-020",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:020",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-021",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:021",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-022",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:022",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-023",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:023",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-024",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:024",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-025",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:025",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-026",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:026",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-027",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:027",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-028",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:028",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-029",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:029",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-030",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:030",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-031",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:031",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-032",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:032",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-033",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:033",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-034",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:034",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-035",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:035",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-036",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:036",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-037",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:037",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-038",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:038",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-039",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:039",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-040",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:040",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-041",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:041",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-042",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:042",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-043",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:043",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-044",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:044",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-045",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:045",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-046",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:046",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-047",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:047",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-048",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:048",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-049",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:049",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-050",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:050",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-051",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:051",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-052",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:052",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-053",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:053",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-054",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:054",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-055",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:055",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-056",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:056",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-057",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:057",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-058",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:058",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-059",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:059",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-060",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:060",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-061",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [
+      "LOCAL_EXPLICIT_RELATION"
+    ],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "IMPACT_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:061",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-062",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "HISTORICAL_COMPARE",
+    "text_unit_id": "local-doc-0000:tu:062",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-063",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "MIGRATION_ANALYSIS",
+    "text_unit_id": "local-doc-0000:tu:063",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-064",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [
+      "LOCAL_EXPLICIT_DIMENSION"
+    ],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "DESIGN_CONTEXT",
+    "text_unit_id": "local-doc-0000:tu:064",
+    "valid": true
+  },
+  {
+    "case_id": "silver_regression-local-doc-0000-065",
+    "case_set": "SILVER_REGRESSION",
+    "document_id": "local-doc-0000",
+    "evidence_keywords": [
+      "#"
+    ],
+    "generated_by_llm": false,
+    "primary_gold": false,
+    "query": "Locate explicit evidence for LC_Acceptable_Bank_US_v1.md",
+    "relation_types": [],
+    "required_dimensions": [],
+    "source_ref": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+    "task_type": "FACT_QA",
+    "text_unit_id": "local-doc-0000:tu:065",
+    "valid": true
+  }
+]

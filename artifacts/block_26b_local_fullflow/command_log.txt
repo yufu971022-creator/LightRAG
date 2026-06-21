@@ -1,0 +1,20 @@
+$ git status --short
+exit=0
+$ git status --short
+exit=0
+$ git diff --name-only -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+exit=0
+$ run_existing_us_local_fullflow
+status=LOCAL_FULLFLOW_PASS_WITH_GAPS
+$ LIGHTRAG_ENABLE_EXISTING_US_LOCAL_FULLFLOW=1 LIGHTRAG_LOCAL_US_ROOT=/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md python -m lightrag_ext.us_dsl.scripts.run_existing_us_local_fullflow --output-dir artifacts/block_26b_local_fullflow --discover-existing-us --use-all-valid-us --measured-runs 5 --warmup-runs 1 --cleanup
+exit=0 status=LOCAL_FULLFLOW_PASS_WITH_GAPS detected_us=66
+$ ./scripts/test.sh <26B-LOCAL target tests>
+exit=0 passed=21
+$ python3 -m py_compile <26B-LOCAL runtime modules>
+exit=0
+$ python3 -m compileall -q <26B-LOCAL runtime modules and tests>
+exit=0
+$ .venv/bin/ruff check <26B-LOCAL runtime modules and tests>
+exit=0
+$ git diff --name-only -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+exit=0 NO_CORE_DIFF

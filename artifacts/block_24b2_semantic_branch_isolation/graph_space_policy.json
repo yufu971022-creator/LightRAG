@@ -1,0 +1,38 @@
+[
+  {
+    "entity_vector_namespace": "pfss_test_graph_entities_vdb",
+    "graph_storage_type": "LOCAL_JSON_GRAPH",
+    "namespace": "pfss_test_graph",
+    "production_allowed": false,
+    "relationship_vector_namespace": "pfss_test_graph_relationships_vdb",
+    "shared_raw_evidence_reference": true,
+    "space": "PFSS",
+    "workspace": "block24b2_pfss_test",
+    "write_enabled": true,
+    "write_mode": "ISOLATED_TEST_WRITE"
+  },
+  {
+    "entity_vector_namespace": "generic_test_graph_entities_vdb",
+    "graph_storage_type": "LOCAL_JSON_GRAPH",
+    "namespace": "generic_test_graph",
+    "production_allowed": false,
+    "relationship_vector_namespace": "generic_test_graph_relationships_vdb",
+    "shared_raw_evidence_reference": true,
+    "space": "GENERIC",
+    "workspace": "block24b2_generic_test",
+    "write_enabled": false,
+    "write_mode": "DISABLED"
+  },
+  {
+    "entity_vector_namespace": null,
+    "graph_storage_type": "LOCAL_JSON_INDEX",
+    "namespace": "issue_test_index",
+    "production_allowed": false,
+    "relationship_vector_namespace": null,
+    "shared_raw_evidence_reference": true,
+    "space": "ISSUE",
+    "workspace": "block24b2_issue_test",
+    "write_enabled": true,
+    "write_mode": "ISOLATED_TEST_WRITE"
+  }
+]

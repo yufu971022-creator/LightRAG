@@ -1,0 +1,6 @@
+{
+  "dropped_candidate_ids": [],
+  "kept_items": 3,
+  "max_items": 10,
+  "token_budget_preserved_required_evidence": true
+}

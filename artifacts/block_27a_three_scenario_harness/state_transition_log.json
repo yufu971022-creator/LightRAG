@@ -1,0 +1,172 @@
+{
+  "dry_run": [
+    {
+      "actor": "SYSTEM",
+      "event": "profile_built",
+      "from_state": "CREATED",
+      "reason": "scenario metrics computed",
+      "timestamp": "2026-06-21T08:04:16.338842+00:00",
+      "to_state": "PROFILED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "route_decided",
+      "from_state": "PROFILED",
+      "reason": "CONFIDENT",
+      "timestamp": "2026-06-21T08:04:16.338847+00:00",
+      "to_state": "ROUTED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "context_assembled",
+      "from_state": "ROUTED",
+      "reason": "context contract ready",
+      "timestamp": "2026-06-21T08:04:16.338853+00:00",
+      "to_state": "CONTEXT_READY"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "plan_built",
+      "from_state": "CONTEXT_READY",
+      "reason": "dag plan ready",
+      "timestamp": "2026-06-21T08:04:16.339007+00:00",
+      "to_state": "PLAN_READY"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "dry_run_started",
+      "from_state": "PLAN_READY",
+      "reason": "27A dry run only",
+      "timestamp": "2026-06-21T08:04:16.339009+00:00",
+      "to_state": "EXECUTING"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "dry_run_completed",
+      "from_state": "EXECUTING",
+      "reason": "no final output generated",
+      "timestamp": "2026-06-21T08:04:16.339024+00:00",
+      "to_state": "DRY_RUN_COMPLETED"
+    }
+  ],
+  "insufficient": [
+    {
+      "actor": "SYSTEM",
+      "event": "profile_built",
+      "from_state": "CREATED",
+      "reason": "scenario metrics computed",
+      "timestamp": "2026-06-21T08:04:16.339212+00:00",
+      "to_state": "PROFILED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "route_decided",
+      "from_state": "PROFILED",
+      "reason": "INSUFFICIENT_EVIDENCE",
+      "timestamp": "2026-06-21T08:04:16.339215+00:00",
+      "to_state": "ROUTED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "clarification_required",
+      "from_state": "ROUTED",
+      "reason": "INSUFFICIENT_EVIDENCE",
+      "timestamp": "2026-06-21T08:04:16.339218+00:00",
+      "to_state": "WAITING_FOR_CLARIFICATION"
+    }
+  ],
+  "mixed": [
+    {
+      "actor": "SYSTEM",
+      "event": "profile_built",
+      "from_state": "CREATED",
+      "reason": "scenario metrics computed",
+      "timestamp": "2026-06-21T08:04:16.339196+00:00",
+      "to_state": "PROFILED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "route_decided",
+      "from_state": "PROFILED",
+      "reason": "MIXED",
+      "timestamp": "2026-06-21T08:04:16.339200+00:00",
+      "to_state": "ROUTED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "clarification_required",
+      "from_state": "ROUTED",
+      "reason": "MIXED",
+      "timestamp": "2026-06-21T08:04:16.339204+00:00",
+      "to_state": "WAITING_FOR_CLARIFICATION"
+    }
+  ],
+  "one_to_one_x": [
+    {
+      "actor": "SYSTEM",
+      "event": "profile_built",
+      "from_state": "CREATED",
+      "reason": "scenario metrics computed",
+      "timestamp": "2026-06-21T08:04:16.339036+00:00",
+      "to_state": "PROFILED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "route_decided",
+      "from_state": "PROFILED",
+      "reason": "CONFIDENT",
+      "timestamp": "2026-06-21T08:04:16.339040+00:00",
+      "to_state": "ROUTED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "context_assembled",
+      "from_state": "ROUTED",
+      "reason": "context contract ready",
+      "timestamp": "2026-06-21T08:04:16.339044+00:00",
+      "to_state": "CONTEXT_READY"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "capability_gap",
+      "from_state": "CONTEXT_READY",
+      "reason": "required capability unavailable",
+      "timestamp": "2026-06-21T08:04:16.339181+00:00",
+      "to_state": "BLOCKED_BY_MISSING_CAPABILITY"
+    }
+  ],
+  "plan_only": [
+    {
+      "actor": "SYSTEM",
+      "event": "profile_built",
+      "from_state": "CREATED",
+      "reason": "scenario metrics computed",
+      "timestamp": "2026-06-21T08:04:16.338567+00:00",
+      "to_state": "PROFILED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "route_decided",
+      "from_state": "PROFILED",
+      "reason": "CONFIDENT",
+      "timestamp": "2026-06-21T08:04:16.338640+00:00",
+      "to_state": "ROUTED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "context_assembled",
+      "from_state": "ROUTED",
+      "reason": "context contract ready",
+      "timestamp": "2026-06-21T08:04:16.338648+00:00",
+      "to_state": "CONTEXT_READY"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "plan_built",
+      "from_state": "CONTEXT_READY",
+      "reason": "dag plan ready",
+      "timestamp": "2026-06-21T08:04:16.338816+00:00",
+      "to_state": "PLAN_READY"
+    }
+  ]
+}

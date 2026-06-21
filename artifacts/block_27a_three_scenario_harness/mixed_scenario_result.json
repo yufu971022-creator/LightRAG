@@ -1,0 +1,231 @@
+{
+  "capability_gaps": [],
+  "checkpoint_results": [
+    {
+      "blocks_downstream": true,
+      "checkpoint_type": "CLARIFICATION_CHECK",
+      "passed": false,
+      "reason_codes": [
+        "clarification_required"
+      ],
+      "required_clarifications": [
+        {
+          "question": "Should this be split into separate new capability and impact-change requests?",
+          "question_id": "split"
+        }
+      ]
+    }
+  ],
+  "context": {
+    "assumptions": [],
+    "available_code_context": {
+      "details": {},
+      "source": "not_configured",
+      "status": "UNAVAILABLE"
+    },
+    "context_budget": {
+      "issue_warning_count": 1,
+      "max_items": 12,
+      "source_evidence_count": 1
+    },
+    "impact_context": {
+      "impact_paths_available": true,
+      "source": "27A_offline_fixture"
+    },
+    "issues_and_warnings": [
+      {
+        "kind": "route_warning",
+        "reason_codes": [
+          "new_capability_and_broad_impact"
+        ],
+        "status": "MIXED"
+      }
+    ],
+    "open_questions": [
+      {
+        "question": "Should this be split into separate new capability and impact-change requests?",
+        "question_id": "split"
+      }
+    ],
+    "requirement_input": {
+      "available_code_context": false,
+      "available_design_context": true,
+      "explicit_scenario_override": null,
+      "metadata": {
+        "affected_domain_count": 2,
+        "affected_feature_count": 4,
+        "direct_impact_count": 4,
+        "evidence_sufficiency_score": 0.7,
+        "existing_code_asset_coverage": 0.2,
+        "existing_feature_coverage": 0.2,
+        "existing_semantic_object_coverage": 0.5,
+        "graph_path_count": 3,
+        "new_business_object_ratio": 0.75,
+        "novelty_score": 0.85,
+        "primary_change_targets": [
+          "new_capability",
+          "existing_state"
+        ],
+        "profile_confidence": 0.72
+      },
+      "module_code": null,
+      "requested_outputs": [],
+      "requirement_id": "REQ-27A-MIXED",
+      "requirement_text": "Add a new coordination capability and modify several existing downstream capabilities in one request.",
+      "source_document_refs": [
+        "synthetic-design-note"
+      ]
+    },
+    "scenario_profile": {
+      "affected_domain_count": 2,
+      "affected_feature_count": 4,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 4,
+      "evidence_sufficiency_score": 0.7,
+      "existing_code_asset_coverage": 0.2,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.2,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.5,
+      "graph_path_count": 3,
+      "indirect_impact_count": 0,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.75,
+      "novelty_score": 0.85,
+      "primary_change_targets": [
+        "new_capability",
+        "existing_state"
+      ],
+      "profile_confidence": 0.72,
+      "requirement_id": "REQ-27A-MIXED",
+      "risks": [
+        "cross_domain_impact"
+      ],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "scenario_route": {
+      "alternative_scenarios": [
+        "ZERO_TO_ONE",
+        "ONE_TO_MANY"
+      ],
+      "clarification_questions": [
+        {
+          "question": "Should this be split into separate new capability and impact-change requests?",
+          "question_id": "split"
+        }
+      ],
+      "classification_status": "MIXED",
+      "confidence": 0.72,
+      "manual_override_used": false,
+      "missing_information": [],
+      "profile": {
+        "affected_domain_count": 2,
+        "affected_feature_count": 4,
+        "cross_system_signal_count": 0,
+        "direct_impact_count": 4,
+        "evidence_sufficiency_score": 0.7,
+        "existing_code_asset_coverage": 0.2,
+        "existing_design_evidence_coverage": 0.6,
+        "existing_feature_coverage": 0.2,
+        "existing_relation_coverage": 0.0,
+        "existing_semantic_object_coverage": 0.5,
+        "graph_path_count": 3,
+        "indirect_impact_count": 0,
+        "local_change_score": 0.0,
+        "new_business_object_ratio": 0.75,
+        "novelty_score": 0.85,
+        "primary_change_targets": [
+          "new_capability",
+          "existing_state"
+        ],
+        "profile_confidence": 0.72,
+        "requirement_id": "REQ-27A-MIXED",
+        "risks": [
+          "cross_domain_impact"
+        ],
+        "signals": [
+          "design_context_available"
+        ],
+        "term_issue_count": 0,
+        "type_issue_count": 0,
+        "version_issue_count": 0
+      },
+      "reason_codes": [
+        "new_capability_and_broad_impact"
+      ],
+      "requirement_id": "REQ-27A-MIXED",
+      "router_policy_version": "27A-router-v1",
+      "selected_scenario": null
+    },
+    "source_evidence": [
+      {
+        "document_id": "synthetic-design-note",
+        "evidence_id": "ev_REQ-27A-MIXED",
+        "excerpt": "Synthetic non-sensitive evidence for harness planning.",
+        "fact_status": "FACTUAL"
+      }
+    ],
+    "term_context": {
+      "stable_terms_available": true
+    },
+    "trusted_context_pack": {
+      "candidate_aliases": [],
+      "direct_evidence": [
+        {
+          "document_id": "synthetic-design-note",
+          "evidence_id": "ev_REQ-27A-MIXED",
+          "excerpt": "Synthetic non-sensitive evidence for harness planning.",
+          "fact_status": "FACTUAL"
+        }
+      ],
+      "factual_candidates": [],
+      "final_answer_generated": false,
+      "issue_warnings": [],
+      "source": "27A_offline_context_pack"
+    },
+    "type_context": {
+      "entity_type_resolution_available": true
+    },
+    "version_context": {
+      "safe_for_deterministic_answer": true,
+      "source": "27A_offline_fixture"
+    }
+  },
+  "execution_trace": [],
+  "final_solution_document_generated": false,
+  "final_state": "WAITING_FOR_CLARIFICATION",
+  "final_us_generated": false,
+  "plan": null,
+  "requirement_id": "REQ-27A-MIXED",
+  "state_transitions": [
+    {
+      "actor": "SYSTEM",
+      "event": "profile_built",
+      "from_state": "CREATED",
+      "reason": "scenario metrics computed",
+      "timestamp": "2026-06-21T08:04:16.339196+00:00",
+      "to_state": "PROFILED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "route_decided",
+      "from_state": "PROFILED",
+      "reason": "MIXED",
+      "timestamp": "2026-06-21T08:04:16.339200+00:00",
+      "to_state": "ROUTED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "clarification_required",
+      "from_state": "ROUTED",
+      "reason": "MIXED",
+      "timestamp": "2026-06-21T08:04:16.339204+00:00",
+      "to_state": "WAITING_FOR_CLARIFICATION"
+    }
+  ]
+}

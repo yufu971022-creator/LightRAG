@@ -1,0 +1,23 @@
+{
+  "deterministic_path_signature": true,
+  "duplicate_groups": [
+    {
+      "channels": [
+        "GENERIC_GRAPH",
+        "PFSS_ENTITY",
+        "RAW_TEXT"
+      ],
+      "dedup_key": "identity:identity:rule-main",
+      "members": [
+        "generic-duplicate",
+        "pfss-entity-main",
+        "raw-current"
+      ],
+      "winner": "pfss-entity-main"
+    }
+  ],
+  "generic_overrode_pfss_count": 0,
+  "input_count": 6,
+  "output_count": 4,
+  "raw_evidence_preserved": true
+}

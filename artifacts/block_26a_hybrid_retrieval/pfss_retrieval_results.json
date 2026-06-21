@@ -1,0 +1,629 @@
+{
+  "generic_only_low_trust": [],
+  "historical_compare": [
+    {
+      "active": true,
+      "candidate_id": "pfss-entity-main",
+      "channel": "PFSS_ENTITY",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.024491803,
+      "fusion_reasons": [
+        "rrf=0.020492",
+        "channel_weight=1.25",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "ENTITY",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.88,
+      "reason_codes": [],
+      "semantic_object_id": "obj-source",
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Semantic object describing the requested rule.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "pfss-relation-main",
+      "channel": "PFSS_RELATION",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 50,
+            "start": 21
+          },
+          "text_hash": "hash-b",
+          "text_unit_id": "u2"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.026131148,
+      "fusion_reasons": [
+        "rrf=0.022131",
+        "channel_weight=1.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "RELATION",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "relation",
+      "path": null,
+      "raw_score": 0.86,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": "rel-1",
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": null,
+      "text": "Semantic relation supporting impact path.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "pfss-path-main",
+      "channel": "PFSS_PATH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        },
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 50,
+            "start": 21
+          },
+          "text_hash": "hash-b",
+          "text_unit_id": "u2"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.027770492,
+      "fusion_reasons": [
+        "rrf=0.023770",
+        "channel_weight=1.45",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "rel-1"
+        ],
+        "evidence_refs": [
+          "doc-a:v1:u1"
+        ],
+        "generic_only": false,
+        "has_issue_edge": false,
+        "node_ids": [
+          "obj-source",
+          "obj-target"
+        ],
+        "path_id": "path-factual",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "complete_evidence"
+        ],
+        "validation_status": "FACTUAL",
+        "version_conflict": false
+      },
+      "raw_score": 0.84,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": null,
+      "text": "Evidence-backed path from source to target.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "hybrid_ready": [
+    {
+      "active": true,
+      "candidate_id": "pfss-entity-main",
+      "channel": "PFSS_ENTITY",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.024491803,
+      "fusion_reasons": [
+        "rrf=0.020492",
+        "channel_weight=1.25",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "ENTITY",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.88,
+      "reason_codes": [],
+      "semantic_object_id": "obj-source",
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Semantic object describing the requested rule.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "pfss-relation-main",
+      "channel": "PFSS_RELATION",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 50,
+            "start": 21
+          },
+          "text_hash": "hash-b",
+          "text_unit_id": "u2"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.026131148,
+      "fusion_reasons": [
+        "rrf=0.022131",
+        "channel_weight=1.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "RELATION",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "relation",
+      "path": null,
+      "raw_score": 0.86,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": "rel-1",
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": null,
+      "text": "Semantic relation supporting impact path.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "pfss-path-main",
+      "channel": "PFSS_PATH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        },
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 50,
+            "start": 21
+          },
+          "text_hash": "hash-b",
+          "text_unit_id": "u2"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.027770492,
+      "fusion_reasons": [
+        "rrf=0.023770",
+        "channel_weight=1.45",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "rel-1"
+        ],
+        "evidence_refs": [
+          "doc-a:v1:u1"
+        ],
+        "generic_only": false,
+        "has_issue_edge": false,
+        "node_ids": [
+          "obj-source",
+          "obj-target"
+        ],
+        "path_id": "path-factual",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "complete_evidence"
+        ],
+        "validation_status": "FACTUAL",
+        "version_conflict": false
+      },
+      "raw_score": 0.84,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": null,
+      "text": "Evidence-backed path from source to target.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "impact_path": [
+    {
+      "active": true,
+      "candidate_id": "pfss-entity-main",
+      "channel": "PFSS_ENTITY",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.024491803,
+      "fusion_reasons": [
+        "rrf=0.020492",
+        "channel_weight=1.25",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "ENTITY",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.88,
+      "reason_codes": [],
+      "semantic_object_id": "obj-source",
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Semantic object describing the requested rule.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "pfss-relation-main",
+      "channel": "PFSS_RELATION",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 50,
+            "start": 21
+          },
+          "text_hash": "hash-b",
+          "text_unit_id": "u2"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.026131148,
+      "fusion_reasons": [
+        "rrf=0.022131",
+        "channel_weight=1.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "RELATION",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "relation",
+      "path": null,
+      "raw_score": 0.86,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": "rel-1",
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": null,
+      "text": "Semantic relation supporting impact path.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "pfss-path-main",
+      "channel": "PFSS_PATH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        },
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 50,
+            "start": 21
+          },
+          "text_hash": "hash-b",
+          "text_unit_id": "u2"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.027770492,
+      "fusion_reasons": [
+        "rrf=0.023770",
+        "channel_weight=1.45",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "rel-1"
+        ],
+        "evidence_refs": [
+          "doc-a:v1:u1"
+        ],
+        "generic_only": false,
+        "has_issue_edge": false,
+        "node_ids": [
+          "obj-source",
+          "obj-target"
+        ],
+        "path_id": "path-factual",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "complete_evidence"
+        ],
+        "validation_status": "FACTUAL",
+        "version_conflict": false
+      },
+      "raw_score": 0.84,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": null,
+      "text": "Evidence-backed path from source to target.",
+      "trust_tier": "T2_SEMANTIC",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "insufficient_evidence": [],
+  "issue_only": [],
+  "strict_scope_empty": [],
+  "text_only_fallback": [],
+  "version_warning": [
+    {
+      "active": true,
+      "candidate_id": "pfss-path-version-warning",
+      "channel": "PFSS_PATH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 50,
+            "start": 21
+          },
+          "text_hash": "hash-b",
+          "text_unit_id": "u2"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.024770492,
+      "fusion_reasons": [
+        "rrf=0.023770",
+        "channel_weight=1.45",
+        "domain_hint_boost",
+        "feature_hint_boost",
+        "version_conflict_penalty"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "rel-old"
+        ],
+        "evidence_refs": [
+          "doc-a:v1:u2"
+        ],
+        "generic_only": false,
+        "has_issue_edge": false,
+        "node_ids": [
+          "obj-source",
+          "obj-old"
+        ],
+        "path_id": "path-version-conflict",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "version_conflict"
+        ],
+        "validation_status": "TENTATIVE_VERSION_CONFLICT",
+        "version_conflict": true
+      },
+      "raw_score": 0.7,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "pfss_graph",
+      "stable_identity_key": null,
+      "text": "Tentative path with version warning.",
+      "trust_tier": "T3_TENTATIVE",
+      "version_intent": null,
+      "version_status": "CONFLICT"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+flowchart TD
+    I[Document Input] --> P[Single Parse]
+    P --> N[Normalized Document]
+    N --> R[RawEvidenceChunks]
+    N --> U[SourceTextUnits]
+    R --> M[ChunkTextUnitMapping by offsets]
+    U --> M
+    R --> FD[full_docs]
+    R --> TC[text_chunks]
+    TC --> CV[chunks_vdb]
+    R --> DS[doc_status]
+    M -. no graph write .-> X[Graph/entity/relation stores untouched]

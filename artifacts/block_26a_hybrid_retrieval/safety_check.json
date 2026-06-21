@@ -1,0 +1,14 @@
+{
+  "FINAL_ANSWER_GENERATED": false,
+  "GENERIC_GRAPH_WRITES_EXECUTED": false,
+  "LIGHTRAG_CORE_MODIFIED": false,
+  "LIVE_QUERY_BEHAVIOR_CHANGED": false,
+  "LIVE_QUERY_HOOK_CONNECTED": false,
+  "NEO4J_CONNECTED": false,
+  "NEW_SUPERSEDES_CREATED": false,
+  "PFSS_GRAPH_WRITES_EXECUTED": false,
+  "PRODUCTION_STORAGE_CONNECTED": false,
+  "REAL_LLM_CALLS_EXECUTED": false,
+  "graph_writes_executed": false,
+  "sidecar_writes_executed": false
+}

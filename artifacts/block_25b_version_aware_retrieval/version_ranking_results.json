@@ -1,0 +1,172 @@
+{
+  "as_of": [
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:HISTORICAL",
+        "confirmed_current",
+        "valid_time_match"
+      ],
+      "score": 7.4,
+      "version_member_id": "m:as:v1"
+    },
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:CURRENT"
+      ],
+      "score": 4.2,
+      "version_member_id": "m:as:v2"
+    }
+  ],
+  "compare": [
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:HISTORICAL",
+        "compare_keep_candidate"
+      ],
+      "score": 3.4,
+      "version_member_id": "m:ss:v1"
+    },
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:UNKNOWN",
+        "compare_keep_candidate",
+        "unknown_version_penalty"
+      ],
+      "score": 2.25,
+      "version_member_id": "m:ss:v2"
+    }
+  ],
+  "current": [
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:CURRENT",
+        "confirmed_current"
+      ],
+      "score": 7.25,
+      "version_member_id": "m:uc:v2"
+    },
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:HISTORICAL",
+        "historical_current_penalty"
+      ],
+      "score": 1.67,
+      "version_member_id": "m:uc:v1"
+    }
+  ],
+  "historical": [
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:HISTORICAL",
+        "historical_intent_boost"
+      ],
+      "score": 4.42,
+      "version_member_id": "m:uc:v1"
+    },
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:CURRENT"
+      ],
+      "score": 4.25,
+      "version_member_id": "m:uc:v2"
+    }
+  ],
+  "issue_visible": [
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:CURRENT"
+      ],
+      "score": 4.2,
+      "version_member_id": "m:is:v2"
+    },
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:UNKNOWN",
+        "version_issue_penalty",
+        "unknown_version_penalty"
+      ],
+      "score": -0.25,
+      "version_member_id": "m:is:v1"
+    }
+  ],
+  "migration": [
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:CURRENT",
+        "migration_keep_candidate"
+      ],
+      "score": 5.2,
+      "version_member_id": "m:is:v2"
+    },
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:UNKNOWN",
+        "migration_keep_candidate",
+        "version_issue_penalty",
+        "unknown_version_penalty"
+      ],
+      "score": 0.75,
+      "version_member_id": "m:is:v1"
+    }
+  ],
+  "unspecified": [
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:UNKNOWN",
+        "unknown_version_penalty"
+      ],
+      "score": 1.25,
+      "version_member_id": "m:wk:v1"
+    },
+    {
+      "reasons": [
+        "semantic_relevance",
+        "evidence_quality",
+        "active_contribution",
+        "status:UNKNOWN",
+        "unknown_version_penalty"
+      ],
+      "score": 1.25,
+      "version_member_id": "m:wk:v2"
+    }
+  ]
+}

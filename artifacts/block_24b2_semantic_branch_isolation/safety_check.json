@@ -1,0 +1,12 @@
+{
+  "auto_write_routing_enabled": false,
+  "lightrag_core_modified": false,
+  "live_generic_fallback_extraction_implemented": false,
+  "live_upload_behavior_changed": false,
+  "live_upload_hook_connected": false,
+  "neo4j_connected": false,
+  "original_extract_entities_called": false,
+  "original_gleaning_executed": false,
+  "production_storage_writes_executed": false,
+  "real_llm_calls_executed": false
+}

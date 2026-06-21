@@ -1,0 +1,3 @@
+fusion_policy_version: fusion-policy.v1
+expected_fusion_policy_version: fusion-policy.v1
+trusted_hybrid_retrieval_enabled: true

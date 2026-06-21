@@ -1,0 +1,1244 @@
+{
+  "AC_GENERATION": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Records a future design/output task contract without generating final narrative content in 27A.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Ac Generation",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "AC_GENERATION",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "future_execution_contract_recorded",
+      "no_final_business_text_generated"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "AC_GENERATION",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "CLARIFICATION_QUESTION_GENERATION": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Clarification Question Generation",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "CLARIFICATION_QUESTION_GENERATION",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "CLARIFICATION_QUESTION_GENERATION",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "CODE_CONTEXT_HANDOFF": {
+    "adapter_target": "future.code_context_adapter",
+    "capability_status": "PLANNED_NOT_IMPLEMENTED",
+    "checkpoint_after": true,
+    "description": "Represents a future code context handoff adapter; unavailable adapters must create capability gaps.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT",
+      "CAPABILITY_NOT_IMPLEMENTED"
+    ],
+    "name": "Code Context Handoff",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "code_context_status": "string",
+        "handoff_contract": "dict"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "code_context_availability_recorded",
+      "capability_gap_visible_when_missing"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available",
+      "code_context_adapter_configured"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "code_context_adapter"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "CODE_CONTEXT_HANDOFF",
+    "supported_scenarios": [
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "CROSS_OUTPUT_CONSISTENCY_CHECK": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Records a future design/output task contract without generating final narrative content in 27A.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Cross Output Consistency Check",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "CROSS_OUTPUT_CONSISTENCY_CHECK",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "future_execution_contract_recorded",
+      "no_final_business_text_generated"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "CROSS_OUTPUT_CONSISTENCY_CHECK",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "CURRENT_STATE_ANALYSIS": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Current State Analysis",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "CURRENT_STATE_ANALYSIS",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "CURRENT_STATE_ANALYSIS",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "DETAILED_DESIGN_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Records a future design/output task contract without generating final narrative content in 27A.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Detailed Design Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "DETAILED_DESIGN_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "future_execution_contract_recorded",
+      "no_final_business_text_generated"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "DETAILED_DESIGN_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "DFX_DESIGN_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Dfx Design Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "DFX_DESIGN_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "DFX_DESIGN_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "FEATURE_DECOMPOSITION": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Feature Decomposition",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "FEATURE_DECOMPOSITION",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "FEATURE_DECOMPOSITION",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "FIELD_SPEC_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Field Spec Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "FIELD_SPEC_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "FIELD_SPEC_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "FINAL_QUALITY_GATE": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": true,
+    "description": "Records a future design/output task contract without generating final narrative content in 27A.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Final Quality Gate",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "FINAL_QUALITY_GATE",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "future_execution_contract_recorded",
+      "no_final_business_text_generated"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available",
+      "all_prior_outputs_marked_as_plan_or_dry_run"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "FINAL_QUALITY_GATE",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "FUNCTION_DECOMPOSITION": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Function Decomposition",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "FUNCTION_DECOMPOSITION",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "FUNCTION_DECOMPOSITION",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "HIGH_LEVEL_SOLUTION_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Records a future design/output task contract without generating final narrative content in 27A.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "High Level Solution Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "HIGH_LEVEL_SOLUTION_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "future_execution_contract_recorded",
+      "no_final_business_text_generated"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "HIGH_LEVEL_SOLUTION_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "IMPACT_ANALYSIS": {
+    "adapter_target": "lightrag_ext.us_dsl.impact_analysis_eval:generate_impact_analysis_deterministic",
+    "capability_status": "ADAPTER_AVAILABLE",
+    "checkpoint_after": true,
+    "description": "Uses an existing deterministic or typed adapter contract and records capability evidence.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT",
+      "ADAPTER_UNAVAILABLE"
+    ],
+    "name": "Impact Analysis",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "IMPACT_ANALYSIS",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "trusted_context_pack",
+      "version_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "IMPACT_ANALYSIS",
+    "supported_scenarios": [
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "INTEGRATION_DESIGN_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Integration Design Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "INTEGRATION_DESIGN_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "INTEGRATION_DESIGN_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "LOCAL_IMPACT_CHECK": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Local Impact Check",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "LOCAL_IMPACT_CHECK",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "LOCAL_IMPACT_CHECK",
+    "supported_scenarios": [
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "MIGRATION_INITIALIZATION_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Migration Initialization Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "MIGRATION_INITIALIZATION_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "MIGRATION_INITIALIZATION_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "NOVELTY_GAP_ANALYSIS": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Novelty Gap Analysis",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "NOVELTY_GAP_ANALYSIS",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "NOVELTY_GAP_ANALYSIS",
+    "supported_scenarios": [
+      "ZERO_TO_ONE"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "PERMISSION_AUDIT_DESIGN_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Permission Audit Design Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "PERMISSION_AUDIT_DESIGN_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "PERMISSION_AUDIT_DESIGN_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "PRIMARY_CHANGE_TARGET_IDENTIFICATION": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Primary Change Target Identification",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "PRIMARY_CHANGE_TARGET_IDENTIFICATION",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "PRIMARY_CHANGE_TARGET_IDENTIFICATION",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "PROCESS_STATE_DESIGN_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Process State Design Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "PROCESS_STATE_DESIGN_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "PROCESS_STATE_DESIGN_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "REQUIREMENT_INTAKE": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Requirement Intake",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "REQUIREMENT_INTAKE",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "REQUIREMENT_INTAKE",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "SCENARIO_CLASSIFICATION": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": true,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Scenario Classification",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "SCENARIO_CLASSIFICATION",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_profile"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "SCENARIO_CLASSIFICATION",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "TEST_SCOPE_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT"
+    ],
+    "name": "Test Scope Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "TEST_SCOPE_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "TEST_SCOPE_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "TRUSTED_KNOWLEDGE_RETRIEVAL": {
+    "adapter_target": "lightrag_ext.us_dsl.hybrid_retrieval_service:HybridRetrievalService",
+    "capability_status": "ADAPTER_AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Uses an existing deterministic or typed adapter contract and records capability evidence.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT",
+      "ADAPTER_UNAVAILABLE"
+    ],
+    "name": "Trusted Knowledge Retrieval",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "TRUSTED_KNOWLEDGE_RETRIEVAL",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_profile"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "TRUSTED_KNOWLEDGE_RETRIEVAL",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "US_GENERATION": {
+    "adapter_target": "lightrag_ext.us_dsl.us_generation_eval:US generation task specification only",
+    "capability_status": "ADAPTER_AVAILABLE",
+    "checkpoint_after": false,
+    "description": "Records a future design/output task contract without generating final narrative content in 27A.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT",
+      "ADAPTER_UNAVAILABLE"
+    ],
+    "name": "Us Generation",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "final_us_generated": false,
+        "task_spec": "dict"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "future_execution_contract_recorded",
+      "no_final_business_text_generated"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "trusted_context_pack",
+      "version_context",
+      "impact_context",
+      "design_task_pack"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "US_GENERATION",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "UX_DESIGN_INPUT_PLANNING": {
+    "adapter_target": null,
+    "capability_status": "PLANNED_NOT_IMPLEMENTED",
+    "checkpoint_after": false,
+    "description": "Generic harness orchestration skill with no module-specific behavior.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT",
+      "CAPABILITY_NOT_IMPLEMENTED"
+    ],
+    "name": "Ux Design Input Planning",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "UX_DESIGN_INPUT_PLANNING",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "harness_context"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "UX_DESIGN_INPUT_PLANNING",
+    "supported_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  },
+  "VERSION_ANALYSIS": {
+    "adapter_target": "lightrag_ext.us_dsl.version_retrieval_service:VersionRetrievalService",
+    "capability_status": "ADAPTER_AVAILABLE",
+    "checkpoint_after": true,
+    "description": "Uses an existing deterministic or typed adapter contract and records capability evidence.",
+    "failure_modes": [
+      "INSUFFICIENT_EVIDENCE",
+      "MISSING_REQUIRED_CONTEXT",
+      "ADAPTER_UNAVAILABLE"
+    ],
+    "name": "Version Analysis",
+    "optional_inputs": [
+      "term_context",
+      "type_context",
+      "version_context",
+      "impact_context"
+    ],
+    "output_schema": {
+      "properties": {
+        "evidence_refs": "list",
+        "skill_id": "VERSION_ANALYSIS",
+        "status": "string"
+      },
+      "type": "object"
+    },
+    "postconditions": [
+      "trace_event_recorded",
+      "outputs_match_contract"
+    ],
+    "preconditions": [
+      "scenario_route_available",
+      "context_contract_available"
+    ],
+    "required_inputs": [
+      "requirement_input",
+      "scenario_route",
+      "trusted_context_pack"
+    ],
+    "side_effect_policy": "NO_SIDE_EFFECTS_OR_STORAGE_WRITES",
+    "skill_id": "VERSION_ANALYSIS",
+    "supported_scenarios": [
+      "ONE_TO_MANY",
+      "ONE_TO_ONE_X"
+    ],
+    "version": "27A-skill-v1"
+  }
+}

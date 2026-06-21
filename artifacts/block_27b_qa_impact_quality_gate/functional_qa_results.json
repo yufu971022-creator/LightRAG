@@ -1,0 +1,932 @@
+[
+  {
+    "attempts_used": 1,
+    "case_id": "QA-CONFIRMED",
+    "final_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "final_state": "QUALITY_GATE_PASSED",
+    "initial_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "output": {
+      "answer_status": "ANSWERED_WITH_CONFIRMED_EVIDENCE",
+      "direct_answer": "The confirmed evidence answers the functional question.",
+      "excluded_claims": [],
+      "execution_trace": [
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "FUNCTIONAL_QA"
+        },
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "TRUSTED_KNOWLEDGE_RETRIEVAL"
+        }
+      ],
+      "issues_and_warnings": [],
+      "open_questions": [],
+      "quality_gate_result": null,
+      "query": "Confirmed functional question",
+      "safe_for_business_use": true,
+      "scenario": "ONE_TO_MANY",
+      "source_citations": [
+        {
+          "document_id": "doc-QA-CONFIRMED",
+          "document_version_id": "docv-QA-CONFIRMED",
+          "evidence_excerpt": "Synthetic evidence excerpt for offline quality gate.",
+          "source_span": {
+            "end": 64,
+            "start": 0
+          },
+          "source_us_id": "US-QA-CONFIRMED",
+          "text_hash": "hash-QA-CONFIRMED",
+          "text_unit_id": "tu-QA-CONFIRMED"
+        }
+      ],
+      "supporting_facts": [
+        {
+          "certainty": "CONFIRMED",
+          "evidence_refs": [
+            "tu-QA-CONFIRMED"
+          ],
+          "fact_id": "fact-QA-CONFIRMED",
+          "fact_kind": "FACT",
+          "fact_text": "Confirmed functional behavior from cited evidence.",
+          "object_id_or_value": "confirmed_value",
+          "predicate": "has_confirmed_behavior",
+          "stable_identity_key": "stable.functional.object",
+          "subject_id": "obj-QA-CONFIRMED",
+          "trust_tier": "T1_DIRECT",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "supporting_paths": [
+        {
+          "evidence_refs": [
+            "tu-QA-CONFIRMED"
+          ],
+          "path_id": "path-QA-CONFIRMED",
+          "validation_status": "FACTUAL"
+        }
+      ],
+      "supporting_relations": [
+        {
+          "evidence_refs": [
+            "tu-QA-CONFIRMED"
+          ],
+          "relation_id": "rel-QA-CONFIRMED"
+        }
+      ],
+      "term_identity_context": {
+        "candidate_aliases": [],
+        "confirmed_alias_groups": [
+          {
+            "aliases": [
+              "canonical",
+              "confirmed_alias"
+            ],
+            "stable_identity_key": "stable.functional.object"
+          }
+        ]
+      },
+      "version_context": {
+        "resolution_status": "CONFIRMED_CURRENT",
+        "version_warnings": []
+      }
+    },
+    "repair_plan": null,
+    "state_transitions": [
+      {
+        "actor": "SYSTEM",
+        "reason": "initial deterministic output drafted",
+        "state": "OUTPUT_DRAFTED",
+        "timestamp": "2026-06-21T08:29:16.499135+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates running",
+        "state": "QUALITY_CHECKING",
+        "timestamp": "2026-06-21T08:29:16.499202+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates passed",
+        "state": "QUALITY_GATE_PASSED",
+        "timestamp": "2026-06-21T08:29:16.499218+00:00"
+      }
+    ],
+    "task_type": "FUNCTIONAL_QA"
+  },
+  {
+    "attempts_used": 1,
+    "case_id": "QA-VERSION",
+    "final_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "final_state": "QUALITY_GATE_PASSED",
+    "initial_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "output": {
+      "answer_status": "ANSWERED_WITH_VERSION_WARNING",
+      "direct_answer": "The historical evidence is available, but the current rule is not confirmed.",
+      "excluded_claims": [],
+      "execution_trace": [
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "FUNCTIONAL_QA"
+        },
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "TRUSTED_KNOWLEDGE_RETRIEVAL"
+        }
+      ],
+      "issues_and_warnings": [
+        {
+          "kind": "version_warning",
+          "status": "VISIBLE"
+        }
+      ],
+      "open_questions": [],
+      "quality_gate_result": null,
+      "query": "Question with version uncertainty",
+      "safe_for_business_use": false,
+      "scenario": "ONE_TO_MANY",
+      "source_citations": [
+        {
+          "document_id": "doc-QA-VERSION",
+          "document_version_id": "docv-QA-VERSION",
+          "evidence_excerpt": "Synthetic evidence excerpt for offline quality gate.",
+          "source_span": {
+            "end": 64,
+            "start": 0
+          },
+          "source_us_id": "US-QA-VERSION",
+          "text_hash": "hash-QA-VERSION",
+          "text_unit_id": "tu-QA-VERSION"
+        }
+      ],
+      "supporting_facts": [
+        {
+          "certainty": "SUPPORTED",
+          "evidence_refs": [
+            "tu-QA-VERSION"
+          ],
+          "fact_id": "fact-QA-VERSION",
+          "fact_kind": "FACT",
+          "fact_text": "Confirmed functional behavior from cited evidence.",
+          "object_id_or_value": "confirmed_value",
+          "predicate": "has_confirmed_behavior",
+          "stable_identity_key": null,
+          "subject_id": "obj-QA-VERSION",
+          "trust_tier": "T1_DIRECT",
+          "version_status": "VERSION_REVIEW_REQUIRED"
+        }
+      ],
+      "supporting_paths": [],
+      "supporting_relations": [],
+      "term_identity_context": {
+        "candidate_aliases": [],
+        "confirmed_alias_groups": []
+      },
+      "version_context": {
+        "resolution_status": "VERSION_REVIEW_REQUIRED",
+        "version_warnings": [
+          "current rule requires review"
+        ]
+      }
+    },
+    "repair_plan": null,
+    "state_transitions": [
+      {
+        "actor": "SYSTEM",
+        "reason": "initial deterministic output drafted",
+        "state": "OUTPUT_DRAFTED",
+        "timestamp": "2026-06-21T08:29:16.499221+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates running",
+        "state": "QUALITY_CHECKING",
+        "timestamp": "2026-06-21T08:29:16.499228+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates passed",
+        "state": "QUALITY_GATE_PASSED",
+        "timestamp": "2026-06-21T08:29:16.499240+00:00"
+      }
+    ],
+    "task_type": "FUNCTIONAL_QA"
+  },
+  {
+    "attempts_used": 1,
+    "case_id": "QA-TEXT",
+    "final_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "final_state": "QUALITY_GATE_PASSED",
+    "initial_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "output": {
+      "answer_status": "TEXT_ONLY_EVIDENCE",
+      "direct_answer": "The answer is supported by raw text evidence only; no graph relation is asserted.",
+      "excluded_claims": [],
+      "execution_trace": [
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "FUNCTIONAL_QA"
+        },
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "TRUSTED_KNOWLEDGE_RETRIEVAL"
+        }
+      ],
+      "issues_and_warnings": [],
+      "open_questions": [],
+      "quality_gate_result": null,
+      "query": "Text-only functional question",
+      "safe_for_business_use": true,
+      "scenario": "ONE_TO_ONE_X",
+      "source_citations": [
+        {
+          "document_id": "doc-QA-TEXT",
+          "document_version_id": "docv-QA-TEXT",
+          "evidence_excerpt": "Synthetic evidence excerpt for offline quality gate.",
+          "source_span": {
+            "end": 64,
+            "start": 0
+          },
+          "source_us_id": "US-QA-TEXT",
+          "text_hash": "hash-QA-TEXT",
+          "text_unit_id": "tu-QA-TEXT"
+        }
+      ],
+      "supporting_facts": [
+        {
+          "certainty": "CONFIRMED",
+          "evidence_refs": [
+            "tu-QA-TEXT"
+          ],
+          "fact_id": "fact-QA-TEXT",
+          "fact_kind": "FACT",
+          "fact_text": "Confirmed functional behavior from cited evidence.",
+          "object_id_or_value": "confirmed_value",
+          "predicate": "has_confirmed_behavior",
+          "stable_identity_key": null,
+          "subject_id": "obj-QA-TEXT",
+          "trust_tier": "T1_DIRECT",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "supporting_paths": [],
+      "supporting_relations": [],
+      "term_identity_context": {
+        "candidate_aliases": [],
+        "confirmed_alias_groups": []
+      },
+      "version_context": {
+        "resolution_status": "CONFIRMED_CURRENT",
+        "version_warnings": []
+      }
+    },
+    "repair_plan": null,
+    "state_transitions": [
+      {
+        "actor": "SYSTEM",
+        "reason": "initial deterministic output drafted",
+        "state": "OUTPUT_DRAFTED",
+        "timestamp": "2026-06-21T08:29:16.499242+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates running",
+        "state": "QUALITY_CHECKING",
+        "timestamp": "2026-06-21T08:29:16.499247+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates passed",
+        "state": "QUALITY_GATE_PASSED",
+        "timestamp": "2026-06-21T08:29:16.499254+00:00"
+      }
+    ],
+    "task_type": "FUNCTIONAL_QA"
+  },
+  {
+    "attempts_used": 1,
+    "case_id": "QA-MISSING",
+    "final_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": false,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "final_state": "QUALITY_GATE_PASSED",
+    "initial_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FUNCTIONAL_QA_CONTRACT",
+        "metrics": {
+          "supporting_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": false,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      }
+    ],
+    "output": {
+      "answer_status": "INSUFFICIENT_EVIDENCE",
+      "direct_answer": "Insufficient evidence to answer safely.",
+      "excluded_claims": [],
+      "execution_trace": [
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "FUNCTIONAL_QA"
+        },
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "TRUSTED_KNOWLEDGE_RETRIEVAL"
+        }
+      ],
+      "issues_and_warnings": [],
+      "open_questions": [
+        {
+          "question": "Which source document should be used?",
+          "question_id": "missing_evidence"
+        }
+      ],
+      "quality_gate_result": null,
+      "query": "Question without evidence",
+      "safe_for_business_use": false,
+      "scenario": "ONE_TO_MANY",
+      "source_citations": [],
+      "supporting_facts": [],
+      "supporting_paths": [],
+      "supporting_relations": [],
+      "term_identity_context": {
+        "candidate_aliases": [],
+        "confirmed_alias_groups": []
+      },
+      "version_context": {
+        "resolution_status": "CONFIRMED_CURRENT",
+        "version_warnings": []
+      }
+    },
+    "repair_plan": null,
+    "state_transitions": [
+      {
+        "actor": "SYSTEM",
+        "reason": "initial deterministic output drafted",
+        "state": "OUTPUT_DRAFTED",
+        "timestamp": "2026-06-21T08:29:16.499256+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates running",
+        "state": "QUALITY_CHECKING",
+        "timestamp": "2026-06-21T08:29:16.499259+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates passed",
+        "state": "QUALITY_GATE_PASSED",
+        "timestamp": "2026-06-21T08:29:16.499264+00:00"
+      }
+    ],
+    "task_type": "FUNCTIONAL_QA"
+  }
+]

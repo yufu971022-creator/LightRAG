@@ -1,0 +1,1104 @@
+{
+  "v1_to_v2": {
+    "added_chunks": [
+      {
+        "new": {
+          "chunk_id": "chunk:docver:US-SYN-001:v2:C3",
+          "chunk_order": 2,
+          "content": "Suspended 状态禁止提交报价",
+          "content_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 218,
+          "projection_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "source_span": {
+            "end": 218,
+            "start": 200
+          },
+          "stable_id": "chunk:US-SYN-001:C3",
+          "start_offset": 200,
+          "token_count": 18
+        },
+        "new_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+        "old": null,
+        "old_hash": null,
+        "reason": "added",
+        "stable_id": "chunk:US-SYN-001:C3"
+      }
+    ],
+    "added_semantic_objects": [
+      {
+        "new": {
+          "canonical_name": "QuoteSubmission",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:QuoteSubmission",
+          "knowledge_status": "APPROVED",
+          "object_type": "TaskRule",
+          "projection_hash": "ca2f9520f7d3168040baef52c3161fd7886896c01a7e337376b7b5cb07793108",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:QuoteSubmission",
+          "stable_id": "obj:QuoteSubmission",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:QuoteSubmission"
+        },
+        "new_hash": "ca2f9520f7d3168040baef52c3161fd7886896c01a7e337376b7b5cb07793108",
+        "old": null,
+        "old_hash": null,
+        "reason": "added",
+        "stable_id": "obj:QuoteSubmission"
+      },
+      {
+        "new": {
+          "canonical_name": "Suspended",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Suspended",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "f866e0596035b004102e8fb3a706250e1df11bbbd3ac3734270a2a32fb7709d3",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Suspended",
+          "stable_id": "obj:Suspended",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Suspended"
+        },
+        "new_hash": "f866e0596035b004102e8fb3a706250e1df11bbbd3ac3734270a2a32fb7709d3",
+        "old": null,
+        "old_hash": null,
+        "reason": "added",
+        "stable_id": "obj:Suspended"
+      }
+    ],
+    "added_semantic_relations": [
+      {
+        "new": {
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "idempotency_key": "rel:Suspended:BlocksAction:QuoteSubmission",
+          "knowledge_status": "APPROVED",
+          "projection_hash": "cda94270adbadbfba4a44ccd570c05c41ee3dfd4d23f159193f007d124d68c34",
+          "relation_type": "BlocksAction",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_relation_id": "rel:Suspended:BlocksAction:QuoteSubmission",
+          "src_semantic_object_id": "obj:Suspended",
+          "stable_id": "rel:Suspended:BlocksAction:QuoteSubmission",
+          "tgt_semantic_object_id": "obj:QuoteSubmission",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID"
+        },
+        "new_hash": "cda94270adbadbfba4a44ccd570c05c41ee3dfd4d23f159193f007d124d68c34",
+        "old": null,
+        "old_hash": null,
+        "reason": "added",
+        "stable_id": "rel:Suspended:BlocksAction:QuoteSubmission"
+      }
+    ],
+    "added_text_units": [
+      {
+        "new": {
+          "content": "Suspended 状态禁止提交报价",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 218,
+          "evidence_excerpt": "Suspended 状态禁止提交报价",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU3",
+          "start_offset": 200,
+          "text_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "text_unit_id": "tu:docver:US-SYN-001:v2:TU3"
+        },
+        "new_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+        "old": null,
+        "old_hash": null,
+        "reason": "added",
+        "stable_id": "tu:US-SYN-001:TU3"
+      }
+    ],
+    "content_changed": true,
+    "document_id": "US-SYN-001",
+    "new_document_version_id": "docver:US-SYN-001:v2",
+    "old_document_version_id": "docver:US-SYN-001:v1",
+    "opened_issues": [],
+    "removed_chunks": [],
+    "removed_semantic_objects": [],
+    "removed_semantic_relations": [],
+    "removed_text_units": [],
+    "resolved_issues": [],
+    "unchanged_chunks": [
+      {
+        "new": {
+          "chunk_id": "chunk:docver:US-SYN-001:v2:C1",
+          "chunk_order": 0,
+          "content": "项目列表支持按项目状态查询",
+          "content_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 13,
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "source_span": {
+            "end": 13,
+            "start": 0
+          },
+          "stable_id": "chunk:US-SYN-001:C1",
+          "start_offset": 0,
+          "token_count": 13
+        },
+        "new_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "old": {
+          "chunk_id": "chunk:docver:US-SYN-001:v1:C1",
+          "chunk_order": 0,
+          "content": "项目列表支持按项目状态查询",
+          "content_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "end_offset": 13,
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "source_span": {
+            "end": 13,
+            "start": 0
+          },
+          "stable_id": "chunk:US-SYN-001:C1",
+          "start_offset": 0,
+          "token_count": 13
+        },
+        "old_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "reason": "unchanged",
+        "stable_id": "chunk:US-SYN-001:C1"
+      }
+    ],
+    "unchanged_issues": [],
+    "unchanged_semantic_objects": [
+      {
+        "new": {
+          "canonical_name": "Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Closed",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Closed",
+          "stable_id": "obj:Closed",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Closed"
+        },
+        "new_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+        "old": {
+          "canonical_name": "Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Closed",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Closed",
+          "stable_id": "obj:Closed",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Closed"
+        },
+        "old_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+        "reason": "unchanged",
+        "stable_id": "obj:Closed"
+      },
+      {
+        "new": {
+          "canonical_name": "InquiryProjectList",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:InquiryProjectList",
+          "knowledge_status": "APPROVED",
+          "object_type": "ReportSpec",
+          "projection_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "obj:InquiryProjectList",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:InquiryProjectList"
+        },
+        "new_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+        "old": {
+          "canonical_name": "InquiryProjectList",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:InquiryProjectList",
+          "knowledge_status": "APPROVED",
+          "object_type": "ReportSpec",
+          "projection_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "obj:InquiryProjectList",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:InquiryProjectList"
+        },
+        "old_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+        "reason": "unchanged",
+        "stable_id": "obj:InquiryProjectList"
+      },
+      {
+        "new": {
+          "canonical_name": "Open",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Open",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Open",
+          "stable_id": "obj:Open",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Open"
+        },
+        "new_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+        "old": {
+          "canonical_name": "Open",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Open",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Open",
+          "stable_id": "obj:Open",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Open"
+        },
+        "old_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+        "reason": "unchanged",
+        "stable_id": "obj:Open"
+      }
+    ],
+    "unchanged_semantic_relations": [
+      {
+        "new": {
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "idempotency_key": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "projection_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+          "relation_type": "HasReportFilter",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_relation_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "src_semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "tgt_semantic_object_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID"
+        },
+        "new_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+        "old": {
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "idempotency_key": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "projection_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+          "relation_type": "HasReportFilter",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_relation_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "src_semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "tgt_semantic_object_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID"
+        },
+        "old_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+        "reason": "unchanged",
+        "stable_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus"
+      }
+    ],
+    "unchanged_text_units": [
+      {
+        "new": {
+          "content": "项目列表支持按项目状态查询",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 13,
+          "evidence_excerpt": "项目列表支持按项目状态查询",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU1",
+          "start_offset": 0,
+          "text_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "text_unit_id": "tu:docver:US-SYN-001:v2:TU1"
+        },
+        "new_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "old": {
+          "content": "项目列表支持按项目状态查询",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "end_offset": 13,
+          "evidence_excerpt": "项目列表支持按项目状态查询",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU1",
+          "start_offset": 0,
+          "text_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "text_unit_id": "tu:docver:US-SYN-001:v1:TU1"
+        },
+        "old_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "reason": "unchanged",
+        "stable_id": "tu:US-SYN-001:TU1"
+      }
+    ],
+    "updated_chunks": [
+      {
+        "new": {
+          "chunk_id": "chunk:docver:US-SYN-001:v2:C2",
+          "chunk_order": 1,
+          "content": "项目状态包含 Open、Suspended、Closed",
+          "content_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 128,
+          "projection_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "source_span": {
+            "end": 128,
+            "start": 100
+          },
+          "stable_id": "chunk:US-SYN-001:C2",
+          "start_offset": 100,
+          "token_count": 28
+        },
+        "new_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+        "old": {
+          "chunk_id": "chunk:docver:US-SYN-001:v1:C2",
+          "chunk_order": 1,
+          "content": "项目状态包含 Open 和 Closed",
+          "content_hash": "1168c72b9bbad7518eda66c0c2e00d7f4ab66fb4c80e7286d6d48eb743b68256",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "end_offset": 120,
+          "projection_hash": "1168c72b9bbad7518eda66c0c2e00d7f4ab66fb4c80e7286d6d48eb743b68256",
+          "source_span": {
+            "end": 120,
+            "start": 100
+          },
+          "stable_id": "chunk:US-SYN-001:C2",
+          "start_offset": 100,
+          "token_count": 20
+        },
+        "old_hash": "1168c72b9bbad7518eda66c0c2e00d7f4ab66fb4c80e7286d6d48eb743b68256",
+        "reason": "projection_hash_changed",
+        "stable_id": "chunk:US-SYN-001:C2"
+      }
+    ],
+    "updated_semantic_objects": [
+      {
+        "new": {
+          "canonical_name": "ProjectStatus",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "object_type": "FieldSpec",
+          "projection_hash": "1052228c07152a29d50e45a3057d86364562987b1c773e624afa15566b8bbcd6",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:ProjectStatus",
+          "stable_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:ProjectStatus"
+        },
+        "new_hash": "1052228c07152a29d50e45a3057d86364562987b1c773e624afa15566b8bbcd6",
+        "old": {
+          "canonical_name": "ProjectStatus",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "object_type": "FieldSpec",
+          "projection_hash": "75f25e065aeafcecf0f1df4028d1b6f7b0ccb1e437f4aea78fded79c13f7d5dc",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:ProjectStatus",
+          "stable_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:ProjectStatus"
+        },
+        "old_hash": "75f25e065aeafcecf0f1df4028d1b6f7b0ccb1e437f4aea78fded79c13f7d5dc",
+        "reason": "projection_hash_changed",
+        "stable_id": "obj:ProjectStatus"
+      }
+    ],
+    "updated_semantic_relations": [],
+    "updated_text_units": [
+      {
+        "new": {
+          "content": "项目状态包含 Open、Suspended、Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 128,
+          "evidence_excerpt": "项目状态包含 Open、Suspended、Closed",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU2",
+          "start_offset": 100,
+          "text_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "text_unit_id": "tu:docver:US-SYN-001:v2:TU2"
+        },
+        "new_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+        "old": {
+          "content": "项目状态包含 Open 和 Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v1",
+          "end_offset": 120,
+          "evidence_excerpt": "项目状态包含 Open 和 Closed",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "1168c72b9bbad7518eda66c0c2e00d7f4ab66fb4c80e7286d6d48eb743b68256",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU2",
+          "start_offset": 100,
+          "text_hash": "1168c72b9bbad7518eda66c0c2e00d7f4ab66fb4c80e7286d6d48eb743b68256",
+          "text_unit_id": "tu:docver:US-SYN-001:v1:TU2"
+        },
+        "old_hash": "1168c72b9bbad7518eda66c0c2e00d7f4ab66fb4c80e7286d6d48eb743b68256",
+        "reason": "projection_hash_changed",
+        "stable_id": "tu:US-SYN-001:TU2"
+      }
+    ]
+  },
+  "v2_to_v3": {
+    "added_chunks": [],
+    "added_semantic_objects": [],
+    "added_semantic_relations": [],
+    "added_text_units": [],
+    "content_changed": true,
+    "document_id": "US-SYN-001",
+    "new_document_version_id": "docver:US-SYN-001:v3",
+    "old_document_version_id": "docver:US-SYN-001:v2",
+    "opened_issues": [],
+    "removed_chunks": [],
+    "removed_semantic_objects": [],
+    "removed_semantic_relations": [
+      {
+        "new": null,
+        "new_hash": null,
+        "old": {
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "idempotency_key": "rel:Suspended:BlocksAction:QuoteSubmission",
+          "knowledge_status": "APPROVED",
+          "projection_hash": "cda94270adbadbfba4a44ccd570c05c41ee3dfd4d23f159193f007d124d68c34",
+          "relation_type": "BlocksAction",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_relation_id": "rel:Suspended:BlocksAction:QuoteSubmission",
+          "src_semantic_object_id": "obj:Suspended",
+          "stable_id": "rel:Suspended:BlocksAction:QuoteSubmission",
+          "tgt_semantic_object_id": "obj:QuoteSubmission",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID"
+        },
+        "old_hash": "cda94270adbadbfba4a44ccd570c05c41ee3dfd4d23f159193f007d124d68c34",
+        "reason": "removed",
+        "stable_id": "rel:Suspended:BlocksAction:QuoteSubmission"
+      }
+    ],
+    "removed_text_units": [],
+    "resolved_issues": [],
+    "unchanged_chunks": [
+      {
+        "new": {
+          "chunk_id": "chunk:docver:US-SYN-001:v3:C1",
+          "chunk_order": 0,
+          "content": "项目列表支持按项目状态查询",
+          "content_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "end_offset": 13,
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "source_span": {
+            "end": 13,
+            "start": 0
+          },
+          "stable_id": "chunk:US-SYN-001:C1",
+          "start_offset": 0,
+          "token_count": 13
+        },
+        "new_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "old": {
+          "chunk_id": "chunk:docver:US-SYN-001:v2:C1",
+          "chunk_order": 0,
+          "content": "项目列表支持按项目状态查询",
+          "content_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 13,
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "source_span": {
+            "end": 13,
+            "start": 0
+          },
+          "stable_id": "chunk:US-SYN-001:C1",
+          "start_offset": 0,
+          "token_count": 13
+        },
+        "old_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "reason": "unchanged",
+        "stable_id": "chunk:US-SYN-001:C1"
+      },
+      {
+        "new": {
+          "chunk_id": "chunk:docver:US-SYN-001:v3:C2",
+          "chunk_order": 1,
+          "content": "项目状态包含 Open、Suspended、Closed",
+          "content_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "end_offset": 128,
+          "projection_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "source_span": {
+            "end": 128,
+            "start": 100
+          },
+          "stable_id": "chunk:US-SYN-001:C2",
+          "start_offset": 100,
+          "token_count": 28
+        },
+        "new_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+        "old": {
+          "chunk_id": "chunk:docver:US-SYN-001:v2:C2",
+          "chunk_order": 1,
+          "content": "项目状态包含 Open、Suspended、Closed",
+          "content_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 128,
+          "projection_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "source_span": {
+            "end": 128,
+            "start": 100
+          },
+          "stable_id": "chunk:US-SYN-001:C2",
+          "start_offset": 100,
+          "token_count": 28
+        },
+        "old_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+        "reason": "unchanged",
+        "stable_id": "chunk:US-SYN-001:C2"
+      }
+    ],
+    "unchanged_issues": [],
+    "unchanged_semantic_objects": [
+      {
+        "new": {
+          "canonical_name": "Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Closed",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Closed",
+          "stable_id": "obj:Closed",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Closed"
+        },
+        "new_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+        "old": {
+          "canonical_name": "Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Closed",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Closed",
+          "stable_id": "obj:Closed",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Closed"
+        },
+        "old_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+        "reason": "unchanged",
+        "stable_id": "obj:Closed"
+      },
+      {
+        "new": {
+          "canonical_name": "InquiryProjectList",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:InquiryProjectList",
+          "knowledge_status": "APPROVED",
+          "object_type": "ReportSpec",
+          "projection_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "obj:InquiryProjectList",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:InquiryProjectList"
+        },
+        "new_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+        "old": {
+          "canonical_name": "InquiryProjectList",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:InquiryProjectList",
+          "knowledge_status": "APPROVED",
+          "object_type": "ReportSpec",
+          "projection_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "obj:InquiryProjectList",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:InquiryProjectList"
+        },
+        "old_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+        "reason": "unchanged",
+        "stable_id": "obj:InquiryProjectList"
+      },
+      {
+        "new": {
+          "canonical_name": "Open",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Open",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Open",
+          "stable_id": "obj:Open",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Open"
+        },
+        "new_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+        "old": {
+          "canonical_name": "Open",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Open",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Open",
+          "stable_id": "obj:Open",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Open"
+        },
+        "old_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+        "reason": "unchanged",
+        "stable_id": "obj:Open"
+      },
+      {
+        "new": {
+          "canonical_name": "ProjectStatus",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "object_type": "FieldSpec",
+          "projection_hash": "1052228c07152a29d50e45a3057d86364562987b1c773e624afa15566b8bbcd6",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:ProjectStatus",
+          "stable_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:ProjectStatus"
+        },
+        "new_hash": "1052228c07152a29d50e45a3057d86364562987b1c773e624afa15566b8bbcd6",
+        "old": {
+          "canonical_name": "ProjectStatus",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "object_type": "FieldSpec",
+          "projection_hash": "1052228c07152a29d50e45a3057d86364562987b1c773e624afa15566b8bbcd6",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:ProjectStatus",
+          "stable_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:ProjectStatus"
+        },
+        "old_hash": "1052228c07152a29d50e45a3057d86364562987b1c773e624afa15566b8bbcd6",
+        "reason": "unchanged",
+        "stable_id": "obj:ProjectStatus"
+      },
+      {
+        "new": {
+          "canonical_name": "QuoteSubmission",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:QuoteSubmission",
+          "knowledge_status": "APPROVED",
+          "object_type": "TaskRule",
+          "projection_hash": "ca2f9520f7d3168040baef52c3161fd7886896c01a7e337376b7b5cb07793108",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:QuoteSubmission",
+          "stable_id": "obj:QuoteSubmission",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:QuoteSubmission"
+        },
+        "new_hash": "ca2f9520f7d3168040baef52c3161fd7886896c01a7e337376b7b5cb07793108",
+        "old": {
+          "canonical_name": "QuoteSubmission",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:QuoteSubmission",
+          "knowledge_status": "APPROVED",
+          "object_type": "TaskRule",
+          "projection_hash": "ca2f9520f7d3168040baef52c3161fd7886896c01a7e337376b7b5cb07793108",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:QuoteSubmission",
+          "stable_id": "obj:QuoteSubmission",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:QuoteSubmission"
+        },
+        "old_hash": "ca2f9520f7d3168040baef52c3161fd7886896c01a7e337376b7b5cb07793108",
+        "reason": "unchanged",
+        "stable_id": "obj:QuoteSubmission"
+      },
+      {
+        "new": {
+          "canonical_name": "Suspended",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Suspended",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "f866e0596035b004102e8fb3a706250e1df11bbbd3ac3734270a2a32fb7709d3",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Suspended",
+          "stable_id": "obj:Suspended",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Suspended"
+        },
+        "new_hash": "f866e0596035b004102e8fb3a706250e1df11bbbd3ac3734270a2a32fb7709d3",
+        "old": {
+          "canonical_name": "Suspended",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "domain_code": "ProjectInquiry",
+          "feature_key": "project-status-query",
+          "idempotency_key": "obj:Suspended",
+          "knowledge_status": "APPROVED",
+          "object_type": "RuleAtom",
+          "projection_hash": "f866e0596035b004102e8fb3a706250e1df11bbbd3ac3734270a2a32fb7709d3",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_object_id": "obj:Suspended",
+          "stable_id": "obj:Suspended",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID",
+          "version_group_key": "vg:obj:Suspended"
+        },
+        "old_hash": "f866e0596035b004102e8fb3a706250e1df11bbbd3ac3734270a2a32fb7709d3",
+        "reason": "unchanged",
+        "stable_id": "obj:Suspended"
+      }
+    ],
+    "unchanged_semantic_relations": [
+      {
+        "new": {
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "idempotency_key": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "projection_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+          "relation_type": "HasReportFilter",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_relation_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "src_semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "tgt_semantic_object_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID"
+        },
+        "new_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+        "old": {
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "idempotency_key": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "knowledge_status": "APPROVED",
+          "projection_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+          "relation_type": "HasReportFilter",
+          "review_decision": "APPROVED_PFSS",
+          "semantic_relation_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "src_semantic_object_id": "obj:InquiryProjectList",
+          "stable_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+          "tgt_semantic_object_id": "obj:ProjectStatus",
+          "updated_at": "2026-06-20T13:32:16Z",
+          "validation_status": "VALID"
+        },
+        "old_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+        "reason": "unchanged",
+        "stable_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus"
+      }
+    ],
+    "unchanged_text_units": [
+      {
+        "new": {
+          "content": "项目列表支持按项目状态查询",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "end_offset": 13,
+          "evidence_excerpt": "项目列表支持按项目状态查询",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU1",
+          "start_offset": 0,
+          "text_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "text_unit_id": "tu:docver:US-SYN-001:v3:TU1"
+        },
+        "new_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "old": {
+          "content": "项目列表支持按项目状态查询",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 13,
+          "evidence_excerpt": "项目列表支持按项目状态查询",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU1",
+          "start_offset": 0,
+          "text_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+          "text_unit_id": "tu:docver:US-SYN-001:v2:TU1"
+        },
+        "old_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+        "reason": "unchanged",
+        "stable_id": "tu:US-SYN-001:TU1"
+      },
+      {
+        "new": {
+          "content": "项目状态包含 Open、Suspended、Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "end_offset": 128,
+          "evidence_excerpt": "项目状态包含 Open、Suspended、Closed",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU2",
+          "start_offset": 100,
+          "text_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "text_unit_id": "tu:docver:US-SYN-001:v3:TU2"
+        },
+        "new_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+        "old": {
+          "content": "项目状态包含 Open、Suspended、Closed",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 128,
+          "evidence_excerpt": "项目状态包含 Open、Suspended、Closed",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU2",
+          "start_offset": 100,
+          "text_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+          "text_unit_id": "tu:docver:US-SYN-001:v2:TU2"
+        },
+        "old_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+        "reason": "unchanged",
+        "stable_id": "tu:US-SYN-001:TU2"
+      }
+    ],
+    "updated_chunks": [
+      {
+        "new": {
+          "chunk_id": "chunk:docver:US-SYN-001:v3:C3",
+          "chunk_order": 2,
+          "content": "Suspended 状态需要人工复核",
+          "content_hash": "164bbe6df66393502f33d7f4c3cdfd12603953c7af799e4ba4dab56902e21aae",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "end_offset": 218,
+          "projection_hash": "164bbe6df66393502f33d7f4c3cdfd12603953c7af799e4ba4dab56902e21aae",
+          "source_span": {
+            "end": 218,
+            "start": 200
+          },
+          "stable_id": "chunk:US-SYN-001:C3",
+          "start_offset": 200,
+          "token_count": 18
+        },
+        "new_hash": "164bbe6df66393502f33d7f4c3cdfd12603953c7af799e4ba4dab56902e21aae",
+        "old": {
+          "chunk_id": "chunk:docver:US-SYN-001:v2:C3",
+          "chunk_order": 2,
+          "content": "Suspended 状态禁止提交报价",
+          "content_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 218,
+          "projection_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "source_span": {
+            "end": 218,
+            "start": 200
+          },
+          "stable_id": "chunk:US-SYN-001:C3",
+          "start_offset": 200,
+          "token_count": 18
+        },
+        "old_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+        "reason": "projection_hash_changed",
+        "stable_id": "chunk:US-SYN-001:C3"
+      }
+    ],
+    "updated_semantic_objects": [],
+    "updated_semantic_relations": [],
+    "updated_text_units": [
+      {
+        "new": {
+          "content": "Suspended 状态需要人工复核",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v3",
+          "end_offset": 218,
+          "evidence_excerpt": "Suspended 状态需要人工复核",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "164bbe6df66393502f33d7f4c3cdfd12603953c7af799e4ba4dab56902e21aae",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU3",
+          "start_offset": 200,
+          "text_hash": "164bbe6df66393502f33d7f4c3cdfd12603953c7af799e4ba4dab56902e21aae",
+          "text_unit_id": "tu:docver:US-SYN-001:v3:TU3"
+        },
+        "new_hash": "164bbe6df66393502f33d7f4c3cdfd12603953c7af799e4ba4dab56902e21aae",
+        "old": {
+          "content": "Suspended 状态禁止提交报价",
+          "created_at": "2026-06-20T13:32:16Z",
+          "document_version_id": "docver:US-SYN-001:v2",
+          "end_offset": 218,
+          "evidence_excerpt": "Suspended 状态禁止提交报价",
+          "feature_key": "project-status-query",
+          "primary_domain": "ProjectInquiry",
+          "projection_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "related_domains": [
+            "ProjectInquiry"
+          ],
+          "section_type": "requirement",
+          "source_us_id": "US-SYN-001",
+          "stable_id": "tu:US-SYN-001:TU3",
+          "start_offset": 200,
+          "text_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+          "text_unit_id": "tu:docver:US-SYN-001:v2:TU3"
+        },
+        "old_hash": "1df4af08463d1c21da9b95cd0beac6c41e0af3337c12ee93d63b036130bbc2c1",
+        "reason": "projection_hash_changed",
+        "stable_id": "tu:US-SYN-001:TU3"
+      }
+    ]
+  }
+}

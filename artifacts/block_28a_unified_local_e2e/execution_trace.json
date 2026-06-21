@@ -1,0 +1,646 @@
+[
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591026+00:00",
+    "component": "UnifiedE2EOrchestrator",
+    "elapsed_ms": 0.004,
+    "event_id": "evt-0001",
+    "input_ids": {},
+    "metadata": {},
+    "operation": "preflight",
+    "output_ids": {
+      "run_id": "block28a-local-run"
+    },
+    "reason_code": "OK",
+    "stage": "PREFLIGHT_VALIDATED",
+    "started_at": "2026-06-21T08:51:47.591026+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591040+00:00",
+    "component": "UnifiedDocumentParser",
+    "elapsed_ms": 0.002,
+    "event_id": "evt-0002",
+    "input_ids": {
+      "document_id": "DOC-DSL-FULL"
+    },
+    "metadata": {},
+    "operation": "single_parse",
+    "output_ids": {
+      "text_unit_id": "tu-doc-dsl-full"
+    },
+    "reason_code": "OK",
+    "stage": "PARSING",
+    "started_at": "2026-06-21T08:51:47.591040+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591046+00:00",
+    "component": "RawEvidenceChain",
+    "elapsed_ms": 0.002,
+    "event_id": "evt-0003",
+    "input_ids": {
+      "text_unit_id": "tu-doc-dsl-full"
+    },
+    "metadata": {},
+    "operation": "index_raw_evidence",
+    "output_ids": {
+      "chunk_id": "chunk-doc-dsl-full"
+    },
+    "reason_code": "OK",
+    "stage": "RAW_EVIDENCE_INDEXED",
+    "started_at": "2026-06-21T08:51:47.591045+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591049+00:00",
+    "component": "DslSemanticCompiler",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0004",
+    "input_ids": {
+      "chunk_id": "chunk-doc-dsl-full"
+    },
+    "metadata": {},
+    "operation": "compile_safe_payload",
+    "output_ids": {
+      "semantic_object_id": "sem-doc-dsl-full"
+    },
+    "reason_code": "OK",
+    "stage": "DSL_COMPILED",
+    "started_at": "2026-06-21T08:51:47.591049+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591052+00:00",
+    "component": "PfssIssueSidecarAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0005",
+    "input_ids": {
+      "semantic_object_id": "sem-doc-dsl-full"
+    },
+    "metadata": {},
+    "operation": "write_isolated_projection",
+    "output_ids": {
+      "graph_object_id": "graph-doc-dsl-full",
+      "issue_id": ""
+    },
+    "reason_code": "OK",
+    "stage": "SEMANTIC_BRANCH_WRITTEN",
+    "started_at": "2026-06-21T08:51:47.591052+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591063+00:00",
+    "component": "UnifiedDocumentParser",
+    "elapsed_ms": 0.002,
+    "event_id": "evt-0006",
+    "input_ids": {
+      "document_id": "DOC-DSL-PARTIAL"
+    },
+    "metadata": {},
+    "operation": "single_parse",
+    "output_ids": {
+      "text_unit_id": "tu-doc-dsl-partial"
+    },
+    "reason_code": "OK",
+    "stage": "PARSING",
+    "started_at": "2026-06-21T08:51:47.591063+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591068+00:00",
+    "component": "RawEvidenceChain",
+    "elapsed_ms": 0.002,
+    "event_id": "evt-0007",
+    "input_ids": {
+      "text_unit_id": "tu-doc-dsl-partial"
+    },
+    "metadata": {},
+    "operation": "index_raw_evidence",
+    "output_ids": {
+      "chunk_id": "chunk-doc-dsl-partial"
+    },
+    "reason_code": "OK",
+    "stage": "RAW_EVIDENCE_INDEXED",
+    "started_at": "2026-06-21T08:51:47.591068+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591072+00:00",
+    "component": "DslSemanticCompiler",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0008",
+    "input_ids": {
+      "chunk_id": "chunk-doc-dsl-partial"
+    },
+    "metadata": {},
+    "operation": "compile_safe_payload",
+    "output_ids": {
+      "semantic_object_id": "sem-doc-dsl-partial"
+    },
+    "reason_code": "OK",
+    "stage": "DSL_COMPILED",
+    "started_at": "2026-06-21T08:51:47.591071+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591074+00:00",
+    "component": "PfssIssueSidecarAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0009",
+    "input_ids": {
+      "semantic_object_id": "sem-doc-dsl-partial"
+    },
+    "metadata": {},
+    "operation": "write_isolated_projection",
+    "output_ids": {
+      "graph_object_id": "graph-doc-dsl-partial",
+      "issue_id": "issue-doc-dsl-partial"
+    },
+    "reason_code": "OK",
+    "stage": "SEMANTIC_BRANCH_WRITTEN",
+    "started_at": "2026-06-21T08:51:47.591074+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591079+00:00",
+    "component": "UnifiedDocumentParser",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0010",
+    "input_ids": {
+      "document_id": "DOC-RAW"
+    },
+    "metadata": {},
+    "operation": "single_parse",
+    "output_ids": {
+      "text_unit_id": "tu-doc-raw"
+    },
+    "reason_code": "OK",
+    "stage": "PARSING",
+    "started_at": "2026-06-21T08:51:47.591079+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591082+00:00",
+    "component": "RawEvidenceChain",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0011",
+    "input_ids": {
+      "text_unit_id": "tu-doc-raw"
+    },
+    "metadata": {},
+    "operation": "index_raw_evidence",
+    "output_ids": {
+      "chunk_id": "chunk-doc-raw"
+    },
+    "reason_code": "OK",
+    "stage": "RAW_EVIDENCE_INDEXED",
+    "started_at": "2026-06-21T08:51:47.591082+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591084+00:00",
+    "component": "DslApplicabilityRouter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0012",
+    "input_ids": {
+      "document_id": "DOC-RAW"
+    },
+    "metadata": {},
+    "operation": "raw_only_route",
+    "output_ids": {},
+    "reason_code": "OK",
+    "stage": "ROUTED",
+    "started_at": "2026-06-21T08:51:47.591084+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591089+00:00",
+    "component": "UnifiedDocumentParser",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0013",
+    "input_ids": {
+      "document_id": "DOC-PARSE-FAILED"
+    },
+    "metadata": {},
+    "operation": "single_parse",
+    "output_ids": {
+      "text_unit_id": "tu-doc-parse-failed"
+    },
+    "reason_code": "OK",
+    "stage": "PARSING",
+    "started_at": "2026-06-21T08:51:47.591089+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591091+00:00",
+    "component": "UnifiedDocumentParser",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0014",
+    "input_ids": {
+      "document_id": "DOC-PARSE-FAILED"
+    },
+    "metadata": {},
+    "operation": "parse_failed",
+    "output_ids": {},
+    "reason_code": "PARSE_FAILED",
+    "stage": "PARSING",
+    "started_at": "2026-06-21T08:51:47.591091+00:00",
+    "status": "FAILED",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591099+00:00",
+    "component": "DocumentLifecycleAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0015",
+    "input_ids": {},
+    "metadata": {},
+    "operation": "initial_ingestion",
+    "output_ids": {},
+    "reason_code": "OK",
+    "stage": "LIFECYCLE_VALIDATED",
+    "started_at": "2026-06-21T08:51:47.591099+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591101+00:00",
+    "component": "DocumentLifecycleAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0016",
+    "input_ids": {},
+    "metadata": {},
+    "operation": "version_update_delta",
+    "output_ids": {},
+    "reason_code": "OK",
+    "stage": "LIFECYCLE_VALIDATED",
+    "started_at": "2026-06-21T08:51:47.591101+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591104+00:00",
+    "component": "DocumentLifecycleAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0017",
+    "input_ids": {},
+    "metadata": {},
+    "operation": "delete_version",
+    "output_ids": {},
+    "reason_code": "OK",
+    "stage": "LIFECYCLE_VALIDATED",
+    "started_at": "2026-06-21T08:51:47.591104+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591106+00:00",
+    "component": "DocumentLifecycleAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0018",
+    "input_ids": {},
+    "metadata": {},
+    "operation": "rebuild_projection",
+    "output_ids": {},
+    "reason_code": "OK",
+    "stage": "LIFECYCLE_VALIDATED",
+    "started_at": "2026-06-21T08:51:47.591106+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591109+00:00",
+    "component": "DocumentLifecycleAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0019",
+    "input_ids": {},
+    "metadata": {},
+    "operation": "failure_compensation",
+    "output_ids": {},
+    "reason_code": "OK",
+    "stage": "LIFECYCLE_VALIDATED",
+    "started_at": "2026-06-21T08:51:47.591109+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591118+00:00",
+    "component": "HybridRetrievalAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0020",
+    "input_ids": {
+      "query_id": "QA-CONFIRMED"
+    },
+    "metadata": {},
+    "operation": "trusted_context_pack",
+    "output_ids": {
+      "quality_gate_id": "qg-QA-CONFIRMED"
+    },
+    "reason_code": "OK",
+    "stage": "QUERY_CONTEXT_READY",
+    "started_at": "2026-06-21T08:51:47.591118+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591123+00:00",
+    "component": "HybridRetrievalAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0021",
+    "input_ids": {
+      "query_id": "QA-VERSION"
+    },
+    "metadata": {},
+    "operation": "trusted_context_pack",
+    "output_ids": {
+      "quality_gate_id": "qg-QA-VERSION"
+    },
+    "reason_code": "OK",
+    "stage": "QUERY_CONTEXT_READY",
+    "started_at": "2026-06-21T08:51:47.591122+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591126+00:00",
+    "component": "HybridRetrievalAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0022",
+    "input_ids": {
+      "query_id": "QA-TEXT"
+    },
+    "metadata": {},
+    "operation": "trusted_context_pack",
+    "output_ids": {
+      "quality_gate_id": "qg-QA-TEXT"
+    },
+    "reason_code": "OK",
+    "stage": "QUERY_CONTEXT_READY",
+    "started_at": "2026-06-21T08:51:47.591126+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591297+00:00",
+    "component": "FunctionalQAAdapter",
+    "elapsed_ms": 0.002,
+    "event_id": "evt-0023",
+    "input_ids": {
+      "query_id": "QA-CONFIRMED"
+    },
+    "metadata": {},
+    "operation": "execute_contract",
+    "output_ids": {
+      "quality_gate_id": "qg-QA-CONFIRMED"
+    },
+    "reason_code": "OK",
+    "stage": "FUNCTIONAL_QA_EXECUTED",
+    "started_at": "2026-06-21T08:51:47.591296+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591301+00:00",
+    "component": "DesignQualityGate27B",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0024",
+    "input_ids": {
+      "quality_gate_id": "qg-QA-CONFIRMED"
+    },
+    "metadata": {},
+    "operation": "evaluate_quality",
+    "output_ids": {},
+    "reason_code": "QUALITY_GATE_PASSED",
+    "stage": "QUALITY_GATE_CHECKED",
+    "started_at": "2026-06-21T08:51:47.591300+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591304+00:00",
+    "component": "FunctionalQAAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0025",
+    "input_ids": {
+      "query_id": "QA-VERSION"
+    },
+    "metadata": {},
+    "operation": "execute_contract",
+    "output_ids": {
+      "quality_gate_id": "qg-QA-VERSION"
+    },
+    "reason_code": "OK",
+    "stage": "FUNCTIONAL_QA_EXECUTED",
+    "started_at": "2026-06-21T08:51:47.591304+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591307+00:00",
+    "component": "DesignQualityGate27B",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0026",
+    "input_ids": {
+      "quality_gate_id": "qg-QA-VERSION"
+    },
+    "metadata": {},
+    "operation": "evaluate_quality",
+    "output_ids": {},
+    "reason_code": "QUALITY_GATE_PASSED",
+    "stage": "QUALITY_GATE_CHECKED",
+    "started_at": "2026-06-21T08:51:47.591307+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591310+00:00",
+    "component": "FunctionalQAAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0027",
+    "input_ids": {
+      "query_id": "QA-TEXT"
+    },
+    "metadata": {},
+    "operation": "execute_contract",
+    "output_ids": {
+      "quality_gate_id": "qg-QA-TEXT"
+    },
+    "reason_code": "OK",
+    "stage": "FUNCTIONAL_QA_EXECUTED",
+    "started_at": "2026-06-21T08:51:47.591309+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591312+00:00",
+    "component": "DesignQualityGate27B",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0028",
+    "input_ids": {
+      "quality_gate_id": "qg-QA-TEXT"
+    },
+    "metadata": {},
+    "operation": "evaluate_quality",
+    "output_ids": {},
+    "reason_code": "QUALITY_GATE_PASSED",
+    "stage": "QUALITY_GATE_CHECKED",
+    "started_at": "2026-06-21T08:51:47.591312+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591315+00:00",
+    "component": "ImpactAnalysisAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0029",
+    "input_ids": {
+      "requirement_id": "REQ-1N"
+    },
+    "metadata": {},
+    "operation": "execute_contract",
+    "output_ids": {
+      "quality_gate_id": "qg-REQ-1N"
+    },
+    "reason_code": "OK",
+    "stage": "IMPACT_ANALYSIS_EXECUTED",
+    "started_at": "2026-06-21T08:51:47.591315+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591317+00:00",
+    "component": "DesignQualityGate27B",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0030",
+    "input_ids": {
+      "quality_gate_id": "qg-REQ-1N"
+    },
+    "metadata": {},
+    "operation": "evaluate_quality",
+    "output_ids": {},
+    "reason_code": "QUALITY_GATE_PASSED",
+    "stage": "QUALITY_GATE_CHECKED",
+    "started_at": "2026-06-21T08:51:47.591317+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591320+00:00",
+    "component": "ImpactAnalysisAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0031",
+    "input_ids": {
+      "requirement_id": "REQ-LOCAL"
+    },
+    "metadata": {},
+    "operation": "execute_contract",
+    "output_ids": {
+      "quality_gate_id": "qg-REQ-LOCAL"
+    },
+    "reason_code": "OK",
+    "stage": "IMPACT_ANALYSIS_EXECUTED",
+    "started_at": "2026-06-21T08:51:47.591320+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591322+00:00",
+    "component": "DesignQualityGate27B",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0032",
+    "input_ids": {
+      "quality_gate_id": "qg-REQ-LOCAL"
+    },
+    "metadata": {},
+    "operation": "evaluate_quality",
+    "output_ids": {},
+    "reason_code": "QUALITY_GATE_PASSED",
+    "stage": "QUALITY_GATE_CHECKED",
+    "started_at": "2026-06-21T08:51:47.591322+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591325+00:00",
+    "component": "ImpactAnalysisAdapter",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0033",
+    "input_ids": {
+      "requirement_id": "REQ-ZERO"
+    },
+    "metadata": {},
+    "operation": "execute_contract",
+    "output_ids": {
+      "quality_gate_id": "qg-REQ-ZERO"
+    },
+    "reason_code": "OK",
+    "stage": "IMPACT_ANALYSIS_EXECUTED",
+    "started_at": "2026-06-21T08:51:47.591324+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  },
+  {
+    "attempt_no": 1,
+    "completed_at": "2026-06-21T08:51:47.591327+00:00",
+    "component": "DesignQualityGate27B",
+    "elapsed_ms": 0.001,
+    "event_id": "evt-0034",
+    "input_ids": {
+      "quality_gate_id": "qg-REQ-ZERO"
+    },
+    "metadata": {},
+    "operation": "evaluate_quality",
+    "output_ids": {},
+    "reason_code": "QUALITY_GATE_PASSED",
+    "stage": "QUALITY_GATE_CHECKED",
+    "started_at": "2026-06-21T08:51:47.591327+00:00",
+    "status": "OK",
+    "trace_id": "trace-block28a-local"
+  }
+]

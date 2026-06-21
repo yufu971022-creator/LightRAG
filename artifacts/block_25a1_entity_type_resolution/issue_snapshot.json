@@ -1,0 +1,20 @@
+{
+  "by_type": {
+    "GENERIC_NER_TYPE_BLOCKED": 1
+  },
+  "confirmed_issue_count": 0,
+  "issue_count": 1,
+  "issues": [
+    {
+      "confirmed": false,
+      "issue_id": "issue:GENERIC_NER_TYPE_BLOCKED:Paris",
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_name": "Paris",
+      "original_entity_type": "Location",
+      "reason_codes": [
+        "generic_ner_type_blocked"
+      ],
+      "text_unit_id": "tu-25a1"
+    }
+  ]
+}

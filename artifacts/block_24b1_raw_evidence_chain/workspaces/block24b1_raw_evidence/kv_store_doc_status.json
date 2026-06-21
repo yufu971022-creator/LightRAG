@@ -1,0 +1,75 @@
+{
+  "docver-94bf4f5256b84b9d5f23fdea095a6a9f": {
+    "status": "preprocessed",
+    "content_summary": "User Story: US-2401 Bank Status query conditions must be searchable.\nAcceptance Criteria: Evidence: Bank Status supports Query Condition filtering.\nBusiness Rule: Bank Status is canonical master data for query conditions.\nEntity: Bank Status.\nField: ...",
+    "content_length": 352,
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d85499495371c2daef4c6d984be4eb40"
+    ],
+    "created_at": "2026-06-20T09:49:36Z",
+    "updated_at": "2026-06-20T09:49:36Z",
+    "file_path": "dsl_full_bank_status.md",
+    "track_id": "block24b1-idem-2",
+    "metadata": {
+      "raw_evidence_status": "TEXT_INDEXED",
+      "semantic_route": "DSL_FULL",
+      "document_id": "block24b1-fixture-dsl-full",
+      "document_version_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f"
+    }
+  },
+  "docver-44d59fc6d9efe5cfa53a87975cdb83bf": {
+    "status": "preprocessed",
+    "content_summary": "User Story: US-2402 Rule Version review is required.\nAcceptance Criteria: Evidence: Rule Version supersedes a prior rule.\nBusiness Rule: Version override requires manual approval.\nEntity: Rule Version.\nSource: synthetic Block 24B-1 fixture.",
+    "content_length": 240,
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-fa3a91ce802ffb9bd081a6e6ca4eba09"
+    ],
+    "created_at": "2026-06-20T09:49:36Z",
+    "updated_at": "2026-06-20T09:49:36Z",
+    "file_path": "dsl_partial_rule_version.md",
+    "track_id": "block24b1-02",
+    "metadata": {
+      "raw_evidence_status": "TEXT_INDEXED",
+      "semantic_route": "DSL_PARTIAL",
+      "document_id": "block24b1-fixture-dsl-partial",
+      "document_version_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf"
+    }
+  },
+  "docver-778c9f7fa39d9b63d043ff7b5242631a": {
+    "status": "preprocessed",
+    "content_summary": "Meeting note.\nThe team discussed a small wording change for an internal help page.\nNo structured product design object is specified here.",
+    "content_length": 137,
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-35157ded3ba21643cec33459c477bc84"
+    ],
+    "created_at": "2026-06-20T09:49:36Z",
+    "updated_at": "2026-06-20T09:49:36Z",
+    "file_path": "raw_only_note.md",
+    "track_id": "block24b1-03",
+    "metadata": {
+      "raw_evidence_status": "TEXT_INDEXED",
+      "semantic_route": "RAW_ONLY",
+      "document_id": "block24b1-fixture-raw-only",
+      "document_version_id": "docver-778c9f7fa39d9b63d043ff7b5242631a"
+    }
+  },
+  "docver-2c318d213b0bd6c3a98a9c693ae6248a": {
+    "status": "failed",
+    "content_summary": "",
+    "content_length": 0,
+    "chunks_count": 0,
+    "chunks_list": [],
+    "created_at": "2026-06-20T09:49:36Z",
+    "updated_at": "2026-06-20T09:49:36Z",
+    "file_path": "parse_failed_empty.md",
+    "track_id": "block24b1-04",
+    "error_msg": "parse_failed_empty_text",
+    "metadata": {
+      "raw_evidence_status": "FAILED",
+      "semantic_route": "PARSE_FAILED"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+flowchart TD
+    T[Original Term + Evidence] --> L[Deterministic Lexical Normalization]
+    L --> S[Scope: Module / Domain / Feature / ObjectType]
+    S --> R[Term Registry Resolution]
+    R --> C{Confidence / Conflict Gate}
+
+    C -->|Confirmed High Confidence| K[Canonical Key]
+    C -->|Candidate| I[Term Mapping Review Issue]
+    C -->|Conflict| A[Term Ambiguity Issue]
+    C -->|No Mapping| O[Keep Original Identity]
+
+    K --> ID[Stable Semantic Object ID]
+    ID --> VG[Canonical Version Group Key]
+    ID --> PFSS[PFSS Business Node]
+
+    T --> E[Original Evidence Preserved]
+    E --> SIDE[Sidecar Alias / Evidence Mapping]
+    K --> SIDE
+
+    Q[Query Term] --> QE[Scoped Query Expansion]
+    QE --> ALIAS[Canonical + Confirmed Aliases]
+
+    NOTE[No Live Query Hook / No Production Graph Rewrite]

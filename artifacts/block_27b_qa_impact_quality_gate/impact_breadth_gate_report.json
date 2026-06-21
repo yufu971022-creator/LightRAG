@@ -1,0 +1,54 @@
+{
+  "gate_name": "IMPACT_BREADTH",
+  "passed": true,
+  "results": [
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "IMPACT_BREADTH",
+      "metrics": {
+        "direct_impact_recall": 1.0,
+        "duplicate_impact_count": 0,
+        "evidence_backed_path_ratio": 1.0,
+        "false_positive_impact_count": 0,
+        "indirect_impact_recall": 1.0,
+        "missing_relevant_dimensions": [],
+        "over_expanded_domain_scope": false,
+        "required_dimension_coverage": 1.0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "IMPACT_BREADTH",
+      "metrics": {
+        "direct_impact_recall": 1.0,
+        "duplicate_impact_count": 0,
+        "evidence_backed_path_ratio": 1.0,
+        "false_positive_impact_count": 0,
+        "indirect_impact_recall": 1.0,
+        "missing_relevant_dimensions": [],
+        "over_expanded_domain_scope": false,
+        "required_dimension_coverage": 1.0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "IMPACT_BREADTH",
+      "metrics": {
+        "direct_impact_recall": 1.0,
+        "duplicate_impact_count": 0,
+        "evidence_backed_path_ratio": 1.0,
+        "false_positive_impact_count": 0,
+        "indirect_impact_recall": 1.0,
+        "missing_relevant_dimensions": [],
+        "over_expanded_domain_scope": false,
+        "required_dimension_coverage": 1.0
+      },
+      "passed": true
+    }
+  ]
+}

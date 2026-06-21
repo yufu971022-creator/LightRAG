@@ -1,0 +1,194 @@
+{
+  "capability_gaps": [],
+  "checkpoint_results": [
+    {
+      "blocks_downstream": true,
+      "checkpoint_type": "CLARIFICATION_CHECK",
+      "passed": false,
+      "reason_codes": [
+        "clarification_required"
+      ],
+      "required_clarifications": [
+        {
+          "question": "Which source document or feature evidence should be used?",
+          "question_id": "evidence"
+        }
+      ]
+    }
+  ],
+  "context": {
+    "assumptions": [],
+    "available_code_context": {
+      "details": {},
+      "source": "not_configured",
+      "status": "UNAVAILABLE"
+    },
+    "context_budget": {
+      "issue_warning_count": 1,
+      "max_items": 12,
+      "source_evidence_count": 0
+    },
+    "impact_context": {
+      "impact_paths_available": false,
+      "source": "27A_offline_fixture"
+    },
+    "issues_and_warnings": [
+      {
+        "kind": "route_warning",
+        "reason_codes": [
+          "insufficient_evidence",
+          "missing_retrieval_not_zero_to_one"
+        ],
+        "status": "INSUFFICIENT_EVIDENCE"
+      }
+    ],
+    "open_questions": [
+      {
+        "question": "Which source document or feature evidence should be used?",
+        "question_id": "evidence"
+      }
+    ],
+    "requirement_input": {
+      "available_code_context": false,
+      "available_design_context": false,
+      "explicit_scenario_override": null,
+      "metadata": {
+        "evidence_sufficiency_score": 0.1,
+        "profile_confidence": 0.2
+      },
+      "module_code": null,
+      "requested_outputs": [],
+      "requirement_id": "REQ-27A-INSUFFICIENT",
+      "requirement_text": "Need a change, but source evidence and affected scope are not provided.",
+      "source_document_refs": []
+    },
+    "scenario_profile": {
+      "affected_domain_count": 0,
+      "affected_feature_count": 0,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 0,
+      "evidence_sufficiency_score": 0.1,
+      "existing_code_asset_coverage": 0.0,
+      "existing_design_evidence_coverage": 0.0,
+      "existing_feature_coverage": 0.0,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.0,
+      "graph_path_count": 0,
+      "indirect_impact_count": 0,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [],
+      "profile_confidence": 0.2,
+      "requirement_id": "REQ-27A-INSUFFICIENT",
+      "risks": [
+        "insufficient_evidence"
+      ],
+      "signals": [],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "scenario_route": {
+      "alternative_scenarios": [],
+      "clarification_questions": [
+        {
+          "question": "Which source document or feature evidence should be used?",
+          "question_id": "evidence"
+        }
+      ],
+      "classification_status": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.2,
+      "manual_override_used": false,
+      "missing_information": [
+        "source_evidence",
+        "trusted_context"
+      ],
+      "profile": {
+        "affected_domain_count": 0,
+        "affected_feature_count": 0,
+        "cross_system_signal_count": 0,
+        "direct_impact_count": 0,
+        "evidence_sufficiency_score": 0.1,
+        "existing_code_asset_coverage": 0.0,
+        "existing_design_evidence_coverage": 0.0,
+        "existing_feature_coverage": 0.0,
+        "existing_relation_coverage": 0.0,
+        "existing_semantic_object_coverage": 0.0,
+        "graph_path_count": 0,
+        "indirect_impact_count": 0,
+        "local_change_score": 0.0,
+        "new_business_object_ratio": 0.0,
+        "novelty_score": 0.0,
+        "primary_change_targets": [],
+        "profile_confidence": 0.2,
+        "requirement_id": "REQ-27A-INSUFFICIENT",
+        "risks": [
+          "insufficient_evidence"
+        ],
+        "signals": [],
+        "term_issue_count": 0,
+        "type_issue_count": 0,
+        "version_issue_count": 0
+      },
+      "reason_codes": [
+        "insufficient_evidence",
+        "missing_retrieval_not_zero_to_one"
+      ],
+      "requirement_id": "REQ-27A-INSUFFICIENT",
+      "router_policy_version": "27A-router-v1",
+      "selected_scenario": null
+    },
+    "source_evidence": [],
+    "term_context": {
+      "stable_terms_available": true
+    },
+    "trusted_context_pack": {
+      "candidate_aliases": [],
+      "direct_evidence": [],
+      "factual_candidates": [],
+      "final_answer_generated": false,
+      "issue_warnings": [],
+      "source": "27A_offline_context_pack"
+    },
+    "type_context": {
+      "entity_type_resolution_available": true
+    },
+    "version_context": {
+      "safe_for_deterministic_answer": true,
+      "source": "27A_offline_fixture"
+    }
+  },
+  "execution_trace": [],
+  "final_solution_document_generated": false,
+  "final_state": "WAITING_FOR_CLARIFICATION",
+  "final_us_generated": false,
+  "plan": null,
+  "requirement_id": "REQ-27A-INSUFFICIENT",
+  "state_transitions": [
+    {
+      "actor": "SYSTEM",
+      "event": "profile_built",
+      "from_state": "CREATED",
+      "reason": "scenario metrics computed",
+      "timestamp": "2026-06-21T08:04:16.339212+00:00",
+      "to_state": "PROFILED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "route_decided",
+      "from_state": "PROFILED",
+      "reason": "INSUFFICIENT_EVIDENCE",
+      "timestamp": "2026-06-21T08:04:16.339215+00:00",
+      "to_state": "ROUTED"
+    },
+    {
+      "actor": "SYSTEM",
+      "event": "clarification_required",
+      "from_state": "ROUTED",
+      "reason": "INSUFFICIENT_EVIDENCE",
+      "timestamp": "2026-06-21T08:04:16.339218+00:00",
+      "to_state": "WAITING_FOR_CLARIFICATION"
+    }
+  ]
+}

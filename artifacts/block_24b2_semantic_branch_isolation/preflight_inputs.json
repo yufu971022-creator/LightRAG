@@ -1,0 +1,31 @@
+{
+  "block_24b0": {
+    "path": "artifacts/block_24b0_shadow_router/unified_ingestion_protocol_report.json",
+    "plan_count": 5,
+    "protocol_version": "24B-0",
+    "route_distribution": {
+      "DSL_FULL": 1,
+      "DSL_PARTIAL": 1,
+      "PARSE_FAILED": 1,
+      "RAW_ONLY": 2
+    }
+  },
+  "block_24b1": {
+    "input_document_count": 4,
+    "parse_failed_count": 1,
+    "path": "artifacts/block_24b1_raw_evidence_chain/raw_evidence_chain_report.json",
+    "protocol_version": "24B-1",
+    "raw_chunk_total": 3,
+    "storage_snapshot": {
+      "chunks_vdb_count": 3,
+      "doc_status_count": 4,
+      "entities_vdb_count": 0,
+      "full_docs_count": 3,
+      "graph_edge_count": 0,
+      "graph_node_count": 0,
+      "relationships_vdb_count": 0,
+      "text_chunks_count": 3
+    },
+    "successful_document_count": 3
+  }
+}

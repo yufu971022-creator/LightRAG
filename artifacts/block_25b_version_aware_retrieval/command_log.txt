@@ -1,0 +1,7 @@
+Block 25B version-aware retrieval smoke started
+Generated version-aware retrieval artifacts
+./scripts/test.sh --collect-only lightrag_ext/us_dsl/tests/test_version_query_intent.py lightrag_ext/us_dsl/tests/test_version_candidate_index.py lightrag_ext/us_dsl/tests/test_version_issue_index.py lightrag_ext/us_dsl/tests/test_current_version_resolver.py lightrag_ext/us_dsl/tests/test_version_candidate_ranker.py lightrag_ext/us_dsl/tests/test_version_context_builder.py lightrag_ext/us_dsl/tests/test_version_retrieval_service.py lightrag_ext/us_dsl/tests/test_version_retrieval_generalization.py lightrag_ext/us_dsl/tests/test_version_retrieval_guards.py
+./scripts/test.sh lightrag_ext/us_dsl/tests/test_version_query_intent.py lightrag_ext/us_dsl/tests/test_version_candidate_index.py lightrag_ext/us_dsl/tests/test_version_issue_index.py lightrag_ext/us_dsl/tests/test_current_version_resolver.py lightrag_ext/us_dsl/tests/test_version_candidate_ranker.py lightrag_ext/us_dsl/tests/test_version_context_builder.py lightrag_ext/us_dsl/tests/test_version_retrieval_service.py lightrag_ext/us_dsl/tests/test_version_retrieval_generalization.py lightrag_ext/us_dsl/tests/test_version_retrieval_guards.py
+PYTHONPYCACHEPREFIX=artifacts/block_25b_version_aware_retrieval/.pycache .venv/bin/python -m compileall -q lightrag_ext
+PYTHONPYCACHEPREFIX=artifacts/block_25b_version_aware_retrieval/.pycache .venv/bin/python -m py_compile lightrag/prompt.py
+.venv/bin/python -m ruff check lightrag_ext lightrag/prompt.py

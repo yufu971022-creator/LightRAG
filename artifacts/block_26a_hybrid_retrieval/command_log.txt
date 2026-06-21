@@ -1,0 +1,20 @@
+$ git status --short
+exit=0
+$ git status --short
+exit=0
+$ git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+exit=0
+$ PYTHONPYCACHEPREFIX=artifacts/block_26a_hybrid_retrieval/pycache python3 -m lightrag_ext.us_dsl.scripts.run_hybrid_retrieval_smoke --output-dir artifacts/block_26a_hybrid_retrieval --fixture-suite --fake-deterministic-embedding --all-task-types --anti-hardcode-check --cleanup
+exit=0
+$ PYTHONPYCACHEPREFIX=artifacts/block_26a_hybrid_retrieval/pycache ./scripts/test.sh <26A target tests> --collect-only
+exit=0 collected=59
+$ PYTHONPYCACHEPREFIX=artifacts/block_26a_hybrid_retrieval/pycache ./scripts/test.sh <26A target tests>
+exit=0 passed=59
+$ PYTHONPYCACHEPREFIX=artifacts/block_26a_hybrid_retrieval/pycache python3 -m py_compile <26A runtime modules>
+exit=0
+$ PYTHONPYCACHEPREFIX=artifacts/block_26a_hybrid_retrieval/pycache python3 -m compileall -q <26A runtime modules and tests>
+exit=0
+$ .venv/bin/ruff check <26A runtime modules and tests>
+exit=0
+$ git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+exit=0 NO_CORE_DIFF

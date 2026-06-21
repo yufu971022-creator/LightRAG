@@ -1,0 +1,29 @@
+{
+  "config_sources": {
+    "LIGHTRAG_DOC_STATUS_STORAGE": "environment",
+    "LIGHTRAG_GRAPH_STORAGE": "environment",
+    "LIGHTRAG_KV_STORAGE": "environment",
+    "LIGHTRAG_VECTOR_STORAGE": "environment",
+    "WORKING_DIR": "default",
+    "WORKSPACE": "default"
+  },
+  "doc_status_storage": "JsonDocStatusStorage",
+  "embedding_metadata_found": null,
+  "graph_storage": "NetworkXStorage",
+  "is_nano_vectordb": true,
+  "is_neo4j": false,
+  "is_networkx": true,
+  "is_postgresql": false,
+  "kv_storage": "JsonKVStorage",
+  "namespace": "workspace-scoped LightRAG namespaces",
+  "risks": [
+    "Configured working_dir does not exist in this checkout."
+  ],
+  "storage_files_found": [],
+  "uses_mongo": false,
+  "uses_opensearch": false,
+  "uses_redis": false,
+  "vector_storage": "NanoVectorDBStorage",
+  "working_dir": "/Users/hufaofao/Projects/LightRAG/rag_storage",
+  "workspace": ""
+}

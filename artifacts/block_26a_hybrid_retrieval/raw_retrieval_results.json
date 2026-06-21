@@ -1,0 +1,310 @@
+{
+  "generic_only_low_trust": [],
+  "historical_compare": [
+    {
+      "active": true,
+      "candidate_id": "raw-current",
+      "channel": "RAW_TEXT",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.022852459,
+      "fusion_reasons": [
+        "rrf=0.018852",
+        "channel_weight=1.15",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "TEXT",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.91,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "raw_store",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Current direct evidence for the requested rule.",
+      "trust_tier": "T1_DIRECT",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": false,
+      "candidate_id": "raw-historical",
+      "channel": "RAW_TEXT",
+      "channel_rank": 2,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-h",
+          "document_version_id": "v0",
+          "excerpt": "direct evidence",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-h",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.022548387,
+      "fusion_reasons": [
+        "rrf=0.018548",
+        "channel_weight=1.15",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "TEXT",
+      "metadata": {},
+      "normalized_score": 0.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.52,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "raw_store",
+      "stable_identity_key": null,
+      "text": "Historical evidence kept only when requested.",
+      "trust_tier": "T1_DIRECT",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "hybrid_ready": [
+    {
+      "active": true,
+      "candidate_id": "raw-current",
+      "channel": "RAW_TEXT",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.022852459,
+      "fusion_reasons": [
+        "rrf=0.018852",
+        "channel_weight=1.15",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "TEXT",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.91,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "raw_store",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Current direct evidence for the requested rule.",
+      "trust_tier": "T1_DIRECT",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "impact_path": [
+    {
+      "active": true,
+      "candidate_id": "raw-current",
+      "channel": "RAW_TEXT",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.022852459,
+      "fusion_reasons": [
+        "rrf=0.018852",
+        "channel_weight=1.15",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "TEXT",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.91,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "raw_store",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Current direct evidence for the requested rule.",
+      "trust_tier": "T1_DIRECT",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "insufficient_evidence": [],
+  "issue_only": [],
+  "strict_scope_empty": [],
+  "text_only_fallback": [
+    {
+      "active": true,
+      "candidate_id": "raw-current",
+      "channel": "RAW_TEXT",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.022852459,
+      "fusion_reasons": [
+        "rrf=0.018852",
+        "channel_weight=1.15",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "TEXT",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.91,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "raw_store",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Current direct evidence for the requested rule.",
+      "trust_tier": "T1_DIRECT",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "version_warning": [
+    {
+      "active": true,
+      "candidate_id": "raw-current",
+      "channel": "RAW_TEXT",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [
+        {
+          "active": true,
+          "deleted": false,
+          "document_id": "doc-a",
+          "document_version_id": "v1",
+          "excerpt": "Primary direct evidence for current rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_hash": "hash-a",
+          "text_unit_id": "u1"
+        }
+      ],
+      "factual_weight": 1.0,
+      "feature_key": "feature-a",
+      "fused_score": 0.022852459,
+      "fusion_reasons": [
+        "rrf=0.018852",
+        "channel_weight=1.15",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "TEXT",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.91,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "raw_store",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Current direct evidence for the requested rule.",
+      "trust_tier": "T1_DIRECT",
+      "version_intent": null,
+      "version_status": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "by_type": {
+    "VERSION_REVIEW_REQUIRED": 1
+  },
+  "idempotency_key_count": 1,
+  "issue_record_count": 1,
+  "pfss_fact_count": 0
+}

@@ -1,0 +1,5 @@
+structured_logs_enabled: true
+metrics_enabled: true
+trace_required: true
+redact_raw_text: true
+redact_model_payloads: true

@@ -1,0 +1,13 @@
+{
+  "max_attempts": 2,
+  "passed": true,
+  "real_embedding_enabled": false,
+  "real_llm_enabled": false,
+  "required_artifacts": {
+    "artifacts/block_26b_local_fullflow/local_document_inventory.json": true,
+    "artifacts/block_27a_three_scenario_harness/three_scenario_harness_report.json": true,
+    "artifacts/block_27b_qa_impact_quality_gate/qa_impact_quality_report.json": true
+  },
+  "us_ac_out_of_scope": true,
+  "workspace_isolated": true
+}

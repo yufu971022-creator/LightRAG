@@ -1,0 +1,84 @@
+{
+  "AssignsHandler": {
+    "source": [
+      "TaskRule"
+    ],
+    "target": [
+      "RolePermission"
+    ]
+  },
+  "CallsBackendApi": {
+    "source": [
+      "FeatureCatalog",
+      "ReportSpec",
+      "RuleAtom",
+      "TaskRule"
+    ],
+    "target": [
+      "IntegrationEndpoint"
+    ]
+  },
+  "HasFieldSpec": {
+    "source": [
+      "DataMigrationSpec",
+      "DomainObject",
+      "FeatureCatalog",
+      "IntegrationEndpoint",
+      "ReportSpec"
+    ],
+    "target": [
+      "FieldSpec"
+    ]
+  },
+  "HasMigrationSpec": {
+    "source": [
+      "DataMigrationSpec",
+      "FeatureCatalog"
+    ],
+    "target": [
+      "DataMigrationSpec",
+      "FieldSpec"
+    ]
+  },
+  "HasReportColumn": {
+    "source": [
+      "ReportSpec"
+    ],
+    "target": [
+      "FieldSpec"
+    ]
+  },
+  "HasReportFilter": {
+    "source": [
+      "FeatureCatalog",
+      "ReportSpec"
+    ],
+    "target": [
+      "FieldSpec"
+    ]
+  },
+  "HasVersion": {
+    "source": [
+      "DataMigrationSpec",
+      "FieldSpec",
+      "IntegrationEndpoint",
+      "ReportSpec",
+      "RolePermission",
+      "RuleAtom",
+      "StateTransition",
+      "TaskRule"
+    ],
+    "target": [
+      "RuleVersion"
+    ]
+  },
+  "TransfersTask": {
+    "source": [
+      "TaskRule"
+    ],
+    "target": [
+      "RolePermission",
+      "TaskRule"
+    ]
+  }
+}

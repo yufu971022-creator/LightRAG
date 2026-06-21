@@ -1,0 +1,98 @@
+{
+  "alias_count": 5,
+  "aliases": [
+    {
+      "active_flag": 1,
+      "alias_id": "alias:23f6eca4d4f05c5f6ffc",
+      "created_at": "2026-06-21T02:00:14Z",
+      "lexical_key": "当前处理人",
+      "original_term": "当前处理人",
+      "semantic_object_id": "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default",
+      "term_mapping_id": "term:25A-0:0005"
+    },
+    {
+      "active_flag": 1,
+      "alias_id": "alias:888fbc88d1a2e9826b2a",
+      "created_at": "2026-06-21T02:00:14Z",
+      "lexical_key": "swiftcode",
+      "original_term": "SWIFTCODE",
+      "semantic_object_id": "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default",
+      "term_mapping_id": "term:25A-0:0001"
+    },
+    {
+      "active_flag": 1,
+      "alias_id": "alias:93ad1d813d867d5a3272",
+      "created_at": "2026-06-21T02:00:14Z",
+      "lexical_key": "bankstatus",
+      "original_term": "Bank Status",
+      "semantic_object_id": "urn:pfss:mod-product:ledger:bankstatusfeature:fieldspec:bankstatus:default",
+      "term_mapping_id": "term:25A-0:0012"
+    },
+    {
+      "active_flag": 1,
+      "alias_id": "alias:cb51380f807bc7a9a3eb",
+      "created_at": "2026-06-21T02:00:14Z",
+      "lexical_key": "银行状态",
+      "original_term": "银行状态",
+      "semantic_object_id": "urn:pfss:mod-product:ledger:bankstatusfeature:fieldspec:bankstatus:default",
+      "term_mapping_id": "term:25A-0:0009"
+    },
+    {
+      "active_flag": 1,
+      "alias_id": "alias:dbd471cfd8f155c44104",
+      "created_at": "2026-06-21T02:00:14Z",
+      "lexical_key": "currenthandler",
+      "original_term": "Current Handler",
+      "semantic_object_id": "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default",
+      "term_mapping_id": "term:25A-0:0006"
+    }
+  ],
+  "mapping_count": 5,
+  "mappings": [
+    {
+      "canonical_language": "en",
+      "canonical_term": "Swift Code",
+      "mapping_status": "CONFIRMED",
+      "original_term": "SWIFTCODE",
+      "source_language": "en",
+      "synonym_type": "WHITESPACE_VARIANT",
+      "term_mapping_id": "term:25A-0:0001"
+    },
+    {
+      "canonical_language": "en",
+      "canonical_term": "Current Handler",
+      "mapping_status": "CONFIRMED",
+      "original_term": "当前处理人",
+      "source_language": "zh",
+      "synonym_type": "TRANSLATION",
+      "term_mapping_id": "term:25A-0:0005"
+    },
+    {
+      "canonical_language": "en",
+      "canonical_term": "Current Handler",
+      "mapping_status": "CONFIRMED",
+      "original_term": "Current Handler",
+      "source_language": "en",
+      "synonym_type": "CASE_VARIANT",
+      "term_mapping_id": "term:25A-0:0006"
+    },
+    {
+      "canonical_language": "en",
+      "canonical_term": "Bank Status",
+      "mapping_status": "CONFIRMED",
+      "original_term": "银行状态",
+      "source_language": "zh",
+      "synonym_type": "TRANSLATION",
+      "term_mapping_id": "term:25A-0:0009"
+    },
+    {
+      "canonical_language": "en",
+      "canonical_term": "Bank Status",
+      "mapping_status": "CONFIRMED",
+      "original_term": "Bank Status",
+      "source_language": "en",
+      "synonym_type": "CASE_VARIANT",
+      "term_mapping_id": "term:25A-0:0012"
+    }
+  ]
+}

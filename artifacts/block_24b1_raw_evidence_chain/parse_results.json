@@ -1,0 +1,367 @@
+[
+  {
+    "chunk_text_unit_links": [
+      {
+        "chunk_coverage_ratio": 1.0,
+        "chunk_id": "chunk-d85499495371c2daef4c6d984be4eb40",
+        "document_id": "block24b1-fixture-dsl-full",
+        "document_version_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+        "evidence": {
+          "chunk_content_hash": "e73abc893815acf82d6da766da3809867cdded16c3ca3f8415e38c6a493d63c4",
+          "mapping_basis": "document_version_id+offset_interval",
+          "text_unit_hash": "5c24a130ef229612"
+        },
+        "link_id": "link-7866f40f27d37280a8b9a15a4f3662c5",
+        "link_type": "FULL",
+        "overlap_char_count": 352,
+        "overlap_end_offset": 352,
+        "overlap_start_offset": 0,
+        "text_unit_coverage_ratio": 1.0,
+        "text_unit_id": "TU249eb978458c"
+      }
+    ],
+    "chunker": {
+      "chunk_size": 4096,
+      "chunker_name": "lightrag.operate.chunking_by_token_size",
+      "chunker_version": "current",
+      "overlap": 0
+    },
+    "document": {
+      "content_hash": "e73abc893815acf82d6da766da3809867cdded16c3ca3f8415e38c6a493d63c4",
+      "document_id": "block24b1-fixture-dsl-full",
+      "document_version_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+      "extracted_text": "User Story: US-2401 Bank Status query conditions must be searchable.\nAcceptance Criteria: Evidence: Bank Status supports Query Condition filtering.\nBusiness Rule: Bank Status is canonical master data for query conditions.\nEntity: Bank Status.\nField: Query Condition.\nRelationship: Bank Status has Query Condition.\nSource: synthetic Block 24B-1 fixture.",
+      "file_name": "dsl_full_bank_status.md",
+      "file_type": "text",
+      "metadata": {
+        "document_id": "block24b1-fixture-dsl-full",
+        "domain": "MasterData",
+        "file_name": "dsl_full_bank_status.md",
+        "fixture": "DSL_FULL",
+        "source_uri": "dsl_full_bank_status.md"
+      },
+      "module_code": null,
+      "normalized_text": "User Story: US-2401 Bank Status query conditions must be searchable.\nAcceptance Criteria: Evidence: Bank Status supports Query Condition filtering.\nBusiness Rule: Bank Status is canonical master data for query conditions.\nEntity: Bank Status.\nField: Query Condition.\nRelationship: Bank Status has Query Condition.\nSource: synthetic Block 24B-1 fixture.",
+      "parse_finished_at": "2026-06-20T09:49:36Z",
+      "parse_started_at": "2026-06-20T09:49:36Z",
+      "parser_name": "unified_raw_evidence_parser",
+      "parser_version": "24B-1",
+      "source_path": null,
+      "source_uri": "dsl_full_bank_status.md"
+    },
+    "file_read_count": 0,
+    "issues": [],
+    "normalized_text_hash": "e73abc893815acf82d6da766da3809867cdded16c3ca3f8415e38c6a493d63c4",
+    "orphan_chunk_count": 0,
+    "orphan_text_unit_count": 0,
+    "parser_call_count": 1,
+    "raw_chunk_coverage": 1.0,
+    "raw_chunks": [
+      {
+        "chunk_id": "chunk-d85499495371c2daef4c6d984be4eb40",
+        "chunk_order": 0,
+        "content": "User Story: US-2401 Bank Status query conditions must be searchable.\nAcceptance Criteria: Evidence: Bank Status supports Query Condition filtering.\nBusiness Rule: Bank Status is canonical master data for query conditions.\nEntity: Bank Status.\nField: Query Condition.\nRelationship: Bank Status has Query Condition.\nSource: synthetic Block 24B-1 fixture.",
+        "content_hash": "e73abc893815acf82d6da766da3809867cdded16c3ca3f8415e38c6a493d63c4",
+        "document_id": "block24b1-fixture-dsl-full",
+        "document_version_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+        "end_offset": 352,
+        "metadata": {
+          "chunker_name": "lightrag.operate.chunking_by_token_size",
+          "chunker_version": "current"
+        },
+        "source_span": {
+          "end": 352,
+          "start": 0
+        },
+        "start_offset": 0,
+        "token_count": 352
+      }
+    ],
+    "source_text_units": [
+      {
+        "content": "User Story: US-2401 Bank Status query conditions must be searchable.\nAcceptance Criteria: Evidence: Bank Status supports Query Condition filtering.\nBusiness Rule: Bank Status is canonical master data for query conditions.\nEntity: Bank Status.\nField: Query Condition.\nRelationship: Bank Status has Query Condition.\nSource: synthetic Block 24B-1 fixture.",
+        "document_id": "block24b1-fixture-dsl-full",
+        "document_version_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+        "end_offset": 352,
+        "feature_key": null,
+        "metadata": {
+          "chunk_index": 0,
+          "file_path": "dsl_full_bank_status.md",
+          "source_text_unit_semantics": "reused_from_lightrag_ext.us_dsl.dsl_types.SourceTextUnit"
+        },
+        "primary_domain": null,
+        "related_domains": [],
+        "section_type": "acceptance_criteria",
+        "source_us_id": null,
+        "start_offset": 0,
+        "text_hash": "5c24a130ef229612",
+        "text_unit_id": "TU249eb978458c"
+      }
+    ],
+    "text_unit_coverage": 1.0
+  },
+  {
+    "chunk_text_unit_links": [
+      {
+        "chunk_coverage_ratio": 1.0,
+        "chunk_id": "chunk-fa3a91ce802ffb9bd081a6e6ca4eba09",
+        "document_id": "block24b1-fixture-dsl-partial",
+        "document_version_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+        "evidence": {
+          "chunk_content_hash": "c5b9fd5ebf9caaa221d318bd81ea58fadd6dc0665884e4f4c7557330113b20da",
+          "mapping_basis": "document_version_id+offset_interval",
+          "text_unit_hash": "52dda8186dffc6b2"
+        },
+        "link_id": "link-fa44907f8ff0b6454911807bd3d5e293",
+        "link_type": "FULL",
+        "overlap_char_count": 240,
+        "overlap_end_offset": 240,
+        "overlap_start_offset": 0,
+        "text_unit_coverage_ratio": 1.0,
+        "text_unit_id": "TUd94d239d4980"
+      }
+    ],
+    "chunker": {
+      "chunk_size": 4096,
+      "chunker_name": "lightrag.operate.chunking_by_token_size",
+      "chunker_version": "current",
+      "overlap": 0
+    },
+    "document": {
+      "content_hash": "c5b9fd5ebf9caaa221d318bd81ea58fadd6dc0665884e4f4c7557330113b20da",
+      "document_id": "block24b1-fixture-dsl-partial",
+      "document_version_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+      "extracted_text": "User Story: US-2402 Rule Version review is required.\nAcceptance Criteria: Evidence: Rule Version supersedes a prior rule.\nBusiness Rule: Version override requires manual approval.\nEntity: Rule Version.\nSource: synthetic Block 24B-1 fixture.",
+      "file_name": "dsl_partial_rule_version.md",
+      "file_type": "text",
+      "metadata": {
+        "document_id": "block24b1-fixture-dsl-partial",
+        "domain": "RuleManagement",
+        "file_name": "dsl_partial_rule_version.md",
+        "fixture": "DSL_PARTIAL",
+        "source_uri": "dsl_partial_rule_version.md"
+      },
+      "module_code": null,
+      "normalized_text": "User Story: US-2402 Rule Version review is required.\nAcceptance Criteria: Evidence: Rule Version supersedes a prior rule.\nBusiness Rule: Version override requires manual approval.\nEntity: Rule Version.\nSource: synthetic Block 24B-1 fixture.",
+      "parse_finished_at": "2026-06-20T09:49:36Z",
+      "parse_started_at": "2026-06-20T09:49:36Z",
+      "parser_name": "unified_raw_evidence_parser",
+      "parser_version": "24B-1",
+      "source_path": null,
+      "source_uri": "dsl_partial_rule_version.md"
+    },
+    "file_read_count": 0,
+    "issues": [],
+    "normalized_text_hash": "c5b9fd5ebf9caaa221d318bd81ea58fadd6dc0665884e4f4c7557330113b20da",
+    "orphan_chunk_count": 0,
+    "orphan_text_unit_count": 0,
+    "parser_call_count": 1,
+    "raw_chunk_coverage": 1.0,
+    "raw_chunks": [
+      {
+        "chunk_id": "chunk-fa3a91ce802ffb9bd081a6e6ca4eba09",
+        "chunk_order": 0,
+        "content": "User Story: US-2402 Rule Version review is required.\nAcceptance Criteria: Evidence: Rule Version supersedes a prior rule.\nBusiness Rule: Version override requires manual approval.\nEntity: Rule Version.\nSource: synthetic Block 24B-1 fixture.",
+        "content_hash": "c5b9fd5ebf9caaa221d318bd81ea58fadd6dc0665884e4f4c7557330113b20da",
+        "document_id": "block24b1-fixture-dsl-partial",
+        "document_version_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+        "end_offset": 240,
+        "metadata": {
+          "chunker_name": "lightrag.operate.chunking_by_token_size",
+          "chunker_version": "current"
+        },
+        "source_span": {
+          "end": 240,
+          "start": 0
+        },
+        "start_offset": 0,
+        "token_count": 240
+      }
+    ],
+    "source_text_units": [
+      {
+        "content": "User Story: US-2402 Rule Version review is required.\nAcceptance Criteria: Evidence: Rule Version supersedes a prior rule.\nBusiness Rule: Version override requires manual approval.\nEntity: Rule Version.\nSource: synthetic Block 24B-1 fixture.",
+        "document_id": "block24b1-fixture-dsl-partial",
+        "document_version_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+        "end_offset": 240,
+        "feature_key": null,
+        "metadata": {
+          "chunk_index": 0,
+          "file_path": "dsl_partial_rule_version.md",
+          "source_text_unit_semantics": "reused_from_lightrag_ext.us_dsl.dsl_types.SourceTextUnit"
+        },
+        "primary_domain": null,
+        "related_domains": [],
+        "section_type": "acceptance_criteria",
+        "source_us_id": null,
+        "start_offset": 0,
+        "text_hash": "52dda8186dffc6b2",
+        "text_unit_id": "TUd94d239d4980"
+      }
+    ],
+    "text_unit_coverage": 1.0
+  },
+  {
+    "chunk_text_unit_links": [
+      {
+        "chunk_coverage_ratio": 1.0,
+        "chunk_id": "chunk-35157ded3ba21643cec33459c477bc84",
+        "document_id": "block24b1-fixture-raw-only",
+        "document_version_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+        "evidence": {
+          "chunk_content_hash": "ec8b322c84db929dd09c83bb252f3fe779e839830be97d8fd3691c45fd4f898e",
+          "mapping_basis": "document_version_id+offset_interval",
+          "text_unit_hash": "703b0964ddb1dc82"
+        },
+        "link_id": "link-3d01d6fc653c0e235bd3e6e9e8fa378e",
+        "link_type": "FULL",
+        "overlap_char_count": 137,
+        "overlap_end_offset": 137,
+        "overlap_start_offset": 0,
+        "text_unit_coverage_ratio": 1.0,
+        "text_unit_id": "TU27b0cb17d10b"
+      }
+    ],
+    "chunker": {
+      "chunk_size": 4096,
+      "chunker_name": "lightrag.operate.chunking_by_token_size",
+      "chunker_version": "current",
+      "overlap": 0
+    },
+    "document": {
+      "content_hash": "ec8b322c84db929dd09c83bb252f3fe779e839830be97d8fd3691c45fd4f898e",
+      "document_id": "block24b1-fixture-raw-only",
+      "document_version_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+      "extracted_text": "Meeting note.\nThe team discussed a small wording change for an internal help page.\nNo structured product design object is specified here.",
+      "file_name": "raw_only_note.md",
+      "file_type": "text",
+      "metadata": {
+        "document_id": "block24b1-fixture-raw-only",
+        "file_name": "raw_only_note.md",
+        "fixture": "RAW_ONLY",
+        "source_uri": "raw_only_note.md"
+      },
+      "module_code": null,
+      "normalized_text": "Meeting note.\nThe team discussed a small wording change for an internal help page.\nNo structured product design object is specified here.",
+      "parse_finished_at": "2026-06-20T09:49:36Z",
+      "parse_started_at": "2026-06-20T09:49:36Z",
+      "parser_name": "unified_raw_evidence_parser",
+      "parser_version": "24B-1",
+      "source_path": null,
+      "source_uri": "raw_only_note.md"
+    },
+    "file_read_count": 0,
+    "issues": [],
+    "normalized_text_hash": "ec8b322c84db929dd09c83bb252f3fe779e839830be97d8fd3691c45fd4f898e",
+    "orphan_chunk_count": 0,
+    "orphan_text_unit_count": 0,
+    "parser_call_count": 1,
+    "raw_chunk_coverage": 1.0,
+    "raw_chunks": [
+      {
+        "chunk_id": "chunk-35157ded3ba21643cec33459c477bc84",
+        "chunk_order": 0,
+        "content": "Meeting note.\nThe team discussed a small wording change for an internal help page.\nNo structured product design object is specified here.",
+        "content_hash": "ec8b322c84db929dd09c83bb252f3fe779e839830be97d8fd3691c45fd4f898e",
+        "document_id": "block24b1-fixture-raw-only",
+        "document_version_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+        "end_offset": 137,
+        "metadata": {
+          "chunker_name": "lightrag.operate.chunking_by_token_size",
+          "chunker_version": "current"
+        },
+        "source_span": {
+          "end": 137,
+          "start": 0
+        },
+        "start_offset": 0,
+        "token_count": 137
+      }
+    ],
+    "source_text_units": [
+      {
+        "content": "Meeting note.\nThe team discussed a small wording change for an internal help page.\nNo structured product design object is specified here.",
+        "document_id": "block24b1-fixture-raw-only",
+        "document_version_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+        "end_offset": 137,
+        "feature_key": null,
+        "metadata": {
+          "chunk_index": 0,
+          "file_path": "raw_only_note.md",
+          "source_text_unit_semantics": "reused_from_lightrag_ext.us_dsl.dsl_types.SourceTextUnit"
+        },
+        "primary_domain": null,
+        "related_domains": [],
+        "section_type": "unknown",
+        "source_us_id": null,
+        "start_offset": 0,
+        "text_hash": "703b0964ddb1dc82",
+        "text_unit_id": "TU27b0cb17d10b"
+      }
+    ],
+    "text_unit_coverage": 1.0
+  },
+  {
+    "chunk_text_unit_links": [],
+    "chunker": {
+      "chunk_size": 4096,
+      "chunker_name": "lightrag.operate.chunking_by_token_size",
+      "chunker_version": "current",
+      "overlap": 0
+    },
+    "document": {
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "document_id": "block24b1-fixture-parse-failed",
+      "document_version_id": "docver-2c318d213b0bd6c3a98a9c693ae6248a",
+      "extracted_text": "   \n\n",
+      "file_name": "parse_failed_empty.md",
+      "file_type": "text",
+      "metadata": {
+        "document_id": "block24b1-fixture-parse-failed",
+        "file_name": "parse_failed_empty.md",
+        "fixture": "PARSE_FAILED",
+        "source_uri": "parse_failed_empty.md"
+      },
+      "module_code": null,
+      "normalized_text": "",
+      "parse_finished_at": "2026-06-20T09:49:36Z",
+      "parse_started_at": "2026-06-20T09:49:36Z",
+      "parser_name": "unified_raw_evidence_parser",
+      "parser_version": "24B-1",
+      "source_path": null,
+      "source_uri": "parse_failed_empty.md"
+    },
+    "file_read_count": 0,
+    "issues": [
+      "parse_failed_empty_text"
+    ],
+    "normalized_text_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "orphan_chunk_count": 0,
+    "orphan_text_unit_count": 1,
+    "parser_call_count": 1,
+    "raw_chunk_coverage": 0.0,
+    "raw_chunks": [],
+    "source_text_units": [
+      {
+        "content": "",
+        "document_id": "block24b1-fixture-parse-failed",
+        "document_version_id": "docver-2c318d213b0bd6c3a98a9c693ae6248a",
+        "end_offset": 0,
+        "feature_key": null,
+        "metadata": {
+          "chunk_index": 0,
+          "file_path": "parse_failed_empty.md",
+          "source_text_unit_semantics": "reused_from_lightrag_ext.us_dsl.dsl_types.SourceTextUnit"
+        },
+        "primary_domain": null,
+        "related_domains": [],
+        "section_type": "unknown",
+        "source_us_id": null,
+        "start_offset": 0,
+        "text_hash": "d41d8cd98f00b204",
+        "text_unit_id": "TU33b4f5a42723"
+      }
+    ],
+    "text_unit_coverage": 0.0
+  }
+]

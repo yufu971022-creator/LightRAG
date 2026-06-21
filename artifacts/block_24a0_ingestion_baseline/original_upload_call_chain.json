@@ -1,0 +1,225 @@
+{
+  "calls_ainsert_custom_kg": false,
+  "calls_embedding": true,
+  "calls_extract_entities": true,
+  "calls_llm": true,
+  "chain_name": "original_upload_call_chain",
+  "entry_point": "/documents/upload",
+  "evidence": [
+    "lightrag/api/routers/document_routes.py:2127 pattern='\"/upload\", response_model=InsertResponse'",
+    "lightrag/api/routers/document_routes.py:2278 pattern='background_tasks.add_task(pipeline_index_file'",
+    "lightrag/api/routers/document_routes.py:1606 pattern='await rag.apipeline_enqueue_documents'",
+    "lightrag/api/routers/document_routes.py:1704 pattern='await rag.apipeline_process_enqueue_documents()'",
+    "lightrag/lightrag.py:1521 pattern='await self.full_docs.upsert(full_docs_data)'",
+    "lightrag/lightrag.py:1436 pattern='\"status\": DocStatus.PENDING'",
+    "lightrag/lightrag.py:2025 pattern='self.chunks_vdb.upsert(chunks)'",
+    "lightrag/lightrag.py:2028 pattern='self.text_chunks.upsert(chunks)'",
+    "lightrag/lightrag.py:1334 pattern='self._process_extract_entities'",
+    "lightrag/lightrag.py:2136 pattern='await merge_nodes_and_edges'",
+    "lightrag/operate.py:2962 pattern='final_result, timestamp = await use_llm_func_with_cache'",
+    "lightrag/operate.py:2987 pattern='if entity_extract_max_gleaning > 0:'"
+  ],
+  "final_storage_targets": [
+    "full_docs",
+    "doc_status",
+    "text_chunks",
+    "chunks_vdb",
+    "chunk_entity_relation_graph",
+    "entities_vdb",
+    "relationships_vdb",
+    "full_entities",
+    "full_relations",
+    "entity_chunks",
+    "relation_chunks",
+    "llm_response_cache"
+  ],
+  "steps": [
+    {
+      "async_mode": true,
+      "callee": "background_tasks.add_task(pipeline_index_file, rag, file_path, track_id)",
+      "caller": "FastAPI APIRouter(prefix='/documents')",
+      "entry_id": "raw-01-upload-route",
+      "file_path": "lightrag/api/routers/document_routes.py",
+      "function_name": "upload_to_input_dir",
+      "inputs": {
+        "file": "UploadFile",
+        "file_path": "doc_manager.input_dir / safe_filename",
+        "safe_filename": "sanitize_filename(file.filename, doc_manager.input_dir)",
+        "track_id": "generate_track_id('upload')"
+      },
+      "line_number": 2127,
+      "outputs": {
+        "http": "InsertResponse(status='success', track_id=track_id)"
+      },
+      "route_or_function": "POST /documents/upload",
+      "side_effects": [
+        "Streams upload bytes to input_dir before returning HTTP 200.",
+        "Checks filename duplicate through rag.doc_status.get_doc_by_file_path.",
+        "Schedules background processing through FastAPI BackgroundTasks."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "pipeline_enqueue_file(...); rag.apipeline_process_enqueue_documents()",
+      "caller": "FastAPI BackgroundTasks",
+      "entry_id": "raw-02-background-index-file",
+      "file_path": "lightrag/api/routers/document_routes.py",
+      "function_name": "pipeline_index_file",
+      "inputs": {
+        "file_path": "Path",
+        "rag": "LightRAG",
+        "track_id": "str | None"
+      },
+      "line_number": 1691,
+      "outputs": {
+        "success": "No return value; logs errors"
+      },
+      "route_or_function": "pipeline_index_file",
+      "side_effects": [
+        "Runs after upload response in background task.",
+        "Processes queue only if pipeline_enqueue_file succeeds."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "rag.apipeline_enqueue_documents(content, file_paths=file_path.name, track_id=track_id)",
+      "caller": "pipeline_index_file / pipeline_index_files",
+      "entry_id": "raw-03-parser-enqueue-file",
+      "file_path": "lightrag/api/routers/document_routes.py",
+      "function_name": "pipeline_enqueue_file",
+      "inputs": {
+        "file_path": "saved upload path",
+        "parser": "extension switch: text decode, pypdf/docling, python-docx, pptx, openpyxl"
+      },
+      "line_number": 1233,
+      "outputs": {
+        "tuple": "(success: bool, track_id: str)"
+      },
+      "route_or_function": "pipeline_enqueue_file",
+      "side_effects": [
+        "Reads file bytes and extracts text.",
+        "Writes file extraction failures through rag.apipeline_enqueue_error_documents.",
+        "Moves successfully enqueued file to __enqueued__."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "self.full_docs.upsert(...); self.doc_status.upsert(...)",
+      "caller": "pipeline_enqueue_file / ainsert / pipeline_index_texts",
+      "entry_id": "raw-04-full-docs-and-pending-status",
+      "file_path": "lightrag/lightrag.py",
+      "function_name": "apipeline_enqueue_documents",
+      "inputs": {
+        "file_paths": "source filename(s)",
+        "ids": "optional document IDs",
+        "input": "document text(s)",
+        "track_id": "upload/insert/enqueue track id"
+      },
+      "line_number": 1344,
+      "outputs": {
+        "track_id": "returns track_id after enqueue"
+      },
+      "route_or_function": "LightRAG.apipeline_enqueue_documents",
+      "side_effects": [
+        "Computes doc_id from content hash when ids are absent.",
+        "Writes original text to full_docs.",
+        "Writes doc_status=PENDING with file_path and track_id.",
+        "Writes duplicate attempts as doc_status=FAILED."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "chunking_func; chunks_vdb.upsert; text_chunks.upsert; _process_extract_entities; merge_nodes_and_edges",
+      "caller": "pipeline_index_file / scan / text insert / reprocess",
+      "entry_id": "raw-05-process-pending-queue",
+      "file_path": "lightrag/lightrag.py",
+      "function_name": "apipeline_process_enqueue_documents",
+      "inputs": {
+        "doc_statuses": "PROCESSING, FAILED, PENDING",
+        "queue_lock": "pipeline_status namespace lock"
+      },
+      "line_number": 1740,
+      "outputs": {
+        "state": "doc_status PROCESSING/PROCESSED/FAILED"
+      },
+      "route_or_function": "LightRAG.apipeline_process_enqueue_documents",
+      "side_effects": [
+        "Uses pipeline_status busy/request_pending as queue gate.",
+        "Reads original content from full_docs.",
+        "Writes doc_status=PROCESSING before extraction.",
+        "Writes chunks_vdb and text_chunks before entity extraction.",
+        "Writes doc_status=PROCESSED after graph merge, FAILED on exception."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "operate.extract_entities(..., llm_response_cache=self.llm_response_cache, text_chunks_storage=self.text_chunks)",
+      "caller": "apipeline_process_enqueue_documents",
+      "entry_id": "raw-06-entity-extraction",
+      "file_path": "lightrag/lightrag.py",
+      "function_name": "_process_extract_entities",
+      "inputs": {
+        "chunks": "chunk dict with content/full_doc_id/file_path"
+      },
+      "line_number": 2318,
+      "outputs": {
+        "chunk_results": "list[(maybe_nodes, maybe_edges)]"
+      },
+      "route_or_function": "LightRAG._process_extract_entities",
+      "side_effects": [
+        "Calls raw native LLM extraction path.",
+        "May update chunk llm_cache_list through text_chunks storage."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "use_llm_func_with_cache for initial extraction and one optional gleaning request",
+      "caller": "LightRAG._process_extract_entities",
+      "entry_id": "raw-07-llm-extract-and-gleaning",
+      "file_path": "lightrag/operate.py",
+      "function_name": "extract_entities",
+      "inputs": {
+        "chunks": "text chunk dict",
+        "entity_extract_max_gleaning": "MAX_GLEANING/default, but implementation gates one extra request",
+        "global_config.llm_model_func": "runtime LLM function"
+      },
+      "line_number": 2883,
+      "outputs": {
+        "chunk_results": "extracted entity/relation fragments"
+      },
+      "route_or_function": "operate.extract_entities",
+      "side_effects": [
+        "Calls LLM for initial extraction unless cache hits.",
+        "If entity_extract_max_gleaning > 0, performs at most one additional gleaning request.",
+        "Caches extract responses when enabled."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "_merge_nodes_then_upsert; _merge_edges_then_upsert; full_entities_storage.upsert; full_relations_storage.upsert",
+      "caller": "LightRAG.apipeline_process_enqueue_documents",
+      "entry_id": "raw-08-merge-graph-and-vdb",
+      "file_path": "lightrag/operate.py",
+      "function_name": "merge_nodes_and_edges",
+      "inputs": {
+        "chunk_results": "extracted fragments",
+        "doc_id": "full document id"
+      },
+      "line_number": 2501,
+      "outputs": {
+        "state": "graph/vdb/full entity relation indexes updated"
+      },
+      "route_or_function": "operate.merge_nodes_and_edges",
+      "side_effects": [
+        "Upserts graph nodes and edges.",
+        "Upserts entities_vdb and relationships_vdb.",
+        "Writes full_entities and full_relations per doc.",
+        "May call LLM summarization during merge when description merge threshold is exceeded."
+      ]
+    }
+  ],
+  "writes_doc_status": true,
+  "writes_full_docs": true,
+  "writes_graph": true,
+  "writes_text_chunks": true
+}

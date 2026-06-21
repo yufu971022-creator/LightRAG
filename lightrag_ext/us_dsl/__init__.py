@@ -113,14 +113,29 @@ from .kg_payload_types import (
     KgPayloadIssue,
     KgRelationship,
 )
-from .kg_real_graph_smoke import (
-    RealCustomKgSmokeConfig,
-    RealGraphSmokeReport,
-    build_minimal_real_smoke_custom_kg_input,
-    build_minimal_real_smoke_payload,
-    run_real_custom_kg_smoke,
-    serialize_real_graph_smoke_report,
-)
+try:
+    from .kg_real_graph_smoke import (
+        RealCustomKgSmokeConfig,
+        RealGraphSmokeReport,
+        build_minimal_real_smoke_custom_kg_input,
+        build_minimal_real_smoke_payload,
+        run_real_custom_kg_smoke,
+        serialize_real_graph_smoke_report,
+    )
+except ModuleNotFoundError as exc:
+    if exc.name != "numpy":
+        raise
+
+    RealCustomKgSmokeConfig = None  # type: ignore[assignment]
+    RealGraphSmokeReport = None  # type: ignore[assignment]
+
+    def _kg_real_graph_smoke_unavailable(*args, _missing_exc=exc, **kwargs):
+        raise ModuleNotFoundError("kg_real_graph_smoke requires optional dependency numpy") from _missing_exc
+
+    build_minimal_real_smoke_custom_kg_input = _kg_real_graph_smoke_unavailable
+    build_minimal_real_smoke_payload = _kg_real_graph_smoke_unavailable
+    run_real_custom_kg_smoke = _kg_real_graph_smoke_unavailable
+    serialize_real_graph_smoke_report = _kg_real_graph_smoke_unavailable
 from .kg_schema_policy import (
     ALLOWED_ENTITY_TYPES,
     ALLOWED_RELATION_TYPES,
@@ -218,14 +233,29 @@ from .pilot_execution_pack import (
     write_pilot_execution_files,
 )
 from .module_onboarding import render_module_onboarding_checklist
-from .real_storage_write_dry_run import (
-    RealStorageWriteDryRunConfig,
-    RealStorageWriteDryRunReport,
-    RealStorageWriteItemResult,
-    arun_real_storage_write_dry_run,
-    run_real_storage_write_dry_run,
-    serialize_real_storage_write_dry_run_report,
-)
+try:
+    from .real_storage_write_dry_run import (
+        RealStorageWriteDryRunConfig,
+        RealStorageWriteDryRunReport,
+        RealStorageWriteItemResult,
+        arun_real_storage_write_dry_run,
+        run_real_storage_write_dry_run,
+        serialize_real_storage_write_dry_run_report,
+    )
+except ModuleNotFoundError as exc:
+    if exc.name != "numpy":
+        raise
+
+    RealStorageWriteDryRunConfig = None  # type: ignore[assignment]
+    RealStorageWriteDryRunReport = None  # type: ignore[assignment]
+    RealStorageWriteItemResult = None  # type: ignore[assignment]
+
+    def _real_storage_write_dry_run_unavailable(*args, _missing_exc=exc, **kwargs):
+        raise ModuleNotFoundError("real_storage_write_dry_run requires optional dependency numpy") from _missing_exc
+
+    arun_real_storage_write_dry_run = _real_storage_write_dry_run_unavailable
+    run_real_storage_write_dry_run = _real_storage_write_dry_run_unavailable
+    serialize_real_storage_write_dry_run_report = _real_storage_write_dry_run_unavailable
 from .prompt_selector import (
     PromptSelectionResult,
     PromptSelectorConfig,

@@ -1,0 +1,92 @@
+{
+  "embedding": {
+    "batch_size": 10,
+    "binding": "openai",
+    "cache_enabled": null,
+    "concurrency": 8,
+    "config_sources": {
+      "EMBEDDING_BATCH_NUM": "default",
+      "EMBEDDING_BINDING": "environment",
+      "EMBEDDING_BINDING_HOST": "environment",
+      "EMBEDDING_DIM": "environment",
+      "EMBEDDING_FUNC_MAX_ASYNC": "default",
+      "EMBEDDING_MODEL": "environment",
+      "EMBEDDING_SEND_DIM": "default",
+      "EMBEDDING_TIMEOUT": "default",
+      "embedding_context_limit": "environment"
+    },
+    "configured_dimension": 3072,
+    "context_limit": 8192,
+    "credential_configured": true,
+    "credential_fingerprint": "sha256:5948d8c736ea",
+    "credential_source": "environment:embedding_binding_credential",
+    "dimension_source": "environment",
+    "endpoint_host": "api.openai.com",
+    "extract_model_same_as_query_model": null,
+    "fake_model_detected": false,
+    "model": "text-embedding-3-large",
+    "no_proxy_covers_endpoint": false,
+    "proxy_detected": false,
+    "risks": [
+      "EMBEDDING_DIM is used for local vector validation, but EMBEDDING_SEND_DIM=false means the OpenAI API dimensions parameter is not sent."
+    ],
+    "sends_dimensions_parameter": false,
+    "summary_context_limit": 8192,
+    "timeout": 30
+  },
+  "llm": {
+    "batch_size": null,
+    "binding": "openai",
+    "cache_enabled": true,
+    "concurrency": 4,
+    "config_sources": {
+      "ENABLE_LLM_CACHE": "default",
+      "ENABLE_LLM_CACHE_FOR_EXTRACT": "environment",
+      "LLM_BINDING": "environment",
+      "LLM_BINDING_HOST": "environment",
+      "LLM_MODEL": "environment",
+      "LLM_TIMEOUT": "default",
+      "MAX_ASYNC": "environment",
+      "summary_context_limit": "default"
+    },
+    "configured_dimension": null,
+    "context_limit": null,
+    "credential_configured": true,
+    "credential_fingerprint": "sha256:5948d8c736ea",
+    "credential_source": "environment:llm_binding_credential",
+    "dimension_source": null,
+    "endpoint_host": "api.openai.com",
+    "extract_model_same_as_query_model": true,
+    "fake_model_detected": false,
+    "model": "gpt-5.4-mini",
+    "no_proxy_covers_endpoint": false,
+    "proxy_detected": false,
+    "risks": [
+      "Model access depends on the configured OpenAI account credential."
+    ],
+    "sends_dimensions_parameter": null,
+    "summary_context_limit": 1200,
+    "timeout": 180
+  },
+  "runtime_flags": {
+    "env_file_present": true,
+    "network_calls_executed": false,
+    "storage_writes_executed": false
+  },
+  "working_dirs": {
+    "dsl_canary_module_working_dir": "tempfile.mkdtemp(prefix='lightrag_dsl_ingestion_dsl_test_')",
+    "dsl_namespace": "dsl_test_knowledge_ingestion",
+    "dsl_readiness_working_dir": null,
+    "e2e_test_working_dir": "/Users/hufaofao/Projects/LightRAG/artifacts",
+    "fake_and_real_embedding_mix_detected": false,
+    "raw_and_dsl_share_graph_namespace": false,
+    "raw_and_dsl_share_working_dir": false,
+    "raw_upload_working_dir": "/Users/hufaofao/Projects/LightRAG/rag_storage",
+    "raw_workspace": "",
+    "risk_notes": [
+      "DSL canary/module creates temp working_dir when LIGHTRAG_DSL_INGEST_WORKING_DIR is unset.",
+      "If both raw and DSL are deliberately pointed at the same safe test path, fake 8-dim and real embedding vectors can collide."
+    ],
+    "runtime_confirmation_required": true
+  }
+}

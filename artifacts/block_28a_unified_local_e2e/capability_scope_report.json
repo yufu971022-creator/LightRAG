@@ -1,0 +1,8 @@
+{
+  "ac_generation_in_scope": false,
+  "code_agent_in_scope": false,
+  "functional_qa_in_scope": true,
+  "impact_analysis_in_scope": true,
+  "us_generation_in_scope": false,
+  "ux_generation_in_scope": false
+}

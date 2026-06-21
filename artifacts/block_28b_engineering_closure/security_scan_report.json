@@ -1,0 +1,9 @@
+{
+  "findings": [],
+  "internal_endpoint_hit_count": 0,
+  "local_index_file_count": 0,
+  "real_business_document_count": 0,
+  "scanned_file_count": 79,
+  "secret_hit_count": 0,
+  "user_absolute_path_hit_count": 0
+}

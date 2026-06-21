@@ -1,0 +1,6 @@
+Block 25A-1 entity type resolution smoke started
+Isolated PFSS type correction smoke completed
+Cleanup completed
+python3 -m lightrag_ext.us_dsl.scripts.run_entity_type_resolution_smoke --output-dir artifacts/block_25a1_entity_type_resolution --fixture-suite --fake-deterministic-embedding --isolated-pfss-smoke --cleanup
+python3 -c '<artifact field sampling>'
+.venv/bin/ruff check lightrag_ext/us_dsl/scripts/run_entity_type_resolution_smoke.py

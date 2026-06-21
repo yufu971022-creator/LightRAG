@@ -1,0 +1,12 @@
+{
+  "case_count": 3,
+  "direct_impact_recall": 1.0,
+  "duplicate_impact_count": 0.0,
+  "evidence_backed_path_ratio": 1.0,
+  "false_positive_impact_count": 0.0,
+  "indirect_impact_recall": 1.0,
+  "one_to_many_case_count": 1,
+  "one_to_many_degraded_count": 0,
+  "required_dimension_coverage": 1.0,
+  "tentative_impact_count": 3
+}

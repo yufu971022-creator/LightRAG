@@ -1,0 +1,51 @@
+COMMAND LOG - Block 24A-0
+mkdir -p artifacts/block_24a0_ingestion_baseline
+git status --short --branch > artifacts/block_24a0_ingestion_baseline/git_status_before.txt
+
+Generated artifacts with:
+python3 -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+
+Generated artifacts with:
+python3 -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+
+Validation commands executed:
+python3 -m py_compile lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py  # failed: sandbox blocked system pycache under ~/Library/Caches
+PYTHONPYCACHEPREFIX=/private/tmp/lightrag_pycache python3 -m py_compile lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+./scripts/test.sh lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+python3 -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection  # failed: system python lacked numpy due package __init__ import side effect
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection  # rerun after config_sources update
+ruff check lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py  # failed: ruff not on shell PATH
+.venv/bin/ruff check lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+
+Generated artifacts with:
+python3 -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+
+Block 24A-0.1 validation commands executed:
+PYTHONPYCACHEPREFIX=/private/tmp/lightrag_pycache python3 -m py_compile lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+./scripts/test.sh --collect-only lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+./scripts/test.sh lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+.venv/bin/ruff check lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+
+Generated artifacts with:
+python3 -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+
+Block 24A-0.1 final rerun after core_diff wording update:
+PYTHONPYCACHEPREFIX=/private/tmp/lightrag_pycache python3 -m py_compile lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+./scripts/test.sh lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+.venv/bin/ruff check lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+
+Generated artifacts with:
+python3 -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection
+git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+
+Block 24A-0.1 final rerun after credential wording cleanup:
+./scripts/test.sh lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+.venv/bin/ruff check lightrag_ext/us_dsl/ingestion_baseline_types.py lightrag_ext/us_dsl/ingestion_entry_inspector.py lightrag_ext/us_dsl/runtime_baseline_probe.py lightrag_ext/us_dsl/scripts/run_ingestion_baseline_inspection.py lightrag_ext/us_dsl/tests/test_ingestion_entry_inspector.py lightrag_ext/us_dsl/tests/test_runtime_baseline_probe.py
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_ingestion_baseline_inspection

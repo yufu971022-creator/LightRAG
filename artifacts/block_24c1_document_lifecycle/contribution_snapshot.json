@@ -1,0 +1,162 @@
+{
+  "raw_chunk_contributions": [
+    {
+      "active_flag": 1,
+      "chunk_id": "chunk:US-SYN-001:C1",
+      "contribution_id": "contrib:chunk:docver:US-SYN-001:v3:chunk:US-SYN-001:C1",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "0afa9b0d56b68dabbad6432f84167e9b6ed803c016dd630c0fd7a2fbac7e5409",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "chunk_id": "chunk:US-SYN-001:C2",
+      "contribution_id": "contrib:chunk:docver:US-SYN-001:v3:chunk:US-SYN-001:C2",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "0afdb9bd8b22fcf6df882884d1b46c243183d552daafbd655c7e8296c406e058",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "chunk_id": "chunk:US-SYN-001:C3",
+      "contribution_id": "contrib:chunk:docver:US-SYN-001:v3:chunk:US-SYN-001:C3",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "164bbe6df66393502f33d7f4c3cdfd12603953c7af799e4ba4dab56902e21aae",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "chunk_id": "chunk:US-SYN-002:C1",
+      "contribution_id": "contrib:chunk:docver:US-SYN-002:v1:chunk:US-SYN-002:C1",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-shared",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-002:v1",
+      "projection_hash": "ecdcbaea09691a96aa46085a6aec9500ef6a413fc0680741d6e5d9b79accaaf1",
+      "updated_at": "2026-06-20T13:32:16Z"
+    }
+  ],
+  "semantic_object_contributions": [
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-001:v3:obj:Closed",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "d63c8343c944f021df0162efd1537a82bd117284eaaec08a1199df95738af66f",
+      "semantic_object_id": "obj:Closed",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-001:v3:obj:InquiryProjectList",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "09cc620ebb2be56f622ed3551b92306b7c0d2866fa7e962e34ca426e8a33911a",
+      "semantic_object_id": "obj:InquiryProjectList",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-001:v3:obj:Open",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "89566e8d3bc5fb6e080f601a2eac853574672469682fa1c303480d4e32a67f94",
+      "semantic_object_id": "obj:Open",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-001:v3:obj:ProjectStatus",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "1052228c07152a29d50e45a3057d86364562987b1c773e624afa15566b8bbcd6",
+      "semantic_object_id": "obj:ProjectStatus",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-001:v3:obj:QuoteSubmission",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "ca2f9520f7d3168040baef52c3161fd7886896c01a7e337376b7b5cb07793108",
+      "semantic_object_id": "obj:QuoteSubmission",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-001:v3:obj:Suspended",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "f866e0596035b004102e8fb3a706250e1df11bbbd3ac3734270a2a32fb7709d3",
+      "semantic_object_id": "obj:Suspended",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-002:v1:obj:ProjectStatus",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-shared",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-002:v1",
+      "projection_hash": "75f25e065aeafcecf0f1df4028d1b6f7b0ccb1e437f4aea78fded79c13f7d5dc",
+      "semantic_object_id": "obj:ProjectStatus",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:obj:docver:US-SYN-002:v1:obj:SharedProjectReport",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-shared",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-002:v1",
+      "projection_hash": "c701b438014fb849e4f99e26227f63be4e6fd5276a598a65c12caaa266b89b8c",
+      "semantic_object_id": "obj:SharedProjectReport",
+      "updated_at": "2026-06-20T13:32:16Z"
+    }
+  ],
+  "semantic_relation_contributions": [
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:rel:docver:US-SYN-001:v3:rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-v3",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-001:v3",
+      "projection_hash": "9f107e64ff55790bd9d4d7874b0b35a72647879cdb86b2e0845216c431e8ccf5",
+      "semantic_relation_id": "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+      "updated_at": "2026-06-20T13:32:16Z"
+    },
+    {
+      "active_flag": 1,
+      "contribution_id": "contrib:rel:docver:US-SYN-002:v1:rel:SharedProjectReport:HasReportFilter:ProjectStatus",
+      "created_at": "2026-06-20T13:32:16Z",
+      "created_by_batch_id": "batch-24c1-shared",
+      "deactivated_by_batch_id": null,
+      "document_version_id": "docver:US-SYN-002:v1",
+      "projection_hash": "ec62a60d96ece60633d0433776801220899273067bf73e0cc3e94d7be939817a",
+      "semantic_relation_id": "rel:SharedProjectReport:HasReportFilter:ProjectStatus",
+      "updated_at": "2026-06-20T13:32:16Z"
+    }
+  ]
+}

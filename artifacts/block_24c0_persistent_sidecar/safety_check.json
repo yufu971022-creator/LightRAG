@@ -1,0 +1,12 @@
+{
+  "auto_write_routing_enabled": false,
+  "lightrag_core_modified": false,
+  "lightrag_storage_writes_executed": false,
+  "live_upload_behavior_changed": false,
+  "live_upload_hook_connected": false,
+  "neo4j_connected": false,
+  "production_database_connected": false,
+  "real_embedding_calls_executed": false,
+  "real_llm_calls_executed": false,
+  "sqlite_reference_backend_only": true
+}

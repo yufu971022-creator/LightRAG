@@ -1,0 +1,152 @@
+{
+  "artifacts_complete": true,
+  "block": "25A-1",
+  "cleanup_passed": true,
+  "contextual_resolver_implemented": true,
+  "generic_ner_type_policy_implemented": true,
+  "identity_migration": {
+    "duplicate_semantic_object_count": 0,
+    "merge_plan_count": 1,
+    "original_evidence_preserved": true,
+    "rekey_required_count": 1,
+    "relation_endpoint_rekey_count": 1,
+    "version_group_rekey_count": 1
+  },
+  "pfss_smoke": {
+    "duplicate_semantic_object_count": 0,
+    "edges": {
+      "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:callsbackendapi:urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default:25a1:default": {
+        "id": "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:callsbackendapi:urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default:25a1:default",
+        "src": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default",
+        "tgt": "urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default",
+        "type": "CallsBackendApi"
+      },
+      "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:hasreportfilter:urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default:25a1:default": {
+        "id": "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:hasreportfilter:urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default:25a1:default",
+        "src": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default",
+        "tgt": "urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default",
+        "type": "HasReportFilter"
+      },
+      "urn:pfss:rel:urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default:assignshandler:urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default:25a1:default": {
+        "id": "urn:pfss:rel:urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default:assignshandler:urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default:25a1:default",
+        "src": "urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default",
+        "tgt": "urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default",
+        "type": "AssignsHandler"
+      }
+    },
+    "endpoint_closure_passed": true,
+    "forbidden_relation_count": 0,
+    "generic_ner_block_issue_count": 1,
+    "generic_ner_node_count": 0,
+    "idempotency_passed": true,
+    "issue_object_written_to_pfss_count": 0,
+    "node_types": [
+      "FieldSpec",
+      "IntegrationEndpoint",
+      "ReportSpec",
+      "RolePermission",
+      "TaskRule"
+    ],
+    "nodes": {
+      "urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default": {
+        "id": "urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default",
+        "label": "供应商报价结果查询 API",
+        "original_entity_type": "Organization",
+        "type": "IntegrationEndpoint"
+      },
+      "urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default": {
+        "id": "urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default",
+        "label": "项目状态",
+        "original_entity_type": "Misc",
+        "type": "FieldSpec"
+      },
+      "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default": {
+        "id": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default",
+        "label": "询价项目列表",
+        "original_entity_type": "Location",
+        "type": "ReportSpec"
+      },
+      "urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default": {
+        "id": "urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default",
+        "label": "Current Handler",
+        "original_entity_type": "Person",
+        "type": "RolePermission"
+      },
+      "urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default": {
+        "id": "urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default",
+        "label": "待报价确认待办",
+        "original_entity_type": "Event",
+        "type": "TaskRule"
+      }
+    },
+    "pfss_edge_count": 3,
+    "pfss_node_count": 5
+  },
+  "product_entity_type_registry_implemented": true,
+  "relation_signature_registry_implemented": true,
+  "relation_signatures": {
+    "endpoint_closure_passed": true,
+    "invalid_signature_count": 1,
+    "invented_relation_count": 0,
+    "valid_signature_count": 3,
+    "validations": [
+      {
+        "issue_code": null,
+        "relation_type": "HasReportFilter",
+        "source_type": "ReportSpec",
+        "target_type": "FieldSpec",
+        "valid": true
+      },
+      {
+        "issue_code": null,
+        "relation_type": "AssignsHandler",
+        "source_type": "TaskRule",
+        "target_type": "RolePermission",
+        "valid": true
+      },
+      {
+        "issue_code": null,
+        "relation_type": "CallsBackendApi",
+        "source_type": "ReportSpec",
+        "target_type": "IntegrationEndpoint",
+        "valid": true
+      },
+      {
+        "issue_code": "INVALID_RELATION_SIGNATURE",
+        "relation_type": "HasReportFilter",
+        "source_type": "ReportSpec",
+        "target_type": "Location",
+        "valid": false
+      }
+    ]
+  },
+  "resolution_fixtures": {
+    "api_resolved_type": "IntegrationEndpoint",
+    "conflict_blocked": true,
+    "generic_location_pfss_written": false,
+    "handler_resolved_type": "RolePermission",
+    "inquiry_project_list_blocked_from_pfss": false,
+    "inquiry_project_list_original_type": "Location",
+    "inquiry_project_list_resolved_type": "ReportSpec",
+    "low_confidence_auto_accepted": false,
+    "migration_resolved_type": "DataMigrationSpec",
+    "project_status_resolved_type": "FieldSpec",
+    "task_resolved_type": "TaskRule"
+  },
+  "safety": {
+    "auto_write_routing_enabled": false,
+    "lightrag_core_modified": false,
+    "live_query_behavior_changed": false,
+    "live_upload_behavior_changed": false,
+    "live_upload_hook_connected": false,
+    "neo4j_connected": false,
+    "original_extract_entities_called": false,
+    "production_database_connected": false,
+    "production_graph_rewrite_executed": false,
+    "real_embedding_calls_executed": false,
+    "real_llm_calls_executed": false,
+    "term_normalization_v2_bypassed": false
+  },
+  "type_migration_planner_implemented": true,
+  "type_resolution_policy_implemented": true
+}

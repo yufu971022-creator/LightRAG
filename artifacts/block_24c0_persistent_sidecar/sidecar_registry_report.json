@@ -1,0 +1,185 @@
+{
+  "block": "24C-0",
+  "foreign_keys_enabled": true,
+  "quality": {
+    "graph_object_trace_to_evidence_passed": true,
+    "new_batch_no_business_duplication": true,
+    "referential_integrity_passed": true,
+    "rollback_manifest_readback_passed": true,
+    "same_payload_idempotency_passed": true,
+    "transaction_rollback_passed": true,
+    "version_group_readback_passed": true,
+    "write_readback_counts_match": true
+  },
+  "readback_validator_implemented": true,
+  "record_counts": {
+    "chunk_text_unit_links_count": 9,
+    "document_versions_count": 4,
+    "documents_count": 4,
+    "evidence_mappings_count": 6,
+    "graph_object_mappings_count": 6,
+    "ingestion_batches_count": 6,
+    "ingestion_issues_count": 2,
+    "raw_chunks_count": 6,
+    "rollback_records_count": 9,
+    "semantic_objects_count": 4,
+    "semantic_relations_count": 2,
+    "source_text_units_count": 9,
+    "term_mappings_count": 1,
+    "version_groups_count": 2,
+    "version_members_count": 2
+  },
+  "repository_abstraction_implemented": true,
+  "results": [
+    {
+      "batch_id": "batch-5ca1e34a514d24e8",
+      "document_id": "doc-24c0-dsl-full",
+      "document_version_id": "docver-f3bb8110a565b81a",
+      "error": null,
+      "record_counts": {
+        "chunk_text_unit_links_count": 3,
+        "document_versions_count": 1,
+        "documents_count": 1,
+        "evidence_mappings_count": 3,
+        "graph_object_mappings_count": 3,
+        "ingestion_batches_count": 1,
+        "ingestion_issues_count": 0,
+        "raw_chunks_count": 2,
+        "rollback_records_count": 3,
+        "semantic_objects_count": 2,
+        "semantic_relations_count": 1,
+        "source_text_units_count": 3,
+        "term_mappings_count": 1,
+        "version_groups_count": 2,
+        "version_members_count": 1
+      },
+      "referential_integrity": {
+        "foreign_key_check_passed": true,
+        "foreign_key_violations": [],
+        "orphan_relation_count": 0,
+        "passed": true
+      },
+      "semantic_route": "DSL_FULL",
+      "status": "COMPLETED",
+      "trace_id": "trace-24c0-dsl-full"
+    },
+    {
+      "batch_id": "batch-825d785066afa635",
+      "document_id": "doc-24c0-dsl-partial",
+      "document_version_id": "docver-a6cfaa2ddef48fff",
+      "error": null,
+      "record_counts": {
+        "chunk_text_unit_links_count": 6,
+        "document_versions_count": 2,
+        "documents_count": 2,
+        "evidence_mappings_count": 6,
+        "graph_object_mappings_count": 6,
+        "ingestion_batches_count": 2,
+        "ingestion_issues_count": 2,
+        "raw_chunks_count": 4,
+        "rollback_records_count": 6,
+        "semantic_objects_count": 4,
+        "semantic_relations_count": 2,
+        "source_text_units_count": 6,
+        "term_mappings_count": 1,
+        "version_groups_count": 2,
+        "version_members_count": 2
+      },
+      "referential_integrity": {
+        "foreign_key_check_passed": true,
+        "foreign_key_violations": [],
+        "orphan_relation_count": 0,
+        "passed": true
+      },
+      "semantic_route": "DSL_PARTIAL",
+      "status": "COMPLETED",
+      "trace_id": "trace-24c0-dsl-partial"
+    },
+    {
+      "batch_id": "batch-424819ca61cb549c",
+      "document_id": "doc-24c0-raw-only",
+      "document_version_id": "docver-ec7e582d8eac7718",
+      "error": null,
+      "record_counts": {
+        "chunk_text_unit_links_count": 9,
+        "document_versions_count": 3,
+        "documents_count": 3,
+        "evidence_mappings_count": 6,
+        "graph_object_mappings_count": 6,
+        "ingestion_batches_count": 3,
+        "ingestion_issues_count": 2,
+        "raw_chunks_count": 6,
+        "rollback_records_count": 6,
+        "semantic_objects_count": 4,
+        "semantic_relations_count": 2,
+        "source_text_units_count": 9,
+        "term_mappings_count": 1,
+        "version_groups_count": 2,
+        "version_members_count": 2
+      },
+      "referential_integrity": {
+        "foreign_key_check_passed": true,
+        "foreign_key_violations": [],
+        "orphan_relation_count": 0,
+        "passed": true
+      },
+      "semantic_route": "RAW_ONLY",
+      "status": "COMPLETED",
+      "trace_id": "trace-24c0-raw-only"
+    },
+    {
+      "batch_id": "batch-89aaa3b13ece6f03",
+      "document_id": "doc-24c0-parse-failed",
+      "document_version_id": "docver-9dfd6eefc3939ded",
+      "error": null,
+      "record_counts": {
+        "chunk_text_unit_links_count": 9,
+        "document_versions_count": 4,
+        "documents_count": 4,
+        "evidence_mappings_count": 6,
+        "graph_object_mappings_count": 6,
+        "ingestion_batches_count": 4,
+        "ingestion_issues_count": 2,
+        "raw_chunks_count": 6,
+        "rollback_records_count": 6,
+        "semantic_objects_count": 4,
+        "semantic_relations_count": 2,
+        "source_text_units_count": 9,
+        "term_mappings_count": 1,
+        "version_groups_count": 2,
+        "version_members_count": 2
+      },
+      "referential_integrity": {
+        "foreign_key_check_passed": true,
+        "foreign_key_violations": [],
+        "orphan_relation_count": 0,
+        "passed": true
+      },
+      "semantic_route": "PARSE_FAILED",
+      "status": "FAILED",
+      "trace_id": "trace-24c0-parse-failed"
+    }
+  ],
+  "route_fixtures": {
+    "dsl_full_passed": true,
+    "dsl_partial_passed": true,
+    "failure_injection_passed": true,
+    "parse_failed_passed": true,
+    "raw_only_passed": true
+  },
+  "safety_check": {
+    "auto_write_routing_enabled": false,
+    "lightrag_core_modified": false,
+    "lightrag_storage_writes_executed": false,
+    "live_upload_behavior_changed": false,
+    "live_upload_hook_connected": false,
+    "neo4j_connected": false,
+    "production_database_connected": false,
+    "real_embedding_calls_executed": false,
+    "real_llm_calls_executed": false,
+    "sqlite_reference_backend_only": true
+  },
+  "schema_table_count": 16,
+  "sqlite_reference_backend_implemented": true,
+  "transaction_support_implemented": true
+}

@@ -1,0 +1,23 @@
+flowchart TD
+    M[Module Manifest] --> V[Input / Gold Validation]
+    V --> S[Freeze Policy and Runtime Versions]
+
+    S --> A[Baseline: Original LightRAG]
+    S --> B[Candidate: DSL-aware LightRAG]
+
+    A --> AI[Isolated Raw Ingestion]
+    B --> BI[Isolated DSL-aware Ingestion]
+
+    AI --> AQ[Baseline Retrieval]
+    BI --> BQ[Trusted Hybrid Retrieval]
+
+    AQ --> AM[Effect / Safety / Performance Metrics]
+    BQ --> BM[Effect / Safety / Performance Metrics]
+
+    AM --> C[Per-case / Per-module Comparator]
+    BM --> C
+
+    C --> H[Holdout and 1-to-N Gates]
+    H --> G[Primary Gate Decision]
+
+    NOTE[Manifest-driven; no module-specific runtime branches]

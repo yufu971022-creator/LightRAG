@@ -1,0 +1,32 @@
+[
+  {
+    "final_state": "QUALITY_GATE_PASSED",
+    "functional_qa_executed": true,
+    "impact_analysis_executed": true,
+    "quality_gate_checked": true,
+    "query_id": "QA-CONFIRMED",
+    "text_only_fallback_passed": true,
+    "trusted_context_pack_created": true,
+    "version_warning_passed": true
+  },
+  {
+    "final_state": "QUALITY_GATE_PASSED",
+    "functional_qa_executed": true,
+    "impact_analysis_executed": true,
+    "quality_gate_checked": true,
+    "query_id": "QA-VERSION",
+    "text_only_fallback_passed": true,
+    "trusted_context_pack_created": true,
+    "version_warning_passed": true
+  },
+  {
+    "final_state": "QUALITY_GATE_PASSED",
+    "functional_qa_executed": true,
+    "impact_analysis_executed": true,
+    "quality_gate_checked": true,
+    "query_id": "QA-TEXT",
+    "text_only_fallback_passed": true,
+    "trusted_context_pack_created": true,
+    "version_warning_passed": true
+  }
+]

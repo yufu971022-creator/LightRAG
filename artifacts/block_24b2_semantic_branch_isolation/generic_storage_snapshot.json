@@ -1,0 +1,10 @@
+{
+  "edge_count": 0,
+  "edge_ids": [],
+  "namespace": "generic_test_graph",
+  "node_count": 1,
+  "node_ids": [
+    "generic:Synthetic Generic Topic"
+  ],
+  "workspace": "block24b2_generic_test"
+}

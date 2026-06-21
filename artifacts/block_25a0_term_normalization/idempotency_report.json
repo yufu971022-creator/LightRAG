@@ -1,0 +1,5 @@
+{
+  "idempotency_passed": true,
+  "identity_generation_deterministic": true,
+  "sidecar_alias_records_are_idempotent": true
+}

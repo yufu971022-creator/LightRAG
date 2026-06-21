@@ -1,0 +1,61 @@
+{
+  "candidate_scores": [
+    {
+      "candidate_id": "pfss-path-main",
+      "channel": "PFSS_PATH",
+      "fused_score": 0.027770492,
+      "rank": 1,
+      "reasons": [
+        "rrf=0.023770",
+        "channel_weight=1.45",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ]
+    },
+    {
+      "candidate_id": "pfss-relation-main",
+      "channel": "PFSS_RELATION",
+      "fused_score": 0.026131148,
+      "rank": 1,
+      "reasons": [
+        "rrf=0.022131",
+        "channel_weight=1.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ]
+    },
+    {
+      "candidate_id": "pfss-entity-main",
+      "channel": "PFSS_ENTITY",
+      "fused_score": 0.024491803,
+      "rank": 1,
+      "reasons": [
+        "rrf=0.020492",
+        "channel_weight=1.25",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ]
+    },
+    {
+      "candidate_id": "generic-background",
+      "channel": "GENERIC_GRAPH",
+      "fused_score": 0.005129032,
+      "rank": 2,
+      "reasons": [
+        "rrf=0.001129",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ]
+    }
+  ],
+  "deterministic_ranking_passed": true,
+  "direct_raw_score_addition_used": false,
+  "domain_match_boost_applied": true,
+  "entity_name_specific_weight_rule_count": 0,
+  "feature_match_boost_applied": true,
+  "fusion_method": "WEIGHTED_RRF",
+  "issue_factual_weight": 0.0,
+  "missing_evidence_penalty_visible": false,
+  "version_conflict_penalty_visible": false
+}

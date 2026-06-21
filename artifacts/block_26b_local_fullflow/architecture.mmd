@@ -1,0 +1,22 @@
+flowchart TD
+    F[One-time Local US Discovery] --> I[Inventory / Role / Dedup]
+    I --> M[Auto-generated Local Manifest]
+
+    M --> B[Original LightRAG Baseline]
+    M --> D[Complete DSL-aware Pipeline]
+
+    D --> P[Parse / Raw Evidence / DSL Compile]
+    P --> G[PFSS / Issue / Sidecar / Lifecycle]
+    G --> N[Term / Type / Version]
+    N --> H[Hybrid Retrieval / Trusted Context]
+
+    B --> E[A/B Metrics]
+    H --> E
+
+    E --> S[Safety / Effectiveness / Performance]
+    S --> L[Local Development Gate]
+
+    L -->|Pass or Pass with Gaps| NEXT[Allow 27A / 27B / 28 Local Development]
+    L --> PEND[Keep Multi-module Production Gate Pending]
+
+    NOTE[No Intranet Migration in This Block]

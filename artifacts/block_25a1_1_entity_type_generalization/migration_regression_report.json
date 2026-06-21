@@ -1,0 +1,52 @@
+{
+  "evidence_preserved": true,
+  "migration_plan_only": true,
+  "plan": {
+    "affected_evidence_mapping_ids": [
+      "evidence-zeta"
+    ],
+    "affected_relation_ids": [
+      "rel-zeta-filter"
+    ],
+    "affected_version_group_keys": [
+      "vg:old",
+      "vg:global|MOD-GENERAL|MonitoringReport|ZetaFeature|ReportSpec|zetalist|default"
+    ],
+    "document_versions_affected": [
+      "docver-generalization"
+    ],
+    "entity_vector_rebuild_required": true,
+    "merge_target_id": null,
+    "new_semantic_object_id": "urn:pfss:mod-general:monitoringreport:zetafeature:reportspec:zetalist:default",
+    "new_type": "ReportSpec",
+    "old_semantic_object_id": "urn:pfss:old:Location:zeta-list",
+    "old_type": "Location",
+    "pfss_delete_plan": [
+      {
+        "delete_node": "urn:pfss:old:Location:zeta-list"
+      }
+    ],
+    "pfss_upsert_plan": [
+      {
+        "type": "ReportSpec",
+        "upsert_node": "urn:pfss:mod-general:monitoringreport:zetafeature:reportspec:zetalist:default"
+      }
+    ],
+    "relation_vector_rebuild_required": true,
+    "risk_level": "LOW",
+    "sidecar_updates": [
+      {
+        "field": "resolved_entity_type",
+        "value": "ReportSpec"
+      },
+      {
+        "field": "semantic_object_id",
+        "from": "urn:pfss:old:Location:zeta-list",
+        "to": "urn:pfss:mod-general:monitoringreport:zetafeature:reportspec:zetalist:default"
+      }
+    ]
+  },
+  "production_graph_rewrite_executed": false,
+  "rekey_required": true,
+  "relation_endpoint_rekey_count": 1
+}

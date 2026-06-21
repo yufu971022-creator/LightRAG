@@ -1,0 +1,83 @@
+{
+  "gate_name": "TERM_IDENTITY",
+  "passed": true,
+  "results": [
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "TERM_IDENTITY",
+      "metrics": {
+        "candidate_alias_as_fact_count": 0,
+        "incorrect_term_merge_count": 0,
+        "term_identity_split_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "TERM_IDENTITY",
+      "metrics": {
+        "candidate_alias_as_fact_count": 0,
+        "incorrect_term_merge_count": 0,
+        "term_identity_split_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "TERM_IDENTITY",
+      "metrics": {
+        "candidate_alias_as_fact_count": 0,
+        "incorrect_term_merge_count": 0,
+        "term_identity_split_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "TERM_IDENTITY",
+      "metrics": {
+        "candidate_alias_as_fact_count": 0,
+        "incorrect_term_merge_count": 0,
+        "term_identity_split_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "TERM_IDENTITY",
+      "metrics": {
+        "candidate_alias_as_fact_count": 0,
+        "incorrect_term_merge_count": 0,
+        "term_identity_split_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "TERM_IDENTITY",
+      "metrics": {
+        "candidate_alias_as_fact_count": 0,
+        "incorrect_term_merge_count": 0,
+        "term_identity_split_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "TERM_IDENTITY",
+      "metrics": {
+        "candidate_alias_as_fact_count": 0,
+        "incorrect_term_merge_count": 0,
+        "term_identity_split_count": 0
+      },
+      "passed": true
+    }
+  ]
+}

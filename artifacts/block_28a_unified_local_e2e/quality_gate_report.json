@@ -1,0 +1,19 @@
+{
+  "fact_safety": {
+    "candidate_as_confirmed_count": 0.0,
+    "generic_ner_fact_hit_count": 0.0,
+    "generic_only_as_confirmed_count": 0.0,
+    "historical_as_current_count": 0.0,
+    "info_only_as_fact_count": 0.0,
+    "invalid_citation_count": 0.0,
+    "issue_as_fact_count": 0.0,
+    "unsupported_factual_path_count": 0.0
+  },
+  "repair": {
+    "initial_fail_count": 0,
+    "max_attempts_observed": 1,
+    "repair_planned_count": 0,
+    "repair_success_count": 0,
+    "second_failure_count": 0
+  }
+}

@@ -1,0 +1,17 @@
+module_code,system_name,domain_code,feature_key,object_type,source_term,canonical_term,source_language,canonical_language,synonym_type,confidence,status,requires_scope,effective_from,effective_to,owner,comments
+MOD-PRODUCT,CoreSystem,Integration,PaymentFeature,FieldSpec,SWIFTCODE,Swift Code,en,en,WHITESPACE_VARIANT,0.99,CONFIRMED,false,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Integration,PaymentFeature,FieldSpec,SWIFT CODE,Swift Code,en,en,WHITESPACE_VARIANT,0.99,CONFIRMED,false,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Integration,PaymentFeature,FieldSpec,swift-code,Swift Code,en,en,PUNCTUATION_VARIANT,0.98,CONFIRMED,false,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Integration,PaymentFeature,FieldSpec,swift_code,Swift Code,en,en,PUNCTUATION_VARIANT,0.98,CONFIRMED,false,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Workflow,HandlerFeature,RolePermission,当前处理人,Current Handler,zh,en,TRANSLATION,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Workflow,HandlerFeature,RolePermission,Current Handler,Current Handler,en,en,CASE_VARIANT,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Ledger,BankStatusFeature,FieldSpec,状态,Bank Status,zh,en,TRANSLATION,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Ledger,BankStatusFeature,FieldSpec,Status,Bank Status,en,en,BUSINESS_ALIAS,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Ledger,BankStatusFeature,FieldSpec,银行状态,Bank Status,zh,en,TRANSLATION,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,MonitoringReport,MonitoringSearch,ReportSpec,查询,Search,zh,en,TRANSLATION,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,MonitoringReport,MonitoringSearch,ReportSpec,Search,Search,en,en,CASE_VARIANT,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Ledger,BankStatusFeature,FieldSpec,Bank Status,Bank Status,en,en,CASE_VARIANT,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Workflow,ApprovalFeature,FieldSpec,Approval Status,Approval Status,en,en,CASE_VARIANT,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Workflow,TaskFeature,FieldSpec,Task Status,Task Status,en,en,CASE_VARIANT,1.0,CONFIRMED,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Workflow,CandidateFeature,FieldSpec,Handler,Current Handler,en,en,BUSINESS_ALIAS,0.8,CANDIDATE,true,,,fixture,25A-0 fixture
+MOD-PRODUCT,CoreSystem,Workflow,RejectedFeature,FieldSpec,Owner,Current Handler,en,en,BUSINESS_ALIAS,0.4,REJECTED,true,,,fixture,25A-0 fixture

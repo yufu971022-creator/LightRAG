@@ -1,0 +1,22 @@
+{
+  "entity_name_specific_weight_rule_count": 0,
+  "findings": [],
+  "fixture_name_runtime_coupling_count": 0,
+  "module_specific_channel_weight_count": 0,
+  "runtime_business_hardcode_count": 0,
+  "scanned_files": [
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/evidence_path_validator.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/generic_graph_retrieval_adapter.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/hybrid_retrieval_fallback.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/hybrid_retrieval_service.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/hybrid_retrieval_types.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/issue_sidecar_retrieval_adapter.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/pfss_retrieval_adapter.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/query_semantic_profile.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/raw_text_retrieval_adapter.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/retrieval_candidate_deduplicator.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/retrieval_candidate_normalizer.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/trust_aware_rank_fusion.py",
+    "/Users/hufaofao/Projects/LightRAG/lightrag_ext/us_dsl/trusted_context_builder.py"
+  ]
+}

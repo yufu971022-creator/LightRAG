@@ -1,0 +1,137 @@
+{
+  "conflict_blocked": true,
+  "decision": {
+    "blocked_from_pfss": true,
+    "candidate_types": [
+      {
+        "candidate_type": "FeatureCatalog",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "confirmed_config_type"
+        ],
+        "score": 0.98,
+        "source": "CONFIRMED_CONFIG"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "confirmed_config_type"
+        ],
+        "score": 0.98,
+        "source": "CONFIRMED_CONFIG"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "query_list_report_structure"
+        ],
+        "score": 0.95,
+        "source": "STRUCTURAL_PARSER"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "monitoring_report_query_context"
+        ],
+        "score": 0.9,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "FeatureCatalog",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Misc",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.98,
+    "conflict_types": [
+      "FeatureCatalog",
+      "ReportSpec"
+    ],
+    "decision": "CONFLICT",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Misc",
+    "reason_codes": [
+      "highest_priority_type_conflict"
+    ],
+    "requires_review": true,
+    "resolved_entity_type": null
+  }
+}

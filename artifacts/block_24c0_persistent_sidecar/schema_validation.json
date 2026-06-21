@@ -1,0 +1,8 @@
+{
+  "created_table_count": 16,
+  "foreign_keys_enabled": true,
+  "missing_tables": [],
+  "passed": true,
+  "required_table_count": 16,
+  "schema_sql_artifact": "artifacts/block_24c0_persistent_sidecar/sidecar_schema.sql"
+}

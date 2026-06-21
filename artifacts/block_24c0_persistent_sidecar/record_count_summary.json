@@ -1,0 +1,17 @@
+{
+  "chunk_text_unit_links_count": 9,
+  "document_versions_count": 4,
+  "documents_count": 4,
+  "evidence_mappings_count": 6,
+  "graph_object_mappings_count": 6,
+  "ingestion_batches_count": 6,
+  "ingestion_issues_count": 2,
+  "raw_chunks_count": 6,
+  "rollback_records_count": 9,
+  "semantic_objects_count": 4,
+  "semantic_relations_count": 2,
+  "source_text_units_count": 9,
+  "term_mappings_count": 1,
+  "version_groups_count": 2,
+  "version_members_count": 2
+}

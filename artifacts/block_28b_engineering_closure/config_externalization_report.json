@@ -1,0 +1,27 @@
+{
+  "config_externalized": true,
+  "default_placeholders": [
+    "<<MODULE_MANIFEST_PATH>>",
+    "<<STORAGE_BACKEND>>"
+  ],
+  "precedence": [
+    "cli",
+    "env",
+    "config_file",
+    "default"
+  ],
+  "secrets_masked": true,
+  "templates": [
+    "models.yaml.example",
+    "module_manifest.json.example",
+    "observability.yaml.example",
+    "ontology.yaml.example",
+    "quality_gate.yaml.example",
+    "retrieval.yaml.example",
+    "routing.yaml.example",
+    "runtime.yaml.example",
+    "storage.yaml.example",
+    "term_registry.csv.example",
+    "version_policy.yaml.example"
+  ]
+}

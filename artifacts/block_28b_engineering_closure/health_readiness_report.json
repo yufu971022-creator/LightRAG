@@ -1,0 +1,63 @@
+{
+  "default_readiness": {
+    "checks": {
+      "config_valid": false,
+      "embedding_dimension_consistent": true,
+      "fusion_policy_valid": true,
+      "health_ok": true,
+      "model_credentials_configured": true,
+      "namespace_safe": true,
+      "no_placeholder_config": false,
+      "ontology_version_compatible": true,
+      "quality_gate_loaded": true,
+      "required_flags_enabled": true,
+      "sidecar_schema_compatible": true,
+      "storage_capability_validated": false,
+      "term_registry_valid": true,
+      "version_policy_valid": true
+    },
+    "details": {
+      "flag_violations": [],
+      "placeholders": [
+        "<<MODULE_MANIFEST_PATH>>",
+        "<<STORAGE_BACKEND>>"
+      ]
+    },
+    "ready": false,
+    "reason_codes": [
+      "UNREPLACED_PLACEHOLDER_CONFIG"
+    ],
+    "status": "NOT_READY_CONFIG"
+  },
+  "health": {
+    "external_services_checked": false,
+    "process_alive": true,
+    "production_disabled": false,
+    "status": "HEALTHY"
+  },
+  "sanitized_readiness": {
+    "checks": {
+      "config_valid": true,
+      "embedding_dimension_consistent": true,
+      "fusion_policy_valid": true,
+      "health_ok": true,
+      "model_credentials_configured": true,
+      "namespace_safe": true,
+      "no_placeholder_config": true,
+      "ontology_version_compatible": true,
+      "quality_gate_loaded": true,
+      "required_flags_enabled": true,
+      "sidecar_schema_compatible": true,
+      "storage_capability_validated": true,
+      "term_registry_valid": true,
+      "version_policy_valid": true
+    },
+    "details": {
+      "flag_violations": [],
+      "placeholders": []
+    },
+    "ready": true,
+    "reason_codes": [],
+    "status": "READY"
+  }
+}

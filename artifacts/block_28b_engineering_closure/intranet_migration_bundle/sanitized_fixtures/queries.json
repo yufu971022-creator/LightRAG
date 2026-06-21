@@ -1,0 +1,9 @@
+{
+  "queries": [
+    {
+      "query_id": "QA-SYN-1",
+      "query_text": "Summarize synthetic behavior.",
+      "scenario": "ONE_TO_MANY"
+    }
+  ]
+}

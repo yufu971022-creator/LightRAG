@@ -1,0 +1,11 @@
+{
+  "required_count": 20,
+  "existing_count": 20,
+  "missing_files": [],
+  "json_parse_failures": [],
+  "missing_report_fields": [],
+  "architecture_present": true,
+  "safety_report_present": true,
+  "core_diff_report_present": true,
+  "artifacts_complete": true
+}

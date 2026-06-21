@@ -1,0 +1,54 @@
+{
+  "bank_status": {
+    "ambiguities": [],
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "Bank Status"
+    ],
+    "confirmed_aliases": [
+      "Bank Status",
+      "Status",
+      "状态",
+      "银行状态"
+    ],
+    "live_query_connected": false,
+    "original_terms": [
+      "Bank Status"
+    ],
+    "rejected_aliases": [],
+    "scope_used": "*|MOD-PRODUCT|Ledger|BankStatusFeature|FieldSpec"
+  },
+  "handler": {
+    "ambiguities": [],
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "Current Handler"
+    ],
+    "confirmed_aliases": [
+      "Current Handler",
+      "当前处理人"
+    ],
+    "live_query_connected": false,
+    "original_terms": [
+      "Current Handler"
+    ],
+    "rejected_aliases": [],
+    "scope_used": "*|MOD-PRODUCT|Workflow|HandlerFeature|RolePermission"
+  },
+  "rejected_scope": {
+    "ambiguities": [],
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "Owner"
+    ],
+    "confirmed_aliases": [],
+    "live_query_connected": false,
+    "original_terms": [
+      "Owner"
+    ],
+    "rejected_aliases": [
+      "Owner"
+    ],
+    "scope_used": "*|MOD-PRODUCT|Workflow|RejectedFeature|FieldSpec"
+  }
+}

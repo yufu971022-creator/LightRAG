@@ -1,0 +1,260 @@
+{
+  "generic_only_low_trust": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "current",
+      "impact",
+      "rule"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "current rule impact",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "FACT_QA",
+    "version_intent": "CURRENT"
+  },
+  "historical_compare": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "compare",
+      "historical"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "historical compare",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "FACT_QA",
+    "version_intent": "COMPARE"
+  },
+  "hybrid_ready": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "current",
+      "impact",
+      "rule"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "current rule impact",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "FACT_QA",
+    "version_intent": "CURRENT"
+  },
+  "impact_path": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "impact",
+      "path"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "impact path",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "IMPACT_ANALYSIS",
+    "version_intent": "UNSPECIFIED"
+  },
+  "insufficient_evidence": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "current",
+      "impact",
+      "rule"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "current rule impact",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "FACT_QA",
+    "version_intent": "CURRENT"
+  },
+  "issue_only": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "review",
+      "warnings"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "review warnings",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "FACT_QA",
+    "version_intent": "UNSPECIFIED"
+  },
+  "strict_scope_empty": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "current",
+      "impact",
+      "rule"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "other-domain"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "current rule impact",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "STRICT_SCOPE_EXPLICIT"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": true,
+    "task_type": "FACT_QA",
+    "version_intent": "CURRENT"
+  },
+  "text_only_fallback": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "current",
+      "impact",
+      "rule"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "current rule impact",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "FACT_QA",
+    "version_intent": "CURRENT"
+  },
+  "version_warning": {
+    "candidate_aliases": [],
+    "canonical_terms": [
+      "compare",
+      "historical",
+      "rule"
+    ],
+    "confirmed_aliases": [],
+    "domain_hints": [
+      "domain-a"
+    ],
+    "feature_hints": [
+      "feature-a"
+    ],
+    "object_type_hints": [
+      "rule"
+    ],
+    "query_text": "compare historical rule",
+    "reason_codes": [
+      "TOKEN_FALLBACK_USED",
+      "VERSION_INTENT_REUSED",
+      "SCOPE_HINT_NOT_FILTER"
+    ],
+    "rejected_aliases": [],
+    "scope_key": null,
+    "strict_scope": false,
+    "task_type": "FACT_QA",
+    "version_intent": "COMPARE"
+  }
+}

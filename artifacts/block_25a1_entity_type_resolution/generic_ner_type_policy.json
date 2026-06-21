@@ -1,0 +1,23 @@
+{
+  "default_generic_disposition": "REQUIRES_RESOLUTION",
+  "default_literal_disposition": "IGNORE_AS_LITERAL",
+  "generic_types": [
+    "Event",
+    "GPE",
+    "LOC",
+    "Location",
+    "Misc",
+    "ORG",
+    "Organization",
+    "PER",
+    "Person",
+    "Product"
+  ],
+  "literal_types": [
+    "Date",
+    "Money",
+    "Number",
+    "Percent",
+    "Time"
+  ]
+}

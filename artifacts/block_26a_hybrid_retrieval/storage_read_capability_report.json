@@ -1,0 +1,12 @@
+{
+  "neo4j_connected": false,
+  "production_storage_connected": false,
+  "read_capability": [
+    "raw_text",
+    "pfss_graph_projection",
+    "generic_graph_projection",
+    "issue_sidecar"
+  ],
+  "storage_mode": "in_memory_fixture_read_only",
+  "writes_executed": false
+}

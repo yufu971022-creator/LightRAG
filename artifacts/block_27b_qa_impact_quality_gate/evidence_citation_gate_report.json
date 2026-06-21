@@ -1,0 +1,90 @@
+{
+  "gate_name": "EVIDENCE_CITATION",
+  "passed": true,
+  "results": [
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "EVIDENCE_CITATION",
+      "metrics": {
+        "invalid_citation_count": 0,
+        "missing_citation_count": 0,
+        "unsupported_fact_count": 0,
+        "unsupported_factual_path_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "EVIDENCE_CITATION",
+      "metrics": {
+        "invalid_citation_count": 0,
+        "missing_citation_count": 0,
+        "unsupported_fact_count": 0,
+        "unsupported_factual_path_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "EVIDENCE_CITATION",
+      "metrics": {
+        "invalid_citation_count": 0,
+        "missing_citation_count": 0,
+        "unsupported_fact_count": 0,
+        "unsupported_factual_path_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "EVIDENCE_CITATION",
+      "metrics": {
+        "invalid_citation_count": 0,
+        "missing_citation_count": 0,
+        "unsupported_fact_count": 0,
+        "unsupported_factual_path_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "EVIDENCE_CITATION",
+      "metrics": {
+        "invalid_citation_count": 0,
+        "missing_citation_count": 0,
+        "unsupported_fact_count": 0,
+        "unsupported_factual_path_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "EVIDENCE_CITATION",
+      "metrics": {
+        "invalid_citation_count": 0,
+        "missing_citation_count": 0,
+        "unsupported_fact_count": 0,
+        "unsupported_factual_path_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "EVIDENCE_CITATION",
+      "metrics": {
+        "invalid_citation_count": 0,
+        "missing_citation_count": 0,
+        "unsupported_fact_count": 0,
+        "unsupported_factual_path_count": 0
+      },
+      "passed": true
+    }
+  ]
+}

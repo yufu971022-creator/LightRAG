@@ -1,0 +1,5 @@
+{
+  "idempotency_passed": true,
+  "isolated_migration_idempotent": true,
+  "resolver_deterministic": true
+}

@@ -1,0 +1,6 @@
+{
+  "cleanup_passed": true,
+  "existed_before_cleanup": true,
+  "exists_after_cleanup": true,
+  "workspace_root": "artifacts/block_24b2_semantic_branch_isolation/workspaces"
+}

@@ -1,0 +1,2 @@
+# Requirements snapshot
+pyproject.toml: sha256=dcefdf70a6e3407de371870f5119cd7a3024e7b27b396a73d281e5540ced4ca6

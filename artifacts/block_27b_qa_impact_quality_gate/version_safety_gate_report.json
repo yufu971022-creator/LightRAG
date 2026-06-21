@@ -1,0 +1,90 @@
+{
+  "gate_name": "VERSION_SAFETY",
+  "passed": true,
+  "results": [
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "VERSION_SAFETY",
+      "metrics": {
+        "historical_as_current_count": 0,
+        "missing_version_warning_count": 0,
+        "unsupported_supersedes_count": 0,
+        "version_hard_judgment_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "VERSION_SAFETY",
+      "metrics": {
+        "historical_as_current_count": 0,
+        "missing_version_warning_count": 0,
+        "unsupported_supersedes_count": 0,
+        "version_hard_judgment_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "VERSION_SAFETY",
+      "metrics": {
+        "historical_as_current_count": 0,
+        "missing_version_warning_count": 0,
+        "unsupported_supersedes_count": 0,
+        "version_hard_judgment_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "VERSION_SAFETY",
+      "metrics": {
+        "historical_as_current_count": 0,
+        "missing_version_warning_count": 0,
+        "unsupported_supersedes_count": 0,
+        "version_hard_judgment_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "VERSION_SAFETY",
+      "metrics": {
+        "historical_as_current_count": 0,
+        "missing_version_warning_count": 0,
+        "unsupported_supersedes_count": 0,
+        "version_hard_judgment_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "VERSION_SAFETY",
+      "metrics": {
+        "historical_as_current_count": 0,
+        "missing_version_warning_count": 0,
+        "unsupported_supersedes_count": 0,
+        "version_hard_judgment_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "VERSION_SAFETY",
+      "metrics": {
+        "historical_as_current_count": 0,
+        "missing_version_warning_count": 0,
+        "unsupported_supersedes_count": 0,
+        "version_hard_judgment_error_count": 0
+      },
+      "passed": true
+    }
+  ]
+}

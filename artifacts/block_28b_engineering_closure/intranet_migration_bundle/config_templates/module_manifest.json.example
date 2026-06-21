@@ -1,0 +1,10 @@
+{
+  "module_manifest_path": "<<MODULE_MANIFEST_PATH>>",
+  "modules": [
+    {
+      "module_code": "SYNTHETIC_MODULE",
+      "enabled": true,
+      "domain_config_path": "<<DOMAIN_CONFIG_PATH>>"
+    }
+  ]
+}

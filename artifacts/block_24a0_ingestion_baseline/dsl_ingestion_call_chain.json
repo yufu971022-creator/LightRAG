@@ -1,0 +1,184 @@
+{
+  "calls_ainsert_custom_kg": true,
+  "calls_embedding": true,
+  "calls_extract_entities": false,
+  "calls_llm": false,
+  "chain_name": "dsl_ingestion_call_chain",
+  "entry_point": "run_dsl_knowledge_ingestion",
+  "evidence": [
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py:22 pattern='def run_dsl_knowledge_ingestion'",
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py:120 pattern='write_custom_kg_batches_to_lightrag(batches'",
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:99 pattern='with without_graph_remote_env():'",
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:242 pattern='workspace=config.namespace'",
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:252 pattern='embedding_dim=8'",
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:255 pattern='model_name=\"dsl-test-fake-embedding\"'",
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:258 pattern='llm_model_func=_fake_llm'",
+    "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:264 pattern='await rag.ainsert_custom_kg(custom_kg, full_doc_id=config.namespace)'",
+    "lightrag/lightrag.py:2376 pattern='async def ainsert_custom_kg'",
+    "lightrag/lightrag.py:2415 pattern='self.chunks_vdb.upsert(all_chunks_data)'",
+    "lightrag/lightrag.py:2416 pattern='self.text_chunks.upsert(all_chunks_data)'",
+    "lightrag/lightrag.py:2459 pattern='self.chunk_entity_relation_graph.upsert_nodes_batch'",
+    "lightrag/lightrag.py:2548 pattern='self.chunk_entity_relation_graph.upsert_edges_batch'"
+  ],
+  "final_storage_targets": [
+    "text_chunks",
+    "chunks_vdb",
+    "chunk_entity_relation_graph",
+    "entities_vdb",
+    "relationships_vdb"
+  ],
+  "steps": [
+    {
+      "async_mode": false,
+      "callee": "run_ingestion_readiness_gate / run_canary_dsl_knowledge_ingestion / run_module_level_dsl_knowledge_ingestion",
+      "caller": "Explicit DSL tooling/tests/scripts",
+      "entry_id": "dsl-01-entry",
+      "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py",
+      "function_name": "run_dsl_knowledge_ingestion",
+      "inputs": {
+        "config": "DslKnowledgeIngestionConfig.from_env() unless supplied"
+      },
+      "line_number": 22,
+      "outputs": {
+        "report": "DslKnowledgeIngestionReport"
+      },
+      "route_or_function": "run_dsl_knowledge_ingestion",
+      "side_effects": [
+        "No write in readiness mode.",
+        "Canary/module may call writer if gates pass."
+      ]
+    },
+    {
+      "async_mode": false,
+      "callee": "build_module_ingestion_payload; prepare_policy_approved_ingestion_payload",
+      "caller": "run_dsl_knowledge_ingestion",
+      "entry_id": "dsl-02-readiness",
+      "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_readiness.py",
+      "function_name": "run_ingestion_readiness_gate",
+      "inputs": {
+        "source_path/module_name/dsl_payload": "DSL payload source"
+      },
+      "line_number": 20,
+      "outputs": {
+        "report": "readiness report with ready_to_write"
+      },
+      "route_or_function": "run_ingestion_readiness_gate",
+      "side_effects": [
+        "Builds and validates custom_kg artifacts in memory."
+      ]
+    },
+    {
+      "async_mode": false,
+      "callee": "build_metadata_sidecar_records; to_lightrag_custom_kg_input; build_graph_insert_sidecar_records",
+      "caller": "run_ingestion_readiness_gate / build_readiness_artifacts",
+      "entry_id": "dsl-03-sidecar-and-custom-kg",
+      "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_policy.py",
+      "function_name": "prepare_policy_approved_ingestion_payload",
+      "inputs": {
+        "namespace": "config.namespace",
+        "payload": "DslKgPayload"
+      },
+      "line_number": 67,
+      "outputs": {
+        "prepared": "PreparedIngestionPayload(custom_kg_input, sidecar_records, rollback info)"
+      },
+      "route_or_function": "prepare_policy_approved_ingestion_payload",
+      "side_effects": [
+        "Builds full sidecar records and graph-insert sidecar records in memory.",
+        "Does not persist sidecar records in dsl_knowledge_ingestion_writer."
+      ]
+    },
+    {
+      "async_mode": false,
+      "callee": "write_custom_kg_batches_to_lightrag",
+      "caller": "run_canary_dsl_knowledge_ingestion / run_module_level_dsl_knowledge_ingestion",
+      "entry_id": "dsl-04-batching",
+      "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py",
+      "function_name": "split_custom_kg_batches",
+      "inputs": {
+        "batch_size": "config.batch_size",
+        "custom_kg": "prepared.custom_kg_input"
+      },
+      "line_number": 175,
+      "outputs": {
+        "batches": "list[custom_kg batch]"
+      },
+      "route_or_function": "split_custom_kg_batches",
+      "side_effects": []
+    },
+    {
+      "async_mode": false,
+      "callee": "without_graph_remote_env; asyncio.run(_write_batches_async(...))",
+      "caller": "DSL canary/module ingestion",
+      "entry_id": "dsl-05-writer",
+      "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py",
+      "function_name": "write_custom_kg_batches_to_lightrag",
+      "inputs": {
+        "config": "DslKnowledgeIngestionConfig",
+        "custom_kg_batches": "list[dict]"
+      },
+      "line_number": 64,
+      "outputs": {
+        "write_result": "WriteResult"
+      },
+      "route_or_function": "write_custom_kg_batches_to_lightrag",
+      "side_effects": [
+        "Blocks production namespace/Neo4j/non-fake-model use through guard issues.",
+        "Optionally isolates remote graph env before local write."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "LightRAG(... local stores, fake embedding, fake LLM); rag.ainsert_custom_kg",
+      "caller": "_write_batches_async",
+      "entry_id": "dsl-06-local-lightrag-construction",
+      "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py",
+      "function_name": "_write_batches_in_working_dir",
+      "inputs": {
+        "embedding": "8-dim dsl-test-fake-embedding",
+        "graph_storage": "NetworkXStorage",
+        "llm": "_fake_llm",
+        "working_dir": "config.working_dir or temp directory",
+        "workspace": "config.namespace"
+      },
+      "line_number": 224,
+      "outputs": {
+        "result": "working_dir, batch results, called flag"
+      },
+      "route_or_function": "_write_batches_in_working_dir",
+      "side_effects": [
+        "Creates/uses a test-scoped local working_dir.",
+        "Initializes local LightRAG storages.",
+        "Calls ainsert_custom_kg for each batch."
+      ]
+    },
+    {
+      "async_mode": true,
+      "callee": "chunks_vdb.upsert; text_chunks.upsert; graph upsert_nodes_batch/upsert_edges_batch; entities_vdb.upsert; relationships_vdb.upsert",
+      "caller": "dsl_knowledge_ingestion_writer._write_batches_in_working_dir",
+      "entry_id": "dsl-07-custom-kg-core-write",
+      "file_path": "lightrag/lightrag.py",
+      "function_name": "ainsert_custom_kg",
+      "inputs": {
+        "custom_kg": "chunks/entities/relationships",
+        "full_doc_id": "config.namespace"
+      },
+      "line_number": 2376,
+      "outputs": {
+        "state": "custom KG inserted into local storages"
+      },
+      "route_or_function": "LightRAG.ainsert_custom_kg",
+      "side_effects": [
+        "Writes chunks_vdb and text_chunks.",
+        "Writes graph nodes and relationships.",
+        "Writes entities_vdb and relationships_vdb.",
+        "Does not call extract_entities.",
+        "Does not write full_docs or doc_status."
+      ]
+    }
+  ],
+  "writes_doc_status": false,
+  "writes_full_docs": false,
+  "writes_graph": true,
+  "writes_text_chunks": true
+}

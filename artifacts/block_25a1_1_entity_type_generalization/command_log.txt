@@ -1,0 +1,7 @@
+Block 25A-1.1 generalization closure started
+Generated generalization closure artifacts
+./scripts/test.sh --collect-only lightrag_ext/us_dsl/tests/test_entity_type_anti_hardcode.py lightrag_ext/us_dsl/tests/test_entity_type_generalization.py lightrag_ext/us_dsl/tests/test_entity_type_unseen_module.py lightrag_ext/us_dsl/tests/test_contextual_entity_type_resolver.py lightrag_ext/us_dsl/tests/test_relation_type_signature_registry.py lightrag_ext/us_dsl/tests/test_entity_type_migration.py lightrag_ext/us_dsl/tests/test_entity_type_resolution_guards.py
+./scripts/test.sh lightrag_ext/us_dsl/tests/test_entity_type_anti_hardcode.py lightrag_ext/us_dsl/tests/test_entity_type_generalization.py lightrag_ext/us_dsl/tests/test_entity_type_unseen_module.py lightrag_ext/us_dsl/tests/test_contextual_entity_type_resolver.py lightrag_ext/us_dsl/tests/test_relation_type_signature_registry.py lightrag_ext/us_dsl/tests/test_entity_type_migration.py lightrag_ext/us_dsl/tests/test_entity_type_resolution_guards.py
+PYTHONPYCACHEPREFIX=artifacts/block_25a1_1_entity_type_generalization/.pycache .venv/bin/python -m compileall -q lightrag_ext
+PYTHONPYCACHEPREFIX=artifacts/block_25a1_1_entity_type_generalization/.pycache .venv/bin/python -m py_compile lightrag/prompt.py
+.venv/bin/python -m ruff check lightrag_ext lightrag/prompt.py

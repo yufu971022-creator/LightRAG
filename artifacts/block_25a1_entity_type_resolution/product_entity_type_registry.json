@@ -1,0 +1,305 @@
+{
+  "CanonicalTerm": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Canonical Term",
+    "high_risk": false,
+    "lexical_cues": [
+      "term",
+      "术语"
+    ],
+    "preferred_section_types": [],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "CanonicalTerm"
+  },
+  "DataMigrationSpec": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Data Migration Spec",
+    "high_risk": false,
+    "lexical_cues": [
+      "dry-run",
+      "initialization",
+      "migration",
+      "初始化",
+      "字段校验",
+      "迁移"
+    ],
+    "preferred_section_types": [
+      "migration_rule",
+      "migration_section"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "DataMigrationSpec"
+  },
+  "DomainObject": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Domain Object",
+    "high_risk": false,
+    "lexical_cues": [
+      "domain",
+      "object",
+      "主数据",
+      "对象"
+    ],
+    "preferred_section_types": [],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "DomainObject"
+  },
+  "EvidenceSpan": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Evidence Span",
+    "high_risk": false,
+    "lexical_cues": [],
+    "preferred_section_types": [],
+    "requires_evidence": true,
+    "structural_cues": [
+      "evidence"
+    ],
+    "type_code": "EvidenceSpan"
+  },
+  "FeatureCatalog": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Feature Catalog",
+    "high_risk": false,
+    "lexical_cues": [
+      "feature",
+      "menu",
+      "page",
+      "入口",
+      "功能",
+      "模块",
+      "能力",
+      "菜单",
+      "页面"
+    ],
+    "preferred_section_types": [],
+    "requires_evidence": true,
+    "structural_cues": [
+      "feature_entry",
+      "menu_entry",
+      "page_title"
+    ],
+    "type_code": "FeatureCatalog"
+  },
+  "FieldSpec": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Field Spec",
+    "high_risk": false,
+    "lexical_cues": [
+      "column",
+      "field",
+      "列",
+      "字段",
+      "展示项",
+      "查询条件",
+      "输入项"
+    ],
+    "preferred_section_types": [
+      "field_table",
+      "query_condition",
+      "result_column"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [
+      "field_row",
+      "query_condition",
+      "table_column"
+    ],
+    "type_code": "FieldSpec"
+  },
+  "IntegrationEndpoint": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Integration Endpoint",
+    "high_risk": false,
+    "lexical_cues": [
+      "api",
+      "callback",
+      "endpoint",
+      "mq",
+      "回调",
+      "接口",
+      "服务端点"
+    ],
+    "preferred_section_types": [
+      "api_desc",
+      "integration_section"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "IntegrationEndpoint"
+  },
+  "MessageAtom": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Message Atom",
+    "high_risk": false,
+    "lexical_cues": [
+      "message",
+      "提示",
+      "消息",
+      "通知"
+    ],
+    "preferred_section_types": [
+      "message_rule"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "MessageAtom"
+  },
+  "ReportSpec": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Report Spec",
+    "high_risk": false,
+    "lexical_cues": [
+      "list",
+      "report",
+      "search",
+      "列表",
+      "导出",
+      "报表",
+      "查询",
+      "结果集"
+    ],
+    "preferred_section_types": [
+      "export_section",
+      "list_definition",
+      "query_section",
+      "report_rule",
+      "result_grid"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [
+      "export_section",
+      "list_definition",
+      "query_page",
+      "result_grid"
+    ],
+    "type_code": "ReportSpec"
+  },
+  "RolePermission": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Role Permission",
+    "high_risk": false,
+    "lexical_cues": [
+      "current handler",
+      "handler",
+      "permission",
+      "role",
+      "处理人",
+      "权限",
+      "角色"
+    ],
+    "preferred_section_types": [],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "RolePermission"
+  },
+  "RuleAtom": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Rule Atom",
+    "high_risk": false,
+    "lexical_cues": [
+      "rule",
+      "控制",
+      "校验",
+      "规则"
+    ],
+    "preferred_section_types": [
+      "business_rule",
+      "dfx_rule"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "RuleAtom"
+  },
+  "RuleVersion": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Rule Version",
+    "high_risk": true,
+    "lexical_cues": [
+      "version",
+      "版本"
+    ],
+    "preferred_section_types": [],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "RuleVersion"
+  },
+  "SourceDocument": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Source Document",
+    "high_risk": false,
+    "lexical_cues": [],
+    "preferred_section_types": [],
+    "requires_evidence": true,
+    "structural_cues": [
+      "document"
+    ],
+    "type_code": "SourceDocument"
+  },
+  "StateTransition": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "State Transition",
+    "high_risk": false,
+    "lexical_cues": [
+      "transition",
+      "状态流转",
+      "状态迁移"
+    ],
+    "preferred_section_types": [
+      "state_rule"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "StateTransition"
+  },
+  "TaskRule": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "Task Rule",
+    "high_risk": false,
+    "lexical_cues": [
+      "task",
+      "todo",
+      "任务",
+      "关闭",
+      "处理动作",
+      "待办",
+      "转审"
+    ],
+    "preferred_section_types": [
+      "task_rule"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "TaskRule"
+  },
+  "UserStory": {
+    "allowed_domains": [],
+    "allowed_relation_roles": [],
+    "display_name": "User Story",
+    "high_risk": false,
+    "lexical_cues": [],
+    "preferred_section_types": [
+      "user_story"
+    ],
+    "requires_evidence": true,
+    "structural_cues": [],
+    "type_code": "UserStory"
+  }
+}

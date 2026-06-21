@@ -1,0 +1,688 @@
+{
+  "baseline_conclusions": {
+    "CAPABILITY_RAW_AND_DSL_CAN_TARGET_SAME_GRAPH": {
+      "conclusion": "true",
+      "evidence_file": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py",
+      "evidence_function": "_write_batches_in_working_dir",
+      "evidence_line": 224,
+      "explanation": "Code capability: DSL writer accepts config.working_dir/config.namespace and native LightRAG accepts working_dir/workspace, so configuration can target the same local graph namespace. This is not a current-state fact.",
+      "unresolved_reason": null
+    },
+    "CORE_MODIFIED_IN_THIS_ROUND": {
+      "conclusion": "false",
+      "evidence_file": "lightrag/api/routers/document_routes.py",
+      "evidence_function": "upload_to_input_dir",
+      "evidence_line": 2127,
+      "explanation": "core_diff_check.txt is generated from git diff over forbidden core/API paths and reports no diff.",
+      "unresolved_reason": null
+    },
+    "CURRENT_AUTO_INGESTION_ROUTER_EXISTS": {
+      "conclusion": "false",
+      "evidence_file": "lightrag/api/routers/document_routes.py",
+      "evidence_function": "upload_to_input_dir",
+      "evidence_line": 2127,
+      "explanation": "Scoped code evidence in the upload route and native core does not contain auto/dsl/raw/shadow ingestion router markers.",
+      "unresolved_reason": null
+    },
+    "CURRENT_DSL_PATH_CALLS_AINSERT_CUSTOM_KG": {
+      "conclusion": "true",
+      "evidence_file": "lightrag/lightrag.py",
+      "evidence_function": "ainsert_custom_kg",
+      "evidence_line": 2376,
+      "explanation": "The DSL writer path reaches LightRAG.ainsert_custom_kg.",
+      "unresolved_reason": null
+    },
+    "CURRENT_DSL_PATH_CALLS_ORIGINAL_EXTRACT_ENTITIES": {
+      "conclusion": "false",
+      "evidence_file": "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py",
+      "evidence_function": "run_dsl_knowledge_ingestion",
+      "evidence_line": 22,
+      "explanation": "The scoped DSL ingestion/readiness/policy/writer source does not call native extract_entities.",
+      "unresolved_reason": null
+    },
+    "CURRENT_FAKE_AND_REAL_EMBEDDING_MIX_DETECTED": {
+      "conclusion": "false",
+      "evidence_file": "lightrag_ext/us_dsl/runtime_baseline_probe.py",
+      "evidence_function": "_working_dir_baseline",
+      "evidence_line": 278,
+      "explanation": "No runtime storage evidence of mixed fake and real vectors was observed by this no-write probe.",
+      "unresolved_reason": null
+    },
+    "CURRENT_RAW_AND_DSL_SHARE_GRAPH_NAMESPACE": {
+      "conclusion": "false",
+      "evidence_file": "lightrag_ext/us_dsl/runtime_baseline_probe.py",
+      "evidence_function": "_working_dir_baseline",
+      "evidence_line": 278,
+      "explanation": "Current parsed raw workspace and DSL namespace are compared directly. Empty raw workspace and default DSL test namespace do not match.",
+      "unresolved_reason": null
+    },
+    "CURRENT_RAW_AND_DSL_SHARE_WORKING_DIR": {
+      "conclusion": "false",
+      "evidence_file": "lightrag_ext/us_dsl/runtime_baseline_probe.py",
+      "evidence_function": "_working_dir_baseline",
+      "evidence_line": 278,
+      "explanation": "Current parsed raw working_dir and DSL ingestion working_dir are compared directly. This is current-state evidence, not routing capability.",
+      "unresolved_reason": null
+    },
+    "CURRENT_RAW_PATH_CALLS_LLM_EXTRACTION": {
+      "conclusion": "true",
+      "evidence_file": "lightrag/operate.py",
+      "evidence_function": "extract_entities",
+      "evidence_line": 2883,
+      "explanation": "Native upload processing calls operate.extract_entities, which uses the configured LLM function unless cache satisfies the request.",
+      "unresolved_reason": null
+    },
+    "CURRENT_UPLOAD_ROUTE_CALLS_DSL": {
+      "conclusion": "false",
+      "evidence_file": "lightrag/api/routers/document_routes.py",
+      "evidence_function": "upload_to_input_dir",
+      "evidence_line": 2127,
+      "explanation": "The current upload route schedules pipeline_index_file and the scoped route source contains no DSL entry call.",
+      "unresolved_reason": null
+    },
+    "FAKE_AND_REAL_EMBEDDING_MIX_RISK": {
+      "conclusion": "MEDIUM",
+      "evidence_file": "lightrag_ext/us_dsl/runtime_baseline_probe.py",
+      "evidence_function": "_working_dir_baseline",
+      "evidence_line": 278,
+      "explanation": "Risk is configuration-level: fake DSL embeddings remain separate by default, but deliberate working_dir/workspace convergence would create a mix hazard.",
+      "unresolved_reason": null
+    },
+    "NETWORK_CALLS_EXECUTED": {
+      "conclusion": "false",
+      "evidence_file": "lightrag_ext/us_dsl/runtime_baseline_probe.py",
+      "evidence_function": "_working_dir_baseline",
+      "evidence_line": 278,
+      "explanation": "The runtime probe only parses files and environment/default values; it does not instantiate model clients.",
+      "unresolved_reason": null
+    },
+    "STORAGE_WRITES_EXECUTED": {
+      "conclusion": "false",
+      "evidence_file": "lightrag_ext/us_dsl/runtime_baseline_probe.py",
+      "evidence_function": "_working_dir_baseline",
+      "evidence_line": 278,
+      "explanation": "The runtime probe does not call insert, ainsert, ainsert_custom_kg, or storage mutation APIs.",
+      "unresolved_reason": null
+    }
+  },
+  "confirmed_facts": [
+    "/documents/upload is implemented by upload_to_input_dir in lightrag/api/routers/document_routes.py.",
+    "The upload route saves the file, generates an upload track_id, and schedules pipeline_index_file with FastAPI BackgroundTasks.",
+    "pipeline_index_file calls pipeline_enqueue_file and then rag.apipeline_process_enqueue_documents after successful enqueue.",
+    "pipeline_enqueue_file parses the uploaded file and calls rag.apipeline_enqueue_documents(content, file_paths=file_path.name, track_id=track_id).",
+    "Native apipeline_enqueue_documents writes full_docs and PENDING doc_status before queue processing.",
+    "Native apipeline_process_enqueue_documents writes chunks_vdb/text_chunks, calls _process_extract_entities, merges graph data, and updates doc_status to PROCESSED or FAILED.",
+    "Native extract_entities uses the configured LLM function for initial extraction and has one optional gleaning request gate.",
+    "DSL run_dsl_knowledge_ingestion is an explicit function entry, not an inspected API upload route.",
+    "DSL canary/module modes call write_custom_kg_batches_to_lightrag, which builds local NetworkX/NanoVectorDB/Json storage with fake embedding and fake LLM defaults.",
+    "DSL writer calls LightRAG.ainsert_custom_kg; the inspected DSL chain does not call native extract_entities.",
+    "LightRAG.ainsert_custom_kg writes chunks, graph nodes/edges, entities_vdb, and relationships_vdb but does not write full_docs or doc_status.",
+    "Static router scan: upload_calls_dsl=False, auto_router_exists=False.",
+    "DSL static scan: calls_ainsert_custom_kg=True, calls_extract_entities=False.",
+    "Current raw working_dir baseline: /Users/hufaofao/Projects/LightRAG/rag_storage.",
+    "Current DSL canary/module working_dir baseline: tempfile.mkdtemp(prefix='lightrag_dsl_ingestion_dsl_test_').",
+    "Original chain flags: embedding=True, llm=True, graph=True.",
+    "DSL chain flags: embedding=True, llm=False, graph=True."
+  ],
+  "current_architecture_conclusion": "POST /documents/upload is the native LightRAG upload queue path. DSL knowledge ingestion is a separate test-scoped custom_kg path that calls LightRAG.ainsert_custom_kg and is not wired into upload or an auto/raw/dsl/shadow router in the inspected API/core code.",
+  "current_branch": "main",
+  "dsl_ingestion_chain": {
+    "calls_ainsert_custom_kg": true,
+    "calls_embedding": true,
+    "calls_extract_entities": false,
+    "calls_llm": false,
+    "chain_name": "dsl_ingestion_call_chain",
+    "entry_point": "run_dsl_knowledge_ingestion",
+    "evidence": [
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py:22 pattern='def run_dsl_knowledge_ingestion'",
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py:120 pattern='write_custom_kg_batches_to_lightrag(batches'",
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:99 pattern='with without_graph_remote_env():'",
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:242 pattern='workspace=config.namespace'",
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:252 pattern='embedding_dim=8'",
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:255 pattern='model_name=\"dsl-test-fake-embedding\"'",
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:258 pattern='llm_model_func=_fake_llm'",
+      "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py:264 pattern='await rag.ainsert_custom_kg(custom_kg, full_doc_id=config.namespace)'",
+      "lightrag/lightrag.py:2376 pattern='async def ainsert_custom_kg'",
+      "lightrag/lightrag.py:2415 pattern='self.chunks_vdb.upsert(all_chunks_data)'",
+      "lightrag/lightrag.py:2416 pattern='self.text_chunks.upsert(all_chunks_data)'",
+      "lightrag/lightrag.py:2459 pattern='self.chunk_entity_relation_graph.upsert_nodes_batch'",
+      "lightrag/lightrag.py:2548 pattern='self.chunk_entity_relation_graph.upsert_edges_batch'"
+    ],
+    "final_storage_targets": [
+      "text_chunks",
+      "chunks_vdb",
+      "chunk_entity_relation_graph",
+      "entities_vdb",
+      "relationships_vdb"
+    ],
+    "steps": [
+      {
+        "async_mode": false,
+        "callee": "run_ingestion_readiness_gate / run_canary_dsl_knowledge_ingestion / run_module_level_dsl_knowledge_ingestion",
+        "caller": "Explicit DSL tooling/tests/scripts",
+        "entry_id": "dsl-01-entry",
+        "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py",
+        "function_name": "run_dsl_knowledge_ingestion",
+        "inputs": {
+          "config": "DslKnowledgeIngestionConfig.from_env() unless supplied"
+        },
+        "line_number": 22,
+        "outputs": {
+          "report": "DslKnowledgeIngestionReport"
+        },
+        "route_or_function": "run_dsl_knowledge_ingestion",
+        "side_effects": [
+          "No write in readiness mode.",
+          "Canary/module may call writer if gates pass."
+        ]
+      },
+      {
+        "async_mode": false,
+        "callee": "build_module_ingestion_payload; prepare_policy_approved_ingestion_payload",
+        "caller": "run_dsl_knowledge_ingestion",
+        "entry_id": "dsl-02-readiness",
+        "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_readiness.py",
+        "function_name": "run_ingestion_readiness_gate",
+        "inputs": {
+          "source_path/module_name/dsl_payload": "DSL payload source"
+        },
+        "line_number": 20,
+        "outputs": {
+          "report": "readiness report with ready_to_write"
+        },
+        "route_or_function": "run_ingestion_readiness_gate",
+        "side_effects": [
+          "Builds and validates custom_kg artifacts in memory."
+        ]
+      },
+      {
+        "async_mode": false,
+        "callee": "build_metadata_sidecar_records; to_lightrag_custom_kg_input; build_graph_insert_sidecar_records",
+        "caller": "run_ingestion_readiness_gate / build_readiness_artifacts",
+        "entry_id": "dsl-03-sidecar-and-custom-kg",
+        "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_policy.py",
+        "function_name": "prepare_policy_approved_ingestion_payload",
+        "inputs": {
+          "namespace": "config.namespace",
+          "payload": "DslKgPayload"
+        },
+        "line_number": 67,
+        "outputs": {
+          "prepared": "PreparedIngestionPayload(custom_kg_input, sidecar_records, rollback info)"
+        },
+        "route_or_function": "prepare_policy_approved_ingestion_payload",
+        "side_effects": [
+          "Builds full sidecar records and graph-insert sidecar records in memory.",
+          "Does not persist sidecar records in dsl_knowledge_ingestion_writer."
+        ]
+      },
+      {
+        "async_mode": false,
+        "callee": "write_custom_kg_batches_to_lightrag",
+        "caller": "run_canary_dsl_knowledge_ingestion / run_module_level_dsl_knowledge_ingestion",
+        "entry_id": "dsl-04-batching",
+        "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion.py",
+        "function_name": "split_custom_kg_batches",
+        "inputs": {
+          "batch_size": "config.batch_size",
+          "custom_kg": "prepared.custom_kg_input"
+        },
+        "line_number": 175,
+        "outputs": {
+          "batches": "list[custom_kg batch]"
+        },
+        "route_or_function": "split_custom_kg_batches",
+        "side_effects": []
+      },
+      {
+        "async_mode": false,
+        "callee": "without_graph_remote_env; asyncio.run(_write_batches_async(...))",
+        "caller": "DSL canary/module ingestion",
+        "entry_id": "dsl-05-writer",
+        "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py",
+        "function_name": "write_custom_kg_batches_to_lightrag",
+        "inputs": {
+          "config": "DslKnowledgeIngestionConfig",
+          "custom_kg_batches": "list[dict]"
+        },
+        "line_number": 64,
+        "outputs": {
+          "write_result": "WriteResult"
+        },
+        "route_or_function": "write_custom_kg_batches_to_lightrag",
+        "side_effects": [
+          "Blocks production namespace/Neo4j/non-fake-model use through guard issues.",
+          "Optionally isolates remote graph env before local write."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "LightRAG(... local stores, fake embedding, fake LLM); rag.ainsert_custom_kg",
+        "caller": "_write_batches_async",
+        "entry_id": "dsl-06-local-lightrag-construction",
+        "file_path": "lightrag_ext/us_dsl/dsl_knowledge_ingestion_writer.py",
+        "function_name": "_write_batches_in_working_dir",
+        "inputs": {
+          "embedding": "8-dim dsl-test-fake-embedding",
+          "graph_storage": "NetworkXStorage",
+          "llm": "_fake_llm",
+          "working_dir": "config.working_dir or temp directory",
+          "workspace": "config.namespace"
+        },
+        "line_number": 224,
+        "outputs": {
+          "result": "working_dir, batch results, called flag"
+        },
+        "route_or_function": "_write_batches_in_working_dir",
+        "side_effects": [
+          "Creates/uses a test-scoped local working_dir.",
+          "Initializes local LightRAG storages.",
+          "Calls ainsert_custom_kg for each batch."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "chunks_vdb.upsert; text_chunks.upsert; graph upsert_nodes_batch/upsert_edges_batch; entities_vdb.upsert; relationships_vdb.upsert",
+        "caller": "dsl_knowledge_ingestion_writer._write_batches_in_working_dir",
+        "entry_id": "dsl-07-custom-kg-core-write",
+        "file_path": "lightrag/lightrag.py",
+        "function_name": "ainsert_custom_kg",
+        "inputs": {
+          "custom_kg": "chunks/entities/relationships",
+          "full_doc_id": "config.namespace"
+        },
+        "line_number": 2376,
+        "outputs": {
+          "state": "custom KG inserted into local storages"
+        },
+        "route_or_function": "LightRAG.ainsert_custom_kg",
+        "side_effects": [
+          "Writes chunks_vdb and text_chunks.",
+          "Writes graph nodes and relationships.",
+          "Writes entities_vdb and relationships_vdb.",
+          "Does not call extract_entities.",
+          "Does not write full_docs or doc_status."
+        ]
+      }
+    ],
+    "writes_doc_status": false,
+    "writes_full_docs": false,
+    "writes_graph": true,
+    "writes_text_chunks": true
+  },
+  "dsl_static_usage": {
+    "run_dsl_chain_calls_ainsert_custom_kg": true,
+    "run_dsl_chain_calls_extract_entities": false
+  },
+  "embedding_baseline": {
+    "batch_size": 10,
+    "binding": "openai",
+    "cache_enabled": null,
+    "concurrency": 8,
+    "config_sources": {
+      "EMBEDDING_BATCH_NUM": "default",
+      "EMBEDDING_BINDING": "environment",
+      "EMBEDDING_BINDING_HOST": "environment",
+      "EMBEDDING_DIM": "environment",
+      "EMBEDDING_FUNC_MAX_ASYNC": "default",
+      "EMBEDDING_MODEL": "environment",
+      "EMBEDDING_SEND_DIM": "default",
+      "EMBEDDING_TIMEOUT": "default",
+      "embedding_context_limit": "environment"
+    },
+    "configured_dimension": 3072,
+    "context_limit": 8192,
+    "credential_configured": true,
+    "credential_fingerprint": "sha256:5948d8c736ea",
+    "credential_source": "environment:embedding_binding_credential",
+    "dimension_source": "environment",
+    "endpoint_host": "api.openai.com",
+    "extract_model_same_as_query_model": null,
+    "fake_model_detected": false,
+    "model": "text-embedding-3-large",
+    "no_proxy_covers_endpoint": false,
+    "proxy_detected": false,
+    "risks": [
+      "EMBEDDING_DIM is used for local vector validation, but EMBEDDING_SEND_DIM=false means the OpenAI API dimensions parameter is not sent."
+    ],
+    "sends_dimensions_parameter": false,
+    "summary_context_limit": 8192,
+    "timeout": 30
+  },
+  "generated_at": "2026-06-20T08:14:05.535857+00:00",
+  "git_commit": "91bf57c90c8321fddc3b2e04d4f456c19d693012",
+  "llm_baseline": {
+    "batch_size": null,
+    "binding": "openai",
+    "cache_enabled": true,
+    "concurrency": 4,
+    "config_sources": {
+      "ENABLE_LLM_CACHE": "default",
+      "ENABLE_LLM_CACHE_FOR_EXTRACT": "environment",
+      "LLM_BINDING": "environment",
+      "LLM_BINDING_HOST": "environment",
+      "LLM_MODEL": "environment",
+      "LLM_TIMEOUT": "default",
+      "MAX_ASYNC": "environment",
+      "summary_context_limit": "default"
+    },
+    "configured_dimension": null,
+    "context_limit": null,
+    "credential_configured": true,
+    "credential_fingerprint": "sha256:5948d8c736ea",
+    "credential_source": "environment:llm_binding_credential",
+    "dimension_source": null,
+    "endpoint_host": "api.openai.com",
+    "extract_model_same_as_query_model": true,
+    "fake_model_detected": false,
+    "model": "gpt-5.4-mini",
+    "no_proxy_covers_endpoint": false,
+    "proxy_detected": false,
+    "risks": [
+      "Model access depends on the configured OpenAI account credential."
+    ],
+    "sends_dimensions_parameter": null,
+    "summary_context_limit": 1200,
+    "timeout": 180
+  },
+  "original_upload_chain": {
+    "calls_ainsert_custom_kg": false,
+    "calls_embedding": true,
+    "calls_extract_entities": true,
+    "calls_llm": true,
+    "chain_name": "original_upload_call_chain",
+    "entry_point": "/documents/upload",
+    "evidence": [
+      "lightrag/api/routers/document_routes.py:2127 pattern='\"/upload\", response_model=InsertResponse'",
+      "lightrag/api/routers/document_routes.py:2278 pattern='background_tasks.add_task(pipeline_index_file'",
+      "lightrag/api/routers/document_routes.py:1606 pattern='await rag.apipeline_enqueue_documents'",
+      "lightrag/api/routers/document_routes.py:1704 pattern='await rag.apipeline_process_enqueue_documents()'",
+      "lightrag/lightrag.py:1521 pattern='await self.full_docs.upsert(full_docs_data)'",
+      "lightrag/lightrag.py:1436 pattern='\"status\": DocStatus.PENDING'",
+      "lightrag/lightrag.py:2025 pattern='self.chunks_vdb.upsert(chunks)'",
+      "lightrag/lightrag.py:2028 pattern='self.text_chunks.upsert(chunks)'",
+      "lightrag/lightrag.py:1334 pattern='self._process_extract_entities'",
+      "lightrag/lightrag.py:2136 pattern='await merge_nodes_and_edges'",
+      "lightrag/operate.py:2962 pattern='final_result, timestamp = await use_llm_func_with_cache'",
+      "lightrag/operate.py:2987 pattern='if entity_extract_max_gleaning > 0:'"
+    ],
+    "final_storage_targets": [
+      "full_docs",
+      "doc_status",
+      "text_chunks",
+      "chunks_vdb",
+      "chunk_entity_relation_graph",
+      "entities_vdb",
+      "relationships_vdb",
+      "full_entities",
+      "full_relations",
+      "entity_chunks",
+      "relation_chunks",
+      "llm_response_cache"
+    ],
+    "steps": [
+      {
+        "async_mode": true,
+        "callee": "background_tasks.add_task(pipeline_index_file, rag, file_path, track_id)",
+        "caller": "FastAPI APIRouter(prefix='/documents')",
+        "entry_id": "raw-01-upload-route",
+        "file_path": "lightrag/api/routers/document_routes.py",
+        "function_name": "upload_to_input_dir",
+        "inputs": {
+          "file": "UploadFile",
+          "file_path": "doc_manager.input_dir / safe_filename",
+          "safe_filename": "sanitize_filename(file.filename, doc_manager.input_dir)",
+          "track_id": "generate_track_id('upload')"
+        },
+        "line_number": 2127,
+        "outputs": {
+          "http": "InsertResponse(status='success', track_id=track_id)"
+        },
+        "route_or_function": "POST /documents/upload",
+        "side_effects": [
+          "Streams upload bytes to input_dir before returning HTTP 200.",
+          "Checks filename duplicate through rag.doc_status.get_doc_by_file_path.",
+          "Schedules background processing through FastAPI BackgroundTasks."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "pipeline_enqueue_file(...); rag.apipeline_process_enqueue_documents()",
+        "caller": "FastAPI BackgroundTasks",
+        "entry_id": "raw-02-background-index-file",
+        "file_path": "lightrag/api/routers/document_routes.py",
+        "function_name": "pipeline_index_file",
+        "inputs": {
+          "file_path": "Path",
+          "rag": "LightRAG",
+          "track_id": "str | None"
+        },
+        "line_number": 1691,
+        "outputs": {
+          "success": "No return value; logs errors"
+        },
+        "route_or_function": "pipeline_index_file",
+        "side_effects": [
+          "Runs after upload response in background task.",
+          "Processes queue only if pipeline_enqueue_file succeeds."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "rag.apipeline_enqueue_documents(content, file_paths=file_path.name, track_id=track_id)",
+        "caller": "pipeline_index_file / pipeline_index_files",
+        "entry_id": "raw-03-parser-enqueue-file",
+        "file_path": "lightrag/api/routers/document_routes.py",
+        "function_name": "pipeline_enqueue_file",
+        "inputs": {
+          "file_path": "saved upload path",
+          "parser": "extension switch: text decode, pypdf/docling, python-docx, pptx, openpyxl"
+        },
+        "line_number": 1233,
+        "outputs": {
+          "tuple": "(success: bool, track_id: str)"
+        },
+        "route_or_function": "pipeline_enqueue_file",
+        "side_effects": [
+          "Reads file bytes and extracts text.",
+          "Writes file extraction failures through rag.apipeline_enqueue_error_documents.",
+          "Moves successfully enqueued file to __enqueued__."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "self.full_docs.upsert(...); self.doc_status.upsert(...)",
+        "caller": "pipeline_enqueue_file / ainsert / pipeline_index_texts",
+        "entry_id": "raw-04-full-docs-and-pending-status",
+        "file_path": "lightrag/lightrag.py",
+        "function_name": "apipeline_enqueue_documents",
+        "inputs": {
+          "file_paths": "source filename(s)",
+          "ids": "optional document IDs",
+          "input": "document text(s)",
+          "track_id": "upload/insert/enqueue track id"
+        },
+        "line_number": 1344,
+        "outputs": {
+          "track_id": "returns track_id after enqueue"
+        },
+        "route_or_function": "LightRAG.apipeline_enqueue_documents",
+        "side_effects": [
+          "Computes doc_id from content hash when ids are absent.",
+          "Writes original text to full_docs.",
+          "Writes doc_status=PENDING with file_path and track_id.",
+          "Writes duplicate attempts as doc_status=FAILED."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "chunking_func; chunks_vdb.upsert; text_chunks.upsert; _process_extract_entities; merge_nodes_and_edges",
+        "caller": "pipeline_index_file / scan / text insert / reprocess",
+        "entry_id": "raw-05-process-pending-queue",
+        "file_path": "lightrag/lightrag.py",
+        "function_name": "apipeline_process_enqueue_documents",
+        "inputs": {
+          "doc_statuses": "PROCESSING, FAILED, PENDING",
+          "queue_lock": "pipeline_status namespace lock"
+        },
+        "line_number": 1740,
+        "outputs": {
+          "state": "doc_status PROCESSING/PROCESSED/FAILED"
+        },
+        "route_or_function": "LightRAG.apipeline_process_enqueue_documents",
+        "side_effects": [
+          "Uses pipeline_status busy/request_pending as queue gate.",
+          "Reads original content from full_docs.",
+          "Writes doc_status=PROCESSING before extraction.",
+          "Writes chunks_vdb and text_chunks before entity extraction.",
+          "Writes doc_status=PROCESSED after graph merge, FAILED on exception."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "operate.extract_entities(..., llm_response_cache=self.llm_response_cache, text_chunks_storage=self.text_chunks)",
+        "caller": "apipeline_process_enqueue_documents",
+        "entry_id": "raw-06-entity-extraction",
+        "file_path": "lightrag/lightrag.py",
+        "function_name": "_process_extract_entities",
+        "inputs": {
+          "chunks": "chunk dict with content/full_doc_id/file_path"
+        },
+        "line_number": 2318,
+        "outputs": {
+          "chunk_results": "list[(maybe_nodes, maybe_edges)]"
+        },
+        "route_or_function": "LightRAG._process_extract_entities",
+        "side_effects": [
+          "Calls raw native LLM extraction path.",
+          "May update chunk llm_cache_list through text_chunks storage."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "use_llm_func_with_cache for initial extraction and one optional gleaning request",
+        "caller": "LightRAG._process_extract_entities",
+        "entry_id": "raw-07-llm-extract-and-gleaning",
+        "file_path": "lightrag/operate.py",
+        "function_name": "extract_entities",
+        "inputs": {
+          "chunks": "text chunk dict",
+          "entity_extract_max_gleaning": "MAX_GLEANING/default, but implementation gates one extra request",
+          "global_config.llm_model_func": "runtime LLM function"
+        },
+        "line_number": 2883,
+        "outputs": {
+          "chunk_results": "extracted entity/relation fragments"
+        },
+        "route_or_function": "operate.extract_entities",
+        "side_effects": [
+          "Calls LLM for initial extraction unless cache hits.",
+          "If entity_extract_max_gleaning > 0, performs at most one additional gleaning request.",
+          "Caches extract responses when enabled."
+        ]
+      },
+      {
+        "async_mode": true,
+        "callee": "_merge_nodes_then_upsert; _merge_edges_then_upsert; full_entities_storage.upsert; full_relations_storage.upsert",
+        "caller": "LightRAG.apipeline_process_enqueue_documents",
+        "entry_id": "raw-08-merge-graph-and-vdb",
+        "file_path": "lightrag/operate.py",
+        "function_name": "merge_nodes_and_edges",
+        "inputs": {
+          "chunk_results": "extracted fragments",
+          "doc_id": "full document id"
+        },
+        "line_number": 2501,
+        "outputs": {
+          "state": "graph/vdb/full entity relation indexes updated"
+        },
+        "route_or_function": "operate.merge_nodes_and_edges",
+        "side_effects": [
+          "Upserts graph nodes and edges.",
+          "Upserts entities_vdb and relationships_vdb.",
+          "Writes full_entities and full_relations per doc.",
+          "May call LLM summarization during merge when description merge threshold is exceeded."
+        ]
+      }
+    ],
+    "writes_doc_status": true,
+    "writes_full_docs": true,
+    "writes_graph": true,
+    "writes_text_chunks": true
+  },
+  "recommended_next_block": "Block 24A-1 should add an explicit routing design only after runtime working_dir, embedding dimension, and model access checks are verified outside production writes.",
+  "repository_path": "/Users/hufaofao/Projects/LightRAG",
+  "risks": [
+    "Raw upload currently uses native LLM extraction; model access failures on the configured LLM model can fail ingestion.",
+    "DSL custom_kg writes bypass full_docs/doc_status, so operational status semantics are not equivalent to native upload ingestion.",
+    "If raw and DSL are pointed at the same working_dir/workspace, both can write graph/vdb data for equivalent entities and relationships.",
+    "EMBEDDING_DIM is used for local vector validation, but EMBEDDING_SEND_DIM=false means the OpenAI API dimensions parameter is not sent.",
+    "Model access depends on the configured OpenAI account credential.",
+    "Configured working_dir does not exist in this checkout.",
+    "Fake DSL 8-dim embeddings and real runtime embeddings must remain isolated by working_dir/workspace/vector store."
+  ],
+  "router_status": {
+    "auto_router_exists": false,
+    "domain_auto_dsl": false,
+    "dsl_fallback_to_raw_in_api": false,
+    "same_file_calls_both_in_upload": false,
+    "upload_calls_dsl": false
+  },
+  "runtime_flags": {
+    "env_file_present": true,
+    "network_calls_executed": false,
+    "storage_writes_executed": false
+  },
+  "storage_baseline": {
+    "config_sources": {
+      "LIGHTRAG_DOC_STATUS_STORAGE": "environment",
+      "LIGHTRAG_GRAPH_STORAGE": "environment",
+      "LIGHTRAG_KV_STORAGE": "environment",
+      "LIGHTRAG_VECTOR_STORAGE": "environment",
+      "WORKING_DIR": "default",
+      "WORKSPACE": "default"
+    },
+    "doc_status_storage": "JsonDocStatusStorage",
+    "embedding_metadata_found": null,
+    "graph_storage": "NetworkXStorage",
+    "is_nano_vectordb": true,
+    "is_neo4j": false,
+    "is_networkx": true,
+    "is_postgresql": false,
+    "kv_storage": "JsonKVStorage",
+    "namespace": "workspace-scoped LightRAG namespaces",
+    "risks": [
+      "Configured working_dir does not exist in this checkout."
+    ],
+    "storage_files_found": [],
+    "uses_mongo": false,
+    "uses_opensearch": false,
+    "uses_redis": false,
+    "vector_storage": "NanoVectorDBStorage",
+    "working_dir": "/Users/hufaofao/Projects/LightRAG/rag_storage",
+    "workspace": ""
+  },
+  "unresolved_questions": [
+    "RUNTIME_CONFIRMATION_REQUIRED: the live server process may pass CLI arguments or environment variables not visible to this static/dry-run probe.",
+    "RUNTIME_CONFIRMATION_REQUIRED: model access cannot be confirmed without a network call, which was intentionally not executed.",
+    "RUNTIME_CONFIRMATION_REQUIRED: production storage contents and historical vector dimensions cannot be confirmed unless the configured working_dir or remote storage is inspected in the target runtime.",
+    "RUNTIME_CONFIRMATION_REQUIRED: no deployed process table was inspected, so effective runtime workspace may differ from .env/default parsing.",
+    "DSL working_dir is unset in the parsed config, so canary/module mode creates a temp directory at runtime."
+  ],
+  "working_dirs": {
+    "dsl_canary_module_working_dir": "tempfile.mkdtemp(prefix='lightrag_dsl_ingestion_dsl_test_')",
+    "dsl_namespace": "dsl_test_knowledge_ingestion",
+    "dsl_readiness_working_dir": null,
+    "e2e_test_working_dir": "/Users/hufaofao/Projects/LightRAG/artifacts",
+    "fake_and_real_embedding_mix_detected": false,
+    "raw_and_dsl_share_graph_namespace": false,
+    "raw_and_dsl_share_working_dir": false,
+    "raw_upload_working_dir": "/Users/hufaofao/Projects/LightRAG/rag_storage",
+    "raw_workspace": "",
+    "risk_notes": [
+      "DSL canary/module creates temp working_dir when LIGHTRAG_DSL_INGEST_WORKING_DIR is unset.",
+      "If both raw and DSL are deliberately pointed at the same safe test path, fake 8-dim and real embedding vectors can collide."
+    ],
+    "runtime_confirmation_required": true
+  }
+}

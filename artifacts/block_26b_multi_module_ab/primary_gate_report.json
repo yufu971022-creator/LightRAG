@@ -1,0 +1,8 @@
+{
+  "failed_primary_gates": [
+    "BLOCKED_INPUT_SET: real multi-module manifest path is required"
+  ],
+  "overall_status": "BLOCKED_INPUT_SET",
+  "recommended_fix": "Provide a real multi-module manifest with audited Gold cases.",
+  "recommended_next_block": "Stay in Block 26B"
+}

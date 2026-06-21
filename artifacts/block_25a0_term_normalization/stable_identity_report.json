@@ -1,0 +1,24 @@
+{
+  "bank_approval_task_status_distinct": true,
+  "current_handler_bilingual_same_identity": true,
+  "current_handler_ids": [
+    "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default",
+    "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default"
+  ],
+  "distinct_status_version_groups": true,
+  "domain_feature_object_type_affect_identity": true,
+  "duplicate_semantic_object_count": 0,
+  "original_language_does_not_affect_identity": true,
+  "relation_id": "urn:pfss:rel:urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default:requirespermission:urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default:paymentfeature:default",
+  "relation_id_uses_stable_endpoints": true,
+  "stable_across_documents": true,
+  "stable_across_versions": true,
+  "swift_code_ids": [
+    "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default",
+    "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default",
+    "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default",
+    "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default"
+  ],
+  "swift_code_variants_same_identity": true,
+  "version_group_uses_canonical_identity": true
+}

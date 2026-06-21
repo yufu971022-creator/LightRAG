@@ -1,0 +1,21 @@
+$ git status --short
+exit=0
+$ git status --short
+exit=0
+$ git diff --name-only -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+exit=0
+$ run_multi_module_ab_gate
+status=BLOCKED_INPUT_SET
+reason=BLOCKED_INPUT_SET: real multi-module manifest path is required
+$ ./scripts/test.sh <26B target tests> --collect-only
+exit=0 collected=50
+$ ./scripts/test.sh <26B target tests>
+exit=0 passed=50
+$ python3 -m py_compile <26B runtime modules>
+exit=0
+$ python3 -m compileall -q <26B runtime modules and tests>
+exit=0
+$ .venv/bin/ruff check <26B runtime modules and tests>
+exit=0
+$ git diff --name-only -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+exit=0 NO_CORE_DIFF

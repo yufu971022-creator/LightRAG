@@ -1,0 +1,14 @@
+Block 24B-2 semantic branch isolation smoke
+output_dir=artifacts/block_24b2_semantic_branch_isolation
+real_embedding_requested=False
+generic_isolation_smoke=True
+real_llm_calls_executed=false
+original_extract_entities_called=false
+original_gleaning_executed=false
+
+Block 24B-2.1 validation commands executed:
+- .venv/bin/python -m pytest ... --collect-only -q -> collected 47
+- split pytest/compileall/py_compile/ruff validation command -> all passed
+- .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_semantic_branch_isolation_smoke --output-dir artifacts/block_24b2_semantic_branch_isolation --fixture-suite --no-real-embedding --generic-isolation-smoke --cleanup -> passed
+- final artifact validation script -> artifacts_complete true
+- core diff check -> NO_CORE_DIFF

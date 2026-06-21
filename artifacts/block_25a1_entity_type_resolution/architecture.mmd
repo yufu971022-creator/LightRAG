@@ -1,0 +1,25 @@
+flowchart TD
+    E[Entity Candidate + Original Type] --> C[Resolution Context]
+    C --> X[Explicit DSL / Config / Structure]
+    C --> R[Relation Signature]
+    C --> H[Section + Domain + Feature]
+    C --> N[Generic NER Candidate]
+
+    X --> P[Priority + Confidence Policy]
+    R --> P
+    H --> P
+    N --> P
+
+    P -->|Safe| T[Resolved PFSS Type]
+    P -->|Low Confidence| I[Type Review Issue]
+    P -->|Conflict| F[Type Conflict Issue]
+    P -->|Generic Only| B[Blocked from PFSS]
+
+    T --> ID[Stable Semantic Identity]
+    ID --> G[PFSS Node / Relation]
+    ID --> M[Rekey / Migration Plan]
+
+    E --> S[Sidecar: Original Type + Evidence]
+    T --> S
+
+    NOTE[No Live Upload / No Live Query / No Production Rewrite]

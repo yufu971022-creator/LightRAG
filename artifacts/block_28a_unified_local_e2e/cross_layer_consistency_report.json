@@ -1,0 +1,13 @@
+{
+  "active_version_mismatch_count": 0,
+  "cross_store_mismatch_count": 0,
+  "dangling_edge_count": 0,
+  "document_registry_active_matches_raw_evidence": true,
+  "orphan_chunk_count": 0,
+  "orphan_sidecar_mapping_count": 0,
+  "orphan_vector_count": 0,
+  "pfss_issue_sidecar_consistent": true,
+  "trusted_context_pack_required": true,
+  "untraceable_fact_count": 0,
+  "untraceable_impact_count": 0
+}

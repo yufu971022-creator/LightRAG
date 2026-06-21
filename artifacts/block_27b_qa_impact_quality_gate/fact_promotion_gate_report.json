@@ -1,0 +1,97 @@
+{
+  "gate_name": "FACT_PROMOTION",
+  "passed": true,
+  "results": [
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "FACT_PROMOTION",
+      "metrics": {
+        "candidate_as_confirmed_count": 0,
+        "generic_ner_fact_hit_count": 0,
+        "generic_only_as_confirmed_count": 0,
+        "info_only_as_fact_count": 0,
+        "issue_as_fact_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "FACT_PROMOTION",
+      "metrics": {
+        "candidate_as_confirmed_count": 0,
+        "generic_ner_fact_hit_count": 0,
+        "generic_only_as_confirmed_count": 0,
+        "info_only_as_fact_count": 0,
+        "issue_as_fact_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "FACT_PROMOTION",
+      "metrics": {
+        "candidate_as_confirmed_count": 0,
+        "generic_ner_fact_hit_count": 0,
+        "generic_only_as_confirmed_count": 0,
+        "info_only_as_fact_count": 0,
+        "issue_as_fact_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "FACT_PROMOTION",
+      "metrics": {
+        "candidate_as_confirmed_count": 0,
+        "generic_ner_fact_hit_count": 0,
+        "generic_only_as_confirmed_count": 0,
+        "info_only_as_fact_count": 0,
+        "issue_as_fact_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "FACT_PROMOTION",
+      "metrics": {
+        "candidate_as_confirmed_count": 0,
+        "generic_ner_fact_hit_count": 0,
+        "generic_only_as_confirmed_count": 0,
+        "info_only_as_fact_count": 0,
+        "issue_as_fact_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "FACT_PROMOTION",
+      "metrics": {
+        "candidate_as_confirmed_count": 0,
+        "generic_ner_fact_hit_count": 0,
+        "generic_only_as_confirmed_count": 0,
+        "info_only_as_fact_count": 0,
+        "issue_as_fact_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "FACT_PROMOTION",
+      "metrics": {
+        "candidate_as_confirmed_count": 0,
+        "generic_ner_fact_hit_count": 0,
+        "generic_only_as_confirmed_count": 0,
+        "info_only_as_fact_count": 0,
+        "issue_as_fact_count": 0
+      },
+      "passed": true
+    }
+  ]
+}

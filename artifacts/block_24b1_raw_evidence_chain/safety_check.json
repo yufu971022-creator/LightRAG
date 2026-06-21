@@ -1,0 +1,16 @@
+{
+  "auto_write_routing_enabled": false,
+  "dsl_write_executed": false,
+  "entity_vector_writes_executed": false,
+  "extract_entities_called": false,
+  "graph_writes_executed": false,
+  "lightrag_core_modified": false,
+  "live_upload_behavior_changed": false,
+  "live_upload_hook_connected": false,
+  "llm_calls_executed": false,
+  "model_calls_executed": false,
+  "network_calls_executed": false,
+  "production_storage_writes_executed": false,
+  "raw_write_executed": false,
+  "relation_vector_writes_executed": false
+}

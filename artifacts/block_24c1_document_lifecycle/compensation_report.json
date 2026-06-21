@@ -1,0 +1,8 @@
+{
+  "compensation_failure_marks_rebuild_required": true,
+  "failure_after_active_switch_compensated": true,
+  "failure_after_edge_write_compensated": true,
+  "half_applied_mutation_count": 0,
+  "preimage_restored": true,
+  "reverse_order_compensation_passed": true
+}

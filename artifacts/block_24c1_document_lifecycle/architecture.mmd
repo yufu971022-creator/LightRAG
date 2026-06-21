@@ -1,0 +1,24 @@
+flowchart TD
+    OLD[Old Active Version Bundle] --> DIFF[Deterministic Version Diff]
+    NEW[New Compiled Version Bundle] --> DIFF
+
+    DIFF --> PLAN[Durable Multi-store Mutation Plan]
+    PLAN --> SIDE[Sidecar: PLANNED / APPLYING]
+    PLAN --> RAW[Raw KV + Chunk Vector Delta]
+    PLAN --> PFSS[PFSS Node / Edge / Vector Delta]
+
+    RAW --> VALIDATE[Validate New Projection]
+    PFSS --> VALIDATE
+
+    VALIDATE --> SWITCH[Switch Active Document Version]
+    SWITCH --> CLEAN[Deactivate Old Contributions]
+    CLEAN --> DELETE[Delete Zero-contribution Projections]
+    DELETE --> READBACK[Cross-store Readback Validation]
+    READBACK --> DONE[Mutation APPLIED]
+
+    PLAN -->|Failure| COMP[Reverse-order Compensation]
+    COMP --> RESTORE[Restore Preimage and Active Pointer]
+    RESTORE --> CHECK[Compensation Validation]
+    CHECK --> COMPENSATED[COMPENSATED or REBUILD_REQUIRED]
+
+    NOTE[No Global ACID Across Stores: Saga + Compensation]

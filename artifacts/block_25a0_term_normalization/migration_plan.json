@@ -1,0 +1,63 @@
+{
+  "affected_semantic_object_ids": [
+    "old:candidate-handler",
+    "old:conflict-status",
+    "old:swift-code",
+    "old:swiftcode"
+  ],
+  "alias_groups": {
+    "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default": [
+      "SWIFT CODE",
+      "SWIFTCODE"
+    ],
+    "urn:pfss:mod-product:workflow:candidatefeature:fieldspec:currenthandler:default": [
+      "Handler"
+    ]
+  },
+  "candidate_review_group_count": 1,
+  "confirmed_merge_group_count": 1,
+  "confirmed_merge_groups": [
+    [
+      "old:swift-code",
+      "old:swiftcode"
+    ]
+  ],
+  "conflict_group_count": 1,
+  "conflict_groups": [
+    [
+      "old:conflict-status"
+    ]
+  ],
+  "graph_rebuild_required_count": 2,
+  "merge_candidate_groups": [
+    [
+      "old:candidate-handler"
+    ]
+  ],
+  "planned_actions": [
+    {
+      "action": "MERGE_OR_REBUILD_TEST_OBJECT",
+      "from": "old:swiftcode",
+      "to": "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default"
+    },
+    {
+      "action": "MERGE_OR_REBUILD_TEST_OBJECT",
+      "from": "old:swift-code",
+      "to": "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default"
+    },
+    {
+      "action": "REVIEW_CANDIDATE_ALIAS",
+      "semantic_object_id": "old:candidate-handler",
+      "term": "Handler"
+    },
+    {
+      "action": "TERM_AMBIGUITY_REVIEW",
+      "semantic_object_id": "old:conflict-status",
+      "term": "Status"
+    }
+  ],
+  "production_graph_rewrite_executed": false,
+  "rebuild_required_count": 2,
+  "sidecar_only_update_count": 0,
+  "version_group_rekey_count": 3
+}

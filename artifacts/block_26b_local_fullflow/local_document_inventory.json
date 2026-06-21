@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "accepted_file_count": 1,
+    "canonical_source_us_count": 66,
+    "dfx_variant_us_count": 0,
+    "discovered_file_count": 1,
+    "duplicate_us_count": 0,
+    "quality_annotation_us_count": 0,
+    "rejected_file_count": 0,
+    "synthetic_change_us_count": 0,
+    "total_detected_us_count": 66,
+    "unique_source_us_count": 66
+  },
+  "discovery": {
+    "discovery_executed_once": true,
+    "discovery_roots": [
+      "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+      "/Users/hufaofao/Projects/LightRAG",
+      "/Users/hufaofao/Projects/LightRAG/data",
+      "/Users/hufaofao/Projects/LightRAG/artifacts"
+    ],
+    "expected_files": [
+      "LC_Acceptable_Bank_US_v1.md",
+      "LC_Acceptable_Bank_66US_with_synthetic_modification_US_for_LightRAG_DSL_test.md",
+      "FX_US_优化后全套US_v9.2.docx",
+      "FX_US_优化后全套US_v9.2_dfx.docx",
+      "FX_US_质检问题高亮版_v9.2.docx",
+      "FX_US_质检问题高亮版_v9.2_dfx.docx"
+    ],
+    "missing_expected_file_count": 5,
+    "missing_expected_files": [
+      "LC_Acceptable_Bank_66US_with_synthetic_modification_US_for_LightRAG_DSL_test.md",
+      "FX_US_优化后全套US_v9.2.docx",
+      "FX_US_优化后全套US_v9.2_dfx.docx",
+      "FX_US_质检问题高亮版_v9.2.docx",
+      "FX_US_质检问题高亮版_v9.2_dfx.docx"
+    ]
+  },
+  "documents": [
+    {
+      "accepted": true,
+      "detected_us_count": 66,
+      "document_id": "local-doc-0000",
+      "duplicate_of": null,
+      "extension": ".md",
+      "file_name": "LC_Acceptable_Bank_US_v1.md",
+      "parse_status": "PARSED",
+      "path": "/Users/hufaofao/Projects/LC_Acceptable_Bank_US_v1.md",
+      "rejection_reason": null,
+      "role": "CANONICAL_SOURCE",
+      "sha256": "4c3fa15af021920cbf091c8a71edf0db39555d94b17be44901f80ac8a79674ce",
+      "size_bytes": 78000,
+      "text_excerpt": "# 信用证可接受银行全量 User Stories（测试版 v1） > 生成日期：2026-05-16 > 适用范围：L/C Acceptable Bank 新增电子流、回顾电子流、台账管理、负向事件、待办、配置、集成、权限审计、报表查询、历史数据迁移与迭代优化。 > 用途：用于 LightRAG / Gleaning / DSL / 质检 Skill 回归测试。 > 注意：本文为完整 US 原文样例，不包含 DSL 编译结果。 ## 固定 Domain 对齐说明 - `Ma"
+    }
+  ]
+}

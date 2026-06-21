@@ -1,0 +1,107 @@
+{
+  "dry_run": [
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "VERSION_CHECK",
+      "passed": true,
+      "reason_codes": [],
+      "required_clarifications": []
+    },
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "IMPACT_BREADTH_CHECK",
+      "passed": true,
+      "reason_codes": [],
+      "required_clarifications": []
+    },
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "EVIDENCE_CHECK",
+      "passed": true,
+      "reason_codes": [],
+      "required_clarifications": []
+    }
+  ],
+  "insufficient": [
+    {
+      "blocks_downstream": true,
+      "checkpoint_type": "CLARIFICATION_CHECK",
+      "passed": false,
+      "reason_codes": [
+        "clarification_required"
+      ],
+      "required_clarifications": [
+        {
+          "question": "Which source document or feature evidence should be used?",
+          "question_id": "evidence"
+        }
+      ]
+    }
+  ],
+  "mixed": [
+    {
+      "blocks_downstream": true,
+      "checkpoint_type": "CLARIFICATION_CHECK",
+      "passed": false,
+      "reason_codes": [
+        "clarification_required"
+      ],
+      "required_clarifications": [
+        {
+          "question": "Should this be split into separate new capability and impact-change requests?",
+          "question_id": "split"
+        }
+      ]
+    }
+  ],
+  "one_to_one_x": [
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "EVIDENCE_CHECK",
+      "passed": true,
+      "reason_codes": [],
+      "required_clarifications": []
+    },
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "IMPACT_BREADTH_CHECK",
+      "passed": true,
+      "reason_codes": [],
+      "required_clarifications": []
+    },
+    {
+      "blocks_downstream": true,
+      "checkpoint_type": "CAPABILITY_CHECK",
+      "passed": false,
+      "reason_codes": [
+        "code_context_capability_gap"
+      ],
+      "required_clarifications": []
+    }
+  ],
+  "plan_only": [
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "EVIDENCE_CHECK",
+      "passed": true,
+      "reason_codes": [],
+      "required_clarifications": []
+    },
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "CLARIFICATION_CHECK",
+      "passed": true,
+      "reason_codes": [],
+      "required_clarifications": []
+    },
+    {
+      "blocks_downstream": false,
+      "checkpoint_type": "HUMAN_DECISION_REQUIRED",
+      "passed": true,
+      "reason_codes": [
+        "assumption_checkpoint_required"
+      ],
+      "required_clarifications": []
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+{
+  "plans": [
+    {
+      "dsl_plan": {
+        "chain_name": "dsl_custom_kg_chain",
+        "enabled": true,
+        "planned_operations": [
+          "compile_controlled_semantics",
+          "plan_custom_kg"
+        ],
+        "reason": "selected_route=DSL_FULL; score=0.775; no ainsert_custom_kg is called in 24B-0",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "generic_graph_fallback_plan": {
+        "chain_name": "native_generic_graph_fallback",
+        "enabled": false,
+        "planned_operations": [],
+        "reason": "generic graph fallback disabled or not applicable",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "live_route": "RAW_ONLY",
+      "metrics": {
+        "domain_score": 0.5,
+        "evidence_coverage_score": 0.5,
+        "evidence_gap_count": 0,
+        "high_risk_object_count": 0,
+        "object_risk_count": 0,
+        "object_risks": [],
+        "object_signal_score": 1.0,
+        "reasons": [
+          "score=0.775",
+          "domain_score=0.5 domains=['MasterData']",
+          "structure_score=1.0 marker_score=8.0",
+          "evidence_coverage_score=0.5 evidence_lines=4",
+          "object_signal_score=1.0 object_count=8"
+        ],
+        "recommended_decision": "DSL_FULL",
+        "score": 0.775,
+        "structure_score": 1.0,
+        "type_issue_count": 0,
+        "version_risk_count": 0
+      },
+      "notes": [
+        "24B-0 produces a plan only; no LightRAG write APIs are invoked.",
+        "Original text evidence chain is always retained in the plan.",
+        "Domain hit alone is insufficient; structure, evidence, object signals, and risk counts affect DSL applicability.",
+        "mode=shadow live_route=RAW_ONLY selected_plan_route=DSL_FULL",
+        "shadow_candidate_route=DSL_FULL; live upload behavior remains raw-only/not connected."
+      ],
+      "parse_failed": false,
+      "profile": {
+        "char_count": 532,
+        "content_hash": "0ca0896e62469221",
+        "design_marker_score": 8.0,
+        "document_id": "24b0-dsl-full",
+        "domain_hit_count": 1,
+        "evidence_line_count": 4,
+        "line_count": 11,
+        "object_candidates": [
+          {
+            "evidence_line_numbers": [
+              1
+            ],
+            "inferred_type": "UserStory",
+            "label": "User Story US",
+            "object_id": "user_story_us",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "DomainObject",
+            "label": "MasterData",
+            "object_id": "masterdata",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "FieldSpec",
+            "label": "Bank Status Reference Data",
+            "object_id": "bank_status_reference_data",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "FieldSpec",
+            "label": "Query Condition",
+            "object_id": "query_condition",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "FieldSpec",
+            "label": "Bank Status",
+            "object_id": "bank_status",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "FieldSpec",
+            "label": "Eligible",
+            "object_id": "eligible",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "FieldSpec",
+            "label": "Bank Status SupportedByEvidence Query",
+            "object_id": "bank_status_supportedbyevidence_query",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "FieldSpec",
+            "label": "Condition",
+            "object_id": "condition",
+            "risk_categories": []
+          }
+        ],
+        "parse_errors": [],
+        "recognized_domains": [
+          "MasterData"
+        ],
+        "user_story_reference_count": 3
+      },
+      "raw_text_plan": {
+        "chain_name": "original_raw_text_chain",
+        "enabled": true,
+        "planned_operations": [
+          "preserve_original_text",
+          "plan_full_docs_doc_status_text_chunks"
+        ],
+        "reason": "raw evidence chain is retained for mode=shadow; live_route=RAW_ONLY",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "request": {
+        "allow_generic_graph_fallback": false,
+        "content": "# User Story US-2401\nDomain: MasterData\nFeature: Bank Status Reference Data\nSource: US-2401 text unit TU-1 evidence.\nAcceptance Criteria:\nGiven Query Condition contains account lifecycle inputs.\nWhen the customer account is active and KYC is complete.\nThen Bank Status is set to Eligible.\nBusiness Rule: Bank Status is determined by Query Condition.\nEntity: Bank Status. Entity: Query Condition. Relationship: Bank Status SupportedByEvidence Query Condition.\nEvidence: US-2401 TU-1 contains the exact source span for both entities.\n",
+        "document_id": "24b0-dsl-full",
+        "file_name": "synthetic_product_design_full.md",
+        "metadata": {
+          "domain": "MasterData"
+        },
+        "mode": "shadow"
+      },
+      "requested_mode": "shadow",
+      "safety_invariants": {
+        "AUTO_WRITE_ROUTING_ENABLED": false,
+        "DSL_WRITE_EXECUTED": false,
+        "LIGHTRAG_CORE_MODIFIED": false,
+        "LIVE_SHADOW_HOOK_CONNECTED": false,
+        "LIVE_UPLOAD_BEHAVIOR_CHANGED": false,
+        "MODEL_CALLS_EXECUTED": false,
+        "NETWORK_CALLS_EXECUTED": false,
+        "RAW_WRITE_EXECUTED": false,
+        "STORAGE_WRITES_EXECUTED": false
+      },
+      "selected_plan_route": "DSL_FULL",
+      "shadow_candidate_route": "DSL_FULL"
+    },
+    {
+      "dsl_plan": {
+        "chain_name": "dsl_custom_kg_chain",
+        "enabled": false,
+        "planned_operations": [],
+        "reason": "selected_route=RAW_ONLY; score=0.0867; no ainsert_custom_kg is called in 24B-0",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "generic_graph_fallback_plan": {
+        "chain_name": "native_generic_graph_fallback",
+        "enabled": false,
+        "planned_operations": [],
+        "reason": "generic graph fallback disabled or not applicable",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "live_route": "RAW_ONLY",
+      "metrics": {
+        "domain_score": 0.5,
+        "evidence_coverage_score": 0.0,
+        "evidence_gap_count": 1,
+        "high_risk_object_count": 0,
+        "object_risk_count": 2,
+        "object_risks": [
+          {
+            "label": "Document Evidence",
+            "line_number": null,
+            "object_id": "document_evidence",
+            "reason": "document has object/domain signals but no evidence/source/US marker",
+            "risk_category": "evidence",
+            "severity": "medium"
+          },
+          {
+            "label": "Document Structure",
+            "line_number": null,
+            "object_id": "document_structure",
+            "reason": "document lacks product-design structure markers",
+            "risk_category": "structure",
+            "severity": "medium"
+          }
+        ],
+        "object_signal_score": 0.3333,
+        "reasons": [
+          "score=0.0867",
+          "domain_score=0.5 domains=['MasterData']",
+          "structure_score=0.0 marker_score=0.0",
+          "evidence_coverage_score=0.0 evidence_lines=0",
+          "object_signal_score=0.3333 object_count=1",
+          "object_risk_distribution={'evidence': 1, 'structure': 1}"
+        ],
+        "recommended_decision": "RAW_ONLY",
+        "score": 0.0867,
+        "structure_score": 0.0,
+        "type_issue_count": 0,
+        "version_risk_count": 0
+      },
+      "notes": [
+        "24B-0 produces a plan only; no LightRAG write APIs are invoked.",
+        "Original text evidence chain is always retained in the plan.",
+        "Domain hit alone is insufficient; structure, evidence, object signals, and risk counts affect DSL applicability.",
+        "mode=auto live_route=RAW_ONLY selected_plan_route=RAW_ONLY"
+      ],
+      "parse_failed": false,
+      "profile": {
+        "char_count": 116,
+        "content_hash": "2c833131e56f793b",
+        "design_marker_score": 0.0,
+        "document_id": "24b0-domain-only",
+        "domain_hit_count": 1,
+        "evidence_line_count": 0,
+        "line_count": 1,
+        "object_candidates": [
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "UserStory",
+            "label": "MasterData",
+            "object_id": "masterdata",
+            "risk_categories": []
+          }
+        ],
+        "parse_errors": [],
+        "recognized_domains": [
+          "MasterData"
+        ],
+        "user_story_reference_count": 0
+      },
+      "raw_text_plan": {
+        "chain_name": "original_raw_text_chain",
+        "enabled": true,
+        "planned_operations": [
+          "preserve_original_text",
+          "plan_full_docs_doc_status_text_chunks"
+        ],
+        "reason": "raw evidence chain is retained for mode=auto; live_route=RAW_ONLY",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "request": {
+        "allow_generic_graph_fallback": false,
+        "content": "MasterData is mentioned here, but this note has no user story, evidence, object definitions, or acceptance criteria.",
+        "document_id": "24b0-domain-only",
+        "file_name": "synthetic_domain_only.txt",
+        "metadata": {
+          "domain": "MasterData"
+        },
+        "mode": "auto"
+      },
+      "requested_mode": "auto",
+      "safety_invariants": {
+        "AUTO_WRITE_ROUTING_ENABLED": false,
+        "DSL_WRITE_EXECUTED": false,
+        "LIGHTRAG_CORE_MODIFIED": false,
+        "LIVE_SHADOW_HOOK_CONNECTED": false,
+        "LIVE_UPLOAD_BEHAVIOR_CHANGED": false,
+        "MODEL_CALLS_EXECUTED": false,
+        "NETWORK_CALLS_EXECUTED": false,
+        "RAW_WRITE_EXECUTED": false,
+        "STORAGE_WRITES_EXECUTED": false
+      },
+      "selected_plan_route": "RAW_ONLY",
+      "shadow_candidate_route": null
+    },
+    {
+      "dsl_plan": {
+        "chain_name": "dsl_custom_kg_chain",
+        "enabled": true,
+        "planned_operations": [
+          "compile_controlled_semantics",
+          "plan_custom_kg"
+        ],
+        "reason": "selected_route=DSL_PARTIAL; score=0.765; no ainsert_custom_kg is called in 24B-0",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "generic_graph_fallback_plan": {
+        "chain_name": "native_generic_graph_fallback",
+        "enabled": true,
+        "planned_operations": [
+          "plan_native_extract_entities_fallback"
+        ],
+        "reason": "generic graph fallback is explicitly enabled but only planned, not written",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "live_route": "DSL_PARTIAL",
+      "metrics": {
+        "domain_score": 1.0,
+        "evidence_coverage_score": 1.0,
+        "evidence_gap_count": 0,
+        "high_risk_object_count": 1,
+        "object_risk_count": 2,
+        "object_risks": [
+          {
+            "label": "Document Version Policy",
+            "line_number": null,
+            "object_id": "document_version_policy",
+            "reason": "version/supersedes/deprecation language requires explicit policy review",
+            "risk_category": "version",
+            "severity": "high"
+          },
+          {
+            "label": "tbd",
+            "line_number": null,
+            "object_id": "type_issue_tbd",
+            "reason": "ambiguous type term found in source text",
+            "risk_category": "type",
+            "severity": "medium"
+          }
+        ],
+        "object_signal_score": 1.0,
+        "reasons": [
+          "score=0.765",
+          "domain_score=1.0 domains=['RuleManagement', 'Workflow']",
+          "structure_score=0.9 marker_score=4.5",
+          "evidence_coverage_score=1.0 evidence_lines=3",
+          "object_signal_score=1.0 object_count=3",
+          "object_risk_distribution={'version': 1, 'type': 1}"
+        ],
+        "recommended_decision": "DSL_PARTIAL",
+        "score": 0.765,
+        "structure_score": 0.9,
+        "type_issue_count": 1,
+        "version_risk_count": 1
+      },
+      "notes": [
+        "24B-0 produces a plan only; no LightRAG write APIs are invoked.",
+        "Original text evidence chain is always retained in the plan.",
+        "Domain hit alone is insufficient; structure, evidence, object signals, and risk counts affect DSL applicability.",
+        "mode=dsl live_route=DSL_PARTIAL selected_plan_route=DSL_PARTIAL",
+        "DSL_PARTIAL requires review before write routing is enabled in a later block."
+      ],
+      "parse_failed": false,
+      "profile": {
+        "char_count": 286,
+        "content_hash": "a57f42b73ba5dfd4",
+        "design_marker_score": 4.5,
+        "document_id": "24b0-version-risk",
+        "domain_hit_count": 2,
+        "evidence_line_count": 3,
+        "line_count": 6,
+        "object_candidates": [
+          {
+            "evidence_line_numbers": [
+              1
+            ],
+            "inferred_type": "UserStory",
+            "label": "User Story US",
+            "object_id": "user_story_us",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [],
+            "inferred_type": "RuleAtom",
+            "label": "RuleManagement",
+            "object_id": "rulemanagement",
+            "risk_categories": []
+          },
+          {
+            "evidence_line_numbers": [
+              4
+            ],
+            "inferred_type": "RuleVersion",
+            "label": "Fee Rule Version",
+            "object_id": "fee_rule_version",
+            "risk_categories": []
+          }
+        ],
+        "parse_errors": [],
+        "recognized_domains": [
+          "RuleManagement",
+          "Workflow"
+        ],
+        "user_story_reference_count": 2
+      },
+      "raw_text_plan": {
+        "chain_name": "original_raw_text_chain",
+        "enabled": true,
+        "planned_operations": [
+          "preserve_original_text",
+          "plan_full_docs_doc_status_text_chunks"
+        ],
+        "reason": "raw evidence chain is retained for mode=dsl; live_route=DSL_PARTIAL",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "request": {
+        "allow_generic_graph_fallback": true,
+        "content": "User Story US-2402\nDomain: RuleManagement\nBusiness Rule: Fee Rule Version v2 supersedes v1.\nAcceptance Criteria: Then Fee Rule Version is used for calculation.\nEvidence: US-2402 TU-3 states that the supersedes relationship needs reviewer approval.\nType: TBD for legacy override object.\n",
+        "document_id": "24b0-version-risk",
+        "file_name": "synthetic_version_partial.md",
+        "metadata": {
+          "domain": "RuleManagement"
+        },
+        "mode": "dsl"
+      },
+      "requested_mode": "dsl",
+      "safety_invariants": {
+        "AUTO_WRITE_ROUTING_ENABLED": false,
+        "DSL_WRITE_EXECUTED": false,
+        "LIGHTRAG_CORE_MODIFIED": false,
+        "LIVE_SHADOW_HOOK_CONNECTED": false,
+        "LIVE_UPLOAD_BEHAVIOR_CHANGED": false,
+        "MODEL_CALLS_EXECUTED": false,
+        "NETWORK_CALLS_EXECUTED": false,
+        "RAW_WRITE_EXECUTED": false,
+        "STORAGE_WRITES_EXECUTED": false
+      },
+      "selected_plan_route": "DSL_PARTIAL",
+      "shadow_candidate_route": null
+    },
+    {
+      "dsl_plan": {
+        "chain_name": "dsl_custom_kg_chain",
+        "enabled": false,
+        "planned_operations": [],
+        "reason": "selected_route=RAW_ONLY; score=0.0; no ainsert_custom_kg is called in 24B-0",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "generic_graph_fallback_plan": {
+        "chain_name": "native_generic_graph_fallback",
+        "enabled": false,
+        "planned_operations": [],
+        "reason": "generic graph fallback disabled or not applicable",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "live_route": "RAW_ONLY",
+      "metrics": {
+        "domain_score": 0.0,
+        "evidence_coverage_score": 0.0,
+        "evidence_gap_count": 0,
+        "high_risk_object_count": 0,
+        "object_risk_count": 2,
+        "object_risks": [
+          {
+            "label": "Document Domain",
+            "line_number": null,
+            "object_id": "document_domain",
+            "reason": "no supported DSL domain signal was detected",
+            "risk_category": "domain",
+            "severity": "medium"
+          },
+          {
+            "label": "Document Structure",
+            "line_number": null,
+            "object_id": "document_structure",
+            "reason": "document lacks product-design structure markers",
+            "risk_category": "structure",
+            "severity": "medium"
+          }
+        ],
+        "object_signal_score": 0.0,
+        "reasons": [
+          "score=0.0",
+          "domain_score=0.0 domains=[]",
+          "structure_score=0.0 marker_score=0.0",
+          "evidence_coverage_score=0.0 evidence_lines=0",
+          "object_signal_score=0.0 object_count=0",
+          "object_risk_distribution={'domain': 1, 'structure': 1}"
+        ],
+        "recommended_decision": "RAW_ONLY",
+        "score": 0.0,
+        "structure_score": 0.0,
+        "type_issue_count": 0,
+        "version_risk_count": 0
+      },
+      "notes": [
+        "24B-0 produces a plan only; no LightRAG write APIs are invoked.",
+        "Original text evidence chain is always retained in the plan.",
+        "Domain hit alone is insufficient; structure, evidence, object signals, and risk counts affect DSL applicability.",
+        "mode=raw live_route=RAW_ONLY selected_plan_route=RAW_ONLY"
+      ],
+      "parse_failed": false,
+      "profile": {
+        "char_count": 100,
+        "content_hash": "7a96be6c9124c9b7",
+        "design_marker_score": 0.0,
+        "document_id": "24b0-raw-only",
+        "domain_hit_count": 0,
+        "evidence_line_count": 0,
+        "line_count": 1,
+        "object_candidates": [],
+        "parse_errors": [],
+        "recognized_domains": [],
+        "user_story_reference_count": 0
+      },
+      "raw_text_plan": {
+        "chain_name": "original_raw_text_chain",
+        "enabled": true,
+        "planned_operations": [
+          "preserve_original_text",
+          "plan_full_docs_doc_status_text_chunks"
+        ],
+        "reason": "raw evidence chain is retained for mode=raw; live_route=RAW_ONLY",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "request": {
+        "allow_generic_graph_fallback": false,
+        "content": "A short operational note without DSL structure. It should keep raw text only in this planning round.",
+        "document_id": "24b0-raw-only",
+        "file_name": "synthetic_raw_note.txt",
+        "metadata": {},
+        "mode": "raw"
+      },
+      "requested_mode": "raw",
+      "safety_invariants": {
+        "AUTO_WRITE_ROUTING_ENABLED": false,
+        "DSL_WRITE_EXECUTED": false,
+        "LIGHTRAG_CORE_MODIFIED": false,
+        "LIVE_SHADOW_HOOK_CONNECTED": false,
+        "LIVE_UPLOAD_BEHAVIOR_CHANGED": false,
+        "MODEL_CALLS_EXECUTED": false,
+        "NETWORK_CALLS_EXECUTED": false,
+        "RAW_WRITE_EXECUTED": false,
+        "STORAGE_WRITES_EXECUTED": false
+      },
+      "selected_plan_route": "RAW_ONLY",
+      "shadow_candidate_route": null
+    },
+    {
+      "dsl_plan": {
+        "chain_name": "dsl_custom_kg_chain",
+        "enabled": false,
+        "planned_operations": [],
+        "reason": "selected_route=PARSE_FAILED; score=0.0; no ainsert_custom_kg is called in 24B-0",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "generic_graph_fallback_plan": {
+        "chain_name": "native_generic_graph_fallback",
+        "enabled": false,
+        "planned_operations": [],
+        "reason": "generic graph fallback disabled or not applicable",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "live_route": "PARSE_FAILED",
+      "metrics": {
+        "domain_score": 0.0,
+        "evidence_coverage_score": 0.0,
+        "evidence_gap_count": 0,
+        "high_risk_object_count": 0,
+        "object_risk_count": 0,
+        "object_risks": [],
+        "object_signal_score": 0.0,
+        "reasons": [
+          "empty_document"
+        ],
+        "recommended_decision": "PARSE_FAILED",
+        "score": 0.0,
+        "structure_score": 0.0,
+        "type_issue_count": 0,
+        "version_risk_count": 0
+      },
+      "notes": [
+        "24B-0 produces a plan only; no LightRAG write APIs are invoked.",
+        "Original text evidence chain is always retained in the plan.",
+        "Domain hit alone is insufficient; structure, evidence, object signals, and risk counts affect DSL applicability.",
+        "mode=shadow live_route=PARSE_FAILED selected_plan_route=PARSE_FAILED",
+        "shadow_candidate_route=PARSE_FAILED; live upload behavior remains raw-only/not connected."
+      ],
+      "parse_failed": true,
+      "profile": {
+        "char_count": 3,
+        "content_hash": "0aad7da77d2ed59c",
+        "design_marker_score": 0.0,
+        "document_id": "24b0-parse-failed",
+        "domain_hit_count": 0,
+        "evidence_line_count": 0,
+        "line_count": 0,
+        "object_candidates": [],
+        "parse_errors": [
+          "empty_document"
+        ],
+        "recognized_domains": [],
+        "user_story_reference_count": 0
+      },
+      "raw_text_plan": {
+        "chain_name": "original_raw_text_chain",
+        "enabled": true,
+        "planned_operations": [
+          "preserve_original_text",
+          "plan_full_docs_doc_status_text_chunks"
+        ],
+        "reason": "raw evidence chain is retained for mode=shadow; live_route=PARSE_FAILED",
+        "target_namespace": null,
+        "target_workspace": null,
+        "would_execute_write": false
+      },
+      "request": {
+        "allow_generic_graph_fallback": false,
+        "content": "   ",
+        "document_id": "24b0-parse-failed",
+        "file_name": "empty.txt",
+        "metadata": {},
+        "mode": "shadow"
+      },
+      "requested_mode": "shadow",
+      "safety_invariants": {
+        "AUTO_WRITE_ROUTING_ENABLED": false,
+        "DSL_WRITE_EXECUTED": false,
+        "LIGHTRAG_CORE_MODIFIED": false,
+        "LIVE_SHADOW_HOOK_CONNECTED": false,
+        "LIVE_UPLOAD_BEHAVIOR_CHANGED": false,
+        "MODEL_CALLS_EXECUTED": false,
+        "NETWORK_CALLS_EXECUTED": false,
+        "RAW_WRITE_EXECUTED": false,
+        "STORAGE_WRITES_EXECUTED": false
+      },
+      "selected_plan_route": "PARSE_FAILED",
+      "shadow_candidate_route": "PARSE_FAILED"
+    }
+  ]
+}

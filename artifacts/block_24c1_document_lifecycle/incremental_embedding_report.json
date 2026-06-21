@@ -1,0 +1,7 @@
+{
+  "embedding_input_count": 6,
+  "embedding_recomputed_count": 6,
+  "embedding_reused_count": 5,
+  "expected_recomputed_count": 6,
+  "passed": true
+}

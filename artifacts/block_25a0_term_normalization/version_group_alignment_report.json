@@ -1,0 +1,5 @@
+{
+  "bank_and_approval_distinct_group": true,
+  "bank_status_and_zh_same_group": true,
+  "uses_original_term": false
+}

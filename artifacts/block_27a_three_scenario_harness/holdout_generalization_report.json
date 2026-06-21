@@ -1,0 +1,49 @@
+{
+  "route": {
+    "alternative_scenarios": [],
+    "clarification_questions": [],
+    "classification_status": "CONFIDENT",
+    "confidence": 0.833,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 2,
+      "affected_feature_count": 3,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 3,
+      "evidence_sufficiency_score": 0.8,
+      "existing_code_asset_coverage": 0.0,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.55,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.7,
+      "graph_path_count": 2,
+      "indirect_impact_count": 2,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [
+        "state_transition"
+      ],
+      "profile_confidence": 0.8,
+      "requirement_id": "REQ-27A-HOLDOUT",
+      "risks": [
+        "cross_domain_impact"
+      ],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "reason_codes": [
+      "one_to_many_signals_matched"
+    ],
+    "requirement_id": "REQ-27A-HOLDOUT",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": "ONE_TO_MANY"
+  },
+  "runtime_module_branch_count": 0,
+  "uses_same_router_policy": true
+}

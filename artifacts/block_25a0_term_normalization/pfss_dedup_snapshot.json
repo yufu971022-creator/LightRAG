@@ -1,0 +1,75 @@
+{
+  "alias_record_count": 5,
+  "approval_status_kept_separate": true,
+  "canonical_node_count": 3,
+  "dedup_duplicate_alias_count": 3,
+  "duplicate_semantic_object_count": 0,
+  "evidence": [
+    {
+      "original_term": "Current Handler",
+      "semantic_object_id": "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default",
+      "source_span": "synthetic",
+      "text_unit_id": "doc1-tu1"
+    },
+    {
+      "original_term": "SWIFT CODE",
+      "semantic_object_id": "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default",
+      "source_span": "synthetic",
+      "text_unit_id": "doc1-tu2"
+    },
+    {
+      "original_term": "Bank Status",
+      "semantic_object_id": "urn:pfss:mod-product:ledger:bankstatusfeature:fieldspec:bankstatus:default",
+      "source_span": "synthetic",
+      "text_unit_id": "doc1-tu3"
+    },
+    {
+      "original_term": "当前处理人",
+      "semantic_object_id": "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default",
+      "source_span": "synthetic",
+      "text_unit_id": "doc2-tu1"
+    },
+    {
+      "original_term": "SWIFTCODE",
+      "semantic_object_id": "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default",
+      "source_span": "synthetic",
+      "text_unit_id": "doc2-tu2"
+    },
+    {
+      "original_term": "银行状态",
+      "semantic_object_id": "urn:pfss:mod-product:ledger:bankstatusfeature:fieldspec:bankstatus:default",
+      "source_span": "synthetic",
+      "text_unit_id": "doc2-tu3"
+    }
+  ],
+  "idempotency_passed": true,
+  "nodes": {
+    "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default": {
+      "aliases": [
+        "SWIFT CODE",
+        "SWIFTCODE"
+      ],
+      "canonical_term": "Swift Code",
+      "semantic_object_id": "urn:pfss:mod-product:integration:paymentfeature:fieldspec:swiftcode:default"
+    },
+    "urn:pfss:mod-product:ledger:bankstatusfeature:fieldspec:bankstatus:default": {
+      "aliases": [
+        "Bank Status",
+        "银行状态"
+      ],
+      "canonical_term": "Bank Status",
+      "semantic_object_id": "urn:pfss:mod-product:ledger:bankstatusfeature:fieldspec:bankstatus:default"
+    },
+    "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default": {
+      "aliases": [
+        "Current Handler",
+        "当前处理人"
+      ],
+      "canonical_term": "Current Handler",
+      "semantic_object_id": "urn:pfss:mod-product:workflow:handlerfeature:rolepermission:currenthandler:default"
+    }
+  },
+  "original_evidence_traceable": true,
+  "source_term_count": 6,
+  "total_node_count_after_approval_status": 4
+}

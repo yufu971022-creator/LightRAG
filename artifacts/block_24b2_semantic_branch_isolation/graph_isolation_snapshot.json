@@ -1,0 +1,24 @@
+{
+  "generic_edge_ids": [],
+  "generic_node_ids": [
+    "generic:Synthetic Generic Topic"
+  ],
+  "issue_object_ids": [
+    "issue:missing_evidence",
+    "issue:version_review_required"
+  ],
+  "namespace_collision_count": 0,
+  "pfss_edge_ids": [
+    "pfss:bank_status:has_field:query_condition",
+    "pfss:rule_version:has_field:approval_status"
+  ],
+  "pfss_generic_edge_overlap_count": 0,
+  "pfss_generic_node_overlap_count": 0,
+  "pfss_issue_overlap_count": 0,
+  "pfss_node_ids": [
+    "pfss:approval_status",
+    "pfss:bank_status",
+    "pfss:query_condition",
+    "pfss:rule_version"
+  ]
+}

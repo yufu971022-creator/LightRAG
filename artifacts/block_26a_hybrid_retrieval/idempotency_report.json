@@ -1,0 +1,15 @@
+{
+  "deterministic_result_ids_match": true,
+  "first_fused_ids": [
+    "pfss-path-main",
+    "pfss-relation-main",
+    "pfss-entity-main",
+    "generic-background"
+  ],
+  "second_fused_ids": [
+    "pfss-path-main",
+    "pfss-relation-main",
+    "pfss-entity-main",
+    "generic-background"
+  ]
+}

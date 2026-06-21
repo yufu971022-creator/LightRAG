@@ -1,0 +1,9 @@
+Block 28A unified local E2E started
+Generated Block 28A artifacts
+No US/AC/UX/Code Agent/live pipeline/production storage executed
+pytest --collect-only target 28A tests: 36 collected
+pytest target 28A tests: 36 passed, 0 failed
+compileall lightrag_ext: passed
+py_compile lightrag/prompt.py: passed
+ruff check lightrag_ext lightrag/prompt.py: passed
+core_diff_check.txt: empty

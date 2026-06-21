@@ -1,0 +1,107 @@
+[
+  {
+    "actor": "SYSTEM",
+    "from_state": "CREATED",
+    "reason": "preflight validated",
+    "timestamp": "2026-06-21T08:51:47.590966+00:00",
+    "to_state": "PREFLIGHT_VALIDATED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "PREFLIGHT_VALIDATED",
+    "reason": "document inventory ready",
+    "timestamp": "2026-06-21T08:51:47.591036+00:00",
+    "to_state": "DOCUMENTS_DISCOVERED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "DOCUMENTS_DISCOVERED",
+    "reason": "single parse per document",
+    "timestamp": "2026-06-21T08:51:47.591038+00:00",
+    "to_state": "PARSING"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "PARSING",
+    "reason": "raw evidence indexed before routing",
+    "timestamp": "2026-06-21T08:51:47.591095+00:00",
+    "to_state": "RAW_EVIDENCE_INDEXED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "RAW_EVIDENCE_INDEXED",
+    "reason": "route decisions applied",
+    "timestamp": "2026-06-21T08:51:47.591096+00:00",
+    "to_state": "ROUTED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "ROUTED",
+    "reason": "dsl branches compiled or skipped",
+    "timestamp": "2026-06-21T08:51:47.591097+00:00",
+    "to_state": "DSL_COMPILED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "DSL_COMPILED",
+    "reason": "isolated semantic projections written",
+    "timestamp": "2026-06-21T08:51:47.591097+00:00",
+    "to_state": "SEMANTIC_BRANCH_WRITTEN"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "SEMANTIC_BRANCH_WRITTEN",
+    "reason": "sidecar persisted for semantic branches",
+    "timestamp": "2026-06-21T08:51:47.591098+00:00",
+    "to_state": "SIDECAR_PERSISTED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "SIDECAR_PERSISTED",
+    "reason": "lifecycle suite validated",
+    "timestamp": "2026-06-21T08:51:47.591116+00:00",
+    "to_state": "LIFECYCLE_VALIDATED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "LIFECYCLE_VALIDATED",
+    "reason": "trusted context packs created",
+    "timestamp": "2026-06-21T08:51:47.591117+00:00",
+    "to_state": "QUERY_CONTEXT_READY"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "QUERY_CONTEXT_READY",
+    "reason": "functional qa executed through contract",
+    "timestamp": "2026-06-21T08:51:47.591341+00:00",
+    "to_state": "FUNCTIONAL_QA_EXECUTED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "FUNCTIONAL_QA_EXECUTED",
+    "reason": "impact analysis executed through contract",
+    "timestamp": "2026-06-21T08:51:47.591342+00:00",
+    "to_state": "IMPACT_ANALYSIS_EXECUTED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "IMPACT_ANALYSIS_EXECUTED",
+    "reason": "27B quality gates checked in runtime flow",
+    "timestamp": "2026-06-21T08:51:47.591343+00:00",
+    "to_state": "QUALITY_GATE_CHECKED"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "QUALITY_GATE_CHECKED",
+    "reason": "completed with deterministic local integration result",
+    "timestamp": "2026-06-21T08:51:47.605358+00:00",
+    "to_state": "COMPLETED_WITH_GAPS"
+  },
+  {
+    "actor": "SYSTEM",
+    "from_state": "COMPLETED_WITH_GAPS",
+    "reason": "isolated workspace cleanup recorded",
+    "timestamp": "2026-06-21T08:51:47.605364+00:00",
+    "to_state": "CLEANED_UP"
+  }
+]

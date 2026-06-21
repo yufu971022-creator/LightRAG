@@ -1,0 +1,28 @@
+{
+  "classification_statuses": [
+    "CONFIDENT",
+    "AMBIGUOUS",
+    "MIXED",
+    "INSUFFICIENT_EVIDENCE",
+    "MANUAL_OVERRIDE"
+  ],
+  "entity_name_rules_allowed": false,
+  "module_name_rules_allowed": false,
+  "one_to_many_requires": [
+    "few_primary_targets",
+    "broad_impact",
+    "existing_coverage"
+  ],
+  "one_to_one_x_requires": [
+    "local_scope",
+    "code_or_design_asset_coverage",
+    "low_cross_domain_risk"
+  ],
+  "policy_version": "27A-router-v1",
+  "scenario_count": 3,
+  "zero_to_one_requires": [
+    "high_novelty",
+    "low_existing_coverage",
+    "sufficient_evidence"
+  ]
+}

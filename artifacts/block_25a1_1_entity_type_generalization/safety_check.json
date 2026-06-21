@@ -1,0 +1,14 @@
+{
+  "business_module_hardcode_detected": false,
+  "fixture_name_used_in_runtime_logic": false,
+  "lightrag_core_modified": false,
+  "live_query_behavior_changed": false,
+  "live_upload_behavior_changed": false,
+  "name_specific_relation_signature_detected": false,
+  "neo4j_connected": false,
+  "production_database_connected": false,
+  "production_graph_rewrite_executed": false,
+  "real_embedding_calls_executed": false,
+  "real_llm_calls_executed": false,
+  "term_normalization_v2_bypassed": false
+}

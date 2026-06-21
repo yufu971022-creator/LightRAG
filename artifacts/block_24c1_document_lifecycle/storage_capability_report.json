@@ -1,0 +1,28 @@
+{
+  "blocked_by_core_gap": false,
+  "direct_storage_file_edit_used": false,
+  "evidence": {
+    "api_methods": [
+      "upsert_raw_chunk",
+      "delete_raw_chunk",
+      "upsert_chunk_vector",
+      "delete_chunk_vector",
+      "upsert_pfss_node",
+      "upsert_pfss_edge",
+      "delete_pfss_edge",
+      "delete_pfss_node"
+    ],
+    "probe_run_count": 1
+  },
+  "graph_edge_delete": true,
+  "graph_edge_upsert": true,
+  "graph_node_delete": true,
+  "graph_node_upsert": true,
+  "graph_readback": true,
+  "kv_delete": true,
+  "kv_upsert": true,
+  "supports_safe_document_delete": true,
+  "unsupported_operations": [],
+  "vector_delete": true,
+  "vector_upsert": true
+}

@@ -1,0 +1,5 @@
+{
+  "alias_same_version_group": true,
+  "canonical_version_group_example": "vg:global|MOD|Domain|Feature|RuleAtom|alias|default",
+  "distinct_objects_distinct_version_groups": true
+}

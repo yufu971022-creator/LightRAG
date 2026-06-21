@@ -1,0 +1,20 @@
+{
+  "business_term_hit_count": 0,
+  "business_term_hits": [],
+  "conditional_business_term_hit_count": 0,
+  "conditional_business_term_hits": [],
+  "files_scanned": [
+    "lightrag_ext/us_dsl/contextual_entity_type_resolver.py",
+    "lightrag_ext/us_dsl/product_entity_type_registry.py",
+    "lightrag_ext/us_dsl/generic_ner_type_policy.py",
+    "lightrag_ext/us_dsl/relation_type_signature_registry.py",
+    "lightrag_ext/us_dsl/entity_type_resolution_policy.py",
+    "lightrag_ext/us_dsl/entity_type_resolution_types.py",
+    "lightrag_ext/us_dsl/entity_type_migration.py"
+  ],
+  "fixture_reference_hit_count": 0,
+  "fixture_reference_hits": [],
+  "passed": true,
+  "runtime_test_coupling_hit_count": 0,
+  "runtime_test_coupling_hits": []
+}

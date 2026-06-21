@@ -1,0 +1,19 @@
+flowchart TD
+    H[27A Harness Plan] --> C[Trusted Context + Version Context]
+    C --> Q[Functional QA Skill]
+    C --> I[Impact Analysis Skill]
+    Q --> QC[QA Output Contract]
+    I --> IC[Impact Output Contract]
+    QC --> G[Quality Gates]
+    IC --> G
+    G --> E[Evidence / Citation]
+    G --> T[Term / Identity]
+    G --> V[Version Safety]
+    G --> B[Impact Breadth / Path]
+    G --> F[Fact Promotion]
+    G --> N[Insufficient Evidence]
+    G -->|Pass| P[QUALITY_GATE_PASSED]
+    G -->|Fail once| R[Targeted Repair]
+    R --> G
+    G -->|Fail again| X[QUALITY_GATE_FAILED]
+    NOTE[No US / AC Generation; max 2 attempts]

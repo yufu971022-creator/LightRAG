@@ -1,0 +1,18 @@
+flowchart TD
+    R[Requirement Input] --> P[Scenario Profile]
+    P --> S{Scenario Router}
+    S -->|0 to 1| Z[Zero-to-One Skill Template]
+    S -->|1 to N| N[One-to-Many Skill Template]
+    S -->|1 to 1.x| O[One-to-One-X Skill Template]
+    S -->|Ambiguous / Mixed| C[Clarification / Split Checkpoint]
+    Z --> D[DAG Planner]
+    N --> D
+    O --> D
+    K[Trusted Knowledge / Version / Impact Context] --> A[Context Assembler]
+    A --> D
+    D --> G[Capability Probe]
+    G -->|Available| E[Harness Dry-run Executor]
+    G -->|Missing| B[Capability Gap / Human Checkpoint]
+    E --> Q[Checkpoint Policy]
+    Q --> T[Execution Trace + Structured Design Task Pack]
+    NOTE[27A: Orchestration only; no final LLM design output]

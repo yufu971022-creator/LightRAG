@@ -1,0 +1,371 @@
+{
+  "generic_only_low_trust": [
+    {
+      "active": true,
+      "candidate_id": "generic-duplicate",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005147541,
+      "fusion_reasons": [
+        "rrf=0.001148",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "ENTITY",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.97,
+      "reason_codes": [],
+      "semantic_object_id": "obj-source",
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Low-trust background duplicate.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "generic-background",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 2,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005129032,
+      "fusion_reasons": [
+        "rrf=0.001129",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 0.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "gen-rel"
+        ],
+        "evidence_refs": [],
+        "generic_only": true,
+        "has_issue_edge": false,
+        "node_ids": [
+          "gen-a",
+          "gen-b"
+        ],
+        "path_id": "path-generic",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "generic_only"
+        ],
+        "validation_status": "BACKGROUND_ONLY",
+        "version_conflict": false
+      },
+      "raw_score": 0.62,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": null,
+      "text": "Background-only generic path.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "historical_compare": [
+    {
+      "active": true,
+      "candidate_id": "generic-duplicate",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005147541,
+      "fusion_reasons": [
+        "rrf=0.001148",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "ENTITY",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.97,
+      "reason_codes": [],
+      "semantic_object_id": "obj-source",
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Low-trust background duplicate.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "generic-background",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 2,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005129032,
+      "fusion_reasons": [
+        "rrf=0.001129",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 0.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "gen-rel"
+        ],
+        "evidence_refs": [],
+        "generic_only": true,
+        "has_issue_edge": false,
+        "node_ids": [
+          "gen-a",
+          "gen-b"
+        ],
+        "path_id": "path-generic",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "generic_only"
+        ],
+        "validation_status": "BACKGROUND_ONLY",
+        "version_conflict": false
+      },
+      "raw_score": 0.62,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": null,
+      "text": "Background-only generic path.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "hybrid_ready": [
+    {
+      "active": true,
+      "candidate_id": "generic-duplicate",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005147541,
+      "fusion_reasons": [
+        "rrf=0.001148",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "ENTITY",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.97,
+      "reason_codes": [],
+      "semantic_object_id": "obj-source",
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Low-trust background duplicate.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "generic-background",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 2,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005129032,
+      "fusion_reasons": [
+        "rrf=0.001129",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 0.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "gen-rel"
+        ],
+        "evidence_refs": [],
+        "generic_only": true,
+        "has_issue_edge": false,
+        "node_ids": [
+          "gen-a",
+          "gen-b"
+        ],
+        "path_id": "path-generic",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "generic_only"
+        ],
+        "validation_status": "BACKGROUND_ONLY",
+        "version_conflict": false
+      },
+      "raw_score": 0.62,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": null,
+      "text": "Background-only generic path.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "impact_path": [
+    {
+      "active": true,
+      "candidate_id": "generic-duplicate",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 1,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005147541,
+      "fusion_reasons": [
+        "rrf=0.001148",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "ENTITY",
+      "metadata": {},
+      "normalized_score": 1.0,
+      "object_type": "rule",
+      "path": null,
+      "raw_score": 0.97,
+      "reason_codes": [],
+      "semantic_object_id": "obj-source",
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": "identity:rule-main",
+      "text": "Low-trust background duplicate.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    },
+    {
+      "active": true,
+      "candidate_id": "generic-background",
+      "channel": "GENERIC_GRAPH",
+      "channel_rank": 2,
+      "deleted": false,
+      "domain_code": "domain-a",
+      "evidence": [],
+      "factual_weight": 0.2,
+      "feature_key": "feature-a",
+      "fused_score": 0.005129032,
+      "fusion_reasons": [
+        "rrf=0.001129",
+        "channel_weight=0.35",
+        "domain_hint_boost",
+        "feature_hint_boost"
+      ],
+      "issue_type": null,
+      "kind": "PATH",
+      "metadata": {},
+      "normalized_score": 0.0,
+      "object_type": "path",
+      "path": {
+        "dangling": false,
+        "edge_ids": [
+          "gen-rel"
+        ],
+        "evidence_refs": [],
+        "generic_only": true,
+        "has_issue_edge": false,
+        "node_ids": [
+          "gen-a",
+          "gen-b"
+        ],
+        "path_id": "path-generic",
+        "task_type": "FACT_QA",
+        "validation_reasons": [
+          "generic_only"
+        ],
+        "validation_status": "BACKGROUND_ONLY",
+        "version_conflict": false
+      },
+      "raw_score": 0.62,
+      "reason_codes": [],
+      "semantic_object_id": null,
+      "semantic_relation_id": null,
+      "severity": null,
+      "source": "generic_graph",
+      "stable_identity_key": null,
+      "text": "Background-only generic path.",
+      "trust_tier": "T4_BACKGROUND",
+      "version_intent": null,
+      "version_status": null
+    }
+  ],
+  "insufficient_evidence": [],
+  "issue_only": [],
+  "strict_scope_empty": [],
+  "text_only_fallback": [],
+  "version_warning": []
+}

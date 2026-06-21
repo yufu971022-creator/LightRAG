@@ -1,0 +1,5 @@
+before:
+NO_CORE_DIFF
+
+after:
+NO_CORE_DIFF

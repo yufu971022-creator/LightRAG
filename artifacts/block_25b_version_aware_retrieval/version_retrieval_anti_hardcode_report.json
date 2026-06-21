@@ -1,0 +1,17 @@
+{
+  "document_upload_time_rule_count": 0,
+  "files_scanned": [
+    "lightrag_ext/us_dsl/version_query_intent.py",
+    "lightrag_ext/us_dsl/version_candidate_index.py",
+    "lightrag_ext/us_dsl/version_issue_index.py",
+    "lightrag_ext/us_dsl/current_version_resolver.py",
+    "lightrag_ext/us_dsl/version_candidate_ranker.py",
+    "lightrag_ext/us_dsl/version_context_builder.py",
+    "lightrag_ext/us_dsl/version_retrieval_service.py"
+  ],
+  "hits": [],
+  "module_specific_version_rule_count": 0,
+  "passed": true,
+  "runtime_business_hardcode_count": 0,
+  "source_us_order_rule_count": 0
+}

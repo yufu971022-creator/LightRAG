@@ -1,0 +1,391 @@
+{
+  "as_of_2024": {
+    "current_candidate_id": "m:as:v1",
+    "excluded_candidates": [],
+    "explanation": [
+      "valid_time_match"
+    ],
+    "issues": [],
+    "resolution_status": "AS_OF_MATCH",
+    "safe_for_deterministic_answer": true,
+    "selected_candidates": [
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v1",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v1",
+        "semantic_object_id": "obj:m:as:v1",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2024-01-01",
+        "valid_to": "2025-01-01",
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v1",
+        "version_status": "HISTORICAL"
+      }
+    ],
+    "supporting_candidates": [
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v1",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v1",
+        "semantic_object_id": "obj:m:as:v1",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2024-01-01",
+        "valid_to": "2025-01-01",
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v2",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v2",
+        "semantic_object_id": "obj:m:as:v2",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2025-01-01",
+        "valid_to": null,
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v2",
+        "version_status": "CURRENT"
+      }
+    ],
+    "version_group_key": "vg:asof",
+    "warnings": []
+  },
+  "as_of_2026": {
+    "current_candidate_id": "m:as:v2",
+    "excluded_candidates": [],
+    "explanation": [
+      "valid_time_match"
+    ],
+    "issues": [],
+    "resolution_status": "AS_OF_MATCH",
+    "safe_for_deterministic_answer": true,
+    "selected_candidates": [
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v2",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v2",
+        "semantic_object_id": "obj:m:as:v2",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2025-01-01",
+        "valid_to": null,
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v2",
+        "version_status": "CURRENT"
+      }
+    ],
+    "supporting_candidates": [
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v1",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v1",
+        "semantic_object_id": "obj:m:as:v1",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2024-01-01",
+        "valid_to": "2025-01-01",
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v2",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v2",
+        "semantic_object_id": "obj:m:as:v2",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2025-01-01",
+        "valid_to": null,
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v2",
+        "version_status": "CURRENT"
+      }
+    ],
+    "version_group_key": "vg:asof",
+    "warnings": []
+  },
+  "no_match": {
+    "current_candidate_id": null,
+    "excluded_candidates": [],
+    "explanation": [
+      "as_of_no_match"
+    ],
+    "issues": [],
+    "resolution_status": "AS_OF_NO_MATCH",
+    "safe_for_deterministic_answer": false,
+    "selected_candidates": [],
+    "supporting_candidates": [
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v1",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v1",
+        "semantic_object_id": "obj:m:as:v1",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2024-01-01",
+        "valid_to": "2025-01-01",
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:asof",
+        "document_version_id": "docver:m:as:v2",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v2",
+        "semantic_object_id": "obj:m:as:v2",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:asof",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2025-01-01",
+        "valid_to": null,
+        "version_group_key": "vg:asof",
+        "version_member_id": "m:as:v2",
+        "version_status": "CURRENT"
+      }
+    ],
+    "version_group_key": "vg:asof",
+    "warnings": [
+      "指定时间没有匹配的业务有效版本"
+    ]
+  },
+  "overlap": {
+    "current_candidate_id": null,
+    "excluded_candidates": [],
+    "explanation": [
+      "valid_time_overlap"
+    ],
+    "issues": [
+      {
+        "created_at": "2026-06-21T04:42:29Z",
+        "document_version_ids": [
+          "docver:m:ov:v1",
+          "docver:m:ov:v2"
+        ],
+        "evidence_refs": [],
+        "issue_id": "version-issue-df028b82c2e72a67e13580931bb121c1",
+        "issue_status": "OPEN",
+        "issue_type": "VALID_TIME_OVERLAP",
+        "member_ids": [
+          "m:ov:v1",
+          "m:ov:v2"
+        ],
+        "reason_code": "valid_time_overlap",
+        "review_required": true,
+        "semantic_object_id": null,
+        "semantic_relation_id": null,
+        "severity": "medium",
+        "source_us_ids": [],
+        "version_group_key": "vg:overlap"
+      }
+    ],
+    "resolution_status": "VALID_TIME_OVERLAP",
+    "safe_for_deterministic_answer": false,
+    "selected_candidates": [],
+    "supporting_candidates": [
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:overlap",
+        "document_version_id": "docver:m:ov:v1",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v1",
+        "semantic_object_id": "obj:m:ov:v1",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:overlap",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2024-01-01",
+        "valid_to": "2025-06-01",
+        "version_group_key": "vg:overlap",
+        "version_member_id": "m:ov:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "active_contribution": true,
+        "document_id": "doc:vg:overlap",
+        "document_version_id": "docver:m:ov:v2",
+        "document_version_status": "ACTIVE",
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "evidence_quality_score": 1.0,
+        "issue_types": [],
+        "knowledge_status": "ACTIVE",
+        "latest_flag": false,
+        "review_decision": null,
+        "rule_version": "v2",
+        "semantic_object_id": "obj:m:ov:v2",
+        "semantic_relation_id": null,
+        "semantic_relevance_score": 0.7,
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "source_us_id": "US-SYN-010",
+        "stable_identity_key": "identity:vg:overlap",
+        "supersedes_member_id": null,
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "valid_from": "2025-01-01",
+        "valid_to": null,
+        "version_group_key": "vg:overlap",
+        "version_member_id": "m:ov:v2",
+        "version_status": "CURRENT"
+      }
+    ],
+    "version_group_key": "vg:overlap",
+    "warnings": [
+      "业务有效期存在重叠"
+    ]
+  }
+}

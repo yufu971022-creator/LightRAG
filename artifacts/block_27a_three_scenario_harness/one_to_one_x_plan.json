@@ -1,0 +1,669 @@
+{
+  "blocking_gaps": [
+    {
+      "available_fallback": "manual_checkpoint",
+      "blocks_plan": true,
+      "gap_id": "gap_code_context_handoff",
+      "gap_type": "PLANNED_NOT_IMPLEMENTED",
+      "manual_action": "Provide capability implementation or explicitly accept reduced scope.",
+      "missing_dependency": "implemented_adapter_or_runtime_capability",
+      "required_for_completion": true,
+      "severity": "HIGH",
+      "skill_id": "CODE_CONTEXT_HANDOFF"
+    }
+  ],
+  "capability_gaps": [
+    {
+      "available_fallback": "manual_checkpoint",
+      "blocks_plan": true,
+      "gap_id": "gap_code_context_handoff",
+      "gap_type": "PLANNED_NOT_IMPLEMENTED",
+      "manual_action": "Provide capability implementation or explicitly accept reduced scope.",
+      "missing_dependency": "implemented_adapter_or_runtime_capability",
+      "required_for_completion": true,
+      "severity": "HIGH",
+      "skill_id": "CODE_CONTEXT_HANDOFF"
+    }
+  ],
+  "edges": [
+    [
+      "n01_requirement_intake",
+      "n02_scenario_classification"
+    ],
+    [
+      "n02_scenario_classification",
+      "n03_trusted_knowledge_retrieval"
+    ],
+    [
+      "n03_trusted_knowledge_retrieval",
+      "n04_version_analysis"
+    ],
+    [
+      "n04_version_analysis",
+      "n05_current_state_analysis"
+    ],
+    [
+      "n05_current_state_analysis",
+      "n06_primary_change_target_identification"
+    ],
+    [
+      "n06_primary_change_target_identification",
+      "n07_local_impact_check"
+    ],
+    [
+      "n07_local_impact_check",
+      "n08_code_context_handoff"
+    ],
+    [
+      "n08_code_context_handoff",
+      "n09_detailed_design_planning"
+    ],
+    [
+      "n09_detailed_design_planning",
+      "n10_field_spec_planning"
+    ],
+    [
+      "n10_field_spec_planning",
+      "n11_integration_design_planning"
+    ],
+    [
+      "n11_integration_design_planning",
+      "n12_process_state_design_planning"
+    ],
+    [
+      "n12_process_state_design_planning",
+      "n13_dfx_design_planning"
+    ],
+    [
+      "n13_dfx_design_planning",
+      "n14_us_generation"
+    ],
+    [
+      "n14_us_generation",
+      "n15_ac_generation"
+    ],
+    [
+      "n15_ac_generation",
+      "n16_test_scope_planning"
+    ],
+    [
+      "n16_test_scope_planning",
+      "n17_cross_output_consistency_check"
+    ],
+    [
+      "n17_cross_output_consistency_check",
+      "n18_final_quality_gate"
+    ]
+  ],
+  "estimated_steps": 18,
+  "manual_checkpoints": [
+    "local_scope_and_code_context_checkpoint",
+    "gap_code_context_handoff"
+  ],
+  "nodes": [
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "REQUIREMENT_INTAKE",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n01_requirement_intake",
+      "required": true,
+      "skill_id": "REQUIREMENT_INTAKE",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": true,
+      "dependencies": [
+        "REQUIREMENT_INTAKE"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "SCENARIO_CLASSIFICATION",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "requirement_input": "context.requirement_input",
+        "scenario_profile": "context.scenario_profile"
+      },
+      "node_id": "n02_scenario_classification",
+      "required": true,
+      "skill_id": "SCENARIO_CLASSIFICATION",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "ADAPTER_AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "SCENARIO_CLASSIFICATION"
+      ],
+      "execution_mode": "DETERMINISTIC_EXECUTION",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "TRUSTED_KNOWLEDGE_RETRIEVAL",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "requirement_input": "context.requirement_input",
+        "scenario_profile": "context.scenario_profile"
+      },
+      "node_id": "n03_trusted_knowledge_retrieval",
+      "required": true,
+      "skill_id": "TRUSTED_KNOWLEDGE_RETRIEVAL",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "ADAPTER_AVAILABLE",
+      "checkpoint_after": true,
+      "dependencies": [
+        "TRUSTED_KNOWLEDGE_RETRIEVAL"
+      ],
+      "execution_mode": "DETERMINISTIC_EXECUTION",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "VERSION_ANALYSIS",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route",
+        "trusted_context_pack": "context.trusted_context_pack"
+      },
+      "node_id": "n04_version_analysis",
+      "required": true,
+      "skill_id": "VERSION_ANALYSIS",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "VERSION_ANALYSIS"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "CURRENT_STATE_ANALYSIS",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n05_current_state_analysis",
+      "required": true,
+      "skill_id": "CURRENT_STATE_ANALYSIS",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "CURRENT_STATE_ANALYSIS"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "PRIMARY_CHANGE_TARGET_IDENTIFICATION",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n06_primary_change_target_identification",
+      "required": true,
+      "skill_id": "PRIMARY_CHANGE_TARGET_IDENTIFICATION",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "PRIMARY_CHANGE_TARGET_IDENTIFICATION"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "LOCAL_IMPACT_CHECK",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n07_local_impact_check",
+      "required": true,
+      "skill_id": "LOCAL_IMPACT_CHECK",
+      "skip_condition": null
+    },
+    {
+      "block_condition": "missing_required_capability",
+      "capability_status": "PLANNED_NOT_IMPLEMENTED",
+      "checkpoint_after": true,
+      "dependencies": [
+        "LOCAL_IMPACT_CHECK"
+      ],
+      "execution_mode": "FUTURE_EXTERNAL_AGENT",
+      "expected_output_schema": {
+        "properties": {
+          "code_context_status": "string",
+          "handoff_contract": "dict"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [
+        "CLARIFICATION_QUESTION_GENERATION"
+      ],
+      "input_bindings": {
+        "code_context_adapter": "context.code_context_adapter",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n08_code_context_handoff",
+      "required": true,
+      "skill_id": "CODE_CONTEXT_HANDOFF",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "CODE_CONTEXT_HANDOFF"
+      ],
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "DETAILED_DESIGN_PLANNING",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n09_detailed_design_planning",
+      "required": true,
+      "skill_id": "DETAILED_DESIGN_PLANNING",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "DETAILED_DESIGN_PLANNING"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "FIELD_SPEC_PLANNING",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n10_field_spec_planning",
+      "required": true,
+      "skill_id": "FIELD_SPEC_PLANNING",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "FIELD_SPEC_PLANNING"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "INTEGRATION_DESIGN_PLANNING",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n11_integration_design_planning",
+      "required": true,
+      "skill_id": "INTEGRATION_DESIGN_PLANNING",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "INTEGRATION_DESIGN_PLANNING"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "PROCESS_STATE_DESIGN_PLANNING",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n12_process_state_design_planning",
+      "required": true,
+      "skill_id": "PROCESS_STATE_DESIGN_PLANNING",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "PROCESS_STATE_DESIGN_PLANNING"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "DFX_DESIGN_PLANNING",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n13_dfx_design_planning",
+      "required": true,
+      "skill_id": "DFX_DESIGN_PLANNING",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "ADAPTER_AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "DFX_DESIGN_PLANNING"
+      ],
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "expected_output_schema": {
+        "properties": {
+          "final_us_generated": false,
+          "task_spec": "dict"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "design_task_pack": "context.design_task_pack",
+        "impact_context": "context.impact_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route",
+        "trusted_context_pack": "context.trusted_context_pack",
+        "version_context": "context.version_context"
+      },
+      "node_id": "n14_us_generation",
+      "required": true,
+      "skill_id": "US_GENERATION",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "US_GENERATION"
+      ],
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "AC_GENERATION",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n15_ac_generation",
+      "required": true,
+      "skill_id": "AC_GENERATION",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "AC_GENERATION"
+      ],
+      "execution_mode": "DRY_RUN",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "TEST_SCOPE_PLANNING",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n16_test_scope_planning",
+      "required": true,
+      "skill_id": "TEST_SCOPE_PLANNING",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": false,
+      "dependencies": [
+        "TEST_SCOPE_PLANNING"
+      ],
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "CROSS_OUTPUT_CONSISTENCY_CHECK",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n17_cross_output_consistency_check",
+      "required": true,
+      "skill_id": "CROSS_OUTPUT_CONSISTENCY_CHECK",
+      "skip_condition": null
+    },
+    {
+      "block_condition": null,
+      "capability_status": "AVAILABLE",
+      "checkpoint_after": true,
+      "dependencies": [
+        "CROSS_OUTPUT_CONSISTENCY_CHECK"
+      ],
+      "execution_mode": "FUTURE_LLM_EXECUTION",
+      "expected_output_schema": {
+        "properties": {
+          "evidence_refs": "list",
+          "skill_id": "FINAL_QUALITY_GATE",
+          "status": "string"
+        },
+        "type": "object"
+      },
+      "fallback_skill_ids": [],
+      "input_bindings": {
+        "harness_context": "context.harness_context",
+        "requirement_input": "context.requirement_input",
+        "scenario_route": "context.scenario_route"
+      },
+      "node_id": "n18_final_quality_gate",
+      "required": true,
+      "skill_id": "FINAL_QUALITY_GATE",
+      "skip_condition": null
+    }
+  ],
+  "optional_gaps": [],
+  "plan_hash": "aa8b3d01b8dec0637e2cd4b61122a0f025d6ffc51890b8f83a7e08cfd27fcd00",
+  "plan_id": "plan_REQ-27A-LOCAL_one_to_one_x",
+  "policy_version": "27A-plan-v1",
+  "required_context": [
+    "context.code_context_adapter",
+    "context.design_task_pack",
+    "context.harness_context",
+    "context.impact_context",
+    "context.requirement_input",
+    "context.scenario_profile",
+    "context.scenario_route",
+    "context.trusted_context_pack",
+    "context.version_context"
+  ],
+  "requirement_id": "REQ-27A-LOCAL",
+  "scenario_route": {
+    "alternative_scenarios": [],
+    "clarification_questions": [],
+    "classification_status": "CONFIDENT",
+    "confidence": 0.853,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 1,
+      "affected_feature_count": 1,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 1,
+      "evidence_sufficiency_score": 0.78,
+      "existing_code_asset_coverage": 0.82,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.86,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.76,
+      "graph_path_count": 0,
+      "indirect_impact_count": 0,
+      "local_change_score": 0.88,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [
+        "field_mapping"
+      ],
+      "profile_confidence": 0.84,
+      "requirement_id": "REQ-27A-LOCAL",
+      "risks": [],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "reason_codes": [
+      "one_to_one_x_signals_matched"
+    ],
+    "requirement_id": "REQ-27A-LOCAL",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": "ONE_TO_ONE_X"
+  },
+  "topological_order": [
+    "n01_requirement_intake",
+    "n02_scenario_classification",
+    "n03_trusted_knowledge_retrieval",
+    "n04_version_analysis",
+    "n05_current_state_analysis",
+    "n06_primary_change_target_identification",
+    "n07_local_impact_check",
+    "n08_code_context_handoff",
+    "n09_detailed_design_planning",
+    "n10_field_spec_planning",
+    "n11_integration_design_planning",
+    "n12_process_state_design_planning",
+    "n13_dfx_design_planning",
+    "n14_us_generation",
+    "n15_ac_generation",
+    "n16_test_scope_planning",
+    "n17_cross_output_consistency_check",
+    "n18_final_quality_gate"
+  ]
+}

@@ -1,0 +1,5 @@
+embedding_model: <<EMBEDDING_MODEL>>
+embedding_dimension: <<EMBEDDING_DIM>>
+expected_embedding_dimension: <<EMBEDDING_DIM>>
+llm_model: <<LLM_MODEL>>
+real_model_calls_enabled: false

@@ -1,0 +1,69 @@
+{
+  "duplicate_semantic_object_count": 0,
+  "edges": {
+    "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:callsbackendapi:urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default:25a1:default": {
+      "id": "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:callsbackendapi:urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default:25a1:default",
+      "src": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default",
+      "tgt": "urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default",
+      "type": "CallsBackendApi"
+    },
+    "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:hasreportfilter:urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default:25a1:default": {
+      "id": "urn:pfss:rel:urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default:hasreportfilter:urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default:25a1:default",
+      "src": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default",
+      "tgt": "urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default",
+      "type": "HasReportFilter"
+    },
+    "urn:pfss:rel:urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default:assignshandler:urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default:25a1:default": {
+      "id": "urn:pfss:rel:urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default:assignshandler:urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default:25a1:default",
+      "src": "urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default",
+      "tgt": "urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default",
+      "type": "AssignsHandler"
+    }
+  },
+  "endpoint_closure_passed": true,
+  "forbidden_relation_count": 0,
+  "generic_ner_node_count": 0,
+  "idempotency_passed": true,
+  "issue_object_written_to_pfss_count": 0,
+  "node_types": [
+    "FieldSpec",
+    "IntegrationEndpoint",
+    "ReportSpec",
+    "RolePermission",
+    "TaskRule"
+  ],
+  "nodes": {
+    "urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default": {
+      "id": "urn:pfss:mod-product:integration:quoteapi:integrationendpoint:supplierquoteresultqueryapi:default",
+      "label": "供应商报价结果查询 API",
+      "original_entity_type": "Organization",
+      "type": "IntegrationEndpoint"
+    },
+    "urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default": {
+      "id": "urn:pfss:mod-product:monitoringreport:inquirylist:fieldspec:projectstatus:default",
+      "label": "项目状态",
+      "original_entity_type": "Misc",
+      "type": "FieldSpec"
+    },
+    "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default": {
+      "id": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:inquiryprojectlist:default",
+      "label": "询价项目列表",
+      "original_entity_type": "Location",
+      "type": "ReportSpec"
+    },
+    "urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default": {
+      "id": "urn:pfss:mod-product:workflow:quotetask:rolepermission:currenthandler:default",
+      "label": "Current Handler",
+      "original_entity_type": "Person",
+      "type": "RolePermission"
+    },
+    "urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default": {
+      "id": "urn:pfss:mod-product:workflow:quotetask:taskrule:quoteconfirmationtask:default",
+      "label": "待报价确认待办",
+      "original_entity_type": "Event",
+      "type": "TaskRule"
+    }
+  },
+  "pfss_edge_count": 3,
+  "pfss_node_count": 5
+}

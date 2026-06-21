@@ -1,0 +1,23 @@
+{
+  "excluded_targets": [
+    "graph",
+    "entities_vdb",
+    "relationships_vdb"
+  ],
+  "execution_mode": "ISOLATED_WRITE",
+  "local_storage_only": true,
+  "notes": [
+    "24B-1 writes only isolated raw evidence storage when execution_mode=ISOLATED_WRITE.",
+    "No LightRAG insert/ainsert/ainsert_custom_kg path is called by this adapter."
+  ],
+  "storage_targets": [
+    "full_docs",
+    "text_chunks",
+    "chunks_vdb",
+    "doc_status"
+  ],
+  "strategy": "DIRECT_STORAGE_ADAPTER",
+  "uses_real_embedding": false,
+  "working_dir": "artifacts/block_24b1_raw_evidence_chain/workspaces",
+  "workspace": "block24b1_raw_evidence"
+}

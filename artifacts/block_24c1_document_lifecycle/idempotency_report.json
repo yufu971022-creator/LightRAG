@@ -1,0 +1,5 @@
+{
+  "idempotency_passed": true,
+  "rebuild_idempotency_passed": true,
+  "same_plan_hash_deterministic": true
+}

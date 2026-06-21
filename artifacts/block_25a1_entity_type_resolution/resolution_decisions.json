@@ -1,0 +1,734 @@
+{
+  "api": {
+    "blocked_from_pfss": false,
+    "candidate_types": [
+      {
+        "candidate_type": "IntegrationEndpoint",
+        "evidence": {
+          "evidence_text": "系统调用供应商报价结果查询 API。",
+          "original_entity_name": "供应商报价结果查询 API",
+          "original_entity_type": "Organization",
+          "section_type": "api_desc",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "api_section_structure"
+        ],
+        "score": 0.95,
+        "source": "STRUCTURAL_PARSER"
+      },
+      {
+        "candidate_type": "IntegrationEndpoint",
+        "evidence": {
+          "evidence_text": "系统调用供应商报价结果查询 API。",
+          "original_entity_name": "供应商报价结果查询 API",
+          "original_entity_type": "Organization",
+          "section_type": "api_desc",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Organization",
+        "evidence": {
+          "evidence_text": "系统调用供应商报价结果查询 API。",
+          "original_entity_name": "供应商报价结果查询 API",
+          "original_entity_type": "Organization",
+          "section_type": "api_desc",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.95,
+    "conflict_types": [],
+    "decision": "STRUCTURE_RESOLVED",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Organization",
+    "reason_codes": [
+      "api_section_structure",
+      "auto_accept_threshold_met"
+    ],
+    "requires_review": false,
+    "resolved_entity_type": "IntegrationEndpoint"
+  },
+  "conflict": {
+    "blocked_from_pfss": true,
+    "candidate_types": [
+      {
+        "candidate_type": "FeatureCatalog",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "confirmed_config_type"
+        ],
+        "score": 0.98,
+        "source": "CONFIRMED_CONFIG"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "confirmed_config_type"
+        ],
+        "score": 0.98,
+        "source": "CONFIRMED_CONFIG"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "query_list_report_structure"
+        ],
+        "score": 0.95,
+        "source": "STRUCTURAL_PARSER"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "monitoring_report_query_context"
+        ],
+        "score": 0.9,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "FeatureCatalog",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Misc",
+        "evidence": {
+          "evidence_text": "结构与配置冲突。",
+          "original_entity_name": "查询页面",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.98,
+    "conflict_types": [
+      "FeatureCatalog",
+      "ReportSpec"
+    ],
+    "decision": "CONFLICT",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Misc",
+    "reason_codes": [
+      "highest_priority_type_conflict"
+    ],
+    "requires_review": true,
+    "resolved_entity_type": null
+  },
+  "generic_location": {
+    "blocked_from_pfss": true,
+    "candidate_types": [
+      {
+        "candidate_type": "Location",
+        "evidence": {
+          "evidence_text": "Paris",
+          "original_entity_name": "Paris",
+          "original_entity_type": "Location",
+          "section_type": null,
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.4,
+    "conflict_types": [],
+    "decision": "BLOCKED_GENERIC_TYPE",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Location",
+    "reason_codes": [
+      "generic_ner_type_blocked"
+    ],
+    "requires_review": true,
+    "resolved_entity_type": null
+  },
+  "handler": {
+    "blocked_from_pfss": false,
+    "candidate_types": [
+      {
+        "candidate_type": "RolePermission",
+        "evidence": {
+          "evidence_text": "分配给 Current Handler。",
+          "original_entity_name": "Current Handler",
+          "original_entity_type": "Person",
+          "section_type": null,
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "relation_signature_unique_type"
+        ],
+        "score": 0.93,
+        "source": "RELATION_SIGNATURE"
+      },
+      {
+        "candidate_type": "RolePermission",
+        "evidence": {
+          "evidence_text": "分配给 Current Handler。",
+          "original_entity_name": "Current Handler",
+          "original_entity_type": "Person",
+          "section_type": null,
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "workflow_role_permission_context"
+        ],
+        "score": 0.91,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "RolePermission",
+        "evidence": {
+          "evidence_text": "分配给 Current Handler。",
+          "original_entity_name": "Current Handler",
+          "original_entity_type": "Person",
+          "section_type": null,
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Person",
+        "evidence": {
+          "evidence_text": "分配给 Current Handler。",
+          "original_entity_name": "Current Handler",
+          "original_entity_type": "Person",
+          "section_type": null,
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.93,
+    "conflict_types": [],
+    "decision": "RELATION_RESOLVED",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Person",
+    "reason_codes": [
+      "relation_signature_unique_type",
+      "auto_accept_threshold_met"
+    ],
+    "requires_review": false,
+    "resolved_entity_type": "RolePermission"
+  },
+  "inquiry_project_list": {
+    "blocked_from_pfss": false,
+    "candidate_types": [
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "询价项目列表支持按项目状态、询价日期和负责人查询。",
+          "original_entity_name": "询价项目列表",
+          "original_entity_type": "Location",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "query_list_report_structure"
+        ],
+        "score": 0.95,
+        "source": "STRUCTURAL_PARSER"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "询价项目列表支持按项目状态、询价日期和负责人查询。",
+          "original_entity_name": "询价项目列表",
+          "original_entity_type": "Location",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "monitoring_report_query_context"
+        ],
+        "score": 0.9,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "FieldSpec",
+        "evidence": {
+          "evidence_text": "询价项目列表支持按项目状态、询价日期和负责人查询。",
+          "original_entity_name": "询价项目列表",
+          "original_entity_type": "Location",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Location",
+        "evidence": {
+          "evidence_text": "询价项目列表支持按项目状态、询价日期和负责人查询。",
+          "original_entity_name": "询价项目列表",
+          "original_entity_type": "Location",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.95,
+    "conflict_types": [],
+    "decision": "STRUCTURE_RESOLVED",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Location",
+    "reason_codes": [
+      "query_list_report_structure",
+      "auto_accept_threshold_met"
+    ],
+    "requires_review": false,
+    "resolved_entity_type": "ReportSpec"
+  },
+  "low_confidence": {
+    "blocked_from_pfss": true,
+    "candidate_types": [
+      {
+        "candidate_type": "Misc",
+        "evidence": {
+          "evidence_text": "处理项。",
+          "original_entity_name": "处理项",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.4,
+    "conflict_types": [],
+    "decision": "BLOCKED_GENERIC_TYPE",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Misc",
+    "reason_codes": [
+      "generic_ner_type_blocked"
+    ],
+    "requires_review": true,
+    "resolved_entity_type": null
+  },
+  "migration": {
+    "blocked_from_pfss": false,
+    "candidate_types": [
+      {
+        "candidate_type": "DataMigrationSpec",
+        "evidence": {
+          "evidence_text": "历史询价项目需要执行 dry-run 迁移和字段校验。",
+          "original_entity_name": "迁移规则",
+          "original_entity_type": "Event",
+          "section_type": "migration_rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "migration_section_structure"
+        ],
+        "score": 0.95,
+        "source": "STRUCTURAL_PARSER"
+      },
+      {
+        "candidate_type": "DataMigrationSpec",
+        "evidence": {
+          "evidence_text": "历史询价项目需要执行 dry-run 迁移和字段校验。",
+          "original_entity_name": "迁移规则",
+          "original_entity_type": "Event",
+          "section_type": "migration_rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Event",
+        "evidence": {
+          "evidence_text": "历史询价项目需要执行 dry-run 迁移和字段校验。",
+          "original_entity_name": "迁移规则",
+          "original_entity_type": "Event",
+          "section_type": "migration_rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.95,
+    "conflict_types": [],
+    "decision": "STRUCTURE_RESOLVED",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Event",
+    "reason_codes": [
+      "migration_section_structure",
+      "auto_accept_threshold_met"
+    ],
+    "requires_review": false,
+    "resolved_entity_type": "DataMigrationSpec"
+  },
+  "project_status": {
+    "blocked_from_pfss": false,
+    "candidate_types": [
+      {
+        "candidate_type": "FieldSpec",
+        "evidence": {
+          "evidence_text": "项目状态是询价项目列表的查询条件。",
+          "original_entity_name": "项目状态",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "field_or_column_structure"
+        ],
+        "score": 0.95,
+        "source": "STRUCTURAL_PARSER"
+      },
+      {
+        "candidate_type": "FieldSpec",
+        "evidence": {
+          "evidence_text": "项目状态是询价项目列表的查询条件。",
+          "original_entity_name": "项目状态",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "relation_signature_unique_type"
+        ],
+        "score": 0.93,
+        "source": "RELATION_SIGNATURE"
+      },
+      {
+        "candidate_type": "ReportSpec",
+        "evidence": {
+          "evidence_text": "项目状态是询价项目列表的查询条件。",
+          "original_entity_name": "项目状态",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "monitoring_report_query_context"
+        ],
+        "score": 0.9,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "FieldSpec",
+        "evidence": {
+          "evidence_text": "项目状态是询价项目列表的查询条件。",
+          "original_entity_name": "项目状态",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Misc",
+        "evidence": {
+          "evidence_text": "项目状态是询价项目列表的查询条件。",
+          "original_entity_name": "项目状态",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.95,
+    "conflict_types": [],
+    "decision": "STRUCTURE_RESOLVED",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Misc",
+    "reason_codes": [
+      "field_or_column_structure",
+      "auto_accept_threshold_met"
+    ],
+    "requires_review": false,
+    "resolved_entity_type": "FieldSpec"
+  },
+  "task": {
+    "blocked_from_pfss": false,
+    "candidate_types": [
+      {
+        "candidate_type": "TaskRule",
+        "evidence": {
+          "evidence_text": "系统生成待报价确认待办。",
+          "original_entity_name": "待报价确认待办",
+          "original_entity_type": "Event",
+          "section_type": "task_rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "task_section_structure"
+        ],
+        "score": 0.95,
+        "source": "STRUCTURAL_PARSER"
+      },
+      {
+        "candidate_type": "TaskRule",
+        "evidence": {
+          "evidence_text": "系统生成待报价确认待办。",
+          "original_entity_name": "待报价确认待办",
+          "original_entity_type": "Event",
+          "section_type": "task_rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "lexical_cue_only"
+        ],
+        "score": 0.8,
+        "source": "SECTION_DOMAIN_HEURISTIC"
+      },
+      {
+        "candidate_type": "Event",
+        "evidence": {
+          "evidence_text": "系统生成待报价确认待办。",
+          "original_entity_name": "待报价确认待办",
+          "original_entity_type": "Event",
+          "section_type": "task_rule",
+          "source_span": {
+            "end": 20,
+            "start": 0
+          },
+          "text_unit_id": "tu-25a1"
+        },
+        "reason_codes": [
+          "generic_ner_weak_hint"
+        ],
+        "score": 0.4,
+        "source": "GENERIC_NER"
+      }
+    ],
+    "confidence": 0.95,
+    "conflict_types": [],
+    "decision": "STRUCTURE_RESOLVED",
+    "identity_rekey_required": false,
+    "new_semantic_object_id": null,
+    "old_semantic_object_id": null,
+    "original_entity_type": "Event",
+    "reason_codes": [
+      "task_section_structure",
+      "auto_accept_threshold_met"
+    ],
+    "requires_review": false,
+    "resolved_entity_type": "TaskRule"
+  }
+}

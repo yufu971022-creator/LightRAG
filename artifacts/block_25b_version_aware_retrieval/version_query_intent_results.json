@@ -1,0 +1,9 @@
+{
+  "as_of_param": "AS_OF_TIME",
+  "compare_terms": "COMPARE",
+  "current_terms": "CURRENT",
+  "explicit": "COMPARE",
+  "history_terms": "HISTORICAL",
+  "migration_terms": "MIGRATION",
+  "unknown": "UNSPECIFIED"
+}

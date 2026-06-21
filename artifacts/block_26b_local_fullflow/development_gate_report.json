@@ -1,0 +1,150 @@
+{
+  "allow_continue_27a_27b_28_local_development": true,
+  "failed_gates": [],
+  "gaps": [
+    "GOLD_CASES_NOT_AVAILABLE_USING_SILVER_REGRESSION"
+  ],
+  "intranet_real_module_validation_pending": true,
+  "metrics": {
+    "baseline_evidence_recall": 0.95,
+    "candidate_as_confirmed_count": 0,
+    "candidate_evidence_recall": 0.95,
+    "embedding_call_count": 66,
+    "generic_ner_fact_hit_count": 0,
+    "ingestion_time_ratio": 1.25,
+    "invalid_citation_count": 0,
+    "issue_as_fact_count": 0,
+    "llm_call_count": 0,
+    "one_to_n_degraded_count": 0,
+    "one_to_n_improved_count": 0,
+    "query_p95_latency_ratio": 1.1,
+    "relation_recall_delta": 0.0,
+    "required_dimension_coverage_delta": 0.0,
+    "storage_size_ratio": 1.05,
+    "unsupported_factual_path_count": 0,
+    "version_hard_judgment_error_count": 0
+  },
+  "multi_module_production_gate_pending": true,
+  "stage_results": [
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "parse"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "unified_document_envelope"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "single_parse"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "raw_evidence"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "dsl_applicability"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "raw_evidence_chain"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "dsl_semantic_branch"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "pfss_issue_sidecar_projection"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "document_registry"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "term_normalization_v2"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "entity_type_resolver"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "version_group_issue"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "version_aware_retrieval"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "four_channel_hybrid_retrieval"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "trusted_context_pack"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "baseline_original_lightrag"
+    },
+    {
+      "invoked": true,
+      "passed": true,
+      "reason": "",
+      "records_processed": 66,
+      "stage_name": "candidate_dsl_aware_ab"
+    }
+  ],
+  "status": "LOCAL_FULLFLOW_PASS_WITH_GAPS"
+}

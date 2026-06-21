@@ -1,0 +1,397 @@
+{
+  "as_of": {
+    "candidate_table": [
+      {
+        "document_version_id": "docver:m:as:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v1",
+        "version_member_id": "m:as:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "document_version_id": "docver:m:as:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v1",
+        "version_member_id": "m:as:v1",
+        "version_status": "HISTORICAL"
+      }
+    ],
+    "comparison_summary": "未请求版本对比",
+    "current_summary": "当前规则未确认",
+    "historical_summary": "历史规则: v1",
+    "intent": "AS_OF_TIME",
+    "recommended_answer_behavior": "不得声明当前规则唯一确定；应列出候选版本、证据和待确认项。",
+    "resolution_status": "AS_OF_MATCH",
+    "safe_for_deterministic_answer": true,
+    "selected_evidence": [
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:as:v1"
+      },
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:as:v2"
+      }
+    ],
+    "uncertainty_summary": "无版本不确定提示",
+    "version_warnings": []
+  },
+  "compare": {
+    "candidate_table": [
+      {
+        "document_version_id": "docver:m:ss:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v1",
+        "version_member_id": "m:ss:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "document_version_id": "docver:m:ss:v2",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v2",
+        "version_member_id": "m:ss:v2",
+        "version_status": "UNKNOWN"
+      },
+      {
+        "document_version_id": "docver:m:ss:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v1",
+        "version_member_id": "m:ss:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "document_version_id": "docver:m:ss:v2",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v2",
+        "version_member_id": "m:ss:v2",
+        "version_status": "UNKNOWN"
+      }
+    ],
+    "comparison_summary": "版本对比包含: v1, v2, v1",
+    "current_summary": "当前规则已确认: v1",
+    "historical_summary": "历史规则: v1",
+    "intent": "COMPARE",
+    "recommended_answer_behavior": "可按当前规则回答，并附带证据。",
+    "resolution_status": "CONFIRMED_CURRENT",
+    "safe_for_deterministic_answer": true,
+    "selected_evidence": [
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:ss:v1"
+      },
+      {
+        "evidence_excerpt": "Version v2 explicitly replaces v1.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:ss:v2"
+      }
+    ],
+    "uncertainty_summary": "无版本不确定提示",
+    "version_warnings": []
+  },
+  "current": {
+    "candidate_table": [
+      {
+        "document_version_id": "docver:m:uc:v2",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v2",
+        "version_member_id": "m:uc:v2",
+        "version_status": "CURRENT"
+      },
+      {
+        "document_version_id": "docver:m:uc:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v1",
+        "version_member_id": "m:uc:v1",
+        "version_status": "HISTORICAL"
+      }
+    ],
+    "comparison_summary": "未请求版本对比",
+    "current_summary": "当前规则已确认: v2",
+    "historical_summary": "历史规则: v1",
+    "intent": "CURRENT",
+    "recommended_answer_behavior": "可按当前规则回答，并附带证据。",
+    "resolution_status": "CONFIRMED_CURRENT",
+    "safe_for_deterministic_answer": true,
+    "selected_evidence": [
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:uc:v2"
+      },
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:uc:v1"
+      }
+    ],
+    "uncertainty_summary": "无版本不确定提示",
+    "version_warnings": []
+  },
+  "historical": {
+    "candidate_table": [
+      {
+        "document_version_id": "docver:m:uc:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v1",
+        "version_member_id": "m:uc:v1",
+        "version_status": "HISTORICAL"
+      },
+      {
+        "document_version_id": "docver:m:uc:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v1",
+        "version_member_id": "m:uc:v1",
+        "version_status": "HISTORICAL"
+      }
+    ],
+    "comparison_summary": "未请求版本对比",
+    "current_summary": "当前规则已确认: v1",
+    "historical_summary": "历史规则: v1",
+    "intent": "HISTORICAL",
+    "recommended_answer_behavior": "可按当前规则回答，并附带证据。",
+    "resolution_status": "CONFIRMED_CURRENT",
+    "safe_for_deterministic_answer": true,
+    "selected_evidence": [
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:uc:v1"
+      },
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:uc:v2"
+      }
+    ],
+    "uncertainty_summary": "无版本不确定提示",
+    "version_warnings": []
+  },
+  "issue_visible": {
+    "candidate_table": [
+      {
+        "document_version_id": "docver:m:is:v2",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v2",
+        "version_member_id": "m:is:v2",
+        "version_status": "CURRENT"
+      },
+      {
+        "document_version_id": "docver:m:is:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": null,
+        "rule_version": "v1",
+        "version_member_id": "m:is:v1",
+        "version_status": "UNKNOWN"
+      }
+    ],
+    "comparison_summary": "未请求版本对比",
+    "current_summary": "当前规则未确认",
+    "historical_summary": "未返回历史规则",
+    "intent": "CURRENT",
+    "recommended_answer_behavior": "不得声明当前规则唯一确定；应列出候选版本、证据和待确认项。",
+    "resolution_status": "VERSION_REVIEW_REQUIRED",
+    "safe_for_deterministic_answer": false,
+    "selected_evidence": [
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:is:v2"
+      },
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:is:v1"
+      }
+    ],
+    "uncertainty_summary": "存在版本待确认或冲突风险",
+    "version_warnings": [
+      "存在版本待确认或冲突风险"
+    ]
+  },
+  "migration": {
+    "candidate_table": [
+      {
+        "document_version_id": "docver:m:is:v2",
+        "evidence_ref": "tu-version",
+        "latest_flag": false,
+        "rule_version": "v2",
+        "version_member_id": "m:is:v2",
+        "version_status": "CURRENT"
+      },
+      {
+        "document_version_id": "docver:m:is:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": null,
+        "rule_version": "v1",
+        "version_member_id": "m:is:v1",
+        "version_status": "UNKNOWN"
+      },
+      {
+        "document_version_id": "docver:m:is:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": null,
+        "rule_version": "v1",
+        "version_member_id": "m:is:v1",
+        "version_status": "UNKNOWN"
+      }
+    ],
+    "comparison_summary": "未请求版本对比",
+    "current_summary": "当前规则未确认",
+    "historical_summary": "未返回历史规则",
+    "intent": "MIGRATION",
+    "recommended_answer_behavior": "同时说明旧规则、新规则和迁移风险。",
+    "resolution_status": "VERSION_REVIEW_REQUIRED",
+    "safe_for_deterministic_answer": false,
+    "selected_evidence": [
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:is:v2"
+      },
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:is:v1"
+      }
+    ],
+    "uncertainty_summary": "存在版本待确认或冲突风险",
+    "version_warnings": [
+      "存在版本待确认或冲突风险"
+    ]
+  },
+  "unspecified": {
+    "candidate_table": [
+      {
+        "document_version_id": "docver:m:wk:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": null,
+        "rule_version": "v1",
+        "version_member_id": "m:wk:v1",
+        "version_status": "UNKNOWN"
+      },
+      {
+        "document_version_id": "docver:m:wk:v1",
+        "evidence_ref": "tu-version",
+        "latest_flag": null,
+        "rule_version": "v1",
+        "version_member_id": "m:wk:v1",
+        "version_status": "UNKNOWN"
+      },
+      {
+        "document_version_id": "docver:m:wk:v2",
+        "evidence_ref": "tu-version",
+        "latest_flag": null,
+        "rule_version": "v2",
+        "version_member_id": "m:wk:v2",
+        "version_status": "UNKNOWN"
+      }
+    ],
+    "comparison_summary": "未请求版本对比",
+    "current_summary": "当前规则未确认",
+    "historical_summary": "未返回历史规则",
+    "intent": "UNSPECIFIED",
+    "recommended_answer_behavior": "不得声明当前规则唯一确定；应列出候选版本、证据和待确认项。",
+    "resolution_status": "NO_CONFIRMED_CURRENT",
+    "safe_for_deterministic_answer": false,
+    "selected_evidence": [
+      {
+        "evidence_excerpt": "Complete explicit version evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:wk:v1"
+      },
+      {
+        "evidence_excerpt": "Version v2 optimizes the previous wording without replacement evidence.",
+        "source_span": {
+          "end": 10,
+          "start": 0
+        },
+        "text_hash": "hash-version",
+        "text_unit_id": "tu-version",
+        "version_member_id": "m:wk:v2"
+      }
+    ],
+    "uncertainty_summary": "没有足够证据确认当前规则",
+    "version_warnings": [
+      "没有足够证据确认当前规则"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+Block 27A three-scenario harness smoke started
+output_dir=artifacts/block_27a_three_scenario_harness
+Generated Block 27A artifacts
+No network/model/storage/code-agent calls executed
+pytest --collect-only target 27A tests: 55 collected
+pytest target 27A tests: 55 passed, 0 failed
+compileall lightrag_ext: passed
+py_compile lightrag/prompt.py: passed
+ruff check lightrag_ext lightrag/prompt.py: passed
+core_diff_check.txt: empty

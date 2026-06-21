@@ -1,0 +1,20 @@
+{
+  "flags": {
+    "DSL_AWARE_RUNTIME_ENABLED": false,
+    "DSL_ROUTER_MODE": "shadow",
+    "FUNCTIONAL_QA_ENABLED": true,
+    "GENERIC_GRAPH_ENABLED": false,
+    "IMPACT_ANALYSIS_ENABLED": true,
+    "ISSUE_INDEX_ENABLED": false,
+    "LIVE_QUERY_INTEGRATION_ENABLED": false,
+    "LIVE_UPLOAD_INTEGRATION_ENABLED": false,
+    "PFSS_WRITE_ENABLED": false,
+    "QUALITY_GATE_ENABLED": true,
+    "REAL_MODEL_CALLS_ENABLED": false,
+    "REMOTE_STORAGE_ENABLED": false,
+    "TRUSTED_HYBRID_RETRIEVAL_ENABLED": true,
+    "VERSION_AWARE_RETRIEVAL_ENABLED": true
+  },
+  "live_flags_disabled_by_default": true,
+  "production_disabled_by_default": true
+}

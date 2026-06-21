@@ -1,0 +1,9 @@
+{
+  "active_version_consistency_passed": true,
+  "compensation_passed": true,
+  "delete_passed": true,
+  "initial_ingestion_passed": true,
+  "new_supersedes_created": false,
+  "rebuild_passed": true,
+  "version_update_passed": true
+}

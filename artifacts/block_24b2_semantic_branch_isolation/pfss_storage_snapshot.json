@@ -1,0 +1,32 @@
+{
+  "duplicate_semantic_object_count": 0,
+  "edge_count": 2,
+  "edge_ids": [
+    "pfss:bank_status:has_field:query_condition",
+    "pfss:rule_version:has_field:approval_status"
+  ],
+  "endpoint_closure_passed": true,
+  "entity_vector_count": 4,
+  "forbidden_relation_count": 0,
+  "issue_object_written_to_pfss_count": 0,
+  "namespace": "pfss_test_graph",
+  "node_count": 4,
+  "node_ids": [
+    "pfss:approval_status",
+    "pfss:bank_status",
+    "pfss:query_condition",
+    "pfss:rule_version"
+  ],
+  "relationship_vector_count": 2,
+  "sidecar_alignment_passed": true,
+  "sidecar_count": 6,
+  "sidecar_ids": [
+    "sidecar:pfss:approval_status",
+    "sidecar:pfss:bank_status",
+    "sidecar:pfss:bank_status:has_field:query_condition",
+    "sidecar:pfss:query_condition",
+    "sidecar:pfss:rule_version",
+    "sidecar:pfss:rule_version:has_field:approval_status"
+  ],
+  "workspace": "block24b2_pfss_test"
+}

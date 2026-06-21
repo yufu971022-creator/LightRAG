@@ -1,0 +1,65 @@
+{
+  "chunk-d85499495371c2daef4c6d984be4eb40": {
+    "content": "User Story: US-2401 Bank Status query conditions must be searchable.\nAcceptance Criteria: Evidence: Bank Status supports Query Condition filtering.\nBusiness Rule: Bank Status is canonical master data for query conditions.\nEntity: Bank Status.\nField: Query Condition.\nRelationship: Bank Status has Query Condition.\nSource: synthetic Block 24B-1 fixture.",
+    "tokens": 352,
+    "chunk_order_index": 0,
+    "full_doc_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+    "file_path": "dsl_full_bank_status.md",
+    "llm_cache_list": [],
+    "source_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+    "status": "preprocessed",
+    "metadata": {
+      "document_id": "block24b1-fixture-dsl-full",
+      "document_version_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f",
+      "source_span": {
+        "start": 0,
+        "end": 352
+      },
+      "content_hash": "e73abc893815acf82d6da766da3809867cdded16c3ca3f8415e38c6a493d63c4"
+    },
+    "update_time": 1781948976,
+    "_id": "chunk-d85499495371c2daef4c6d984be4eb40"
+  },
+  "chunk-fa3a91ce802ffb9bd081a6e6ca4eba09": {
+    "content": "User Story: US-2402 Rule Version review is required.\nAcceptance Criteria: Evidence: Rule Version supersedes a prior rule.\nBusiness Rule: Version override requires manual approval.\nEntity: Rule Version.\nSource: synthetic Block 24B-1 fixture.",
+    "tokens": 240,
+    "chunk_order_index": 0,
+    "full_doc_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+    "file_path": "dsl_partial_rule_version.md",
+    "llm_cache_list": [],
+    "source_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+    "status": "preprocessed",
+    "metadata": {
+      "document_id": "block24b1-fixture-dsl-partial",
+      "document_version_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf",
+      "source_span": {
+        "start": 0,
+        "end": 240
+      },
+      "content_hash": "c5b9fd5ebf9caaa221d318bd81ea58fadd6dc0665884e4f4c7557330113b20da"
+    },
+    "update_time": 1781948976,
+    "_id": "chunk-fa3a91ce802ffb9bd081a6e6ca4eba09"
+  },
+  "chunk-35157ded3ba21643cec33459c477bc84": {
+    "content": "Meeting note.\nThe team discussed a small wording change for an internal help page.\nNo structured product design object is specified here.",
+    "tokens": 137,
+    "chunk_order_index": 0,
+    "full_doc_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+    "file_path": "raw_only_note.md",
+    "llm_cache_list": [],
+    "source_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+    "status": "preprocessed",
+    "metadata": {
+      "document_id": "block24b1-fixture-raw-only",
+      "document_version_id": "docver-778c9f7fa39d9b63d043ff7b5242631a",
+      "source_span": {
+        "start": 0,
+        "end": 137
+      },
+      "content_hash": "ec8b322c84db929dd09c83bb252f3fe779e839830be97d8fd3691c45fd4f898e"
+    },
+    "update_time": 1781948976,
+    "_id": "chunk-35157ded3ba21643cec33459c477bc84"
+  }
+}

@@ -1,0 +1,14 @@
+Block 24C-0 persistent sidecar smoke
+output_dir=artifacts/block_24c0_persistent_sidecar
+db_path=artifacts/block_24c0_persistent_sidecar/workspaces/block24c0_smoke/sidecar.db
+network_calls_executed=false
+model_calls_executed=false
+lightrag_storage_writes_executed=false
+
+Validation commands executed:
+- ./scripts/test.sh lightrag_ext/us_dsl/tests/test_sidecar_schema.py lightrag_ext/us_dsl/tests/test_sqlite_sidecar_repository.py lightrag_ext/us_dsl/tests/test_sidecar_persistence_service.py lightrag_ext/us_dsl/tests/test_sidecar_readback_validator.py lightrag_ext/us_dsl/tests/test_sidecar_transaction_guards.py --collect-only -> collected 37
+- ./scripts/test.sh lightrag_ext/us_dsl/tests/test_sidecar_schema.py lightrag_ext/us_dsl/tests/test_sqlite_sidecar_repository.py lightrag_ext/us_dsl/tests/test_sidecar_persistence_service.py lightrag_ext/us_dsl/tests/test_sidecar_readback_validator.py lightrag_ext/us_dsl/tests/test_sidecar_transaction_guards.py -> initial 36 passed, 1 fixture naming failure; fixed test fixture name; final 37 passed
+- .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_persistent_sidecar_smoke --output-dir artifacts/block_24c0_persistent_sidecar --fixture-suite --cleanup -> passed after source_uri_hash fixture correction
+- .venv/bin/python -m compileall -q lightrag_ext -> passed
+- .venv/bin/python -m py_compile lightrag/prompt.py -> passed
+- .venv/bin/python -m ruff check lightrag_ext lightrag/prompt.py -> passed after unused import cleanup

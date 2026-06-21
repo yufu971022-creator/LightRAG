@@ -1,0 +1,22 @@
+{
+  "active_current_candidate_count": 26,
+  "by_version_group": {
+    "vg:alias-shared": 2,
+    "vg:asof": 2,
+    "vg:deleted": 2,
+    "vg:distinct-a": 1,
+    "vg:distinct-b": 1,
+    "vg:issue": 2,
+    "vg:missing-evidence": 1,
+    "vg:multi-current": 2,
+    "vg:multi-latest": 2,
+    "vg:overlap": 2,
+    "vg:supersedes": 2,
+    "vg:unique-current": 2,
+    "vg:unique-latest": 2,
+    "vg:us-order": 2,
+    "vg:weak-change": 2
+  },
+  "candidate_count": 27,
+  "deleted_projection_count": 1
+}

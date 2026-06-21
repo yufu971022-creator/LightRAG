@@ -1,0 +1,3 @@
+version_policy_version: version-policy.v1
+expected_version_policy_version: version-policy.v1
+current_version_required: true

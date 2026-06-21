@@ -1,0 +1,9 @@
+
+Block 24A-1 command executed:
+.venv/bin/python -m lightrag_ext.us_dsl.scripts.run_runtime_smoke_24a1 --timeout-seconds 120
+
+Block 24A-1 validation commands executed:
+PYTHONPYCACHEPREFIX=/private/tmp/lightrag_pycache python3 -m py_compile lightrag_ext/us_dsl/scripts/run_runtime_smoke_24a1.py
+.venv/bin/ruff check lightrag_ext/us_dsl/scripts/run_runtime_smoke_24a1.py
+.venv/bin/python -m lightrag_ext.us_dsl.scripts.run_runtime_smoke_24a1 --timeout-seconds 120
+credential marker scan over artifacts/block_24a1_runtime_smoke returned no credential material

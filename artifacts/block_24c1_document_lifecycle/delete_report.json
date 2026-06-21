@@ -1,0 +1,8 @@
+{
+  "dangling_edge_count": 0,
+  "delete_document_passed": true,
+  "delete_version_passed": true,
+  "previous_version_auto_restored": false,
+  "shared_object_protection_passed": true,
+  "tombstone_created": true
+}

@@ -1,0 +1,8 @@
+{
+  "entity_name_specific_weight_rule_count": 0,
+  "findings": [],
+  "fixture_runtime_coupling_count": 0,
+  "holdout_specific_rule_count": 0,
+  "runtime_module_branch_count": 0,
+  "scanned_files": []
+}

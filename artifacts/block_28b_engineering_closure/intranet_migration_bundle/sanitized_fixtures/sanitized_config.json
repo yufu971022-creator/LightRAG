@@ -1,0 +1,21 @@
+{
+  "deployment_mode": "LOCAL_ISOLATED",
+  "embedding_dimension": 8,
+  "embedding_model": "synthetic-embedding",
+  "expected_embedding_dimension": 8,
+  "feature_flags": {
+    "DSL_AWARE_RUNTIME_ENABLED": true,
+    "DSL_ROUTER_MODE": "shadow",
+    "GENERIC_GRAPH_ENABLED": false,
+    "LIVE_QUERY_INTEGRATION_ENABLED": false,
+    "LIVE_UPLOAD_INTEGRATION_ENABLED": false,
+    "PFSS_WRITE_ENABLED": false,
+    "REAL_MODEL_CALLS_ENABLED": false,
+    "REMOTE_STORAGE_ENABLED": false
+  },
+  "llm_model": "synthetic-llm",
+  "module_manifest_path": "sanitized_fixtures/module_manifest.json",
+  "namespace": "local_synthetic_runtime",
+  "storage_backend": "LOCAL_JSON",
+  "working_dir": "workspaces/synthetic_runtime"
+}

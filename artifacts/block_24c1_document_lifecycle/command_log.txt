@@ -1,0 +1,17 @@
+V1 initial projection
+V1 -> V2 incremental update
+V2 -> V3 relation removal
+Shared document contribution test
+Delete current version
+Delete logical document
+Rebuild version
+Failure after PFSS edge write
+Failure after active version switch
+COMMAND: ./scripts/test.sh lightrag_ext/us_dsl/tests/test_document_version_diff.py lightrag_ext/us_dsl/tests/test_document_contribution_registry.py lightrag_ext/us_dsl/tests/test_lifecycle_storage_capability.py lightrag_ext/us_dsl/tests/test_multistore_mutation_plan.py lightrag_ext/us_dsl/tests/test_document_lifecycle_service.py lightrag_ext/us_dsl/tests/test_lifecycle_compensation.py lightrag_ext/us_dsl/tests/test_lifecycle_readback_validator.py lightrag_ext/us_dsl/tests/test_document_lifecycle_guards.py --collect-only -q
+RESULT: 52 collected
+COMMAND: ./scripts/test.sh lightrag_ext/us_dsl/tests/test_document_version_diff.py lightrag_ext/us_dsl/tests/test_document_contribution_registry.py lightrag_ext/us_dsl/tests/test_lifecycle_storage_capability.py lightrag_ext/us_dsl/tests/test_multistore_mutation_plan.py lightrag_ext/us_dsl/tests/test_document_lifecycle_service.py lightrag_ext/us_dsl/tests/test_lifecycle_compensation.py lightrag_ext/us_dsl/tests/test_lifecycle_readback_validator.py lightrag_ext/us_dsl/tests/test_document_lifecycle_guards.py -q
+RESULT: 52 passed, 0 failed
+COMMAND: .venv/bin/python -m compileall -q lightrag_ext && .venv/bin/python -m py_compile lightrag/prompt.py && .venv/bin/python -m ruff check lightrag_ext lightrag/prompt.py
+RESULT: passed
+COMMAND: .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_document_lifecycle_smoke --output-dir artifacts/block_24c1_document_lifecycle --fixture-suite --fake-deterministic-embedding --failure-injection-suite --cleanup
+RESULT: passed

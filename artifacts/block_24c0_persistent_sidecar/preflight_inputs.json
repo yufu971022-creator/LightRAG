@@ -1,0 +1,35 @@
+{
+  "issue_index": {
+    "issue_count": 2,
+    "path": "artifacts/block_24b2_semantic_branch_isolation/issue_index.json"
+  },
+  "pfss_payload_summary": {
+    "blocked_object_count": 2,
+    "dangling_relationship_count": 0,
+    "endpoint_closure_passed": true,
+    "forbidden_relation_count": 0,
+    "path": "artifacts/block_24b2_semantic_branch_isolation/pfss_payload_summary.json",
+    "safe_entity_count": 4,
+    "safe_relationship_count": 2,
+    "sidecar_alignment_passed": false
+  },
+  "raw_evidence_chain_report": {
+    "input_document_count": 4,
+    "mapping_link_total": 3,
+    "parse_failed_count": 1,
+    "path": "artifacts/block_24b1_raw_evidence_chain/raw_evidence_chain_report.json",
+    "raw_chunk_total": 3,
+    "source_text_unit_total": 4,
+    "successful_document_count": 3
+  },
+  "semantic_branch_report": {
+    "dsl_full_pfss_write": true,
+    "dsl_partial_issue_write": true,
+    "dsl_partial_pfss_write": true,
+    "idempotency_passed": true,
+    "parse_failed_semantic_write": false,
+    "path": "artifacts/block_24b2_semantic_branch_isolation/semantic_branch_report.json",
+    "raw_only_pfss_write": false,
+    "sidecar_alignment_passed": true
+  }
+}

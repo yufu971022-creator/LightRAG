@@ -1,0 +1,282 @@
+{
+  "holdout": {
+    "alternative_scenarios": [],
+    "clarification_questions": [],
+    "classification_status": "CONFIDENT",
+    "confidence": 0.833,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 2,
+      "affected_feature_count": 3,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 3,
+      "evidence_sufficiency_score": 0.8,
+      "existing_code_asset_coverage": 0.0,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.55,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.7,
+      "graph_path_count": 2,
+      "indirect_impact_count": 2,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [
+        "state_transition"
+      ],
+      "profile_confidence": 0.8,
+      "requirement_id": "REQ-27A-HOLDOUT",
+      "risks": [
+        "cross_domain_impact"
+      ],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "reason_codes": [
+      "one_to_many_signals_matched"
+    ],
+    "requirement_id": "REQ-27A-HOLDOUT",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": "ONE_TO_MANY"
+  },
+  "insufficient": {
+    "alternative_scenarios": [],
+    "clarification_questions": [
+      {
+        "question": "Which source document or feature evidence should be used?",
+        "question_id": "evidence"
+      }
+    ],
+    "classification_status": "INSUFFICIENT_EVIDENCE",
+    "confidence": 0.2,
+    "manual_override_used": false,
+    "missing_information": [
+      "source_evidence",
+      "trusted_context"
+    ],
+    "profile": {
+      "affected_domain_count": 0,
+      "affected_feature_count": 0,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 0,
+      "evidence_sufficiency_score": 0.1,
+      "existing_code_asset_coverage": 0.0,
+      "existing_design_evidence_coverage": 0.0,
+      "existing_feature_coverage": 0.0,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.0,
+      "graph_path_count": 0,
+      "indirect_impact_count": 0,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [],
+      "profile_confidence": 0.2,
+      "requirement_id": "REQ-27A-INSUFFICIENT",
+      "risks": [
+        "insufficient_evidence"
+      ],
+      "signals": [],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "reason_codes": [
+      "insufficient_evidence",
+      "missing_retrieval_not_zero_to_one"
+    ],
+    "requirement_id": "REQ-27A-INSUFFICIENT",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": null
+  },
+  "mixed": {
+    "alternative_scenarios": [
+      "ZERO_TO_ONE",
+      "ONE_TO_MANY"
+    ],
+    "clarification_questions": [
+      {
+        "question": "Should this be split into separate new capability and impact-change requests?",
+        "question_id": "split"
+      }
+    ],
+    "classification_status": "MIXED",
+    "confidence": 0.72,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 2,
+      "affected_feature_count": 4,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 4,
+      "evidence_sufficiency_score": 0.7,
+      "existing_code_asset_coverage": 0.2,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.2,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.5,
+      "graph_path_count": 3,
+      "indirect_impact_count": 0,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.75,
+      "novelty_score": 0.85,
+      "primary_change_targets": [
+        "new_capability",
+        "existing_state"
+      ],
+      "profile_confidence": 0.72,
+      "requirement_id": "REQ-27A-MIXED",
+      "risks": [
+        "cross_domain_impact"
+      ],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "reason_codes": [
+      "new_capability_and_broad_impact"
+    ],
+    "requirement_id": "REQ-27A-MIXED",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": null
+  },
+  "one_to_many": {
+    "alternative_scenarios": [],
+    "clarification_questions": [],
+    "classification_status": "CONFIDENT",
+    "confidence": 0.857,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 3,
+      "affected_feature_count": 5,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 4,
+      "evidence_sufficiency_score": 0.82,
+      "existing_code_asset_coverage": 0.45,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.65,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.75,
+      "graph_path_count": 4,
+      "indirect_impact_count": 3,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [
+        "state_value"
+      ],
+      "profile_confidence": 0.86,
+      "requirement_id": "REQ-27A-MANY",
+      "risks": [
+        "cross_domain_impact"
+      ],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 1
+    },
+    "reason_codes": [
+      "one_to_many_signals_matched"
+    ],
+    "requirement_id": "REQ-27A-MANY",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": "ONE_TO_MANY"
+  },
+  "one_to_one_x": {
+    "alternative_scenarios": [],
+    "clarification_questions": [],
+    "classification_status": "CONFIDENT",
+    "confidence": 0.853,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 1,
+      "affected_feature_count": 1,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 1,
+      "evidence_sufficiency_score": 0.78,
+      "existing_code_asset_coverage": 0.82,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.86,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.76,
+      "graph_path_count": 0,
+      "indirect_impact_count": 0,
+      "local_change_score": 0.88,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [
+        "field_mapping"
+      ],
+      "profile_confidence": 0.84,
+      "requirement_id": "REQ-27A-LOCAL",
+      "risks": [],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "reason_codes": [
+      "one_to_one_x_signals_matched"
+    ],
+    "requirement_id": "REQ-27A-LOCAL",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": "ONE_TO_ONE_X"
+  },
+  "zero_to_one": {
+    "alternative_scenarios": [],
+    "clarification_questions": [],
+    "classification_status": "CONFIDENT",
+    "confidence": 0.833,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 0,
+      "affected_feature_count": 0,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 0,
+      "evidence_sufficiency_score": 0.75,
+      "existing_code_asset_coverage": 0.0,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.1,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.1,
+      "graph_path_count": 0,
+      "indirect_impact_count": 0,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.85,
+      "novelty_score": 0.9,
+      "primary_change_targets": [
+        "new_capability"
+      ],
+      "profile_confidence": 0.78,
+      "requirement_id": "REQ-27A-ZERO",
+      "risks": [],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 0
+    },
+    "reason_codes": [
+      "zero_to_one_signals_matched"
+    ],
+    "requirement_id": "REQ-27A-ZERO",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": "ZERO_TO_ONE"
+  }
+}

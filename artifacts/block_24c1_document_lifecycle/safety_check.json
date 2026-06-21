@@ -1,0 +1,15 @@
+{
+  "auto_write_routing_enabled": false,
+  "direct_storage_file_edit_used": false,
+  "global_acid_claimed": false,
+  "lightrag_core_modified": false,
+  "live_upload_behavior_changed": false,
+  "live_upload_hook_connected": false,
+  "neo4j_connected": false,
+  "original_extract_entities_called": false,
+  "production_database_connected": false,
+  "production_storage_writes_executed": false,
+  "real_embedding_calls_executed": false,
+  "real_llm_calls_executed": false,
+  "saga_compensation_used": true
+}

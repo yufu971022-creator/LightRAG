@@ -1,0 +1,63 @@
+{
+  "artifacts_complete": true,
+  "block": "25B",
+  "cleanup_passed": true,
+  "identity_and_generalization": {
+    "alias_same_version_group": true,
+    "distinct_objects_distinct_version_groups": true,
+    "new_supersedes_created_count": 0,
+    "runtime_business_hardcode_count": 0
+  },
+  "implementation": {
+    "conservative_current_resolver_implemented": true,
+    "version_aware_ranker_implemented": true,
+    "version_candidate_index_implemented": true,
+    "version_context_builder_implemented": true,
+    "version_issue_index_implemented": true,
+    "version_query_intent_implemented": true
+  },
+  "intent_behavior": {
+    "as_of_intent_passed": true,
+    "compare_intent_passed": true,
+    "current_intent_passed": true,
+    "historical_intent_passed": true,
+    "migration_intent_passed": true,
+    "unspecified_intent_passed": true
+  },
+  "recommended_next_block": "Block 26A",
+  "resolution_fixtures": {
+    "document_upload_time_used_for_latest": false,
+    "explicit_supersedes_terminal_confirmed": true,
+    "missing_evidence_confirmed_current": false,
+    "multiple_current_conflict": true,
+    "multiple_latest_conflict": true,
+    "no_confirmed_current_returns_warning": true,
+    "source_us_order_used_for_latest": false,
+    "unique_current_confirmed": true,
+    "unique_latest_confirmed": true,
+    "weak_change_word_created_supersedes": false
+  },
+  "safety": {
+    "business_module_hardcode_detected": false,
+    "document_upload_time_used_for_latest": false,
+    "generic_graph_writes_executed": false,
+    "lightrag_core_modified": false,
+    "live_query_behavior_changed": false,
+    "live_query_hook_connected": false,
+    "live_upload_behavior_changed": false,
+    "neo4j_connected": false,
+    "new_supersedes_auto_created": false,
+    "pfss_graph_writes_executed": false,
+    "production_database_connected": false,
+    "real_embedding_calls_executed": false,
+    "real_llm_calls_executed": false,
+    "source_us_order_used_for_latest": false
+  },
+  "version_issues": {
+    "issue_record_count": 1,
+    "issue_visible_in_context": true,
+    "issue_written_as_pfss_fact": false,
+    "valid_time_overlap_detected": true,
+    "version_review_fails_whole_document": false
+  }
+}

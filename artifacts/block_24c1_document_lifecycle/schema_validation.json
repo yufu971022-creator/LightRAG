@@ -1,0 +1,17 @@
+{
+  "foreign_keys_enabled": true,
+  "lifecycle_tables_present": true,
+  "required_lifecycle_tables": [
+    "schema_migrations",
+    "document_active_versions",
+    "document_version_state_history",
+    "raw_chunk_contributions",
+    "semantic_object_contributions",
+    "semantic_relation_contributions",
+    "lifecycle_mutations",
+    "lifecycle_mutation_steps",
+    "document_tombstones",
+    "rebuild_requests"
+  ],
+  "schema_migration_version": 2
+}

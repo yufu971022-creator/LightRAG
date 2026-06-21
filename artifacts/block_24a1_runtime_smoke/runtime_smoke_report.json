@@ -1,0 +1,55 @@
+{
+  "block": "Block 24A-1",
+  "config": {
+    "doc_status_storage": "JsonDocStatusStorage",
+    "embedding_batch_num": 10,
+    "embedding_binding": "openai",
+    "embedding_context_limit": 8192,
+    "embedding_credential_configured": true,
+    "embedding_credential_fingerprint": "sha256:5948d8c736ea",
+    "embedding_dim": 3072,
+    "embedding_host": "api.openai.com",
+    "embedding_model": "text-embedding-3-large",
+    "embedding_send_dimensions": false,
+    "graph_storage": "NetworkXStorage",
+    "kv_storage": "JsonKVStorage",
+    "llm_binding": "openai",
+    "llm_credential_configured": true,
+    "llm_credential_fingerprint": "sha256:5948d8c736ea",
+    "llm_host": "api.openai.com",
+    "llm_max_async": 4,
+    "llm_model": "gpt-5.4-mini",
+    "llm_timeout": 180,
+    "no_proxy": "unset",
+    "proxy_detected": false,
+    "vector_storage": "NanoVectorDBStorage"
+  },
+  "dsl_workspace": "block24a1_20260620_163912_829a56ae_dsl",
+  "generated_at": "2026-06-20T08:39:12Z",
+  "raw_workspace": "block24a1_20260620_163912_829a56ae_raw",
+  "repository_path": "/Users/hufaofao/Projects/LightRAG",
+  "risks": [],
+  "run_id": "20260620_163912_829a56ae",
+  "safety": {
+    "calls_upload_route": false,
+    "core_diff_check": "No diff in forbidden core/API files for Block 24A-1.\n",
+    "dependency_install_attempted": false,
+    "modifies_core_api": false,
+    "uses_company_documents": false,
+    "uses_local_storage_only": true,
+    "writes_only_under": "/Users/hufaofao/Projects/LightRAG/artifacts/block_24a1_runtime_smoke/workspaces"
+  },
+  "status": "BLOCKED_BY_ENV",
+  "steps": [
+    {
+      "error_code": "BLOCKED_MISSING_RUNTIME_DEPENDENCY",
+      "error_message": "Missing runtime dependency for configured binding: openai",
+      "evidence": {},
+      "finished_at": "2026-06-20T08:39:12Z",
+      "name": "preflight",
+      "started_at": "2026-06-20T08:39:12Z",
+      "status": "blocked"
+    }
+  ],
+  "workspace_root": "/Users/hufaofao/Projects/LightRAG/artifacts/block_24a1_runtime_smoke/workspaces/20260620_163912_829a56ae"
+}

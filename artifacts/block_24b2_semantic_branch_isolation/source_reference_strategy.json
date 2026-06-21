@@ -1,0 +1,8 @@
+{
+  "PFSS_SOURCE_REFERENCE_STRATEGY": "EXTERNAL_SIDECAR_REFERENCE",
+  "duplicate_raw_chunk_count": 0,
+  "raw_chunk_count_after": 3,
+  "raw_chunk_count_before": 3,
+  "raw_chunk_vector_count_after": 3,
+  "raw_chunk_vector_count_before": 3
+}

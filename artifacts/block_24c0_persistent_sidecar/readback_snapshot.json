@@ -1,0 +1,238 @@
+{
+  "document_version_snapshot": {
+    "document_version_id": "docver-f3bb8110a565b81a",
+    "graph_object_mappings": [
+      {
+        "batch_id": "batch-5ca1e34a514d24e8",
+        "created_at": "2026-06-20T12:18:53Z",
+        "graph_namespace": "pfss_test_graph",
+        "graph_object_id": "rel:sem:bank_status:has_field:sem:query_condition",
+        "graph_object_kind": "edge",
+        "graph_space": "PFSS",
+        "mapping_id": "map:rel:sem:bank_status:has_field:sem:query_condition",
+        "rollback_key": "rb:rel:sem:bank_status:has_field:sem:query_condition",
+        "semantic_object_id": null,
+        "semantic_relation_id": "rel:sem:bank_status:has_field:sem:query_condition",
+        "source_id": "chunk-24c0-1"
+      },
+      {
+        "batch_id": "batch-5ca1e34a514d24e8",
+        "created_at": "2026-06-20T12:18:53Z",
+        "graph_namespace": "pfss_test_graph",
+        "graph_object_id": "sem:bank_status",
+        "graph_object_kind": "node",
+        "graph_space": "PFSS",
+        "mapping_id": "map:sem:bank_status",
+        "rollback_key": "rb:sem:bank_status",
+        "semantic_object_id": "sem:bank_status",
+        "semantic_relation_id": null,
+        "source_id": "chunk-24c0-0"
+      },
+      {
+        "batch_id": "batch-5ca1e34a514d24e8",
+        "created_at": "2026-06-20T12:18:53Z",
+        "graph_namespace": "pfss_test_graph",
+        "graph_object_id": "sem:query_condition",
+        "graph_object_kind": "node",
+        "graph_space": "PFSS",
+        "mapping_id": "map:sem:query_condition",
+        "rollback_key": "rb:sem:query_condition",
+        "semantic_object_id": "sem:query_condition",
+        "semantic_relation_id": null,
+        "source_id": "chunk-24c0-0"
+      }
+    ],
+    "issues": [],
+    "semantic_objects": [
+      {
+        "canonical_name": "Bank Status",
+        "created_at": "2026-06-20T12:18:53Z",
+        "document_version_id": "docver-f3bb8110a565b81a",
+        "domain_code": "MasterData",
+        "feature_key": "bank-status-query",
+        "idempotency_key": "sem:bank_status",
+        "knowledge_status": "APPROVED",
+        "object_type": "DomainObject",
+        "review_decision": "APPROVED_PFSS",
+        "semantic_object_id": "sem:bank_status",
+        "updated_at": "2026-06-20T12:18:53Z",
+        "validation_status": "VALID",
+        "version_group_key": "vg-bank-status"
+      },
+      {
+        "canonical_name": "Query Condition",
+        "created_at": "2026-06-20T12:18:53Z",
+        "document_version_id": "docver-f3bb8110a565b81a",
+        "domain_code": "MasterData",
+        "feature_key": "bank-status-query",
+        "idempotency_key": "sem:query_condition",
+        "knowledge_status": "APPROVED",
+        "object_type": "FieldSpec",
+        "review_decision": "APPROVED_PFSS",
+        "semantic_object_id": "sem:query_condition",
+        "updated_at": "2026-06-20T12:18:53Z",
+        "validation_status": "VALID",
+        "version_group_key": "vg-bank-status"
+      }
+    ],
+    "semantic_relations": [
+      {
+        "created_at": "2026-06-20T12:18:53Z",
+        "document_version_id": "docver-f3bb8110a565b81a",
+        "idempotency_key": "sem:bank_status:HasField:sem:query_condition",
+        "knowledge_status": "APPROVED",
+        "relation_type": "HasField",
+        "review_decision": "APPROVED_PFSS",
+        "semantic_relation_id": "rel:sem:bank_status:has_field:sem:query_condition",
+        "src_semantic_object_id": "sem:bank_status",
+        "tgt_semantic_object_id": "sem:query_condition",
+        "updated_at": "2026-06-20T12:18:53Z",
+        "validation_status": "VALID"
+      }
+    ]
+  },
+  "graph_object_trace_to_evidence": {
+    "document": {
+      "created_at": "2026-06-20T12:18:53Z",
+      "document_id": "doc-24c0-dsl-full",
+      "logical_name": "24C0 Sidecar Fixture",
+      "module_code": "BLOCK24C0",
+      "source_type": "synthetic",
+      "source_uri_hash": "6dad5c1fbd0bec1bc2362ada28b04bc52fd7ae0e23bbe7b37c946f9c6f4dddc4",
+      "updated_at": "2026-06-20T12:18:53Z"
+    },
+    "document_version": {
+      "content_hash": "7c71d88bf41cdd2cff77077ab1e41606e0ee94489054396440beabbe400c9d01",
+      "created_at": "2026-06-20T12:18:53Z",
+      "document_id": "doc-24c0-dsl-full",
+      "document_version_id": "docver-f3bb8110a565b81a",
+      "normalized_text_hash": "7c71d88bf41cdd2cff77077ab1e41606e0ee94489054396440beabbe400c9d01",
+      "parser_name": "unified_raw_evidence_parser",
+      "parser_version": "24B-1",
+      "previous_version_id": null,
+      "status": "TEXT_INDEXED"
+    },
+    "evidence": [
+      {
+        "created_at": "2026-06-20T12:18:53Z",
+        "evidence_excerpt": "US-2401 Bank Status query",
+        "evidence_mapping_id": "ev:sem:bank_status",
+        "evidence_role": "object_support",
+        "semantic_object_id": "sem:bank_status",
+        "semantic_relation_id": null,
+        "source_span_json": "{\"end\": 60, \"start\": 0}",
+        "text_hash": "8c09a5d16c5a3bf4f49ad43a88610e5f71a4cd8c146ef69d0b2f1504767b508f",
+        "text_unit_id": "tu-a565b81a-us"
+      }
+    ],
+    "evidence_excerpt": "US-2401 Bank Status query",
+    "mapping": {
+      "batch_id": "batch-5ca1e34a514d24e8",
+      "created_at": "2026-06-20T12:18:53Z",
+      "graph_namespace": "pfss_test_graph",
+      "graph_object_id": "sem:bank_status",
+      "graph_object_kind": "node",
+      "graph_space": "PFSS",
+      "mapping_id": "map:sem:bank_status",
+      "rollback_key": "rb:sem:bank_status",
+      "semantic_object_id": "sem:bank_status",
+      "semantic_relation_id": null,
+      "source_id": "chunk-24c0-0"
+    },
+    "review_decision": "APPROVED_PFSS",
+    "semantic": {
+      "canonical_name": "Bank Status",
+      "created_at": "2026-06-20T12:18:53Z",
+      "document_version_id": "docver-f3bb8110a565b81a",
+      "domain_code": "MasterData",
+      "feature_key": "bank-status-query",
+      "idempotency_key": "sem:bank_status",
+      "knowledge_status": "APPROVED",
+      "object_type": "DomainObject",
+      "review_decision": "APPROVED_PFSS",
+      "semantic_object_id": "sem:bank_status",
+      "updated_at": "2026-06-20T12:18:53Z",
+      "validation_status": "VALID",
+      "version_group_key": "vg-bank-status"
+    },
+    "source_span_json": "{\"end\": 60, \"start\": 0}",
+    "source_us_id": "US-2401",
+    "text_hash": "8c09a5d16c5a3bf4f49ad43a88610e5f71a4cd8c146ef69d0b2f1504767b508f",
+    "text_unit_id": "tu-a565b81a-us",
+    "version_status": "APPROVED"
+  },
+  "readback_counts": {
+    "graph_object_mappings": 3,
+    "issues": 0,
+    "rollback_records": 3,
+    "semantic_objects": 2,
+    "semantic_relations": 1,
+    "source_text_units": 3
+  },
+  "rollback_manifest": [
+    {
+      "batch_id": "batch-5ca1e34a514d24e8",
+      "created_at": "2026-06-20T12:18:53Z",
+      "execution_status": "NOT_EXECUTED",
+      "graph_namespace": "pfss_test_graph",
+      "graph_object_id": "rel:sem:bank_status:has_field:sem:query_condition",
+      "graph_object_kind": "edge",
+      "graph_space": "PFSS",
+      "planned_action": "DELETE_GRAPH_OBJECT",
+      "rollback_key": "rb:rel:sem:bank_status:has_field:sem:query_condition",
+      "rollback_record_id": "rollback:batch-5ca1e34a514d24e8:rel:sem:bank_status:has_field:sem:query_condition"
+    },
+    {
+      "batch_id": "batch-5ca1e34a514d24e8",
+      "created_at": "2026-06-20T12:18:53Z",
+      "execution_status": "NOT_EXECUTED",
+      "graph_namespace": "pfss_test_graph",
+      "graph_object_id": "sem:bank_status",
+      "graph_object_kind": "node",
+      "graph_space": "PFSS",
+      "planned_action": "DELETE_GRAPH_OBJECT",
+      "rollback_key": "rb:sem:bank_status",
+      "rollback_record_id": "rollback:batch-5ca1e34a514d24e8:sem:bank_status"
+    },
+    {
+      "batch_id": "batch-5ca1e34a514d24e8",
+      "created_at": "2026-06-20T12:18:53Z",
+      "execution_status": "NOT_EXECUTED",
+      "graph_namespace": "pfss_test_graph",
+      "graph_object_id": "sem:query_condition",
+      "graph_object_kind": "node",
+      "graph_space": "PFSS",
+      "planned_action": "DELETE_GRAPH_OBJECT",
+      "rollback_key": "rb:sem:query_condition",
+      "rollback_record_id": "rollback:batch-5ca1e34a514d24e8:sem:query_condition"
+    }
+  ],
+  "version_group_readback": {
+    "group": {
+      "created_at": "2026-06-20T12:18:53Z",
+      "domain_code": "MasterData",
+      "feature_key": "bank-status-query",
+      "module_code": "BLOCK24C0",
+      "object_key": "bank-status",
+      "object_type": "DomainObject",
+      "rule_dimension": "canonical",
+      "updated_at": "2026-06-20T12:18:53Z",
+      "version_group_key": "vg-bank-status"
+    },
+    "issues": [],
+    "members": [
+      {
+        "created_at": "2026-06-20T12:18:53Z",
+        "latest_flag": 1,
+        "rule_version": "v1",
+        "semantic_object_id": "sem:bank_status",
+        "supersedes_member_id": null,
+        "valid_from": "2026-06-20T12:18:53Z",
+        "valid_to": null,
+        "version_group_key": "vg-bank-status",
+        "version_member_id": "vm:sem:bank_status",
+        "version_status": "current"
+      }
+    ]
+  }
+}

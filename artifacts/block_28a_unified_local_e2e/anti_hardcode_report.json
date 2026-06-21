@@ -1,0 +1,26 @@
+{
+  "entity_name_specific_rule_count": 0,
+  "file_name_controls_runtime_logic_count": 0,
+  "findings": [],
+  "fixture_runtime_coupling_count": 0,
+  "module_specific_skill_count": 0,
+  "module_specific_weight_count": 0,
+  "runtime_module_branch_count": 0,
+  "scanned_files": [
+    "unified_e2e_types.py",
+    "unified_e2e_trace.py",
+    "unified_e2e_state_machine.py",
+    "unified_e2e_pipeline.py",
+    "unified_e2e_orchestrator.py",
+    "unified_e2e_consistency_validator.py",
+    "unified_e2e_generalization_guard.py",
+    "design_output_quality_harness.py",
+    "design_quality_types.py",
+    "evidence_citation_gate.py",
+    "term_identity_gate.py",
+    "version_safety_gate.py",
+    "impact_breadth_gate.py",
+    "fact_promotion_gate.py",
+    "insufficient_evidence_gate.py"
+  ]
+}

@@ -1,0 +1,24 @@
+flowchart TD
+    D[Local Document / US Input] --> P[Single Parse]
+    P --> R[Raw Evidence Chain]
+    P --> A[DSL Applicability]
+    A --> T[Term Normalization]
+    T --> E[Entity Type Resolution]
+    E --> ID[Stable Semantic Identity]
+    ID --> V[Version Governance]
+    V --> G[Policy Gate]
+    G --> PFSS[PFSS Safe Graph]
+    G --> ISSUE[Issue / Review Index]
+    G --> SIDE[Persistent Sidecar]
+    R --> LIFE[Document Lifecycle]
+    PFSS --> LIFE
+    SIDE --> LIFE
+    Q[Question / Requirement] --> QP[Query Profile]
+    QP --> HR[Four-channel Hybrid Retrieval]
+    HR --> TCP[Trusted Context Pack]
+    TCP --> QA[Functional QA]
+    TCP --> IA[Impact Analysis]
+    QA --> QG[27B Quality Gates]
+    IA --> QG
+    QG --> DONE[Completed]
+    NOTE[No US / AC / UX / Code Agent]

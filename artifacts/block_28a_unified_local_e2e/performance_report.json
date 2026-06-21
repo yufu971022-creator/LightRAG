@@ -1,0 +1,5 @@
+{
+  "deterministic_local_run": true,
+  "real_model_calls": 0,
+  "storage_writes_to_production": 0
+}

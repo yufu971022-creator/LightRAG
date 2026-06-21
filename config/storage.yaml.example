@@ -1,0 +1,3 @@
+storage_backend: <<STORAGE_BACKEND>>
+remote_storage_enabled: false
+production_namespace_allowed: false

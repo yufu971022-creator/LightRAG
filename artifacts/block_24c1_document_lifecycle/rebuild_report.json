@@ -1,0 +1,59 @@
+{
+  "llm_called_during_rebuild": false,
+  "rebuild_extra_projection_cleanup_passed": true,
+  "rebuild_idempotency_passed": true,
+  "rebuild_missing_projection_passed": true,
+  "validation": {
+    "active_version_pointer_correct": true,
+    "dangling_edge_count": 0,
+    "details": {
+      "active_version_id": "docver:US-SYN-001:v3",
+      "expected_active_version_id": "docver:US-SYN-001:v3",
+      "object_actual": [
+        "obj:Closed",
+        "obj:InquiryProjectList",
+        "obj:Open",
+        "obj:ProjectStatus",
+        "obj:QuoteSubmission",
+        "obj:SharedProjectReport",
+        "obj:Suspended"
+      ],
+      "object_expected": [
+        "obj:Closed",
+        "obj:InquiryProjectList",
+        "obj:Open",
+        "obj:ProjectStatus",
+        "obj:QuoteSubmission",
+        "obj:SharedProjectReport",
+        "obj:Suspended"
+      ],
+      "raw_actual": [
+        "chunk:US-SYN-001:C1",
+        "chunk:US-SYN-001:C2",
+        "chunk:US-SYN-001:C3",
+        "chunk:US-SYN-002:C1"
+      ],
+      "raw_expected": [
+        "chunk:US-SYN-001:C1",
+        "chunk:US-SYN-001:C2",
+        "chunk:US-SYN-001:C3",
+        "chunk:US-SYN-002:C1"
+      ],
+      "relation_actual": [
+        "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+        "rel:SharedProjectReport:HasReportFilter:ProjectStatus"
+      ],
+      "relation_expected": [
+        "rel:InquiryProjectList:HasReportFilter:ProjectStatus",
+        "rel:SharedProjectReport:HasReportFilter:ProjectStatus"
+      ]
+    },
+    "duplicate_projection_count": 0,
+    "issue_object_written_to_pfss_count": 0,
+    "orphan_vector_count": 0,
+    "passed": true,
+    "pfss_projection_matches_sidecar": true,
+    "raw_projection_matches_sidecar": true,
+    "vector_projection_matches_sidecar": true
+  }
+}

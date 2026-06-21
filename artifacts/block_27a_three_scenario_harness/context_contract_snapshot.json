@@ -1,0 +1,158 @@
+{
+  "assumptions": [
+    "Version issues require explicit review before final output."
+  ],
+  "available_code_context": {
+    "details": {},
+    "source": "not_configured",
+    "status": "UNAVAILABLE"
+  },
+  "context_budget": {
+    "issue_warning_count": 0,
+    "max_items": 12,
+    "source_evidence_count": 1
+  },
+  "impact_context": {
+    "impact_paths_available": true,
+    "source": "27A_offline_fixture"
+  },
+  "issues_and_warnings": [],
+  "open_questions": [],
+  "requirement_input": {
+    "available_code_context": false,
+    "available_design_context": true,
+    "explicit_scenario_override": null,
+    "metadata": {
+      "affected_domain_count": 3,
+      "affected_feature_count": 5,
+      "direct_impact_count": 4,
+      "evidence_sufficiency_score": 0.82,
+      "existing_code_asset_coverage": 0.45,
+      "existing_feature_coverage": 0.65,
+      "existing_semantic_object_coverage": 0.75,
+      "graph_path_count": 4,
+      "indirect_impact_count": 3,
+      "primary_change_targets": [
+        "state_value"
+      ],
+      "profile_confidence": 0.86,
+      "version_issue_count": 1
+    },
+    "module_code": null,
+    "requested_outputs": [],
+    "requirement_id": "REQ-27A-MANY",
+    "requirement_text": "Add a new value to an existing transaction state and assess downstream query, workflow, interface, permission, ledger, and migration impacts.",
+    "source_document_refs": [
+      "synthetic-design-note"
+    ]
+  },
+  "scenario_profile": {
+    "affected_domain_count": 3,
+    "affected_feature_count": 5,
+    "cross_system_signal_count": 0,
+    "direct_impact_count": 4,
+    "evidence_sufficiency_score": 0.82,
+    "existing_code_asset_coverage": 0.45,
+    "existing_design_evidence_coverage": 0.6,
+    "existing_feature_coverage": 0.65,
+    "existing_relation_coverage": 0.0,
+    "existing_semantic_object_coverage": 0.75,
+    "graph_path_count": 4,
+    "indirect_impact_count": 3,
+    "local_change_score": 0.0,
+    "new_business_object_ratio": 0.0,
+    "novelty_score": 0.0,
+    "primary_change_targets": [
+      "state_value"
+    ],
+    "profile_confidence": 0.86,
+    "requirement_id": "REQ-27A-MANY",
+    "risks": [
+      "cross_domain_impact"
+    ],
+    "signals": [
+      "design_context_available"
+    ],
+    "term_issue_count": 0,
+    "type_issue_count": 0,
+    "version_issue_count": 1
+  },
+  "scenario_route": {
+    "alternative_scenarios": [],
+    "clarification_questions": [],
+    "classification_status": "CONFIDENT",
+    "confidence": 0.857,
+    "manual_override_used": false,
+    "missing_information": [],
+    "profile": {
+      "affected_domain_count": 3,
+      "affected_feature_count": 5,
+      "cross_system_signal_count": 0,
+      "direct_impact_count": 4,
+      "evidence_sufficiency_score": 0.82,
+      "existing_code_asset_coverage": 0.45,
+      "existing_design_evidence_coverage": 0.6,
+      "existing_feature_coverage": 0.65,
+      "existing_relation_coverage": 0.0,
+      "existing_semantic_object_coverage": 0.75,
+      "graph_path_count": 4,
+      "indirect_impact_count": 3,
+      "local_change_score": 0.0,
+      "new_business_object_ratio": 0.0,
+      "novelty_score": 0.0,
+      "primary_change_targets": [
+        "state_value"
+      ],
+      "profile_confidence": 0.86,
+      "requirement_id": "REQ-27A-MANY",
+      "risks": [
+        "cross_domain_impact"
+      ],
+      "signals": [
+        "design_context_available"
+      ],
+      "term_issue_count": 0,
+      "type_issue_count": 0,
+      "version_issue_count": 1
+    },
+    "reason_codes": [
+      "one_to_many_signals_matched"
+    ],
+    "requirement_id": "REQ-27A-MANY",
+    "router_policy_version": "27A-router-v1",
+    "selected_scenario": "ONE_TO_MANY"
+  },
+  "source_evidence": [
+    {
+      "document_id": "synthetic-design-note",
+      "evidence_id": "ev_REQ-27A-MANY",
+      "excerpt": "Synthetic non-sensitive evidence for harness planning.",
+      "fact_status": "FACTUAL"
+    }
+  ],
+  "term_context": {
+    "stable_terms_available": true
+  },
+  "trusted_context_pack": {
+    "candidate_aliases": [],
+    "direct_evidence": [
+      {
+        "document_id": "synthetic-design-note",
+        "evidence_id": "ev_REQ-27A-MANY",
+        "excerpt": "Synthetic non-sensitive evidence for harness planning.",
+        "fact_status": "FACTUAL"
+      }
+    ],
+    "factual_candidates": [],
+    "final_answer_generated": false,
+    "issue_warnings": [],
+    "source": "27A_offline_context_pack"
+  },
+  "type_context": {
+    "entity_type_resolution_available": true
+  },
+  "version_context": {
+    "safe_for_deterministic_answer": true,
+    "source": "27A_offline_fixture"
+  }
+}

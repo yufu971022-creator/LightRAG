@@ -1,0 +1,353 @@
+{
+  "AC_GENERATION": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "AC_GENERATION"
+  },
+  "CLARIFICATION_QUESTION_GENERATION": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "CLARIFICATION_QUESTION_GENERATION"
+  },
+  "CODE_CONTEXT_HANDOFF": {
+    "adapter_importable": false,
+    "adapter_target": "future.code_context_adapter",
+    "declared_status": "PLANNED_NOT_IMPLEMENTED",
+    "evidence_source": "explicit_unimplemented_capability_contract",
+    "notes": [
+      "not faked as available"
+    ],
+    "probed": true,
+    "probed_status": "PLANNED_NOT_IMPLEMENTED",
+    "real_execution_performed": false,
+    "skill_id": "CODE_CONTEXT_HANDOFF"
+  },
+  "CROSS_OUTPUT_CONSISTENCY_CHECK": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "CROSS_OUTPUT_CONSISTENCY_CHECK"
+  },
+  "CURRENT_STATE_ANALYSIS": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "CURRENT_STATE_ANALYSIS"
+  },
+  "DETAILED_DESIGN_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "DETAILED_DESIGN_PLANNING"
+  },
+  "DFX_DESIGN_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "DFX_DESIGN_PLANNING"
+  },
+  "FEATURE_DECOMPOSITION": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "FEATURE_DECOMPOSITION"
+  },
+  "FIELD_SPEC_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "FIELD_SPEC_PLANNING"
+  },
+  "FINAL_QUALITY_GATE": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "FINAL_QUALITY_GATE"
+  },
+  "FUNCTION_DECOMPOSITION": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "FUNCTION_DECOMPOSITION"
+  },
+  "HIGH_LEVEL_SOLUTION_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "HIGH_LEVEL_SOLUTION_PLANNING"
+  },
+  "IMPACT_ANALYSIS": {
+    "adapter_importable": true,
+    "adapter_target": "lightrag_ext.us_dsl.impact_analysis_eval:generate_impact_analysis_deterministic",
+    "declared_status": "ADAPTER_AVAILABLE",
+    "evidence_source": "importlib_spec_probe_without_execution",
+    "notes": [
+      "adapter contract located"
+    ],
+    "probed": true,
+    "probed_status": "ADAPTER_AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "IMPACT_ANALYSIS"
+  },
+  "INTEGRATION_DESIGN_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "INTEGRATION_DESIGN_PLANNING"
+  },
+  "LOCAL_IMPACT_CHECK": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "LOCAL_IMPACT_CHECK"
+  },
+  "MIGRATION_INITIALIZATION_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "MIGRATION_INITIALIZATION_PLANNING"
+  },
+  "NOVELTY_GAP_ANALYSIS": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "NOVELTY_GAP_ANALYSIS"
+  },
+  "PERMISSION_AUDIT_DESIGN_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "PERMISSION_AUDIT_DESIGN_PLANNING"
+  },
+  "PRIMARY_CHANGE_TARGET_IDENTIFICATION": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "PRIMARY_CHANGE_TARGET_IDENTIFICATION"
+  },
+  "PROCESS_STATE_DESIGN_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "PROCESS_STATE_DESIGN_PLANNING"
+  },
+  "REQUIREMENT_INTAKE": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "REQUIREMENT_INTAKE"
+  },
+  "SCENARIO_CLASSIFICATION": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "SCENARIO_CLASSIFICATION"
+  },
+  "TEST_SCOPE_PLANNING": {
+    "adapter_importable": null,
+    "adapter_target": null,
+    "declared_status": "AVAILABLE",
+    "evidence_source": "local_deterministic_contract",
+    "notes": [
+      "no external execution required"
+    ],
+    "probed": true,
+    "probed_status": "AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "TEST_SCOPE_PLANNING"
+  },
+  "TRUSTED_KNOWLEDGE_RETRIEVAL": {
+    "adapter_importable": true,
+    "adapter_target": "lightrag_ext.us_dsl.hybrid_retrieval_service:HybridRetrievalService",
+    "declared_status": "ADAPTER_AVAILABLE",
+    "evidence_source": "importlib_spec_probe_without_execution",
+    "notes": [
+      "adapter contract located"
+    ],
+    "probed": true,
+    "probed_status": "ADAPTER_AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "TRUSTED_KNOWLEDGE_RETRIEVAL"
+  },
+  "US_GENERATION": {
+    "adapter_importable": true,
+    "adapter_target": "lightrag_ext.us_dsl.us_generation_eval:US generation task specification only",
+    "declared_status": "ADAPTER_AVAILABLE",
+    "evidence_source": "importlib_spec_probe_without_execution",
+    "notes": [
+      "adapter contract located"
+    ],
+    "probed": true,
+    "probed_status": "ADAPTER_AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "US_GENERATION"
+  },
+  "UX_DESIGN_INPUT_PLANNING": {
+    "adapter_importable": false,
+    "adapter_target": null,
+    "declared_status": "PLANNED_NOT_IMPLEMENTED",
+    "evidence_source": "explicit_unimplemented_capability_contract",
+    "notes": [
+      "not faked as available"
+    ],
+    "probed": true,
+    "probed_status": "PLANNED_NOT_IMPLEMENTED",
+    "real_execution_performed": false,
+    "skill_id": "UX_DESIGN_INPUT_PLANNING"
+  },
+  "VERSION_ANALYSIS": {
+    "adapter_importable": true,
+    "adapter_target": "lightrag_ext.us_dsl.version_retrieval_service:VersionRetrievalService",
+    "declared_status": "ADAPTER_AVAILABLE",
+    "evidence_source": "importlib_spec_probe_without_execution",
+    "notes": [
+      "adapter contract located"
+    ],
+    "probed": true,
+    "probed_status": "ADAPTER_AVAILABLE",
+    "real_execution_performed": false,
+    "skill_id": "VERSION_ANALYSIS"
+  }
+}

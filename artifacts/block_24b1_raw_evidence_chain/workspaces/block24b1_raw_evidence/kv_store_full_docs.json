@@ -1,0 +1,20 @@
+{
+  "docver-94bf4f5256b84b9d5f23fdea095a6a9f": {
+    "content": "User Story: US-2401 Bank Status query conditions must be searchable.\nAcceptance Criteria: Evidence: Bank Status supports Query Condition filtering.\nBusiness Rule: Bank Status is canonical master data for query conditions.\nEntity: Bank Status.\nField: Query Condition.\nRelationship: Bank Status has Query Condition.\nSource: synthetic Block 24B-1 fixture.",
+    "file_path": "dsl_full_bank_status.md",
+    "update_time": 1781948976,
+    "_id": "docver-94bf4f5256b84b9d5f23fdea095a6a9f"
+  },
+  "docver-44d59fc6d9efe5cfa53a87975cdb83bf": {
+    "content": "User Story: US-2402 Rule Version review is required.\nAcceptance Criteria: Evidence: Rule Version supersedes a prior rule.\nBusiness Rule: Version override requires manual approval.\nEntity: Rule Version.\nSource: synthetic Block 24B-1 fixture.",
+    "file_path": "dsl_partial_rule_version.md",
+    "update_time": 1781948976,
+    "_id": "docver-44d59fc6d9efe5cfa53a87975cdb83bf"
+  },
+  "docver-778c9f7fa39d9b63d043ff7b5242631a": {
+    "content": "Meeting note.\nThe team discussed a small wording change for an internal help page.\nNo structured product design object is specified here.",
+    "file_path": "raw_only_note.md",
+    "update_time": 1781948976,
+    "_id": "docver-778c9f7fa39d9b63d043ff7b5242631a"
+  }
+}

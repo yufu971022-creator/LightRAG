@@ -1,0 +1,10 @@
+{
+  "ac_generation_available": false,
+  "code_agent_available": false,
+  "functional_qa_available": true,
+  "impact_analysis_available": true,
+  "ingestion_available": true,
+  "lifecycle_available": true,
+  "us_generation_available": false,
+  "ux_generation_available": false
+}

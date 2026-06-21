@@ -1,0 +1,49 @@
+{
+  "case_set": "NEGATIVE",
+  "gold_backed": false,
+  "quality_summary": {
+    "fact_safety": {
+      "candidate_as_confirmed_count": 0.0,
+      "generic_ner_fact_hit_count": 0.0,
+      "generic_only_as_confirmed_count": 0.0,
+      "historical_as_current_count": 0.0,
+      "info_only_as_fact_count": 0.0,
+      "invalid_citation_count": 0.0,
+      "issue_as_fact_count": 0.0,
+      "unsupported_factual_path_count": 0.0
+    },
+    "functional_qa": {
+      "answered_with_confirmed_evidence_count": 1,
+      "answered_with_version_warning_count": 1,
+      "case_count": 4,
+      "citation_validity_rate": 1.0,
+      "evidence_recall": 1.0,
+      "incorrect_term_merge_count": 0.0,
+      "insufficient_evidence_count": 1,
+      "source_span_accuracy": 1.0,
+      "text_only_evidence_count": 1,
+      "unsupported_fact_count": 0.0,
+      "version_hard_judgment_error_count": 0.0
+    },
+    "impact_analysis": {
+      "case_count": 3,
+      "direct_impact_recall": 1.0,
+      "duplicate_impact_count": 0.0,
+      "evidence_backed_path_ratio": 1.0,
+      "false_positive_impact_count": 0.0,
+      "indirect_impact_recall": 1.0,
+      "one_to_many_case_count": 1,
+      "one_to_many_degraded_count": 0,
+      "required_dimension_coverage": 1.0,
+      "tentative_impact_count": 3
+    },
+    "repair": {
+      "initial_fail_count": 0,
+      "max_attempts_observed": 1,
+      "repair_planned_count": 0,
+      "repair_success_count": 0,
+      "second_failure_count": 0
+    }
+  },
+  "source_case_count": 0
+}

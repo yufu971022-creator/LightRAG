@@ -1,0 +1,24 @@
+{
+  "dangling_path_count": 0,
+  "generic_background_count": 1,
+  "issue_edges_in_factual_path_count": 0,
+  "missing_evidence_factual_path_count": 0,
+  "path_statuses": [
+    {
+      "hop_count": 1,
+      "path_id": "path-factual",
+      "reasons": [
+        "complete_evidence"
+      ],
+      "status": "FACTUAL"
+    },
+    {
+      "hop_count": 1,
+      "path_id": "path-generic",
+      "reasons": [
+        "generic_only"
+      ],
+      "status": "BACKGROUND_ONLY"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "ac_generation_executed": false,
+  "code_agent_called": false,
+  "entity_name_specific_rule_count": 0,
+  "internal_endpoints_packaged": false,
+  "lightrag_core_modified": false,
+  "live_harness_hook_connected": false,
+  "live_query_behavior_changed": false,
+  "live_upload_behavior_changed": false,
+  "local_indexes_packaged": false,
+  "module_specific_skill_count": 0,
+  "module_specific_weight_count": 0,
+  "production_enabled_by_default": false,
+  "production_storage_connected": false,
+  "real_business_data_packaged": false,
+  "real_model_calls_executed": false,
+  "runtime_module_branch_count": 0,
+  "secrets_packaged": false,
+  "us_generation_executed": false,
+  "user_absolute_paths_packaged": false,
+  "ux_generation_executed": false
+}

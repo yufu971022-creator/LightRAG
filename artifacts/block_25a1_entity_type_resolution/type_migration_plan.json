@@ -1,0 +1,45 @@
+{
+  "affected_evidence_mapping_ids": [
+    "evidence-25a1-list"
+  ],
+  "affected_relation_ids": [
+    "rel-old-filter"
+  ],
+  "affected_version_group_keys": [
+    "vg:old-location",
+    "vg:CoreSystem|MOD-PRODUCT|MonitoringReport|InquiryList|ReportSpec|search|default"
+  ],
+  "document_versions_affected": [
+    "docver-25a1-v1"
+  ],
+  "entity_vector_rebuild_required": true,
+  "merge_target_id": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:search:default",
+  "new_semantic_object_id": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:search:default",
+  "new_type": "ReportSpec",
+  "old_semantic_object_id": "urn:pfss:old:Location:inquiry-project-list",
+  "old_type": "Location",
+  "pfss_delete_plan": [
+    {
+      "delete_node": "urn:pfss:old:Location:inquiry-project-list"
+    }
+  ],
+  "pfss_upsert_plan": [
+    {
+      "type": "ReportSpec",
+      "upsert_node": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:search:default"
+    }
+  ],
+  "relation_vector_rebuild_required": true,
+  "risk_level": "MEDIUM",
+  "sidecar_updates": [
+    {
+      "field": "resolved_entity_type",
+      "value": "ReportSpec"
+    },
+    {
+      "field": "semantic_object_id",
+      "from": "urn:pfss:old:Location:inquiry-project-list",
+      "to": "urn:pfss:mod-product:monitoringreport:inquirylist:reportspec:search:default"
+    }
+  ]
+}

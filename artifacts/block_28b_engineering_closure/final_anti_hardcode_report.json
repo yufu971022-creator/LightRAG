@@ -1,0 +1,12 @@
+{
+  "entity_name_specific_rule_count": 0,
+  "findings": [],
+  "fixture_runtime_coupling_count": 0,
+  "internal_endpoint_hardcode_count": 0,
+  "local_filename_controls_runtime_logic_count": 0,
+  "module_specific_skill_count": 0,
+  "module_specific_weight_count": 0,
+  "runtime_module_branch_count": 0,
+  "scanned_file_count": 9,
+  "user_absolute_path_hardcode_count": 0
+}

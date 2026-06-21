@@ -1,0 +1,21 @@
+flowchart TD
+    E[Unknown Business Entity Name] --> C[Generic Product Context]
+    C --> S[Section / Domain / Feature]
+    C --> R[Relation Role / Type Signature]
+    C --> D[Explicit DSL / Confirmed Config]
+    C --> N[Generic NER Candidate]
+
+    S --> P[Generic Resolution Policy]
+    R --> P
+    D --> P
+    N --> P
+
+    P -->|Safe and Explainable| T[PFSS Product Type]
+    P -->|Insufficient Context| I[Review Issue]
+    P -->|Generic NER Only| B[Blocked from PFSS]
+    P -->|Conflict| F[Type Conflict]
+
+    T --> ID[Stable Semantic Identity]
+    ID --> PFSS[PFSS Node / Relation]
+
+    NOTE[No Business-module Name Special Cases]

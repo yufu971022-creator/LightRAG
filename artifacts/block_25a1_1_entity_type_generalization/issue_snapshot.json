@@ -1,0 +1,657 @@
+{
+  "by_type": {
+    "ENTITY_TYPE_CONFLICT": 1,
+    "ENTITY_TYPE_REVIEW_REQUIRED": 1,
+    "GENERIC_NER_TYPE_BLOCKED": 9
+  },
+  "issue_count": 11,
+  "issues": [
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Location",
+          "evidence": {
+            "evidence_text": "Berlin",
+            "original_entity_name": "Berlin",
+            "original_entity_type": "Location",
+            "section_type": null,
+            "source_span": {
+              "end": 6,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Location",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "generic_location",
+      "source_evidence": [
+        {
+          "evidence_text": "Berlin",
+          "original_entity_name": "Berlin",
+          "original_entity_type": "Location",
+          "section_type": null,
+          "source_span": {
+            "end": 6,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "结果",
+            "original_entity_name": "结果",
+            "original_entity_type": "Misc",
+            "section_type": null,
+            "source_span": {
+              "end": 2,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Misc",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "ambiguous_short_name",
+      "source_evidence": [
+        {
+          "evidence_text": "结果",
+          "original_entity_name": "结果",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 2,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "Zeta 模糊项 appears in a product design structure.",
+            "original_entity_name": "Zeta 模糊项",
+            "original_entity_type": "Misc",
+            "section_type": null,
+            "source_span": {
+              "end": 8,
+              "start": 0
+            },
+            "text_unit_id": null
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Misc",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "Zeta 模糊项",
+      "source_evidence": [
+        {
+          "evidence_text": "Zeta 模糊项 appears in a product design structure.",
+          "original_entity_name": "Zeta 模糊项",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 8,
+            "start": 0
+          },
+          "text_unit_id": null
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "Eta 模糊项 appears in a product design structure.",
+            "original_entity_name": "Eta 模糊项",
+            "original_entity_type": "Misc",
+            "section_type": null,
+            "source_span": {
+              "end": 7,
+              "start": 0
+            },
+            "text_unit_id": null
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Misc",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "Eta 模糊项",
+      "source_evidence": [
+        {
+          "evidence_text": "Eta 模糊项 appears in a product design structure.",
+          "original_entity_name": "Eta 模糊项",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 7,
+            "start": 0
+          },
+          "text_unit_id": null
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "Theta 模糊项 appears in a product design structure.",
+            "original_entity_name": "Theta 模糊项",
+            "original_entity_type": "Misc",
+            "section_type": null,
+            "source_span": {
+              "end": 9,
+              "start": 0
+            },
+            "text_unit_id": null
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Misc",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "Theta 模糊项",
+      "source_evidence": [
+        {
+          "evidence_text": "Theta 模糊项 appears in a product design structure.",
+          "original_entity_name": "Theta 模糊项",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 9,
+            "start": 0
+          },
+          "text_unit_id": null
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "Iota 模糊项 appears in a product design structure.",
+            "original_entity_name": "Iota 模糊项",
+            "original_entity_type": "Misc",
+            "section_type": null,
+            "source_span": {
+              "end": 8,
+              "start": 0
+            },
+            "text_unit_id": null
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Misc",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "Iota 模糊项",
+      "source_evidence": [
+        {
+          "evidence_text": "Iota 模糊项 appears in a product design structure.",
+          "original_entity_name": "Iota 模糊项",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 8,
+            "start": 0
+          },
+          "text_unit_id": null
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "Kappa 模糊项 appears in a product design structure.",
+            "original_entity_name": "Kappa 模糊项",
+            "original_entity_type": "Misc",
+            "section_type": null,
+            "source_span": {
+              "end": 9,
+              "start": 0
+            },
+            "text_unit_id": null
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Misc",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "Kappa 模糊项",
+      "source_evidence": [
+        {
+          "evidence_text": "Kappa 模糊项 appears in a product design structure.",
+          "original_entity_name": "Kappa 模糊项",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 9,
+            "start": 0
+          },
+          "text_unit_id": null
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Location",
+          "evidence": {
+            "evidence_text": "Berlin",
+            "original_entity_name": "Berlin",
+            "original_entity_type": "Location",
+            "section_type": null,
+            "source_span": {
+              "end": 6,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Location",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "explainability",
+      "source_evidence": [
+        {
+          "evidence_text": "Berlin",
+          "original_entity_name": "Berlin",
+          "original_entity_type": "Location",
+          "section_type": null,
+          "source_span": {
+            "end": 6,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "FieldSpec",
+          "evidence": {
+            "evidence_text": "查询条件",
+            "original_entity_name": "查询条件",
+            "original_entity_type": "Unknown",
+            "section_type": null,
+            "source_span": {
+              "end": 4,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "lexical_cue_only"
+          ],
+          "score": 0.8,
+          "source": "SECTION_DOMAIN_HEURISTIC"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "ENTITY_TYPE_REVIEW_REQUIRED",
+      "original_entity_type": "Unknown",
+      "score": 0.8,
+      "signals_used": [
+        "feature_context",
+        "generic_lexical_cue",
+        "lexical_cue_only",
+        "primary_domain"
+      ],
+      "source": "explainability",
+      "source_evidence": [
+        {
+          "evidence_text": "查询条件",
+          "original_entity_name": "查询条件",
+          "original_entity_type": "Unknown",
+          "section_type": null,
+          "source_span": {
+            "end": 4,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "结果",
+            "original_entity_name": "结果",
+            "original_entity_type": "Misc",
+            "section_type": null,
+            "source_span": {
+              "end": 2,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "GENERIC_NER_TYPE_BLOCKED",
+      "original_entity_type": "Misc",
+      "score": 0.4,
+      "signals_used": [
+        "generic_ner_candidate",
+        "generic_ner_weak_hint"
+      ],
+      "source": "explainability",
+      "source_evidence": [
+        {
+          "evidence_text": "结果",
+          "original_entity_name": "结果",
+          "original_entity_type": "Misc",
+          "section_type": null,
+          "source_span": {
+            "end": 2,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        }
+      ]
+    },
+    {
+      "candidate_types": [
+        {
+          "candidate_type": "FeatureCatalog",
+          "evidence": {
+            "evidence_text": "配置对象 appears in a product design structure.",
+            "original_entity_name": "配置对象",
+            "original_entity_type": "Misc",
+            "section_type": "query_section",
+            "source_span": {
+              "end": 4,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "confirmed_config_type"
+          ],
+          "score": 0.98,
+          "source": "CONFIRMED_CONFIG"
+        },
+        {
+          "candidate_type": "ReportSpec",
+          "evidence": {
+            "evidence_text": "配置对象 appears in a product design structure.",
+            "original_entity_name": "配置对象",
+            "original_entity_type": "Misc",
+            "section_type": "query_section",
+            "source_span": {
+              "end": 4,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "confirmed_config_type"
+          ],
+          "score": 0.98,
+          "source": "CONFIRMED_CONFIG"
+        },
+        {
+          "candidate_type": "ReportSpec",
+          "evidence": {
+            "evidence_text": "配置对象 appears in a product design structure.",
+            "original_entity_name": "配置对象",
+            "original_entity_type": "Misc",
+            "section_type": "query_section",
+            "source_span": {
+              "end": 4,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "query_list_report_structure"
+          ],
+          "score": 0.95,
+          "source": "STRUCTURAL_PARSER"
+        },
+        {
+          "candidate_type": "ReportSpec",
+          "evidence": {
+            "evidence_text": "配置对象 appears in a product design structure.",
+            "original_entity_name": "配置对象",
+            "original_entity_type": "Misc",
+            "section_type": "query_section",
+            "source_span": {
+              "end": 4,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "monitoring_report_query_context"
+          ],
+          "score": 0.9,
+          "source": "SECTION_DOMAIN_HEURISTIC"
+        },
+        {
+          "candidate_type": "DomainObject",
+          "evidence": {
+            "evidence_text": "配置对象 appears in a product design structure.",
+            "original_entity_name": "配置对象",
+            "original_entity_type": "Misc",
+            "section_type": "query_section",
+            "source_span": {
+              "end": 4,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "lexical_cue_only"
+          ],
+          "score": 0.8,
+          "source": "SECTION_DOMAIN_HEURISTIC"
+        },
+        {
+          "candidate_type": "Misc",
+          "evidence": {
+            "evidence_text": "配置对象 appears in a product design structure.",
+            "original_entity_name": "配置对象",
+            "original_entity_type": "Misc",
+            "section_type": "query_section",
+            "source_span": {
+              "end": 4,
+              "start": 0
+            },
+            "text_unit_id": "tu-generalization"
+          },
+          "reason_codes": [
+            "generic_ner_weak_hint"
+          ],
+          "score": 0.4,
+          "source": "GENERIC_NER"
+        }
+      ],
+      "confirmed": false,
+      "issue_type": "ENTITY_TYPE_CONFLICT",
+      "original_entity_type": "Misc",
+      "score": 0.98,
+      "signals_used": [
+        "confirmed_config_type",
+        "confirmed_type_configuration"
+      ],
+      "source": "explainability",
+      "source_evidence": [
+        {
+          "evidence_text": "配置对象 appears in a product design structure.",
+          "original_entity_name": "配置对象",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 4,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        },
+        {
+          "evidence_text": "配置对象 appears in a product design structure.",
+          "original_entity_name": "配置对象",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 4,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        },
+        {
+          "evidence_text": "配置对象 appears in a product design structure.",
+          "original_entity_name": "配置对象",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 4,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        },
+        {
+          "evidence_text": "配置对象 appears in a product design structure.",
+          "original_entity_name": "配置对象",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 4,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        },
+        {
+          "evidence_text": "配置对象 appears in a product design structure.",
+          "original_entity_name": "配置对象",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 4,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        },
+        {
+          "evidence_text": "配置对象 appears in a product design structure.",
+          "original_entity_name": "配置对象",
+          "original_entity_type": "Misc",
+          "section_type": "query_section",
+          "source_span": {
+            "end": 4,
+            "start": 0
+          },
+          "text_unit_id": "tu-generalization"
+        }
+      ]
+    }
+  ]
+}

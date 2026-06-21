@@ -1,0 +1,23 @@
+{
+  "logs_contain_full_document": false,
+  "logs_contain_secret": false,
+  "required_trace_fields": [
+    "timestamp",
+    "level",
+    "trace_id",
+    "run_id",
+    "batch_id",
+    "document_id",
+    "document_version_id",
+    "query_id",
+    "stage",
+    "component",
+    "event",
+    "status",
+    "reason_code",
+    "elapsed_ms",
+    "attempt_no"
+  ],
+  "required_trace_fields_present": true,
+  "structured_logging_implemented": true
+}

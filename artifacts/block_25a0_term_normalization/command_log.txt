@@ -1,0 +1,12 @@
+Block 25A-0 term normalization smoke started
+CSV registry imported
+Isolated PFSS dedup smoke completed
+Cleanup completed
+COMMAND: ./scripts/test.sh lightrag_ext/us_dsl/tests/test_term_lexical_normalizer.py lightrag_ext/us_dsl/tests/test_term_registry.py lightrag_ext/us_dsl/tests/test_scoped_term_resolver.py lightrag_ext/us_dsl/tests/test_semantic_identity.py lightrag_ext/us_dsl/tests/test_term_query_expander.py lightrag_ext/us_dsl/tests/test_term_normalization_migration.py lightrag_ext/us_dsl/tests/test_term_normalization_integration.py lightrag_ext/us_dsl/tests/test_term_normalization_guards.py --collect-only -q
+RESULT: 45 collected
+COMMAND: ./scripts/test.sh lightrag_ext/us_dsl/tests/test_term_lexical_normalizer.py lightrag_ext/us_dsl/tests/test_term_registry.py lightrag_ext/us_dsl/tests/test_scoped_term_resolver.py lightrag_ext/us_dsl/tests/test_semantic_identity.py lightrag_ext/us_dsl/tests/test_term_query_expander.py lightrag_ext/us_dsl/tests/test_term_normalization_migration.py lightrag_ext/us_dsl/tests/test_term_normalization_integration.py lightrag_ext/us_dsl/tests/test_term_normalization_guards.py -q
+RESULT: 45 passed, 0 failed
+COMMAND: .venv/bin/python -m compileall -q lightrag_ext && .venv/bin/python -m py_compile lightrag/prompt.py && .venv/bin/python -m ruff check lightrag_ext lightrag/prompt.py
+RESULT: passed
+COMMAND: .venv/bin/python -m lightrag_ext.us_dsl.scripts.run_term_normalization_smoke --output-dir artifacts/block_25a0_term_normalization --fixture-suite --fake-deterministic-embedding --isolated-pfss-dedup-smoke --cleanup
+RESULT: passed

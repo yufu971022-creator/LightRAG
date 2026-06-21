@@ -1,0 +1,39 @@
+{
+  "blocking_gap_count": 1,
+  "gap_count": 3,
+  "gaps": [
+    {
+      "available_fallback": "skip_with_trace",
+      "blocks_plan": false,
+      "gap_id": "gap_ux_design_input_planning",
+      "gap_type": "PLANNED_NOT_IMPLEMENTED",
+      "manual_action": "Provide capability implementation or explicitly accept reduced scope.",
+      "missing_dependency": "implemented_adapter_or_runtime_capability",
+      "required_for_completion": false,
+      "severity": "MEDIUM",
+      "skill_id": "UX_DESIGN_INPUT_PLANNING"
+    },
+    {
+      "available_fallback": "skip_with_trace",
+      "blocks_plan": false,
+      "gap_id": "gap_ux_design_input_planning",
+      "gap_type": "PLANNED_NOT_IMPLEMENTED",
+      "manual_action": "Provide capability implementation or explicitly accept reduced scope.",
+      "missing_dependency": "implemented_adapter_or_runtime_capability",
+      "required_for_completion": false,
+      "severity": "MEDIUM",
+      "skill_id": "UX_DESIGN_INPUT_PLANNING"
+    },
+    {
+      "available_fallback": "manual_checkpoint",
+      "blocks_plan": true,
+      "gap_id": "gap_code_context_handoff",
+      "gap_type": "PLANNED_NOT_IMPLEMENTED",
+      "manual_action": "Provide capability implementation or explicitly accept reduced scope.",
+      "missing_dependency": "implemented_adapter_or_runtime_capability",
+      "required_for_completion": true,
+      "severity": "HIGH",
+      "skill_id": "CODE_CONTEXT_HANDOFF"
+    }
+  ]
+}

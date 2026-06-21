@@ -1,0 +1,8 @@
+{
+  "required_fields": [
+    "document_id",
+    "document_version_id",
+    "trace_id"
+  ],
+  "schema_version": "sidecar.v1"
+}

@@ -1,0 +1,17 @@
+Block 24B-1 raw evidence chain smoke
+output_dir=artifacts/block_24b1_raw_evidence_chain
+workspace=block24b1_raw_evidence
+execution_mode=ISOLATED_WRITE
+real_embedding_requested=False
+network_calls_executed=false
+model_calls_executed=false
+
+Validation commands executed:
+- python3 -m py_compile ... -> failed due sandbox pycache permission, rerun with escalation passed
+- python3 lightrag_ext/us_dsl/scripts/run_raw_evidence_chain_smoke.py ... -> failed under system Python missing project import/dependency; switched to .venv
+- ./scripts/test.sh ... --collect-only -> initial import helper failure, fixed; final collected 40 tests
+- ./scripts/test.sh four 24B-1 test files -> final 40 passed
+- .venv/bin/python lightrag_ext/us_dsl/scripts/run_raw_evidence_chain_smoke.py ... -> passed
+- .venv/bin/python -m compileall -q 24B-1 files and lightrag/prompt.py -> passed
+- .venv/bin/ruff check 24B-1 files and lightrag/prompt.py -> passed after lint-only cleanup
+- Initial full target test exposed an unintended tiktoken encoding download attempt to openaipublic.blob.core.windows.net; it failed at DNS/network layer and was fixed by switching 24B-1 parser to an offline deterministic tokenizer. Final target tests and final artifact smoke completed without network/model calls.

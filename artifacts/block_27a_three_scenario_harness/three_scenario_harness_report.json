@@ -1,0 +1,120 @@
+{
+  "artifacts": [
+    "artifacts/block_27a_three_scenario_harness/three_scenario_harness_report.json",
+    "artifacts/block_27a_three_scenario_harness/three_scenario_harness_report.md",
+    "artifacts/block_27a_three_scenario_harness/scenario_policy.json",
+    "artifacts/block_27a_three_scenario_harness/scenario_profile_results.json",
+    "artifacts/block_27a_three_scenario_harness/scenario_route_results.json",
+    "artifacts/block_27a_three_scenario_harness/skill_registry.json",
+    "artifacts/block_27a_three_scenario_harness/skill_capability_matrix.json",
+    "artifacts/block_27a_three_scenario_harness/skill_contracts.json",
+    "artifacts/block_27a_three_scenario_harness/zero_to_one_plan.json",
+    "artifacts/block_27a_three_scenario_harness/one_to_many_plan.json",
+    "artifacts/block_27a_three_scenario_harness/one_to_one_x_plan.json",
+    "artifacts/block_27a_three_scenario_harness/mixed_scenario_result.json",
+    "artifacts/block_27a_three_scenario_harness/insufficient_evidence_result.json",
+    "artifacts/block_27a_three_scenario_harness/context_contract_snapshot.json",
+    "artifacts/block_27a_three_scenario_harness/checkpoint_results.json",
+    "artifacts/block_27a_three_scenario_harness/state_transition_log.json",
+    "artifacts/block_27a_three_scenario_harness/execution_trace.json",
+    "artifacts/block_27a_three_scenario_harness/capability_gap_report.json",
+    "artifacts/block_27a_three_scenario_harness/harness_anti_hardcode_report.json",
+    "artifacts/block_27a_three_scenario_harness/holdout_generalization_report.json",
+    "artifacts/block_27a_three_scenario_harness/safety_check.json",
+    "artifacts/block_27a_three_scenario_harness/cleanup_report.json",
+    "artifacts/block_27a_three_scenario_harness/architecture.mmd",
+    "artifacts/block_27a_three_scenario_harness/command_log.txt",
+    "artifacts/block_27a_three_scenario_harness/git_status_before.txt",
+    "artifacts/block_27a_three_scenario_harness/git_status_after.txt",
+    "artifacts/block_27a_three_scenario_harness/core_diff_check.txt",
+    "artifacts/block_27a_three_scenario_harness/unresolved_questions.md"
+  ],
+  "block": "27A",
+  "final": {
+    "overall_status": "PASS",
+    "recommended_next_block": "Block 27B"
+  },
+  "generalization": {
+    "anti_hardcode_passed": true,
+    "entity_name_skill_rule_count": 0,
+    "fixture_runtime_coupling_count": 0,
+    "new_module_requires_code_change": false
+  },
+  "harness": {
+    "capability_gap_count": 3,
+    "checkpoint_policy_implemented": true,
+    "context_contract_implemented": true,
+    "dry_run_status": "DRY_RUN_COMPLETED",
+    "final_solution_document_generated": false,
+    "final_us_generated": false,
+    "plan_only_status": "PLAN_READY",
+    "state_machine_implemented": true,
+    "waiting_for_clarification_count": 2
+  },
+  "plans": {
+    "dag_cycle_count": 0,
+    "deterministic_plan_hash_passed": true,
+    "missing_required_dependency_count": 0,
+    "one_to_many_plan_node_count": 24,
+    "one_to_one_x_plan_node_count": 18,
+    "zero_to_one_plan_node_count": 21
+  },
+  "preconditions": {
+    "block_26b_local_status": {
+      "allow_continue_27a_27b_28_local_development": true,
+      "formal_multi_module_gate_status": "BLOCKED_INPUT_SET",
+      "local_fullflow_status": "LOCAL_FULLFLOW_PASS_WITH_GAPS"
+    },
+    "multi_module_production_gate_pending": true
+  },
+  "safety": {
+    "cleanup_passed": true,
+    "code_agent_called": false,
+    "core_modified_in_this_round": false,
+    "entity_name_scenario_rule_count": 0,
+    "entity_name_skill_rule_count": 0,
+    "final_solution_document_generated": false,
+    "final_us_generated": false,
+    "knowledge_storage_writes_executed": false,
+    "lightrag_core_modified": false,
+    "live_harness_hook_connected": false,
+    "live_query_behavior_changed": false,
+    "live_upload_behavior_changed": false,
+    "module_specific_skill_count": 0,
+    "neo4j_connected": false,
+    "production_database_connected": false,
+    "real_embedding_calls_executed": false,
+    "real_llm_calls_executed": false,
+    "runtime_module_branch_count": 0
+  },
+  "scenario_router": {
+    "entity_name_scenario_rule_count": 0,
+    "holdout_generalization_passed": true,
+    "insufficient_evidence_forced_classification": false,
+    "mixed_fixture_forced_classification": false,
+    "one_to_many_fixture_passed": true,
+    "one_to_one_x_fixture_passed": true,
+    "runtime_module_branch_count": 0,
+    "zero_to_one_fixture_passed": true
+  },
+  "skills": {
+    "adapter_available_skill_count": 4,
+    "available_skill_count": 21,
+    "blocked_dependency_skill_count": 0,
+    "module_specific_skill_count": 0,
+    "planned_not_implemented_skill_count": 2,
+    "registered_skill_count": 27,
+    "unimplemented_skill_falsely_marked_available_count": 0
+  },
+  "tests": {
+    "collected_count": 55,
+    "compileall": "passed",
+    "failed_count": 0,
+    "passed_count": 55,
+    "py_compile": "passed",
+    "ruff": "passed",
+    "warnings": [
+      "2 dependency deprecation warnings from pypinyin during pytest"
+    ]
+  }
+}

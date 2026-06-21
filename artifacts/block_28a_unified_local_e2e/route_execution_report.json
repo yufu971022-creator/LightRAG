@@ -1,0 +1,26 @@
+{
+  "route_counts": {
+    "DSL_FULL": 1,
+    "DSL_PARTIAL": 1,
+    "PARSE_FAILED": 1,
+    "RAW_ONLY": 1
+  },
+  "routes": [
+    {
+      "document_id": "DOC-DSL-FULL",
+      "route": "DSL_FULL"
+    },
+    {
+      "document_id": "DOC-DSL-PARTIAL",
+      "route": "DSL_PARTIAL"
+    },
+    {
+      "document_id": "DOC-RAW",
+      "route": "RAW_ONLY"
+    },
+    {
+      "document_id": "DOC-PARSE-FAILED",
+      "route": "PARSE_FAILED"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "entity_name_quality_rule_count": 0,
+  "findings": [],
+  "fixture_runtime_coupling_count": 0,
+  "holdout_policy_passed": true,
+  "module_specific_dimension_rule_count": 0,
+  "module_specific_threshold_count": 0,
+  "runtime_module_branch_count": 0,
+  "scanned_files": [
+    "design_quality_types.py",
+    "functional_qa_contract.py",
+    "impact_analysis_contract.py",
+    "functional_qa_executor.py",
+    "impact_analysis_executor.py",
+    "evidence_citation_gate.py",
+    "term_identity_gate.py",
+    "version_safety_gate.py",
+    "impact_breadth_gate.py",
+    "fact_promotion_gate.py",
+    "insufficient_evidence_gate.py",
+    "targeted_repair_planner.py",
+    "design_output_quality_harness.py",
+    "design_quality_generalization_guard.py"
+  ]
+}

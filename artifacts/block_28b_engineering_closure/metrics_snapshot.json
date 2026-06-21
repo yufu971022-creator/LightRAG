@@ -1,0 +1,9 @@
+{
+  "counters": {
+    "ingestion_documents_total{route=DSL_FULL,status=OK}": 1,
+    "quality_gate_checks_total{gate=quality_gate,status=OK}": 1,
+    "query_requests_total{scenario=ONE_TO_MANY,status=QUALITY_GATE_PASSED}": 1
+  },
+  "gauges": {},
+  "samples": []
+}

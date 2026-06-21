@@ -1,0 +1,25 @@
+flowchart TD
+    CFG[Externalized Config + Feature Flags] --> FACADE[DSL-aware Runtime Facade]
+    FACADE --> PRE[Preflight / Readiness]
+    PRE --> E2E[28A Unified E2E Orchestrator]
+
+    E2E --> ING[Ingest / Lifecycle]
+    E2E --> QA[Functional QA]
+    E2E --> IA[Impact Analysis]
+
+    ING --> OBS[Trace / Logs / Metrics]
+    QA --> OBS
+    IA --> OBS
+
+    FACADE --> HEALTH[Health / Compatibility]
+    FACADE --> DIAG[Diagnostics]
+
+    SRC[Source + Config Templates + Schema + Tests] --> BUILD[Migration Bundle Builder]
+    BUILD --> SEC[Secret / Data / Path Scan]
+    SEC --> SUM[Checksums / Reproducible Build]
+    SUM --> PORT[Portable Bundle Smoke]
+    PORT --> READY[INTRANET_STAGING_READY]
+
+    READY --> PENDING[Production Gates Still Pending]
+
+    NOTE[No US / AC / UX / Code Agent; Production Disabled by Default]

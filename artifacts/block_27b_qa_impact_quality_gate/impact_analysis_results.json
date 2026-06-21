@@ -1,0 +1,1002 @@
+[
+  {
+    "attempts_used": 1,
+    "case_id": "IMPACT-ONE-MANY",
+    "final_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_ANALYSIS_CONTRACT",
+        "metrics": {
+          "impact_count": 3
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_BREADTH",
+        "metrics": {
+          "direct_impact_recall": 1.0,
+          "duplicate_impact_count": 0,
+          "evidence_backed_path_ratio": 1.0,
+          "false_positive_impact_count": 0,
+          "indirect_impact_recall": 1.0,
+          "missing_relevant_dimensions": [],
+          "over_expanded_domain_scope": false,
+          "required_dimension_coverage": 1.0
+        },
+        "passed": true
+      }
+    ],
+    "final_state": "QUALITY_GATE_PASSED",
+    "initial_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_ANALYSIS_CONTRACT",
+        "metrics": {
+          "impact_count": 3
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_BREADTH",
+        "metrics": {
+          "direct_impact_recall": 1.0,
+          "duplicate_impact_count": 0,
+          "evidence_backed_path_ratio": 1.0,
+          "false_positive_impact_count": 0,
+          "indirect_impact_recall": 1.0,
+          "missing_relevant_dimensions": [],
+          "over_expanded_domain_scope": false,
+          "required_dimension_coverage": 1.0
+        },
+        "passed": true
+      }
+    ],
+    "output": {
+      "direct_impacts": [
+        {
+          "affected_object_id": "sem-IMPACT-ONE-MANY-Workflow",
+          "affected_object_name": "Workflow object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "FACT",
+          "certainty": "CONFIRMED",
+          "domain_code": "Workflow",
+          "evidence_refs": [
+            "tu-impact-IMPACT-ONE-MANY"
+          ],
+          "feature_key": "feature-workflow",
+          "impact_id": "impact-IMPACT-ONE-MANY-direct-Workflow",
+          "impact_level": "DIRECT",
+          "impact_path": [
+            "target-IMPACT-ONE-MANY",
+            "relation-Workflow",
+            "sem-IMPACT-ONE-MANY-Workflow"
+          ],
+          "impact_type": "workflow_state",
+          "reason": "Evidence-backed impact classification.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": false,
+          "risk_level": "LOW",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "domain_coverage": {
+        "not_applicable_dimensions": [
+          "MasterData",
+          "Ledger",
+          "MonitoringReport"
+        ],
+        "optional_dimensions": [
+          "DataMigrationInitialization"
+        ],
+        "relevant_domains": [
+          "Workflow",
+          "Integration",
+          "AccessAudit"
+        ],
+        "required_dimensions": [
+          "workflow_state",
+          "interface_contract",
+          "permission_review"
+        ]
+      },
+      "excluded_candidates": [
+        {
+          "affected_object_id": "sem-IMPACT-ONE-MANY-Ledger",
+          "affected_object_name": "Ledger object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "GENERIC_ONLY",
+          "certainty": "UNCONFIRMED",
+          "domain_code": "Ledger",
+          "evidence_refs": [],
+          "feature_key": "feature-ledger",
+          "impact_id": "impact-IMPACT-ONE-MANY-tentative-Ledger",
+          "impact_level": "TENTATIVE",
+          "impact_path": [
+            "target-IMPACT-ONE-MANY",
+            "relation-Ledger",
+            "sem-IMPACT-ONE-MANY-Ledger"
+          ],
+          "impact_type": "generic_neighbor",
+          "reason": "Excluded or tentative non-factual candidate.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": true,
+          "risk_level": "MEDIUM",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "execution_trace": [
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "IMPACT_ANALYSIS"
+        }
+      ],
+      "feature_coverage": {
+        "covered_features": [
+          "feature_a",
+          "feature_b"
+        ],
+        "over_expanded": false
+      },
+      "indirect_impacts": [
+        {
+          "affected_object_id": "sem-IMPACT-ONE-MANY-Integration",
+          "affected_object_name": "Integration object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "FACT",
+          "certainty": "SUPPORTED",
+          "domain_code": "Integration",
+          "evidence_refs": [
+            "tu-impact-IMPACT-ONE-MANY"
+          ],
+          "feature_key": "feature-integration",
+          "impact_id": "impact-IMPACT-ONE-MANY-indirect-Integration",
+          "impact_level": "INDIRECT",
+          "impact_path": [
+            "target-IMPACT-ONE-MANY",
+            "relation-Integration",
+            "sem-IMPACT-ONE-MANY-Integration"
+          ],
+          "impact_type": "interface_contract",
+          "reason": "Evidence-backed impact classification.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": false,
+          "risk_level": "LOW",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "issues_and_warnings": [],
+      "open_questions": [],
+      "primary_change_targets": [
+        "primary_change_target"
+      ],
+      "quality_gate_result": null,
+      "requirement": "One target affects multiple features",
+      "safe_for_business_use": true,
+      "scenario": "ONE_TO_MANY",
+      "source_citations": [
+        {
+          "document_id": "doc-impact-IMPACT-ONE-MANY",
+          "document_version_id": "docv-impact-IMPACT-ONE-MANY",
+          "evidence_excerpt": "Synthetic impact evidence excerpt for offline quality gate.",
+          "source_span": {
+            "end": 80,
+            "start": 0
+          },
+          "source_us_id": "US-IMPACT-IMPACT-ONE-MANY",
+          "text_hash": "hash-impact-IMPACT-ONE-MANY",
+          "text_unit_id": "tu-impact-IMPACT-ONE-MANY"
+        }
+      ],
+      "tentative_impacts": [
+        {
+          "affected_object_id": "sem-IMPACT-ONE-MANY-AccessAudit",
+          "affected_object_name": "AccessAudit object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "FACT",
+          "certainty": "POSSIBLE",
+          "domain_code": "AccessAudit",
+          "evidence_refs": [
+            "tu-impact-IMPACT-ONE-MANY"
+          ],
+          "feature_key": "feature-accessaudit",
+          "impact_id": "impact-IMPACT-ONE-MANY-tentative-AccessAudit",
+          "impact_level": "TENTATIVE",
+          "impact_path": [
+            "target-IMPACT-ONE-MANY",
+            "relation-AccessAudit",
+            "sem-IMPACT-ONE-MANY-AccessAudit"
+          ],
+          "impact_type": "permission_review",
+          "reason": "Evidence-backed impact classification.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": true,
+          "risk_level": "MEDIUM",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "test_scope_hints": [],
+      "version_context": {
+        "resolution_status": "CONFIRMED_CURRENT",
+        "version_warnings": []
+      }
+    },
+    "repair_plan": null,
+    "state_transitions": [
+      {
+        "actor": "SYSTEM",
+        "reason": "initial deterministic output drafted",
+        "state": "OUTPUT_DRAFTED",
+        "timestamp": "2026-06-21T08:29:16.499267+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates running",
+        "state": "QUALITY_CHECKING",
+        "timestamp": "2026-06-21T08:29:16.499283+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates passed",
+        "state": "QUALITY_GATE_PASSED",
+        "timestamp": "2026-06-21T08:29:16.499297+00:00"
+      }
+    ],
+    "task_type": "IMPACT_ANALYSIS"
+  },
+  {
+    "attempts_used": 1,
+    "case_id": "IMPACT-LOCAL",
+    "final_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_ANALYSIS_CONTRACT",
+        "metrics": {
+          "impact_count": 2
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_BREADTH",
+        "metrics": {
+          "direct_impact_recall": 1.0,
+          "duplicate_impact_count": 0,
+          "evidence_backed_path_ratio": 1.0,
+          "false_positive_impact_count": 0,
+          "indirect_impact_recall": 1.0,
+          "missing_relevant_dimensions": [],
+          "over_expanded_domain_scope": false,
+          "required_dimension_coverage": 1.0
+        },
+        "passed": true
+      }
+    ],
+    "final_state": "QUALITY_GATE_PASSED",
+    "initial_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_ANALYSIS_CONTRACT",
+        "metrics": {
+          "impact_count": 2
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_BREADTH",
+        "metrics": {
+          "direct_impact_recall": 1.0,
+          "duplicate_impact_count": 0,
+          "evidence_backed_path_ratio": 1.0,
+          "false_positive_impact_count": 0,
+          "indirect_impact_recall": 1.0,
+          "missing_relevant_dimensions": [],
+          "over_expanded_domain_scope": false,
+          "required_dimension_coverage": 1.0
+        },
+        "passed": true
+      }
+    ],
+    "output": {
+      "direct_impacts": [
+        {
+          "affected_object_id": "sem-IMPACT-LOCAL-Integration",
+          "affected_object_name": "Integration object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "FACT",
+          "certainty": "CONFIRMED",
+          "domain_code": "Integration",
+          "evidence_refs": [
+            "tu-impact-IMPACT-LOCAL"
+          ],
+          "feature_key": "feature-integration",
+          "impact_id": "impact-IMPACT-LOCAL-direct-Integration",
+          "impact_level": "DIRECT",
+          "impact_path": [
+            "target-IMPACT-LOCAL",
+            "relation-Integration",
+            "sem-IMPACT-LOCAL-Integration"
+          ],
+          "impact_type": "field_mapping",
+          "reason": "Evidence-backed impact classification.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": false,
+          "risk_level": "LOW",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "domain_coverage": {
+        "not_applicable_dimensions": [
+          "MasterData",
+          "Workflow",
+          "Ledger",
+          "RuleManagement"
+        ],
+        "relevant_domains": [
+          "Integration",
+          "Other"
+        ],
+        "required_dimensions": [
+          "field_mapping"
+        ]
+      },
+      "excluded_candidates": [
+        {
+          "affected_object_id": "sem-IMPACT-LOCAL-Ledger",
+          "affected_object_name": "Ledger object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "CANDIDATE",
+          "certainty": "UNCONFIRMED",
+          "domain_code": "Ledger",
+          "evidence_refs": [],
+          "feature_key": "feature-ledger",
+          "impact_id": "impact-IMPACT-LOCAL-tentative-Ledger",
+          "impact_level": "TENTATIVE",
+          "impact_path": [
+            "target-IMPACT-LOCAL",
+            "relation-Ledger",
+            "sem-IMPACT-LOCAL-Ledger"
+          ],
+          "impact_type": "irrelevant_neighbor",
+          "reason": "Excluded or tentative non-factual candidate.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": true,
+          "risk_level": "MEDIUM",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "execution_trace": [
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "IMPACT_ANALYSIS"
+        }
+      ],
+      "feature_coverage": {
+        "covered_features": [
+          "local_feature"
+        ],
+        "over_expanded": false
+      },
+      "indirect_impacts": [],
+      "issues_and_warnings": [],
+      "open_questions": [],
+      "primary_change_targets": [
+        "local_target"
+      ],
+      "quality_gate_result": null,
+      "requirement": "Local field mapping adjustment",
+      "safe_for_business_use": true,
+      "scenario": "ONE_TO_ONE_X",
+      "source_citations": [
+        {
+          "document_id": "doc-impact-IMPACT-LOCAL",
+          "document_version_id": "docv-impact-IMPACT-LOCAL",
+          "evidence_excerpt": "Synthetic impact evidence excerpt for offline quality gate.",
+          "source_span": {
+            "end": 80,
+            "start": 0
+          },
+          "source_us_id": "US-IMPACT-IMPACT-LOCAL",
+          "text_hash": "hash-impact-IMPACT-LOCAL",
+          "text_unit_id": "tu-impact-IMPACT-LOCAL"
+        }
+      ],
+      "tentative_impacts": [
+        {
+          "affected_object_id": "sem-IMPACT-LOCAL-Other",
+          "affected_object_name": "Other object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "FACT",
+          "certainty": "POSSIBLE",
+          "domain_code": "Other",
+          "evidence_refs": [
+            "tu-impact-IMPACT-LOCAL"
+          ],
+          "feature_key": "feature-other",
+          "impact_id": "impact-IMPACT-LOCAL-tentative-Other",
+          "impact_level": "TENTATIVE",
+          "impact_path": [
+            "target-IMPACT-LOCAL",
+            "relation-Other",
+            "sem-IMPACT-LOCAL-Other"
+          ],
+          "impact_type": "hidden_cross_domain_risk",
+          "reason": "Evidence-backed impact classification.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": true,
+          "risk_level": "MEDIUM",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "test_scope_hints": [],
+      "version_context": {
+        "resolution_status": "CONFIRMED_CURRENT",
+        "version_warnings": []
+      }
+    },
+    "repair_plan": null,
+    "state_transitions": [
+      {
+        "actor": "SYSTEM",
+        "reason": "initial deterministic output drafted",
+        "state": "OUTPUT_DRAFTED",
+        "timestamp": "2026-06-21T08:29:16.499299+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates running",
+        "state": "QUALITY_CHECKING",
+        "timestamp": "2026-06-21T08:29:16.499308+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates passed",
+        "state": "QUALITY_GATE_PASSED",
+        "timestamp": "2026-06-21T08:29:16.499319+00:00"
+      }
+    ],
+    "task_type": "IMPACT_ANALYSIS"
+  },
+  {
+    "attempts_used": 1,
+    "case_id": "IMPACT-ZERO",
+    "final_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_ANALYSIS_CONTRACT",
+        "metrics": {
+          "impact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_BREADTH",
+        "metrics": {
+          "direct_impact_recall": 1.0,
+          "duplicate_impact_count": 0,
+          "evidence_backed_path_ratio": 1.0,
+          "false_positive_impact_count": 0,
+          "indirect_impact_recall": 1.0,
+          "missing_relevant_dimensions": [],
+          "over_expanded_domain_scope": false,
+          "required_dimension_coverage": 1.0
+        },
+        "passed": true
+      }
+    ],
+    "final_state": "QUALITY_GATE_PASSED",
+    "initial_gate_results": [
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_ANALYSIS_CONTRACT",
+        "metrics": {
+          "impact_count": 1
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "EVIDENCE_CITATION",
+        "metrics": {
+          "invalid_citation_count": 0,
+          "missing_citation_count": 0,
+          "unsupported_fact_count": 0,
+          "unsupported_factual_path_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "TERM_IDENTITY",
+        "metrics": {
+          "candidate_alias_as_fact_count": 0,
+          "incorrect_term_merge_count": 0,
+          "term_identity_split_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "VERSION_SAFETY",
+        "metrics": {
+          "historical_as_current_count": 0,
+          "missing_version_warning_count": 0,
+          "unsupported_supersedes_count": 0,
+          "version_hard_judgment_error_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "FACT_PROMOTION",
+        "metrics": {
+          "candidate_as_confirmed_count": 0,
+          "generic_ner_fact_hit_count": 0,
+          "generic_only_as_confirmed_count": 0,
+          "info_only_as_fact_count": 0,
+          "issue_as_fact_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "INSUFFICIENT_EVIDENCE",
+        "metrics": {
+          "has_direct_evidence": true,
+          "insufficient_evidence_detection_error_count": 0,
+          "unsafe_context_marked_safe_count": 0
+        },
+        "passed": true
+      },
+      {
+        "blocked_reason_codes": [],
+        "errors": [],
+        "gate_name": "IMPACT_BREADTH",
+        "metrics": {
+          "direct_impact_recall": 1.0,
+          "duplicate_impact_count": 0,
+          "evidence_backed_path_ratio": 1.0,
+          "false_positive_impact_count": 0,
+          "indirect_impact_recall": 1.0,
+          "missing_relevant_dimensions": [],
+          "over_expanded_domain_scope": false,
+          "required_dimension_coverage": 1.0
+        },
+        "passed": true
+      }
+    ],
+    "output": {
+      "direct_impacts": [],
+      "domain_coverage": {
+        "not_applicable_dimensions": [],
+        "relevant_domains": [
+          "Other"
+        ],
+        "required_dimensions": [
+          "external_constraint"
+        ]
+      },
+      "excluded_candidates": [],
+      "execution_trace": [
+        {
+          "executed": true,
+          "mode": "DETERMINISTIC_OFFLINE",
+          "skill": "IMPACT_ANALYSIS"
+        }
+      ],
+      "feature_coverage": {
+        "covered_features": []
+      },
+      "indirect_impacts": [],
+      "issues_and_warnings": [],
+      "open_questions": [],
+      "primary_change_targets": [
+        "new_capability"
+      ],
+      "quality_gate_result": null,
+      "requirement": "New capability without existing impact",
+      "safe_for_business_use": true,
+      "scenario": "ZERO_TO_ONE",
+      "source_citations": [
+        {
+          "document_id": "doc-impact-IMPACT-ZERO",
+          "document_version_id": "docv-impact-IMPACT-ZERO",
+          "evidence_excerpt": "Synthetic impact evidence excerpt for offline quality gate.",
+          "source_span": {
+            "end": 80,
+            "start": 0
+          },
+          "source_us_id": "US-IMPACT-IMPACT-ZERO",
+          "text_hash": "hash-impact-IMPACT-ZERO",
+          "text_unit_id": "tu-impact-IMPACT-ZERO"
+        }
+      ],
+      "tentative_impacts": [
+        {
+          "affected_object_id": "sem-IMPACT-ZERO-Other",
+          "affected_object_name": "Other object",
+          "affected_object_type": "FUNCTIONAL_OBJECT",
+          "candidate_kind": "FACT",
+          "certainty": "POSSIBLE",
+          "domain_code": "Other",
+          "evidence_refs": [
+            "tu-impact-IMPACT-ZERO"
+          ],
+          "feature_key": "feature-other",
+          "impact_id": "impact-IMPACT-ZERO-tentative-Other",
+          "impact_level": "TENTATIVE",
+          "impact_path": [
+            "target-IMPACT-ZERO",
+            "relation-Other",
+            "sem-IMPACT-ZERO-Other"
+          ],
+          "impact_type": "external_constraint",
+          "reason": "Evidence-backed impact classification.",
+          "relation_types": [
+            "AFFECTS"
+          ],
+          "requires_review": true,
+          "risk_level": "MEDIUM",
+          "version_status": "CONFIRMED_CURRENT"
+        }
+      ],
+      "test_scope_hints": [],
+      "version_context": {
+        "resolution_status": "CONFIRMED_CURRENT",
+        "version_warnings": []
+      }
+    },
+    "repair_plan": null,
+    "state_transitions": [
+      {
+        "actor": "SYSTEM",
+        "reason": "initial deterministic output drafted",
+        "state": "OUTPUT_DRAFTED",
+        "timestamp": "2026-06-21T08:29:16.499320+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates running",
+        "state": "QUALITY_CHECKING",
+        "timestamp": "2026-06-21T08:29:16.499325+00:00"
+      },
+      {
+        "actor": "SYSTEM",
+        "reason": "initial quality gates passed",
+        "state": "QUALITY_GATE_PASSED",
+        "timestamp": "2026-06-21T08:29:16.499332+00:00"
+      }
+    ],
+    "task_type": "IMPACT_ANALYSIS"
+  }
+]

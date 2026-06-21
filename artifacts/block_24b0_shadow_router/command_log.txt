@@ -1,0 +1,10 @@
+Block 24B-0 commands executed:
+.venv/bin/python -m lightrag_ext.us_dsl.scripts.run_24b0_shadow_router_report
+git diff -- lightrag/lightrag.py lightrag/operate.py lightrag/prompt.py lightrag/api
+
+Validation commands executed:
+PYTHONPYCACHEPREFIX=/private/tmp/lightrag_pycache python3 -m py_compile lightrag_ext/us_dsl/unified_ingestion_protocol.py lightrag_ext/us_dsl/scripts/run_24b0_shadow_router_report.py lightrag_ext/us_dsl/tests/test_unified_ingestion_protocol.py
+./scripts/test.sh --collect-only lightrag_ext/us_dsl/tests/test_unified_ingestion_protocol.py
+./scripts/test.sh lightrag_ext/us_dsl/tests/test_unified_ingestion_protocol.py
+.venv/bin/ruff check lightrag_ext/us_dsl/unified_ingestion_protocol.py lightrag_ext/us_dsl/scripts/run_24b0_shadow_router_report.py lightrag_ext/us_dsl/tests/test_unified_ingestion_protocol.py
+.venv/bin/python -m lightrag_ext.us_dsl.scripts.run_24b0_shadow_router_report

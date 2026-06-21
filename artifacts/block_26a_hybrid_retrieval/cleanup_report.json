@@ -1,0 +1,7 @@
+{
+  "cleanup_enabled": true,
+  "cleanup_passed": true,
+  "workspace_dir": "artifacts/block_26a_hybrid_retrieval/workspaces/block26a-offline",
+  "workspace_existed_before_cleanup": true,
+  "workspace_root_exists": true
+}

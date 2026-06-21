@@ -1,0 +1,86 @@
+{
+  "data_security_review": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "formal_multi_module_ab_gate": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "holdout_module_validation": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "intranet_network_proxy_validation": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "intranet_real_embedding_validation": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "intranet_real_llm_authorization": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "intranet_storage_adapter_validation": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "live_query_integration": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "live_upload_integration": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "performance_capacity_test": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "production_approval": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  },
+  "production_rollback_drill": {
+    "blocking": true,
+    "owner_placeholder": "<<OWNER>>",
+    "recommended_command_or_runbook": "runbooks/12_生产准出未完成项.md",
+    "required_evidence": "intranet staging or production approval evidence required",
+    "status": "PENDING"
+  }
+}

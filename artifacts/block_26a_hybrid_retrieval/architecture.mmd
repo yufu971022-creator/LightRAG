@@ -1,0 +1,16 @@
+flowchart TD
+    Q[Query] --> S[Semantic Profile]
+    S --> T[Term / Version / Domain Hints]
+    T --> R[RAW Text Adapter]
+    T --> P[PFSS Adapter]
+    T --> G[Generic Graph Adapter]
+    T --> I[Issue Sidecar Adapter]
+    R --> N[Candidate Normalization]
+    P --> N
+    G --> N
+    I --> N
+    N --> D[Semantic / Evidence Dedup]
+    D --> F[Weighted RRF Fusion]
+    F --> V[Evidence Path Validation]
+    V --> B[Fallback Policy]
+    B --> C[Trusted Context Pack]

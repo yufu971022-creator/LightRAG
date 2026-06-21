@@ -1,0 +1,4 @@
+deployment_mode: PRODUCTION_DISABLED
+namespace: local_dry_run
+working_dir: workspaces/runtime_dry_run
+module_manifest_path: <<MODULE_MANIFEST_PATH>>

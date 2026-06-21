@@ -1,0 +1,21 @@
+flowchart TD
+    P[Unified Parse Result] --> S[Sidecar Persistence Service]
+    R[Raw Evidence Result] --> S
+    G[Semantic Branch Result] --> S
+    D[Route Decision] --> S
+
+    S --> DOC[Document Registry]
+    S --> VER[Document Version Registry]
+    S --> BAT[Ingestion Batch]
+    S --> TXT[Chunk / TextUnit / Link]
+    S --> SEM[Semantic Object / Relation]
+    S --> EVI[Evidence Mapping]
+    S --> TERM[Term Mapping]
+    S --> VR[Version Group]
+    S --> ISS[Issue Registry]
+    S --> RB[Rollback Manifest]
+
+    SEM --> MAP[Graph Object Mapping]
+    MAP -. references .-> PFSS[External PFSS Graph]
+
+    NOTE[Local SQLite Reference Backend Only; Sidecar stores mappings and governance metadata, not graph payloads]

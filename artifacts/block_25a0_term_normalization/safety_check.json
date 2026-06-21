@@ -1,0 +1,14 @@
+{
+  "auto_write_routing_enabled": false,
+  "entity_type_resolver_changed": false,
+  "lightrag_core_modified": false,
+  "live_query_behavior_changed": false,
+  "live_upload_behavior_changed": false,
+  "live_upload_hook_connected": false,
+  "neo4j_connected": false,
+  "original_extract_entities_called": false,
+  "production_database_connected": false,
+  "production_graph_rewrite_executed": false,
+  "real_embedding_calls_executed": false,
+  "real_llm_calls_executed": false
+}

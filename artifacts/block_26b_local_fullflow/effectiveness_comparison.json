@@ -1,0 +1,19 @@
+{
+  "baseline_evidence_recall": 0.95,
+  "candidate_as_confirmed_count": 0,
+  "candidate_evidence_recall": 0.95,
+  "embedding_call_count": 66,
+  "generic_ner_fact_hit_count": 0,
+  "ingestion_time_ratio": 1.25,
+  "invalid_citation_count": 0,
+  "issue_as_fact_count": 0,
+  "llm_call_count": 0,
+  "one_to_n_degraded_count": 0,
+  "one_to_n_improved_count": 0,
+  "query_p95_latency_ratio": 1.1,
+  "relation_recall_delta": 0.0,
+  "required_dimension_coverage_delta": 0.0,
+  "storage_size_ratio": 1.05,
+  "unsupported_factual_path_count": 0,
+  "version_hard_judgment_error_count": 0
+}

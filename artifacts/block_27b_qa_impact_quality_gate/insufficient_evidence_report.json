@@ -1,0 +1,83 @@
+{
+  "gate_name": "INSUFFICIENT_EVIDENCE",
+  "passed": true,
+  "results": [
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "INSUFFICIENT_EVIDENCE",
+      "metrics": {
+        "has_direct_evidence": true,
+        "insufficient_evidence_detection_error_count": 0,
+        "unsafe_context_marked_safe_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "INSUFFICIENT_EVIDENCE",
+      "metrics": {
+        "has_direct_evidence": true,
+        "insufficient_evidence_detection_error_count": 0,
+        "unsafe_context_marked_safe_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "INSUFFICIENT_EVIDENCE",
+      "metrics": {
+        "has_direct_evidence": true,
+        "insufficient_evidence_detection_error_count": 0,
+        "unsafe_context_marked_safe_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "INSUFFICIENT_EVIDENCE",
+      "metrics": {
+        "has_direct_evidence": false,
+        "insufficient_evidence_detection_error_count": 0,
+        "unsafe_context_marked_safe_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "INSUFFICIENT_EVIDENCE",
+      "metrics": {
+        "has_direct_evidence": true,
+        "insufficient_evidence_detection_error_count": 0,
+        "unsafe_context_marked_safe_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "INSUFFICIENT_EVIDENCE",
+      "metrics": {
+        "has_direct_evidence": true,
+        "insufficient_evidence_detection_error_count": 0,
+        "unsafe_context_marked_safe_count": 0
+      },
+      "passed": true
+    },
+    {
+      "blocked_reason_codes": [],
+      "errors": [],
+      "gate_name": "INSUFFICIENT_EVIDENCE",
+      "metrics": {
+        "has_direct_evidence": true,
+        "insufficient_evidence_detection_error_count": 0,
+        "unsafe_context_marked_safe_count": 0
+      },
+      "passed": true
+    }
+  ]
+}

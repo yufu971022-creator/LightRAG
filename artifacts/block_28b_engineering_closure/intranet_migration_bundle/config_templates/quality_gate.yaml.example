@@ -1,0 +1,5 @@
+quality_gate_version: quality-gate.v1
+expected_quality_gate_version: quality-gate.v1
+functional_qa_enabled: true
+impact_analysis_enabled: true
+quality_gate_enabled: true

@@ -1,0 +1,32 @@
+{
+  "channel_counts": {
+    "GENERIC_GRAPH": 2,
+    "PFSS_ENTITY": 1,
+    "PFSS_PATH": 1,
+    "PFSS_RELATION": 1,
+    "RAW_TEXT": 1
+  },
+  "direct_raw_score_addition_used": false,
+  "score_ranges": {
+    "GENERIC_GRAPH": {
+      "max": 0.97,
+      "min": 0.62
+    },
+    "PFSS_ENTITY": {
+      "max": 0.88,
+      "min": 0.88
+    },
+    "PFSS_PATH": {
+      "max": 0.84,
+      "min": 0.84
+    },
+    "PFSS_RELATION": {
+      "max": 0.86,
+      "min": 0.86
+    },
+    "RAW_TEXT": {
+      "max": 0.91,
+      "min": 0.91
+    }
+  }
+}
